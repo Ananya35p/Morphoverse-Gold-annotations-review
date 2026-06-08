@@ -5,7 +5,6 @@ from typing import Any, Dict, List, Tuple
 
 import streamlit as st
 
-from utils.review_utils import get_title
 from utils.reviewer_store import get_user_languages, save_user_languages
 
 
@@ -33,25 +32,6 @@ LANGUAGE_UI_CSS = """
     margin: 0 0 0.35rem 0;
     font-size: 1.1rem;
     color: #1e3a5f;
-}
-.lang-poem-list {
-    list-style: none;
-    margin: 0.6rem 0 0 0;
-    padding: 0;
-    text-align: left;
-}
-.lang-poem-list li {
-    font-size: 0.86rem;
-    color: #374151;
-    padding: 0.28rem 0;
-    border-bottom: 1px solid #e5e7eb;
-}
-.lang-poem-list li:last-child {
-    border-bottom: none;
-}
-.lang-poem-id {
-    font-size: 0.75rem;
-    color: #6b7280;
 }
 .top-bar {
     border: 1px solid #dbeafe;
@@ -100,32 +80,8 @@ def language_key(raw: Dict[str, Any]) -> str:
     return str(raw.get("language") or raw.get("_language_folder") or "Unknown")
 
 
-def language_poem_groups(
-    poems: List[Dict[str, Any]],
-    get_poem_id_fn,
-) -> List[Tuple[str, List[Tuple[str, str]]]]:
-    """Return (language, [(poem_id, title), ...]) sorted by language then title."""
-    languages = sorted({language_key(p) for p in poems})
-    rows: List[Tuple[str, List[Tuple[str, str]]]] = []
-    for lang in languages:
-        lang_poems = sorted(
-            [p for p in poems if language_key(p) == lang],
-            key=lambda p: get_title(p).lower(),
-        )
-        entries = [(get_poem_id_fn(p), get_title(p)) for p in lang_poems]
-        rows.append((lang, entries))
-    return rows
-
-
-def _poem_list_html(entries: List[Tuple[str, str]]) -> str:
-    items = []
-    for poem_id, title in entries:
-        safe_title = escape(title or poem_id)
-        safe_id = escape(poem_id)
-        items.append(
-            f'<li><strong>{safe_title}</strong><br><span class="lang-poem-id">{safe_id}</span></li>'
-        )
-    return f'<ul class="lang-poem-list">{"".join(items)}</ul>'
+def available_languages(poems: List[Dict[str, Any]]) -> List[str]:
+    return sorted({language_key(p) for p in poems})
 
 
 def render_language_multiselect(
@@ -148,20 +104,18 @@ def render_language_multiselect(
         unsafe_allow_html=True,
     )
 
-    groups = language_poem_groups(poems, get_poem_id_fn)
-    all_languages = [lang for lang, _ in groups]
+    all_languages = available_languages(poems)
 
     saved = get_user_languages(logged_in_user)
     default_selection = [lang for lang in saved if lang in all_languages]
 
-    cols = st.columns(min(3, len(groups)) or 1)
-    for index, (lang, entries) in enumerate(groups):
+    cols = st.columns(min(3, len(all_languages)) or 1)
+    for index, lang in enumerate(all_languages):
         with cols[index % len(cols)]:
             st.markdown(
                 f"""
                 <div class="lang-card">
                     <h3>{escape(lang)}</h3>
-                    {_poem_list_html(entries)}
                 </div>
                 """,
                 unsafe_allow_html=True,

@@ -8,6 +8,7 @@ FONT_STEP = 10
 FONT_DEFAULT = 100
 
 THEME_OPTIONS = ("Light", "Dark", "Sepia")
+THEME_LABELS = {"Light": "Light", "Dark": "Dark", "Sepia": "Poetry (Sepia)"}
 
 
 def init_display_prefs() -> None:
@@ -134,13 +135,6 @@ def get_display_css() -> str:
 .lang-card h3 {{
     color: {tokens["top_bar_title"]};
 }}
-.lang-poem-list li {{
-    color: {tokens["text"]};
-    border-bottom-color: {tokens["section_border"]};
-}}
-.lang-poem-id {{
-    color: {tokens["muted"]};
-}}
 .section-header {{
     border-bottom-color: {tokens["section_border"]};
     font-size: {1.15 * base_px}px;
@@ -168,7 +162,12 @@ def render_display_controls() -> None:
         if st.session_state.ui_theme in THEME_OPTIONS
         else 0
     )
-    st.session_state.ui_theme = st.selectbox("Theme", THEME_OPTIONS, index=theme_index)
+    st.session_state.ui_theme = st.selectbox(
+        "Theme",
+        THEME_OPTIONS,
+        index=theme_index,
+        format_func=lambda value: THEME_LABELS.get(value, value),
+    )
 
     st.caption(f"Text size: {st.session_state.font_scale}%")
     minus_col, reset_col, plus_col = st.columns(3)

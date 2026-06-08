@@ -101,7 +101,7 @@ def load_raw_poems(data_dir: Optional[Path] = None) -> List[Dict[str, Any]]:
                 {
                     "poem_id": poem_id_from_path,
                     "language": language_folder,
-                    "poem_title": poem_id_from_path,
+                    "poem_title": "",
                     "status": "load_error",
                     "load_error": str(exc),
                     "_source_file": str(json_path),

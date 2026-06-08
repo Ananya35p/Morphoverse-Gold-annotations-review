@@ -110,6 +110,8 @@ def load_user_reviewed_index(username: str) -> Dict[str, Dict[str, Any]]:
     for poem_id, payload in poems.items():
         if not isinstance(payload, dict):
             continue
+        if payload.get("is_draft") or str(payload.get("review_status") or "") == "draft":
+            continue
         index[str(poem_id)] = {
             "poem_id": str(poem_id),
             "review_status": str(payload.get("review_status") or "reviewed"),

@@ -19,6 +19,21 @@ create index if not exists idx_reviewed_annotations_poem_id
 create index if not exists idx_reviewed_annotations_reviewer_id
   on reviewed_annotations (reviewer_id);
 
+create table if not exists review_escalations (
+  poem_id text primary key,
+  title text,
+  language text not null,
+  escalated_at timestamptz not null,
+  escalated_by text not null,
+  agreement text,
+  reviewers jsonb,
+  status text not null default 'pending_senior_review',
+  senior_decision text,
+  senior_comment text,
+  resolved_at timestamptz,
+  resolved_by text
+);
+
 create table if not exists review_audit_log (
   id bigint generated always as identity primary key,
   event text not null,

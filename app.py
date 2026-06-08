@@ -59,7 +59,10 @@ from utils.ui_utils import (
     render_top_bar,
     require_language_setup,
 )
+from utils.autosave_utils import maybe_autosave_draft
+from utils.display_utils import build_reviewer_poem_options
 from utils.display_prefs import get_display_css, init_display_prefs, render_display_controls
+from utils.review_history import append_history_event, format_history_table
 from utils.storage_utils import get_supabase_config, persistent_storage_label, save_review_to_persistent_storage
 
 
@@ -364,16 +367,6 @@ def get_low_agreement_notes(raw: Dict[str, Any]) -> List[str]:
     return notes
 
 
-def poem_option_label(raw: Dict[str, Any], reviewed_index: Dict[str, Dict[str, Any]]) -> str:
-    poem_id = get_poem_id(raw)
-    title = get_title(raw)
-    short_title = title if len(title) <= 42 else f"{title[:39]}..."
-    status = get_current_review_status(raw, reviewed_index)
-    you_status = "done" if status not in {"pending_review", "pending"} else "pending"
-    agreement = get_agreement(raw) or "n/a"
-    return f"{short_title} · {poem_id} · you: {you_status}"
-
-
 def review_action_column(include_add: bool = True) -> st.column_config.SelectboxColumn:
     options = REVIEW_ACTIONS if include_add else REVIEW_ACTIONS_EXISTING
     return st.column_config.SelectboxColumn(
@@ -656,26 +649,36 @@ with st.sidebar:
     status_filter = st.selectbox("Show poems", REVIEW_STATUS_FILTERS, index=0)
 
     language_poems = filter_poems(poems, language, status_filter, reviewed_index)
-    search_query = st.text_input("Search", placeholder="Poem ID or title").strip().lower()
+    search_query = st.text_input("Search", placeholder="Search by poem title").strip().lower()
     if search_query:
         language_poems = [
             p
             for p in language_poems
-            if search_query in get_poem_id(p).lower() or search_query in get_title(p).lower()
+            if search_query in get_title(p).lower()
         ]
     if not language_poems:
         st.warning("No poems match this filter. Try a different status or search term.")
         st.stop()
 
-    poem_options = {
-        poem_option_label(p, reviewed_index): get_poem_id(p) for p in language_poems
-    }
+    poem_options = build_reviewer_poem_options(language_poems, get_poem_id, get_title)
     poem_labels = list(poem_options.keys())
     selected_label = st.selectbox("Select poem to review", poem_labels, index=0)
     selected_poem_id = poem_options[selected_label]
+    selected_raw = next(p for p in language_poems if get_poem_id(p) == selected_poem_id)
+    you_status = get_current_review_status(selected_raw, reviewed_index)
+    st.caption(
+        "Your status: **done**"
+        if you_status not in {"pending_review", "pending"}
+        else "Your status: **pending**"
+    )
 
     st.divider()
     render_display_controls()
+
+    st.divider()
+    if "autosave_enabled" not in st.session_state:
+        st.session_state.autosave_enabled = True
+    st.session_state.autosave_enabled = st.toggle("Auto-save drafts", value=st.session_state.autosave_enabled)
 
     st.divider()
     st.caption(f"Signed in as **{logged_in_user}**")
@@ -699,8 +702,7 @@ original_culture_df = normalize_culture_entities(raw)
 st.markdown('<div class="section-header">Poem overview</div>', unsafe_allow_html=True)
 st.subheader(title)
 st.markdown(
-    badge(poem_id, "blue")
-    + badge(poem_language, "gray")
+    badge(poem_language, "gray")
     + badge(f"Status: {current_review_status}", status_badge_kind(current_review_status)),
     unsafe_allow_html=True,
 )
@@ -711,10 +713,20 @@ if co_reviewers:
         "Your review is saved separately under your name."
     )
 
-if reviewed:
+if reviewed and not reviewed.get("is_draft") and str(reviewed.get("review_status")) != "draft":
     st.info("You have a saved review for this poem. Submitting again will update your copy only.")
+elif reviewed and (reviewed.get("is_draft") or str(reviewed.get("review_status")) == "draft"):
+    st.info("Draft in progress — your annotations are auto-saved as you edit.")
 else:
     st.caption("Your review will be saved under your name. Other reviewers can review the same poem independently.")
+
+if reviewed and reviewed.get("history"):
+    with st.expander("Your review history", expanded=False):
+        st.dataframe(
+            pd.DataFrame(format_history_table(reviewed.get("history") or [])),
+            use_container_width=True,
+            hide_index=True,
+        )
 
 culture_df, metaphor_df, emotion_df, motif_df = load_initial_tables(raw, reviewed)
 
@@ -754,6 +766,23 @@ with tab_emotion:
 with tab_motif:
     st.caption("Keep concrete visual motifs present in the poem. Remove vague or generic items.")
     edited_motif_df = df_editor_motif(motif_df, key=f"motif_{poem_id}")
+
+saved_now, autosave_time = maybe_autosave_draft(
+    username=logged_in_user,
+    poem_id=poem_id,
+    language=poem_language,
+    title=title,
+    raw=raw,
+    culture_df=strip_internal_columns(edited_culture_df),
+    metaphor_df=strip_internal_columns(edited_metaphor_df),
+    emotion_df=strip_internal_columns(edited_emotion_df),
+    motif_df=strip_internal_columns(edited_motif_df),
+    enabled=bool(st.session_state.get("autosave_enabled", True)),
+)
+if saved_now:
+    st.caption(f"Draft auto-saved at {autosave_time}")
+elif autosave_time and st.session_state.get("autosave_enabled", True):
+    st.caption(f"Last auto-save: {autosave_time}")
 
 with st.container():
     st.markdown('<div class="section-header">Submit your review</div>', unsafe_allow_html=True)
@@ -816,12 +845,18 @@ with st.container():
             submitted_reviewer_id = logged_in_user
             reviewed_at = now_iso()
 
+            had_prior_submission = bool(
+                reviewed
+                and not reviewed.get("is_draft")
+                and str(reviewed.get("review_status") or "") != "draft"
+            )
             payload = {
                 "review_id": review_id(poem_id, submitted_reviewer_id),
                 "poem_id": poem_id,
                 "language": poem_language,
                 "title": title,
                 "review_status": decision,
+                "is_draft": False,
                 "reviewer_id": submitted_reviewer_id,
                 "logged_in_user": logged_in_user,
                 "reviewer_confidence": confidence,
@@ -846,7 +881,13 @@ with st.container():
                     "reason": reason.strip(),
                 },
                 "raw_llm_annotation_snapshot": raw,
+                "history": list((reviewed or {}).get("history") or []),
             }
+            append_history_event(
+                payload,
+                "updated" if had_prior_submission else "submitted",
+                note=reason.strip()[:200],
+            )
 
             save_poem_review(logged_in_user, poem_id, payload)
 
@@ -866,7 +907,7 @@ with st.container():
 
             persistent_ok, persistent_message = save_review_to_persistent_storage(payload, audit_entry)
 
-            st.success(f"Your review for **{poem_id}** was saved under **{logged_in_user}**.")
+            st.success(f"Your review for **{title}** was saved under **{logged_in_user}**.")
             if persistent_ok:
                 st.success("Saved to database (Supabase). Admins can see all reviewer submissions.")
             elif get_supabase_config()[0]:

@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import re
 from typing import Any, Dict, List
 
 import pandas as pd
+
+POEM_ID_PATTERN = re.compile(r"^MV\+\+_\d+$", re.IGNORECASE)
 
 
 def unwrap_value(value: Any, default: Any = "") -> Any:
@@ -31,8 +34,34 @@ def get_language(raw: Dict[str, Any], fallback: str = "") -> str:
     return str(raw.get("language") or fallback or "Unknown")
 
 
+def looks_like_poem_id(value: Any) -> bool:
+    text = str(value or "").strip()
+    return bool(text) and bool(POEM_ID_PATTERN.match(text))
+
+
+def sanitize_display_title(value: Any, fallback: str = "Untitled poem") -> str:
+    """Return a user-facing poem name; never an internal poem ID."""
+    text = str(value or "").strip()
+    if not text or looks_like_poem_id(text):
+        return fallback
+    return text
+
+
 def get_title(raw: Dict[str, Any]) -> str:
-    return str(raw.get("poem_title") or raw.get("title") or get_poem_id(raw))
+    """Human-facing poem title; never returns internal poem IDs."""
+    poem_id = get_poem_id(raw)
+    for field in ("poem_title", "title"):
+        candidate = str(raw.get(field) or "").strip()
+        if not candidate:
+            continue
+        if candidate == poem_id or looks_like_poem_id(candidate):
+            continue
+        return candidate
+    return "Untitled poem"
+
+
+def poem_display_label(title: str, language: str = "") -> str:
+    return sanitize_display_title(title)
 
 
 def get_original_poem(raw: Dict[str, Any]) -> str:

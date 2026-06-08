@@ -6,10 +6,25 @@ from typing import Any, Dict, List
 import pandas as pd
 import streamlit as st
 
-from utils.auth_utils import admin_logout, init_admin_state, require_admin_login
-from utils.io_utils import load_json, make_review_zip
-from utils.reviewer_store import load_all_reviewer_submissions, SUBMISSIONS_DIR
+from utils.auth_utils import admin_logout, get_admin_role, init_admin_state, require_admin_login
+from utils.comparison_utils import (
+    comparison_rows,
+    compute_agreement,
+    poems_with_multiple_reviews,
+    reviews_for_poem,
+)
+from utils.display_utils import (
+    build_poem_option_map,
+    comparison_option_label,
+    submissions_display_df,
+)
+from utils.review_utils import sanitize_display_title
 from utils.display_prefs import get_display_css, init_display_prefs, render_display_controls
+from utils.escalation_store import escalate_poem, get_escalation, pending_escalations, resolve_escalation
+from utils.io_utils import load_json, make_review_zip
+from utils.review_history import format_history_table
+from utils.reviewer_store import load_all_reviewer_submissions, SUBMISSIONS_DIR
+from utils.schema_utils import REVIEW_DECISIONS
 from utils.storage_utils import load_reviews_from_persistent_storage, persistent_storage_label
 
 
@@ -43,6 +58,30 @@ CUSTOM_CSS = """
     overflow-y: auto;
 }
 .small-muted { color: #4b5563; font-size: 0.88rem; }
+.compare-panel {
+    border: 2px solid #dbeafe;
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+    margin: 1rem 0 1.25rem 0;
+}
+.compare-row {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1rem;
+}
+.compare-row:last-child { border-bottom: none; }
+.agreement-high { color: #176b3a; font-weight: 700; }
+.agreement-medium { color: #7a5200; font-weight: 700; }
+.agreement-low { color: #9d1c1c; font-weight: 700; }
+.agreement-na { color: #4b5563; font-weight: 700; }
+.escalation-card {
+    border: 1px solid #fcd34d;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fffbeb;
+    margin-bottom: 0.75rem;
+}
 </style>
 """
 init_display_prefs()
@@ -93,7 +132,7 @@ def review_summary_df(reviews: List[Dict[str, Any]]) -> pd.DataFrame:
                 "reviewer": review.get("logged_in_user") or review.get("reviewer_id", ""),
                 "poem_id": review.get("poem_id", ""),
                 "language": review.get("language", ""),
-                "title": review.get("title", ""),
+                "title": sanitize_display_title(review.get("title", "")),
                 "status": review.get("review_status", ""),
                 "confidence": review.get("reviewer_confidence", ""),
                 "reviewed_at": review.get("reviewed_at", ""),
@@ -112,6 +151,121 @@ def records_df(records: List[Dict[str, Any]]) -> pd.DataFrame:
     if not records:
         return pd.DataFrame()
     return pd.DataFrame(records).fillna("")
+
+
+def agreement_css_class(agreement: str) -> str:
+    return {
+        "HIGH": "agreement-high",
+        "MEDIUM": "agreement-medium",
+        "LOW": "agreement-low",
+    }.get((agreement or "").upper(), "agreement-na")
+
+
+def render_comparison_panel(
+    poem_reviews: List[Dict[str, Any]],
+    poem_id: str,
+    title: str,
+    language: str,
+    staff_user: str,
+    staff_role: str,
+) -> None:
+    agreement = compute_agreement(poem_reviews)
+    rows = comparison_rows(poem_reviews)
+    compare_lines = "".join(
+        f'<div class="compare-row"><strong>{row["reviewer"]}</strong> &rarr; {row["decision"]}</div>'
+        for row in rows
+    )
+    st.markdown(
+        f"""
+        <div class="compare-panel">
+            <div class="section-header" style="margin-top:0;">Review comparison</div>
+            {compare_lines}
+            <div class="compare-row">
+                <span class="{agreement_css_class(agreement)}">Agreement: {agreement}</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    if len(poem_reviews) < 2:
+        st.caption("Comparison appears when two or more reviewers submit the same poem.")
+        return
+
+    escalation = get_escalation(poem_id)
+    if escalation and str(escalation.get("status")) == "pending_senior_review":
+        st.warning(
+            f"Escalated on {escalation.get('escalated_at', '')} by **{escalation.get('escalated_by', 'admin')}**. "
+            "Awaiting senior review."
+        )
+    elif staff_role == "admin" and agreement == "LOW":
+        reviewers = [str(r.get("logged_in_user") or r.get("reviewer_id") or "") for r in poem_reviews]
+        if st.button("Escalate to Senior Reviewer", type="primary", key=f"escalate_{poem_id}"):
+            escalate_poem(
+                poem_id,
+                title=title,
+                language=language,
+                escalated_by=staff_user,
+                agreement=agreement,
+                reviewers=reviewers,
+            )
+            st.success(f"Escalated **{title}** to the senior review queue.")
+            st.rerun()
+
+
+def render_senior_review_queue(staff_user: str, staff_role: str) -> None:
+    pending = pending_escalations()
+    if not pending:
+        return
+
+    st.markdown("### Senior review queue")
+    for entry in pending:
+        poem_id = str(entry.get("poem_id") or "")
+        with st.container():
+            st.markdown(
+                f"""
+                <div class="escalation-card">
+                    <strong>{entry.get("title", "Untitled poem")}</strong>
+                    <span class="small-muted"> &middot; {entry.get("language", "")}</span><br>
+                    <span class="small-muted">
+                        Agreement: {entry.get("agreement", "")} &middot;
+                        Reviewers: {", ".join(entry.get("reviewers") or [])} &middot;
+                        Escalated by {entry.get("escalated_by", "")}
+                    </span>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+            if staff_role not in {"admin", "senior"}:
+                continue
+            with st.form(key=f"senior_resolve_{poem_id}"):
+                decision = st.selectbox("Final senior decision", REVIEW_DECISIONS, key=f"senior_dec_{poem_id}")
+                comment = st.text_area("Senior reviewer comment", key=f"senior_comment_{poem_id}", height=100)
+                if st.form_submit_button("Submit senior decision", type="primary"):
+                    if not comment.strip():
+                        st.error("Please add a senior reviewer comment.")
+                    else:
+                        resolve_escalation(
+                            poem_id,
+                            senior_user=staff_user,
+                            decision=decision,
+                            comment=comment,
+                        )
+                        st.success(f"Senior review completed for **{entry.get('title', 'poem')}**.")
+                        st.rerun()
+    st.divider()
+
+
+def render_review_history(review: Dict[str, Any]) -> None:
+    history = review.get("history") or []
+    if not history:
+        st.caption("No history recorded for this review yet.")
+        return
+    st.dataframe(
+        pd.DataFrame(format_history_table(history)),
+        use_container_width=True,
+        hide_index=True,
+    )
 
 
 def render_review(review: Dict[str, Any]) -> None:
@@ -163,15 +317,20 @@ def render_review(review: Dict[str, Any]) -> None:
         st.markdown("#### Visual motifs")
         st.dataframe(records_df(changes.get("visual_motifs", []) or []), use_container_width=True, hide_index=True)
 
+    with st.expander("Review history", expanded=False):
+        render_review_history(review)
+
 
 init_admin_state()
 admin_user = require_admin_login()
+staff_role = get_admin_role()
 
 reviews, storage_message = load_all_reviews()
 summary_df = review_summary_df(reviews)
+multi_review_poems = poems_with_multiple_reviews(reviews)
 
 st.title("MorphoVerse++ Review Admin")
-st.caption(f"Signed in as admin: **{admin_user}**")
+st.caption(f"Signed in as **{staff_role}**: **{admin_user}**")
 st.caption(f"Reviewer submissions folder: `{SUBMISSIONS_DIR}` · Storage: {persistent_storage_label()}")
 
 if storage_message and "not configured" in storage_message.lower():
@@ -211,12 +370,10 @@ with st.sidebar:
     if selected_language != "All":
         filtered = filtered[filtered["language"] == selected_language]
 
-    poem_labels = [
-        f"{row.poem_id} | {row.title} | {row.language}"
-        for row in filtered[["poem_id", "title", "language"]].drop_duplicates().itertuples(index=False)
-    ]
+    poem_option_map = build_poem_option_map(filtered)
+    poem_labels = list(poem_option_map.keys())
     selected_poem_label = st.selectbox("Poem", poem_labels) if poem_labels else None
-    selected_poem_id = selected_poem_label.split(" | ", 1)[0] if selected_poem_label else None
+    selected_poem_id = poem_option_map.get(selected_poem_label or "", None)
 
     st.divider()
     zip_path = make_review_zip()
@@ -230,25 +387,69 @@ with st.sidebar:
                 use_container_width=True,
             )
 
+render_senior_review_queue(admin_user, staff_role)
+
 st.subheader("Overview")
-m1, m2, m3, m4 = st.columns(4)
+m1, m2, m3, m4, m5 = st.columns(5)
 m1.metric("Reviewers", summary_df["reviewer"].nunique())
 m2.metric("Poems reviewed", summary_df["poem_id"].nunique())
 m3.metric("Total submissions", len(summary_df))
-m4.metric("Languages", summary_df["language"].nunique())
+m4.metric("Multi-review poems", len(multi_review_poems))
+m5.metric("Pending escalations", len(pending_escalations()))
+
+if multi_review_poems:
+    st.markdown("### Poems needing comparison")
+    compare_option_map = {
+        comparison_option_label(revs, compute_agreement(revs)): pid
+        for pid, revs in sorted(
+            multi_review_poems.items(),
+            key=lambda item: compute_agreement(item[1]),
+        )
+    }
+    compare_labels = list(compare_option_map.keys())
+    quick_compare = st.selectbox("Jump to comparison", compare_labels, key="quick_compare")
+    if quick_compare:
+        quick_poem_id = compare_option_map.get(quick_compare, "")
+        quick_reviews = reviews_for_poem(reviews, quick_poem_id)
+        if quick_reviews:
+            first = quick_reviews[0]
+            render_comparison_panel(
+                quick_reviews,
+                quick_poem_id,
+                str(first.get("title") or ""),
+                str(first.get("language") or ""),
+                admin_user,
+                staff_role,
+            )
 
 st.markdown("### All submissions")
 st.dataframe(
-    filtered.sort_values(["reviewer", "language", "poem_id"]),
+    submissions_display_df(filtered),
     use_container_width=True,
     hide_index=True,
 )
 
 if selected_poem_id:
-    poem_reviews = [r for r in reviews if str(r.get("poem_id")) == selected_poem_id]
+    poem_reviews = reviews_for_poem(reviews, selected_poem_id)
     poem_reviews = sorted(poem_reviews, key=lambda r: str(r.get("logged_in_user") or r.get("reviewer_id", "")))
 
-    st.markdown("### Selected poem reviews")
+    if poem_reviews:
+        first = poem_reviews[0]
+        render_comparison_panel(
+            poem_reviews,
+            selected_poem_id,
+            str(first.get("title") or ""),
+            str(first.get("language") or ""),
+            admin_user,
+            staff_role,
+        )
+
+    poem_title = (
+        sanitize_display_title(poem_reviews[0].get("title", ""))
+        if poem_reviews
+        else "Untitled poem"
+    )
+    st.markdown(f"### Selected poem reviews — {poem_title}")
     for review in poem_reviews:
         reviewer = review.get("logged_in_user") or review.get("reviewer_id", "unknown")
         with st.expander(f"{reviewer} — {review.get('review_status', '')}", expanded=len(poem_reviews) == 1):
