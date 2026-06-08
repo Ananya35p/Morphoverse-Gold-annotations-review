@@ -1,0 +1,212 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1075",
+  "poem_title": "Panchhi Nadiyan Pawan Ke Jhonke",
+  "language": "Kannada",
+  "original_poem": "पंछी, नदियाँ, पवन के झोंके,  \nकोई सरहद न इन्हें रोके,  \nसरहदें इंसानों के लिए हैं,  \nसोचो, तुमने और मैंने क्या पाया इंसान होकर।  \n\nदूरियों का ग़म नहीं था,  \nतुमसे मिलकर फिर से जीना है,  \nदिल से दिल के दरमियाँ,  \nदीवारें क्यों बनाई इंसान ने खुदा बनकर।  \n\nपंछी, नदियाँ, पवन के झोंके,  \nकोई सरहद न इन्हें रोके।",
+  "translated_poem": "Birds, rivers, gusts of wind,  \nNo borders to halt them or bind,  \nBorders are made for humankind;  \nThink, you and I—what have we gained as mankind?  \n\nDistances never weighed us down,  \nMeeting you gave life anew to drown.  \nWhy do hearts need walls to stay,  \nWhen man himself becomes God in the way?  \n\nBirds, rivers, gusts of wind,  \nNo borders to halt them or bind.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8885,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "पंछी, नदियाँ, पवन के झोंके,",
+          "कोई सरहद न इन्हें रोके,",
+          "सरहदें इंसानों के लिए हैं,",
+          "सोचो, तुमने और मैंने क्या पाया इंसान होकर।"
+        ],
+        "translated_lines": [
+          "Birds, rivers, gusts of wind,",
+          "No borders to halt them or bind,",
+          "Borders are made for humankind;",
+          "Think, you and I—what have we gained as mankind?"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "दूरियों का ग़म नहीं था,",
+          "तुमसे मिलकर फिर से जीना है,",
+          "दिल से दिल के दरमियाँ,",
+          "दीवारें क्यों बनाई इंसान ने खुदा बनकर।"
+        ],
+        "translated_lines": [
+          "Distances never weighed us down,",
+          "Meeting you gave life anew to drown.",
+          "Why do hearts need walls to stay,",
+          "When man himself becomes God in the way?"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "पंछी, नदियाँ, पवन के झोंके,",
+          "कोई सरहद न इन्हें रोके।"
+        ],
+        "translated_lines": [
+          "Birds, rivers, gusts of wind,",
+          "No borders to halt them or bind."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "questioning human boundaries",
+    "translation_fidelity_score": 0.833333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "पंछी, नदियाँ, पवन के झोंके,",
+          "कोई सरहद न इन्हें रोके,",
+          "सरहदें इंसानों के लिए हैं,",
+          "सोचो, तुमने और मैंने क्या पाया इंसान होकर।"
+        ],
+        "translated_lines": [
+          "Birds, rivers, gusts of wind,",
+          "No borders to halt them or bind,",
+          "Borders are made for humankind;",
+          "Think, you and I—what have we gained as mankind?"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "पंछी, नदियाँ, पवन के झोंके",
+            "abstract_meaning": "Symbols of absolute freedom"
+          },
+          {
+            "source_term": "सरहदें",
+            "abstract_meaning": "Artificial human-made divisions"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "दूरियों का ग़म नहीं था,",
+          "तुमसे मिलकर फिर से जीना है,",
+          "दिल से दिल के दरमियाँ,",
+          "दीवारें क्यों बनाई इंसान ने खुदा बनकर।"
+        ],
+        "translated_lines": [
+          "Distances never weighed us down,",
+          "Meeting you gave life anew to drown.",
+          "Why do hearts need walls to stay,",
+          "When man himself becomes God in the way?"
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Added 'to drown' contradicts 'live again'",
+        "metaphor_spans": [
+          {
+            "source_term": "फिर से जीना",
+            "abstract_meaning": "Experiencing emotional renewal"
+          },
+          {
+            "source_term": "दीवारें",
+            "abstract_meaning": "Emotional or social barriers"
+          },
+          {
+            "source_term": "खुदा बनकर",
+            "abstract_meaning": "Assuming supreme, arrogant control"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "पंछी, नदियाँ, पवन के झोंके,",
+          "कोई सरहद न इन्हें रोके।"
+        ],
+        "translated_lines": [
+          "Birds, rivers, gusts of wind,",
+          "No borders to halt them or bind."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "पंछी",
+            "abstract_meaning": "Freedom from man-made boundaries"
+          },
+          {
+            "source_term": "नदियाँ",
+            "abstract_meaning": "Nature's indifference to political borders"
+          },
+          {
+            "source_term": "पवन के झोंके",
+            "abstract_meaning": "Invisible, borderless movement of nature"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "इंसान होकर",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "खुदा",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "नदियाँ",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8885,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 8,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

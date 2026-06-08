@@ -1,0 +1,218 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1248",
+  "poem_title": "Utho Jaago",
+  "language": "Sindhi",
+  "original_poem": "اُٿو جاگو سڀڪا،  \nرات جاڳي وڃي،  \nجي جڳ سڄو سمهي پيو،  \nڪير خبر ڏيئي؟  \nروئندي روئندي گهميا،  \nاوڙکيا عجيب،  \nجي ۾ ٿيندا جيءَ ۾،  \nسي ساهه وڻيندا.\n\nاُٿو جاگو هرهڪ،  \nرات وڃائي ٿي،  \nاو جاڳڻ واريون،  \nڏيهه ڇڏي ويون،  \nچپ رهڻ سان پاڻ ۾،  \nڏينهن گڏي نٿو.",
+  "translated_poem": "Arise and awaken, every one of you,  \nThe night is slipping away,  \nWhile the world sleeps,  \nWho will bear witness?  \nWandering and weeping,  \nThe strange travelers,  \nWhat stirs in the soul,  \nWill delight the breath.\n\nArise and awaken, every one,  \nThe night is passing by,  \nThose who stay awake,  \nHave already left this land,  \nIn silence, by yourself,  \nYou cannot summon the dawn.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7631,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 8,
+        "source_lines": [
+          "اُٿو جاگو سڀڪا،",
+          "رات جاڳي وڃي،",
+          "جي جڳ سڄو سمهي پيو،",
+          "ڪير خبر ڏيئي؟",
+          "روئندي روئندي گهميا،",
+          "اوڙکيا عجيب،",
+          "جي ۾ ٿيندا جيءَ ۾،",
+          "سي ساهه وڻيندا."
+        ],
+        "translated_lines": [
+          "Arise and awaken, every one of you,",
+          "The night is slipping away,",
+          "While the world sleeps,",
+          "Who will bear witness?",
+          "Wandering and weeping,",
+          "The strange travelers,",
+          "What stirs in the soul,",
+          "Will delight the breath."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 6,
+        "source_lines": [
+          "اُٿو جاگو هرهڪ،",
+          "رات وڃائي ٿي،",
+          "او جاڳڻ واريون،",
+          "ڏيهه ڇڏي ويون،",
+          "چپ رهڻ سان پاڻ ۾،",
+          "ڏينهن گڏي نٿو."
+        ],
+        "translated_lines": [
+          "Arise and awaken, every one,",
+          "The night is passing by,",
+          "Those who stay awake,",
+          "Have already left this land,",
+          "In silence, by yourself,",
+          "You cannot summon the dawn."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Urgent call to awaken",
+    "translation_fidelity_score": 0.75,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 8,
+        "source_lines": [
+          "اُٿو جاگو سڀڪا،",
+          "رات جاڳي وڃي،",
+          "جي جڳ سڄو سمهي پيو،",
+          "ڪير خبر ڏيئي؟",
+          "روئندي روئندي گهميا،",
+          "اوڙکيا عجيب،",
+          "جي ۾ ٿيندا جيءَ ۾،",
+          "سي ساهه وڻيندا."
+        ],
+        "translated_lines": [
+          "Arise and awaken, every one of you,",
+          "The night is slipping away,",
+          "While the world sleeps,",
+          "Who will bear witness?",
+          "Wandering and weeping,",
+          "The strange travelers,",
+          "What stirs in the soul,",
+          "Will delight the breath."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "جڳ سڄو سمهي پيو",
+            "abstract_meaning": "Spiritual ignorance of the masses"
+          },
+          {
+            "source_term": "رات جاڳي وڃي",
+            "abstract_meaning": "Life spent in spiritual vigil"
+          },
+          {
+            "source_term": "جي ۾ ٿيندا جيءَ ۾",
+            "abstract_meaning": "Divine presence within the soul"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 6,
+        "source_lines": [
+          "اُٿو جاگو هرهڪ،",
+          "رات وڃائي ٿي،",
+          "او جاڳڻ واريون،",
+          "ڏيهه ڇڏي ويون،",
+          "چپ رهڻ سان پاڻ ۾،",
+          "ڏينهن گڏي نٿو."
+        ],
+        "translated_lines": [
+          "Arise and awaken, every one,",
+          "The night is passing by,",
+          "Those who stay awake,",
+          "Have already left this land,",
+          "In silence, by yourself,",
+          "You cannot summon the dawn."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "loses feminine plural context of the seekers",
+        "metaphor_spans": [
+          {
+            "source_term": "رات وڃائي ٿي",
+            "abstract_meaning": "End of ignorance or darkness"
+          },
+          {
+            "source_term": "ڏينهن گڏي نٿو",
+            "abstract_meaning": "Failure to achieve progress"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "اُٿو جاگو",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "رات جاڳي",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "عجيب",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "جيءَ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "اُٿو جاگو",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "جاڳڻ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7631,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

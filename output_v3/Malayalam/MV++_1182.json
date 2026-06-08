@@ -1,0 +1,112 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1182",
+  "poem_title": "Naranathu Bhranthan",
+  "language": "Malayalam",
+  "original_poem": "നറനാത്ത്‌ ഭ്രാന്തൻ  \nകല്ല്‌ തള്ളി കയറുന്നു,  \nഓരോ ദിനവും  \nതാഴേക്ക് വീഴും  \nപക്ഷെ അവനവിടെ  \nപോയി തുടങ്ങുന്നു വീണ്ടും.",
+  "translated_poem": "The wanderer,  \nPushing the stone uphill,  \nEvery day it falls  \nBack down,  \nBut he starts again  \nFrom where it fell.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9885,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "നറനാത്ത്‌ ഭ്രാന്തൻ",
+          "കല്ല്‌ തള്ളി കയറുന്നു,",
+          "ഓരോ ദിനവും",
+          "താഴേക്ക് വീഴും",
+          "പക്ഷെ അവനവിടെ",
+          "പോയി തുടങ്ങുന്നു വീണ്ടും."
+        ],
+        "translated_lines": [
+          "The wanderer,",
+          "Pushing the stone uphill,",
+          "Every day it falls",
+          "Back down,",
+          "But he starts again",
+          "From where it fell."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Endless repetitive effort",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "നറനാത്ത്‌ ഭ്രാന്തൻ",
+          "കല്ല്‌ തള്ളി കയറുന്നു,",
+          "ഓരോ ദിനവും",
+          "താഴേക്ക് വീഴും",
+          "പക്ഷെ അവനവിടെ",
+          "പോയി തുടങ്ങുന്നു വീണ്ടും."
+        ],
+        "translated_lines": [
+          "The wanderer,",
+          "Pushing the stone uphill,",
+          "Every day it falls",
+          "Back down,",
+          "But he starts again",
+          "From where it fell."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "partial",
+        "loss_note": "Lost reference to Naranath Branthan the madman",
+        "metaphor_spans": [
+          {
+            "source_term": "നറനാത്ത്‌ ഭ്രാന്തൻ",
+            "abstract_meaning": "Symbol of existential human struggle"
+          },
+          {
+            "source_term": "കല്ല്‌ തള്ളി കയറുന്നു",
+            "abstract_meaning": "Repetitive and arduous life tasks"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "നറനാത്ത്‌ ഭ്രാന്തൻ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9885,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

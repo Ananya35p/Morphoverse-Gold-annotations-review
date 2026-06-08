@@ -1,0 +1,140 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1242",
+  "poem_title": "Ho Jamalo",
+  "language": "Sindhi",
+  "original_poem": "ڄامالي جي خوشبوءِ،  \nڪوڻن ۾ پکڙي،  \nسڄي سنڌ ۾،  \nمحفلون سجايو ٿا.  \nهو ڄامالو اچي،  \nڪمري جي دروازي کان،  \nسبحان الله، سڏجي ٿو.",
+  "translated_poem": "The fragrance of Jamalo spreads,  \nThrough every corner,  \nIn all of Sindh,  \nCelebrations arise.  \nHere comes Jamalo,  \nThrough the door of the room,  \nPraised with 'Subhan Allah.'",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8012,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "ڄامالي جي خوشبوءِ،",
+          "ڪوڻن ۾ پکڙي،",
+          "سڄي سنڌ ۾،",
+          "محفلون سجايو ٿا.",
+          "هو ڄامالو اچي،",
+          "ڪمري جي دروازي کان،",
+          "سبحان الله، سڏجي ٿو."
+        ],
+        "translated_lines": [
+          "The fragrance of Jamalo spreads,",
+          "Through every corner,",
+          "In all of Sindh,",
+          "Celebrations arise.",
+          "Here comes Jamalo,",
+          "Through the door of the room,",
+          "Praised with 'Subhan Allah.'"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "festive Sindhi celebration",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "ڄامالي جي خوشبوءِ،",
+          "ڪوڻن ۾ پکڙي،",
+          "سڄي سنڌ ۾،",
+          "محفلون سجايو ٿا.",
+          "هو ڄامالو اچي،",
+          "ڪمري جي دروازي کان،",
+          "سبحان الله، سڏجي ٿو."
+        ],
+        "translated_lines": [
+          "The fragrance of Jamalo spreads,",
+          "Through every corner,",
+          "In all of Sindh,",
+          "Celebrations arise.",
+          "Here comes Jamalo,",
+          "Through the door of the room,",
+          "Praised with 'Subhan Allah.'"
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ڄامالي جي خوشبوءِ",
+            "abstract_meaning": "Spirit of cultural joy"
+          },
+          {
+            "source_term": "ڪوڻن ۾ پکڙي",
+            "abstract_meaning": "Spreading beauty among the people"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ڄامالو",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سنڌ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "محفلون",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سبحان الله",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8012,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

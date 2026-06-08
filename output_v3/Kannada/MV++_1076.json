@@ -1,0 +1,114 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1076",
+  "poem_title": "Prithvi Ki Pukar",
+  "language": "Kannada",
+  "original_poem": "धूल धूसरित, कन-कन में बसी हुई,  \nधरती पुकारती मन की गहराई से।  \nप्राची के पर्वतों की चोटी से,  \nविंध्याचल की कंदराओं तक,  \nगंगा के घाटों से लेकर  \nगहरे समंदर की थाह तक,  \nहर कोना, हर क्षण मुझे पुकारता।  \n\"पुत्र, मेरे रंग में तू भी रंग जा,  \nमेरी तरह स्थिर और शांत हो जा,  \nमेरी वेदना और मेरी संजीवनी को जान ले,  \nऔर बढ़ा कदम मेरे संरक्षण में।\"",
+  "translated_poem": "Dusted and veiled in every grain,  \nThe earth calls out from deep within.  \nFrom the peaks of eastern mountains,  \nTo the caves of Vindhyachal,  \nFrom the banks of the Ganga  \nTo the depth of the vast seas,  \nEvery corner, every moment calls to me.  \n\"Child, embrace my hues as yours,  \nBe calm and steady as I am,  \nKnow my pain and my vitality,  \nAnd step forward, protecting me.\"",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9335,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 11,
+        "source_lines": [
+          "धूल धूसरित, कन-कन में बसी हुई,",
+          "धरती पुकारती मन की गहराई से।",
+          "प्राची के पर्वतों की चोटी से,",
+          "विंध्याचल की कंदराओं तक,",
+          "गंगा के घाटों से लेकर",
+          "गहरे समंदर की थाह तक,",
+          "हर कोना, हर क्षण मुझे पुकारता।",
+          "\"पुत्र, मेरे रंग में तू भी रंग जा,",
+          "मेरी तरह स्थिर और शांत हो जा,",
+          "मेरी वेदना और मेरी संजीवनी को जान ले,",
+          "और बढ़ा कदम मेरे संरक्षण में।\""
+        ],
+        "translated_lines": [
+          "Dusted and veiled in every grain,",
+          "The earth calls out from deep within.",
+          "From the peaks of eastern mountains,",
+          "To the caves of Vindhyachal,",
+          "From the banks of the Ganga",
+          "To the depth of the vast seas,",
+          "Every corner, every moment calls to me.",
+          "\"Child, embrace my hues as yours,",
+          "Be calm and steady as I am,",
+          "Know my pain and my vitality,",
+          "And step forward, protecting me.\""
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Call of Mother Earth",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 11,
+        "source_lines": [
+          "धूल धूसरित, कन-कन में बसी हुई,",
+          "धरती पुकारती मन की गहराई से।",
+          "प्राची के पर्वतों की चोटी से,",
+          "विंध्याचल की कंदराओं तक,",
+          "गंगा के घाटों से लेकर",
+          "गहरे समंदर की थाह तक,",
+          "हर कोना, हर क्षण मुझे पुकारता।",
+          "\"पुत्र, मेरे रंग में तू भी रंग जा,",
+          "मेरी तरह स्थिर और शांत हो जा,",
+          "मेरी वेदना और मेरी संजीवनी को जान ले,",
+          "और बढ़ा कदम मेरे संरक्षण में।\""
+        ],
+        "translated_lines": [
+          "Dusted and veiled in every grain,",
+          "The earth calls out from deep within.",
+          "From the peaks of eastern mountains,",
+          "To the caves of Vindhyachal,",
+          "From the banks of the Ganga",
+          "To the depth of the vast seas,",
+          "Every corner, every moment calls to me.",
+          "\"Child, embrace my hues as yours,",
+          "Be calm and steady as I am,",
+          "Know my pain and my vitality,",
+          "And step forward, protecting me.\""
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": []
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9335,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 0,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

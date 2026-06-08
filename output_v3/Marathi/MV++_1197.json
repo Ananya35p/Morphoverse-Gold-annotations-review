@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1197",
+  "poem_title": "Maze Mrityu",
+  "language": "Marathi",
+  "original_poem": "माझं मृत्यू  \nजगात किती गूढता आहे,  \nते प्रत्येक क्षणात आहे,  \nअशा गूढता त्यात,  \nमाझं मृत्यू सजवून आलं आहे.",
+  "translated_poem": "My death,  \nHow much mystery exists in the world,  \nIt is present in every moment,  \nIn such mystery,  \nMy death has come adorned.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8881,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "माझं मृत्यू",
+          "जगात किती गूढता आहे,",
+          "ते प्रत्येक क्षणात आहे,",
+          "अशा गूढता त्यात,",
+          "माझं मृत्यू सजवून आलं आहे."
+        ],
+        "translated_lines": [
+          "My death,",
+          "How much mystery exists in the world,",
+          "It is present in every moment,",
+          "In such mystery,",
+          "My death has come adorned."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "contemplating death's mystery",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "माझं मृत्यू",
+          "जगात किती गूढता आहे,",
+          "ते प्रत्येक क्षणात आहे,",
+          "अशा गूढता त्यात,",
+          "माझं मृत्यू सजवून आलं आहे."
+        ],
+        "translated_lines": [
+          "My death,",
+          "How much mystery exists in the world,",
+          "It is present in every moment,",
+          "In such mystery,",
+          "My death has come adorned."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "मृत्यू सजवून आलं आहे",
+            "abstract_meaning": "Death as a beautiful transition"
+          },
+          {
+            "source_term": "प्रत्येक क्षणात आहे",
+            "abstract_meaning": "The omnipresence of the unknown"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "मृत्यू",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "गूढता",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8881,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

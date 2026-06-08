@@ -1,0 +1,236 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1042",
+  "poem_title": "Prithvi Ki Santaan",
+  "language": "Kannada",
+  "original_poem": "हम पृथ्वी की संतान हैं,  \nइसकी मिट्टी में जीवन की गाथा है।  \nयह हमें अन्न, जल, और आकाश देती है,  \nहर मौसम में हमें नवजीवन देती है।  \n\nपर्वत, वन, और नदियों का संगीत,  \nहमारी नसों में बहता है।  \nइसकी छाया में हमने स्वप्न संजोए हैं,  \nइसकी गोद में हर दर्द भुलाए हैं।  \n\nओ मातृभूमि, तुझसे हमें शक्ति मिलती है,  \nतेरी सेवा में हमारा जीवन खपता है।  \nतेरी संतानों के रूप में गर्व से जीते हैं,  \nहम पृथ्वी की संतान हैं, अमर बनते हैं।",
+  "translated_poem": "We are the children of the earth,  \nIn its soil lies the story of birth.  \nIt gives us food, water, and sky,  \nIn every season, new life springs high.\n\nThe music of mountains, forests, and streams  \nFlows through our veins, like ancient dreams.  \nIn its shadow, our dreams were spun,  \nIn its embrace, every pain undone.\n\nO Motherland, you give us might,  \nIn your service, our lives ignite.  \nWe live with pride as your kin,  \nChildren of the earth, forever akin.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9011,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "हम पृथ्वी की संतान हैं,",
+          "इसकी मिट्टी में जीवन की गाथा है।",
+          "यह हमें अन्न, जल, और आकाश देती है,",
+          "हर मौसम में हमें नवजीवन देती है।"
+        ],
+        "translated_lines": [
+          "We are the children of the earth,",
+          "In its soil lies the story of birth.",
+          "It gives us food, water, and sky,",
+          "In every season, new life springs high."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "पर्वत, वन, और नदियों का संगीत,",
+          "हमारी नसों में बहता है।",
+          "इसकी छाया में हमने स्वप्न संजोए हैं,",
+          "इसकी गोद में हर दर्द भुलाए हैं।"
+        ],
+        "translated_lines": [
+          "The music of mountains, forests, and streams",
+          "Flows through our veins, like ancient dreams.",
+          "In its shadow, our dreams were spun,",
+          "In its embrace, every pain undone."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ओ मातृभूमि, तुझसे हमें शक्ति मिलती है,",
+          "तेरी सेवा में हमारा जीवन खपता है।",
+          "तेरी संतानों के रूप में गर्व से जीते हैं,",
+          "हम पृथ्वी की संतान हैं, अमर बनते हैं।"
+        ],
+        "translated_lines": [
+          "O Motherland, you give us might,",
+          "In your service, our lives ignite.",
+          "We live with pride as your kin,",
+          "Children of the earth, forever akin."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Devotion to Mother Earth",
+    "translation_fidelity_score": 0.666667,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "हम पृथ्वी की संतान हैं,",
+          "इसकी मिट्टी में जीवन की गाथा है।",
+          "यह हमें अन्न, जल, और आकाश देती है,",
+          "हर मौसम में हमें नवजीवन देती है।"
+        ],
+        "translated_lines": [
+          "We are the children of the earth,",
+          "In its soil lies the story of birth.",
+          "It gives us food, water, and sky,",
+          "In every season, new life springs high."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हम पृथ्वी की संतान हैं",
+            "abstract_meaning": "Humanity's kinship with the earth"
+          },
+          {
+            "source_term": "मिट्टी में जीवन की गाथा",
+            "abstract_meaning": "Soil as a record of life"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "पर्वत, वन, और नदियों का संगीत,",
+          "हमारी नसों में बहता है।",
+          "इसकी छाया में हमने स्वप्न संजोए हैं,",
+          "इसकी गोद में हर दर्द भुलाए हैं।"
+        ],
+        "translated_lines": [
+          "The music of mountains, forests, and streams",
+          "Flows through our veins, like ancient dreams.",
+          "In its shadow, our dreams were spun,",
+          "In its embrace, every pain undone."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "added simile like ancient dreams",
+        "metaphor_spans": [
+          {
+            "source_term": "नदियों का संगीत",
+            "abstract_meaning": "Nature's harmonious rhythm"
+          },
+          {
+            "source_term": "हमारी नसों में बहता है",
+            "abstract_meaning": "Inherent connection to nature"
+          },
+          {
+            "source_term": "इसकी गोद में",
+            "abstract_meaning": "Nature's nurturing embrace"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ओ मातृभूमि, तुझसे हमें शक्ति मिलती है,",
+          "तेरी सेवा में हमारा जीवन खपता है।",
+          "तेरी संतानों के रूप में गर्व से जीते हैं,",
+          "हम पृथ्वी की संतान हैं, अमर बनते हैं।"
+        ],
+        "translated_lines": [
+          "O Motherland, you give us might,",
+          "In your service, our lives ignite.",
+          "We live with pride as your kin,",
+          "Children of the earth, forever akin."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "loses the concept of immortality",
+        "metaphor_spans": [
+          {
+            "source_term": "मातृभूमि",
+            "abstract_meaning": "Land personified as a mother"
+          },
+          {
+            "source_term": "जीवन खपता है",
+            "abstract_meaning": "Life dedicated to national service"
+          },
+          {
+            "source_term": "पृथ्वी की संतान",
+            "abstract_meaning": "Citizens as offspring of land"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "पृथ्वी",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मातृभूमि",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "शक्ति",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सेवा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पृथ्वी",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9011,
+      "source_term_checks": {
+        "entities_total": 5,
+        "entities_dropped": 0,
+        "metaphors_total": 8,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

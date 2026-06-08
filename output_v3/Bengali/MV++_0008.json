@@ -1,0 +1,127 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0008",
+  "poem_title": "Chitto Jetha Bhayshunyo",
+  "language": "Bengali",
+  "original_poem": "চিত্ত যেথা ভয়শূন্য, উচ্চ যেথা শির,\nজ্ঞান যেথা মুক্ত, যেথা গৃহের প্রাচীর\nআপন প্রাঙ্গণতলে দিবসশর্বরী\nবসুধারে রাখে নাই খণ্ড ক্ষুদ্র করি,\nযেথা বাক্য হৃদয়ের উৎসমুখ হতে\nউচ্ছ্বসিয়া উঠে, যেথা নির্বারিত স্রোতে\nদেশে দেশে দিশে দিশে কর্মধারা ধায়\nঅজস্র সহস্রবিধ চরিতার্থতায়,\nযেথা তুচ্ছ আচারের মরুবালুরাশি\nবিচারের স্রোতঃপথ ফেলে নাই গ্রাসি,\nপৌরুষেরে করে নি শতধা, নিত্য যেথা\nতুমি সর্ব কর্ম চিন্তা আনন্দের নেতা,\nনিজ হস্তে নির্দয় আঘাত করি, পিতঃ;\nভারতেরে সেই স্বর্গে করো জাগরিত৷",
+  "translated_poem": "Where the mind is without fear and the head is held high;\nWhere knowledge is free;\nWhere the world has not been broken up into fragments by narrow domestic walls;\nWhere words come out from the depth of truth;\nWhere tireless striving stretches its arms towards perfection;\nWhere the clear stream of reason has not lost its way into the dreary desert sand of dead habit;\nWhere the mind is led forward by thee into ever-widening thought and action—\nInto that heaven of freedom, my Father, let my country awake.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9424,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 14,
+        "source_lines": [
+          "চিত্ত যেথা ভয়শূন্য, উচ্চ যেথা শির,",
+          "জ্ঞান যেথা মুক্ত, যেথা গৃহের প্রাচীর",
+          "আপন প্রাঙ্গণতলে দিবসশর্বরী",
+          "বসুধারে রাখে নাই খণ্ড ক্ষুদ্র করি,",
+          "যেথা বাক্য হৃদয়ের উৎসমুখ হতে",
+          "উচ্ছ্বসিয়া উঠে, যেথা নির্বারিত স্রোতে",
+          "দেশে দেশে দিশে দিশে কর্মধারা ধায়",
+          "অজস্র সহস্রবিধ চরিতার্থতায়,",
+          "যেথা তুচ্ছ আচারের মরুবালুরাশি",
+          "বিচারের স্রোতঃপথ ফেলে নাই গ্রাসি,",
+          "পৌরুষেরে করে নি শতধা, নিত্য যেথা",
+          "তুমি সর্ব কর্ম চিন্তা আনন্দের নেতা,",
+          "নিজ হস্তে নির্দয় আঘাত করি, পিতঃ;",
+          "ভারতেরে সেই স্বর্গে করো জাগরিত৷"
+        ],
+        "translated_lines": [
+          "Where the mind is without fear and the head is held high;",
+          "Where knowledge is free;",
+          "Where the world has not been broken up into fragments by narrow domestic walls;",
+          "Where words come out from the depth of truth;",
+          "Where tireless striving stretches its arms towards perfection;",
+          "Where the clear stream of reason has not lost its way into the dreary desert sand of dead habit;",
+          "Where the mind is led forward by thee into ever-widening thought and action—",
+          "Into that heaven of freedom, my Father, let my country awake."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Prayer for true freedom",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 14,
+        "source_lines": [
+          "চিত্ত যেথা ভয়শূন্য, উচ্চ যেথা শির,",
+          "জ্ঞান যেথা মুক্ত, যেথা গৃহের প্রাচীর",
+          "আপন প্রাঙ্গণতলে দিবসশর্বরী",
+          "বসুধারে রাখে নাই খণ্ড ক্ষুদ্র করি,",
+          "যেথা বাক্য হৃদয়ের উৎসমুখ হতে",
+          "উচ্ছ্বসিয়া উঠে, যেথা নির্বারিত স্রোতে",
+          "দেশে দেশে দিশে দিশে কর্মধারা ধায়",
+          "অজস্র সহস্রবিধ চরিতার্থতায়,",
+          "যেথা তুচ্ছ আচারের মরুবালুরাশি",
+          "বিচারের স্রোতঃপথ ফেলে নাই গ্রাসি,",
+          "পৌরুষেরে করে নি শতধা, নিত্য যেথা",
+          "তুমি সর্ব কর্ম চিন্তা আনন্দের নেতা,",
+          "নিজ হস্তে নির্দয় আঘাত করি, পিতঃ;",
+          "ভারতেরে সেই স্বর্গে করো জাগরিত৷"
+        ],
+        "translated_lines": [
+          "Where the mind is without fear and the head is held high;",
+          "Where knowledge is free;",
+          "Where the world has not been broken up into fragments by narrow domestic walls;",
+          "Where words come out from the depth of truth;",
+          "Where tireless striving stretches its arms towards perfection;",
+          "Where the clear stream of reason has not lost its way into the dreary desert sand of dead habit;",
+          "Where the mind is led forward by thee into ever-widening thought and action—",
+          "Into that heaven of freedom, my Father, let my country awake."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "partial",
+        "loss_note": "Omits merciless strike and condenses several metaphors",
+        "metaphor_spans": [
+          {
+            "source_term": "গৃহের প্রাচীর",
+            "abstract_meaning": "Narrow domestic walls or parochialism"
+          },
+          {
+            "source_term": "মরুবালুরাশি",
+            "abstract_meaning": "Stagnant habits and dead traditions"
+          },
+          {
+            "source_term": "বিচারের স্রোতঃপথ",
+            "abstract_meaning": "Clear stream of rational thought"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9424,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

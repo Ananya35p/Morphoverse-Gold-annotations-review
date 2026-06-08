@@ -1,0 +1,174 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1123",
+  "poem_title": "Hachchevu Kannadada Deepa",
+  "language": "Kannada",
+  "original_poem": "ಹಚ್ಚೆವು ಕನ್ನಡದ ದೀಪ,  \nನಿನ್ನ ಕಂದನವನಲ್ಲಿ,  \nನೀನು ನನ್ನ ಹೃದಯವನ್ನು  \nಮೇಡಲ ಮೇಲಿಟ್ಟರೆ.  \n\nನಿನ್ನ ಬೆಳಕು ಹಾರುವಾಗ,  \nಕನ್ನಡ ನಾಡಿನ ಪರಿಮಳ,  \nನೀನೆ ನನ್ನ ಬಾಳ್ಮಣಿಯ,  \nನೀನೆ ನಮ್ಮ ತೇಜಸ್ಸು.",
+  "translated_poem": "You lit the lamp of Kannada,  \nIn your beloved garden,  \nIf you place it on my heart,  \nIt shines brightly.  \n\nAs your light soars,  \nThe fragrance of the Kannada land,  \nYou are my life's essence,  \nYou are our brilliance.",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8327,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಹಚ್ಚೆವು ಕನ್ನಡದ ದೀಪ,",
+          "ನಿನ್ನ ಕಂದನವನಲ್ಲಿ,",
+          "ನೀನು ನನ್ನ ಹೃದಯವನ್ನು",
+          "ಮೇಡಲ ಮೇಲಿಟ್ಟರೆ."
+        ],
+        "translated_lines": [
+          "You lit the lamp of Kannada,",
+          "In your beloved garden,",
+          "If you place it on my heart,",
+          "It shines brightly."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ನಿನ್ನ ಬೆಳಕು ಹಾರುವಾಗ,",
+          "ಕನ್ನಡ ನಾಡಿನ ಪರಿಮಳ,",
+          "ನೀನೆ ನನ್ನ ಬಾಳ್ಮಣಿಯ,",
+          "ನೀನೆ ನಮ್ಮ ತೇಜಸ್ಸು."
+        ],
+        "translated_lines": [
+          "As your light soars,",
+          "The fragrance of the Kannada land,",
+          "You are my life's essence,",
+          "You are our brilliance."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Pride for Kannada",
+    "translation_fidelity_score": 0.75,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಹಚ್ಚೆವು ಕನ್ನಡದ ದೀಪ,",
+          "ನಿನ್ನ ಕಂದನವನಲ್ಲಿ,",
+          "ನೀನು ನನ್ನ ಹೃದಯವನ್ನು",
+          "ಮೇಡಲ ಮೇಲಿಟ್ಟರೆ."
+        ],
+        "translated_lines": [
+          "You lit the lamp of Kannada,",
+          "In your beloved garden,",
+          "If you place it on my heart,",
+          "It shines brightly."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Changes 'we will light' to 'you lit'",
+        "metaphor_spans": [
+          {
+            "source_term": "ಕನ್ನಡದ ದೀಪ",
+            "abstract_meaning": "Enlightenment of Kannada culture"
+          },
+          {
+            "source_term": "ಕಂದನವನಲ್ಲಿ",
+            "abstract_meaning": "The poet's creative inner world"
+          },
+          {
+            "source_term": "ಹೃದಯವನ್ನು ಮೇಡಲ ಮೇಲಿಟ್ಟರೆ",
+            "abstract_meaning": "Sacrificial devotion to the language"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ನಿನ್ನ ಬೆಳಕು ಹಾರುವಾಗ,",
+          "ಕನ್ನಡ ನಾಡಿನ ಪರಿಮಳ,",
+          "ನೀನೆ ನನ್ನ ಬಾಳ್ಮಣಿಯ,",
+          "ನೀನೆ ನಮ್ಮ ತೇಜಸ್ಸು."
+        ],
+        "translated_lines": [
+          "As your light soars,",
+          "The fragrance of the Kannada land,",
+          "You are my life's essence,",
+          "You are our brilliance."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಕನ್ನಡ ನಾಡಿನ ಪರಿಮಳ",
+            "abstract_meaning": "Essence of Kannada culture"
+          },
+          {
+            "source_term": "ನೀನೆ ನನ್ನ ಬಾಳ್ಮಣಿಯ",
+            "abstract_meaning": "Precious guide of life"
+          },
+          {
+            "source_term": "ನೀನೆ ನಮ್ಮ ತೇಜಸ್ಸು",
+            "abstract_meaning": "Source of collective inspiration"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಕನ್ನಡದ ದೀಪ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ತೇಜಸ್ಸು",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8327,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 1,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "ಕನ್ನಡ ನಾಡು",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

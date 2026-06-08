@@ -1,0 +1,103 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1196",
+  "poem_title": "Aakashacha Paay",
+  "language": "Marathi",
+  "original_poem": "आकाशाचा पाय  \nखोलातुन आवाज येतो,  \nआभाळाच्या काठावर,  \nधरणा धरून उभा आहे,  \nआसमानातच आहे माणूस.",
+  "translated_poem": "Feet of the sky,  \nA voice rises from deep,  \nOn the edge of the heavens,  \nStanding firm,  \nHumans dwell in the sky.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8743,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "आकाशाचा पाय",
+          "खोलातुन आवाज येतो,",
+          "आभाळाच्या काठावर,",
+          "धरणा धरून उभा आहे,",
+          "आसमानातच आहे माणूस."
+        ],
+        "translated_lines": [
+          "Feet of the sky,",
+          "A voice rises from deep,",
+          "On the edge of the heavens,",
+          "Standing firm,",
+          "Humans dwell in the sky."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Man and the cosmos",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "आकाशाचा पाय",
+          "खोलातुन आवाज येतो,",
+          "आभाळाच्या काठावर,",
+          "धरणा धरून उभा आहे,",
+          "आसमानातच आहे माणूस."
+        ],
+        "translated_lines": [
+          "Feet of the sky,",
+          "A voice rises from deep,",
+          "On the edge of the heavens,",
+          "Standing firm,",
+          "Humans dwell in the sky."
+        ],
+        "emotion": "resilience",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "loses literal imagery of holding a dam",
+        "metaphor_spans": [
+          {
+            "source_term": "आकाशाचा पाय",
+            "abstract_meaning": "Deep cosmic roots or foundation"
+          },
+          {
+            "source_term": "आभाळाच्या काठावर",
+            "abstract_meaning": "The limits of human existence"
+          },
+          {
+            "source_term": "धरणा धरून उभा आहे",
+            "abstract_meaning": "Human resilience against vast forces"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8743,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

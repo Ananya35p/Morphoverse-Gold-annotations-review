@@ -1,0 +1,104 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1362",
+  "poem_title": "Azhagiya Tamil Magan",
+  "language": "Tamil",
+  "original_poem": "அழகிய தமிழ் மகன்,  \nஉன் பேச்சில் மணம்,  \nஎன் இதயத்தின் குரலில்,  \nகாதல் என வரும்!",
+  "translated_poem": "Beautiful Tamil prince,  \nFragrance in your words,  \nIn the voice of my heart,  \nLove comes forth!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8854,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "அழகிய தமிழ் மகன்,",
+          "உன் பேச்சில் மணம்,",
+          "என் இதயத்தின் குரலில்,",
+          "காதல் என வரும்!"
+        ],
+        "translated_lines": [
+          "Beautiful Tamil prince,",
+          "Fragrance in your words,",
+          "In the voice of my heart,",
+          "Love comes forth!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Deep romantic admiration",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "அழகிய தமிழ் மகன்,",
+          "உன் பேச்சில் மணம்,",
+          "என் இதயத்தின் குரலில்,",
+          "காதல் என வரும்!"
+        ],
+        "translated_lines": [
+          "Beautiful Tamil prince,",
+          "Fragrance in your words,",
+          "In the voice of my heart,",
+          "Love comes forth!"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "உன் பேச்சில் மணம்",
+            "abstract_meaning": "Speech has sweetness or virtue"
+          },
+          {
+            "source_term": "என் இதயத்தின் குரலில்",
+            "abstract_meaning": "Deep inner emotional expression"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "தமிழ்",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8854,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

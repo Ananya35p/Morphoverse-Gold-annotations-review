@@ -1,0 +1,132 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1180",
+  "poem_title": "Nizhalattam",
+  "language": "Malayalam",
+  "original_poem": "നിഴലാട്ടം  \nചിമ്മുന്ന നിലാവിൻ  \nകായലിൽ,  \nഇടറുന്ന ഓർമകൾ  \nമൂടിയ  \nകാളിയാട്ടം.",
+  "translated_poem": "Shadow play,  \nIn the shimmering moonlight  \nOver the backwaters,  \nThe dance of shadows  \nCovered by  \nFading memories.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7543,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "നിഴലാട്ടം",
+          "ചിമ്മുന്ന നിലാവിൻ",
+          "കായലിൽ,",
+          "ഇടറുന്ന ഓർമകൾ",
+          "മൂടിയ",
+          "കാളിയാട്ടം."
+        ],
+        "translated_lines": [
+          "Shadow play,",
+          "In the shimmering moonlight",
+          "Over the backwaters,",
+          "The dance of shadows",
+          "Covered by",
+          "Fading memories."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Shadows of fading memories",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "നിഴലാട്ടം",
+          "ചിമ്മുന്ന നിലാവിൻ",
+          "കായലിൽ,",
+          "ഇടറുന്ന ഓർമകൾ",
+          "മൂടിയ",
+          "കാളിയാട്ടം."
+        ],
+        "translated_lines": [
+          "Shadow play,",
+          "In the shimmering moonlight",
+          "Over the backwaters,",
+          "The dance of shadows",
+          "Covered by",
+          "Fading memories."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "Lost cultural reference to Kaliyattam ritual dance",
+        "metaphor_spans": [
+          {
+            "source_term": "ചിമ്മുന്ന നിലാവിൻ കായലിൽ",
+            "abstract_meaning": "Mind reflecting flickering thoughts"
+          },
+          {
+            "source_term": "ഇടറുന്ന ഓർമകൾ",
+            "abstract_meaning": "Fragmented and painful past recollections"
+          },
+          {
+            "source_term": "കാളിയാട്ടം",
+            "abstract_meaning": "Intense emotional or chaotic state"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "നിഴലാട്ടം",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "കായലിൽ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "കാളിയാട്ടം",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7543,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

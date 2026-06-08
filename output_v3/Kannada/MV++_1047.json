@@ -1,0 +1,244 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1047",
+  "poem_title": "Doosra Sita",
+  "language": "Kannada",
+  "original_poem": "मैं दूसरी सीता हूँ,  \nजिसने राम के वनवास का दुख न सहा,  \nजिसे अग्नि परीक्षा नहीं देनी पड़ी,  \nमैं तो उनके लिए बस एक कल्पना थी।  \n\nमेरा जीवन है शांत, सरल,  \nजिसमें संघर्ष का भार नहीं,  \nकिंतु कभी-कभी सोचती हूँ,  \nक्या मेरा यह जीवन असल में मेरा है?  \n\nवह सीता जो धरती में समा गई,  \nजिसने अपने अधिकारों के लिए संघर्ष किया,  \nमैं उसकी छाया मात्र हूँ,  \nमैं दूसरी सीता हूँ।",
+  "translated_poem": "I am the other Sita,  \nWho did not endure Ram's exile and sorrow,  \nWho was spared the trial by fire,  \nTo him, I was only an ideal to borrow.\n\nMy life is calm, simple, and neat,  \nWithout the weight of struggle’s feat,  \nYet sometimes I ponder alone,  \nIs this life truly my own?\n\nThat Sita who vanished into the earth,  \nWho fought for her rights from birth,  \nI am only her shadow here,  \nI am the other Sita, mere and clear.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9036,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "मैं दूसरी सीता हूँ,",
+          "जिसने राम के वनवास का दुख न सहा,",
+          "जिसे अग्नि परीक्षा नहीं देनी पड़ी,",
+          "मैं तो उनके लिए बस एक कल्पना थी।"
+        ],
+        "translated_lines": [
+          "I am the other Sita,",
+          "Who did not endure Ram's exile and sorrow,",
+          "Who was spared the trial by fire,",
+          "To him, I was only an ideal to borrow."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मेरा जीवन है शांत, सरल,",
+          "जिसमें संघर्ष का भार नहीं,",
+          "किंतु कभी-कभी सोचती हूँ,",
+          "क्या मेरा यह जीवन असल में मेरा है?"
+        ],
+        "translated_lines": [
+          "My life is calm, simple, and neat,",
+          "Without the weight of struggle’s feat,",
+          "Yet sometimes I ponder alone,",
+          "Is this life truly my own?"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "वह सीता जो धरती में समा गई,",
+          "जिसने अपने अधिकारों के लिए संघर्ष किया,",
+          "मैं उसकी छाया मात्र हूँ,",
+          "मैं दूसरी सीता हूँ।"
+        ],
+        "translated_lines": [
+          "That Sita who vanished into the earth,",
+          "Who fought for her rights from birth,",
+          "I am only her shadow here,",
+          "I am the other Sita, mere and clear."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Questioning personal identity",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "मैं दूसरी सीता हूँ,",
+          "जिसने राम के वनवास का दुख न सहा,",
+          "जिसे अग्नि परीक्षा नहीं देनी पड़ी,",
+          "मैं तो उनके लिए बस एक कल्पना थी।"
+        ],
+        "translated_lines": [
+          "I am the other Sita,",
+          "Who did not endure Ram's exile and sorrow,",
+          "Who was spared the trial by fire,",
+          "To him, I was only an ideal to borrow."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "lost 'imagination', added 'to borrow' for rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "दूसरी सीता",
+            "abstract_meaning": "Alternative or modern parallel identity"
+          },
+          {
+            "source_term": "अग्नि परीक्षा",
+            "abstract_meaning": "Severe test of character"
+          },
+          {
+            "source_term": "कल्पना",
+            "abstract_meaning": "Unreal or idealized existence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मेरा जीवन है शांत, सरल,",
+          "जिसमें संघर्ष का भार नहीं,",
+          "किंतु कभी-कभी सोचती हूँ,",
+          "क्या मेरा यह जीवन असल में मेरा है?"
+        ],
+        "translated_lines": [
+          "My life is calm, simple, and neat,",
+          "Without the weight of struggle’s feat,",
+          "Yet sometimes I ponder alone,",
+          "Is this life truly my own?"
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Rhyme scheme adds words not in source",
+        "metaphor_spans": [
+          {
+            "source_term": "संघर्ष का भार",
+            "abstract_meaning": "Burden of life's difficulties"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "वह सीता जो धरती में समा गई,",
+          "जिसने अपने अधिकारों के लिए संघर्ष किया,",
+          "मैं उसकी छाया मात्र हूँ,",
+          "मैं दूसरी सीता हूँ।"
+        ],
+        "translated_lines": [
+          "That Sita who vanished into the earth,",
+          "Who fought for her rights from birth,",
+          "I am only her shadow here,",
+          "I am the other Sita, mere and clear."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "added words for rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "उसकी छाया मात्र",
+            "abstract_meaning": "Reflection of her identity"
+          },
+          {
+            "source_term": "दूसरी सीता",
+            "abstract_meaning": "Modern iteration of the archetype"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "सीता",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "राम",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "वनवास",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "अग्नि परीक्षा",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "जीवन",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सीता",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "धरती में समा गई",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9036,
+      "source_term_checks": {
+        "entities_total": 7,
+        "entities_dropped": 0,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

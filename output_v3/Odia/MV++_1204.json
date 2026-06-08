@@ -1,0 +1,99 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1204",
+  "poem_title": "Samudra",
+  "language": "Odia",
+  "original_poem": "ସମୁଦ୍ର  \nମୋତେ ଦେଖିଲା ଆମ ଦେଶ  \nସମୁଦ୍ର ସାମ୍ରାଜ୍ୟରେ।  \nତା’ର କ୍ଷୁଦ୍ରତା ନେଇ କିଛି  \nଉଚ୍ଚା ଶିରୋଭାଗରେ।",
+  "translated_poem": "The Ocean  \nI saw my land,  \nIn the empire of the ocean.  \nTaking its smallness,  \nHigh upon the head.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9467,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ସମୁଦ୍ର",
+          "ମୋତେ ଦେଖିଲା ଆମ ଦେଶ",
+          "ସମୁଦ୍ର ସାମ୍ରାଜ୍ୟରେ।",
+          "ତା’ର କ୍ଷୁଦ୍ରତା ନେଇ କିଛି",
+          "ଉଚ୍ଚା ଶିରୋଭାଗରେ।"
+        ],
+        "translated_lines": [
+          "The Ocean",
+          "I saw my land,",
+          "In the empire of the ocean.",
+          "Taking its smallness,",
+          "High upon the head."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Empire of the sea",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ସମୁଦ୍ର",
+          "ମୋତେ ଦେଖିଲା ଆମ ଦେଶ",
+          "ସମୁଦ୍ର ସାମ୍ରାଜ୍ୟରେ।",
+          "ତା’ର କ୍ଷୁଦ୍ରତା ନେଇ କିଛି",
+          "ଉଚ୍ଚା ଶିରୋଭାଗରେ।"
+        ],
+        "translated_lines": [
+          "The Ocean",
+          "I saw my land,",
+          "In the empire of the ocean.",
+          "Taking its smallness,",
+          "High upon the head."
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Inverts subject and object in second line",
+        "metaphor_spans": [
+          {
+            "source_term": "ସମୁଦ୍ର ସାମ୍ରାଜ୍ୟରେ",
+            "abstract_meaning": "Vast domain of the ocean"
+          },
+          {
+            "source_term": "ଉଚ୍ଚା ଶିରୋଭାଗରେ",
+            "abstract_meaning": "Lofty pride or elevated status"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9467,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

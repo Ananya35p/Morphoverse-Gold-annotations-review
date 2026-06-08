@@ -1,0 +1,112 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1194",
+  "poem_title": "Mi Zaad Boltoy",
+  "language": "Marathi",
+  "original_poem": "मी झाड बोलतोय  \nआसमानाच्या छायेत,  \nपानांच्या आभाळात  \nसंपूर्ण जगणं अनुभवतोय,  \nमी रुखमाई फुलते.",
+  "translated_poem": "I am a talking tree  \nIn the shade of the sky,  \nIn the canopy of leaves  \nI experience all of life,  \nAs the flowers bloom.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.85,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "मी झाड बोलतोय",
+          "आसमानाच्या छायेत,",
+          "पानांच्या आभाळात",
+          "संपूर्ण जगणं अनुभवतोय,",
+          "मी रुखमाई फुलते."
+        ],
+        "translated_lines": [
+          "I am a talking tree",
+          "In the shade of the sky,",
+          "In the canopy of leaves",
+          "I experience all of life,",
+          "As the flowers bloom."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Experiencing life fully",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "मी झाड बोलतोय",
+          "आसमानाच्या छायेत,",
+          "पानांच्या आभाळात",
+          "संपूर्ण जगणं अनुभवतोय,",
+          "मी रुखमाई फुलते."
+        ],
+        "translated_lines": [
+          "I am a talking tree",
+          "In the shade of the sky,",
+          "In the canopy of leaves",
+          "I experience all of life,",
+          "As the flowers bloom."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Lost the cultural reference to goddess Rakhumai",
+        "metaphor_spans": [
+          {
+            "source_term": "पानांच्या आभाळात",
+            "abstract_meaning": "Vast canopy of green leaves"
+          },
+          {
+            "source_term": "मी झाड बोलतोय",
+            "abstract_meaning": "Nature expressing its inner voice"
+          },
+          {
+            "source_term": "मी रुखमाई फुलते",
+            "abstract_meaning": "Divine feminine growth and blossoming"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "रुखमाई",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.85,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

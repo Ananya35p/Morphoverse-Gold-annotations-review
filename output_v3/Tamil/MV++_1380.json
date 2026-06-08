@@ -1,0 +1,95 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1380",
+  "poem_title": "Thunaiyin Mozhi",
+  "language": "Tamil",
+  "original_poem": "துணையின் மொழி,  \nஉன் உள்ளத்தில் பேசும்,  \nஎன் இதயத்தின் கோவிலில்,  \nகாதல் பூங்காற்றாய் வீசும்!",
+  "translated_poem": "The language of companionship,  \nSpeaks in your heart,  \nIn the temple of my soul,  \nLove blows like a fragrant breeze!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8636,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "துணையின் மொழி,",
+          "உன் உள்ளத்தில் பேசும்,",
+          "என் இதயத்தின் கோவிலில்,",
+          "காதல் பூங்காற்றாய் வீசும்!"
+        ],
+        "translated_lines": [
+          "The language of companionship,",
+          "Speaks in your heart,",
+          "In the temple of my soul,",
+          "Love blows like a fragrant breeze!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Love's gentle breeze",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "துணையின் மொழி,",
+          "உன் உள்ளத்தில் பேசும்,",
+          "என் இதயத்தின் கோவிலில்,",
+          "காதல் பூங்காற்றாய் வீசும்!"
+        ],
+        "translated_lines": [
+          "The language of companionship,",
+          "Speaks in your heart,",
+          "In the temple of my soul,",
+          "Love blows like a fragrant breeze!"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "இதயத்தின் கோவிலில்",
+            "abstract_meaning": "Heart as a sacred sanctuary"
+          },
+          {
+            "source_term": "காதல் பூங்காற்றாய்",
+            "abstract_meaning": "Love as a gentle fragrant breeze"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8636,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -18,25 +18,44 @@ from .schema_utils import EXCLUDED_LANGUAGES, EXCLUDED_POEM_IDS
 def resolve_data_dir() -> Path:
     """Find the raw outputs folder in common locations."""
     candidates = [
+        Path("output_v3"),
+        Path("data") / "output_v3",
         Path("data") / "outputs_new_4",
         Path("data") / "outputs_new_4" / "outputs_new_4",
         Path("outputs_new_4"),
         Path("outputs_new_4") / "outputs_new_4",
+        Path("../output_v3"),
         Path("../outputs_new_4"),
         Path("../outputs_new_4") / "outputs_new_4",
+        Path("../../output_v3"),
         Path("../../outputs_new_4"),
         Path("../../outputs_new_4") / "outputs_new_4",
+        Path("/mnt/data/output_v3"),
         Path("/mnt/data/outputs_new_4"),
     ]
     for candidate in candidates:
         if candidate.exists() and candidate.is_dir() and any(candidate.glob("*/*.json")):
             return candidate
-    # Default path shown in the UI if nothing exists yet.
-    return Path("data") / "outputs_new_4"
+    return Path("output_v3")
+
+
+def load_low_confidence_poem_ids(data_dir: Path) -> set[str]:
+    """Return poem IDs marked low confidence in annotation_summary.csv."""
+    summary_path = data_dir / "annotation_summary.csv"
+    if not summary_path.exists():
+        return set()
+
+    df = pd.read_csv(summary_path)
+    if "poem_id" not in df.columns or "confidence" not in df.columns:
+        return set()
+
+    low_df = df[df["confidence"].astype(str).str.lower() == "low"]
+    return {str(poem_id) for poem_id in low_df["poem_id"].astype(str)}
 
 
 def ensure_app_dirs() -> None:
     Path("reviewed_outputs").mkdir(exist_ok=True)
+    Path("reviewer_submissions").mkdir(exist_ok=True)
     Path("audit_logs").mkdir(exist_ok=True)
     Path("data").mkdir(exist_ok=True)
 
@@ -53,26 +72,36 @@ def save_json(path: Path, payload: Dict[str, Any]) -> None:
 
 
 def load_raw_poems(data_dir: Optional[Path] = None) -> List[Dict[str, Any]]:
-    """Load all raw poem JSON files, excluding Bodo and failed Telugu poem."""
+    """Load low-confidence poem JSON files from the outputs folder."""
     data_dir = data_dir or resolve_data_dir()
     poems: List[Dict[str, Any]] = []
+    low_confidence_ids = load_low_confidence_poem_ids(data_dir)
 
     if not data_dir.exists():
         return poems
 
+    using_low_confidence_filter = bool(low_confidence_ids)
+
     for json_path in sorted(data_dir.glob("*/*.json")):
         language_folder = json_path.parent.name
-        if language_folder in EXCLUDED_LANGUAGES:
+        poem_id_from_path = json_path.stem
+
+        if using_low_confidence_filter:
+            if poem_id_from_path not in low_confidence_ids:
+                continue
+        elif language_folder in EXCLUDED_LANGUAGES:
             continue
 
         try:
             raw = load_json(json_path)
         except Exception as exc:
+            if using_low_confidence_filter:
+                continue
             poems.append(
                 {
-                    "poem_id": json_path.stem,
+                    "poem_id": poem_id_from_path,
                     "language": language_folder,
-                    "poem_title": json_path.stem,
+                    "poem_title": poem_id_from_path,
                     "status": "load_error",
                     "load_error": str(exc),
                     "_source_file": str(json_path),
@@ -83,15 +112,15 @@ def load_raw_poems(data_dir: Optional[Path] = None) -> List[Dict[str, Any]]:
         poem_id = get_poem_id(raw)
         language = get_language(raw, fallback=language_folder)
 
-        if language in EXCLUDED_LANGUAGES or poem_id in EXCLUDED_POEM_IDS:
-            continue
-
-        # Extra safety: skip raw failed files if accidentally present.
-        if poem_id == "MV++_1443" or (language == "Telugu" and get_status(raw).lower() == "failed"):
-            continue
+        if not using_low_confidence_filter:
+            if language in EXCLUDED_LANGUAGES or poem_id in EXCLUDED_POEM_IDS:
+                continue
+            if poem_id == "MV++_1443" or (language == "Telugu" and get_status(raw).lower() == "failed"):
+                continue
 
         raw["_source_file"] = str(json_path)
         raw["_language_folder"] = language_folder
+        raw["_confidence_band"] = "low" if using_low_confidence_filter else ""
         poems.append(raw)
 
     return poems

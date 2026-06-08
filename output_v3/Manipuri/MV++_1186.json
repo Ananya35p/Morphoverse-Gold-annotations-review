@@ -1,0 +1,288 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1186",
+  "poem_title": "Chingda Satpi",
+  "language": "Manipuri",
+  "original_poem": "चिंगदा सत्तपी मतोइ,  \nइचि याड्रीगु पमलैममा।  \nथावा थामा मनिन्बरी,  \nना थाम्बा चिंग्लई पंबीगु।\n\nइशिंगै बा फिनिनबा,  \nमरिंगाओबा नीनतंगोई।  \nताओई रेनबा नैरेइबा,  \nयामलंबा मरोमली ओइ।\n\nचिंग्दा फुरम्बा लाईगुम,  \nनुंगी दरेइ, चिंग्लई थाबी।  \nपोरं कांगरे, पंगक लेइबा,  \nफुरंबी लाई मरंगलाओ।",
+  "translated_poem": "The flower of the hill, so fair and bright,  \nReaching for the sky in pure delight.  \nIts petals whisper a song untold,  \nOf the mountain’s love in the quiet fold.\n\nThe morning dew kisses its face,  \nIn this high, untouched, and sacred place.  \nWinds of time may come and go,  \nBut in this bloom, love will grow.\n\nThe hill’s flower sways in the breeze,  \nIn the shadow of ancient trees.  \nIt stands tall, proud and free,  \nA symbol of eternity.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7668,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "चिंगदा सत्तपी मतोइ,",
+          "इचि याड्रीगु पमलैममा।",
+          "थावा थामा मनिन्बरी,",
+          "ना थाम्बा चिंग्लई पंबीगु।"
+        ],
+        "translated_lines": [
+          "The flower of the hill, so fair and bright,",
+          "Reaching for the sky in pure delight.",
+          "Its petals whisper a song untold,",
+          "Of the mountain’s love in the quiet fold."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "इशिंगै बा फिनिनबा,",
+          "मरिंगाओबा नीनतंगोई।",
+          "ताओई रेनबा नैरेइबा,",
+          "यामलंबा मरोमली ओइ।"
+        ],
+        "translated_lines": [
+          "The morning dew kisses its face,",
+          "In this high, untouched, and sacred place.",
+          "Winds of time may come and go,",
+          "But in this bloom, love will grow."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "चिंग्दा फुरम्बा लाईगुम,",
+          "नुंगी दरेइ, चिंग्लई थाबी।",
+          "पोरं कांगरे, पंगक लेइबा,",
+          "फुरंबी लाई मरंगलाओ।"
+        ],
+        "translated_lines": [
+          "The hill’s flower sways in the breeze,",
+          "In the shadow of ancient trees.",
+          "It stands tall, proud and free,",
+          "A symbol of eternity."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Reverence for hill deity",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "चिंगदा सत्तपी मतोइ,",
+          "इचि याड्रीगु पमलैममा।",
+          "थावा थामा मनिन्बरी,",
+          "ना थाम्बा चिंग्लई पंबीगु।"
+        ],
+        "translated_lines": [
+          "The flower of the hill, so fair and bright,",
+          "Reaching for the sky in pure delight.",
+          "Its petals whisper a song untold,",
+          "Of the mountain’s love in the quiet fold."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "loses reference to the mountain deity",
+        "metaphor_spans": [
+          {
+            "source_term": "इचि याड्रीगु पमलैममा",
+            "abstract_meaning": "Untouched, pure beauty"
+          },
+          {
+            "source_term": "थावा थामा मनिन्बरी",
+            "abstract_meaning": "Preciousness of the human soul"
+          },
+          {
+            "source_term": "ना थाम्बा चिंग्लई पंबीगु",
+            "abstract_meaning": "Delicate, rare hill lily"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "इशिंगै बा फिनिनबा,",
+          "मरिंगाओबा नीनतंगोई।",
+          "ताओई रेनबा नैरेइबा,",
+          "यामलंबा मरोमली ओइ।"
+        ],
+        "translated_lines": [
+          "The morning dew kisses its face,",
+          "In this high, untouched, and sacred place.",
+          "Winds of time may come and go,",
+          "But in this bloom, love will grow."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Literal phrasing sacrificed for English rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "इशिंगै बा फिनिनबा",
+            "abstract_meaning": "Purity of the soul"
+          },
+          {
+            "source_term": "ताओई रेनबा नैरेइबा",
+            "abstract_meaning": "Transience of human existence"
+          },
+          {
+            "source_term": "यामलंबा मरोमली ओइ",
+            "abstract_meaning": "Solitary spiritual journey"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "चिंग्दा फुरम्बा लाईगुम,",
+          "नुंगी दरेइ, चिंग्लई थाबी।",
+          "पोरं कांगरे, पंगक लेइबा,",
+          "फुरंबी लाई मरंगलाओ।"
+        ],
+        "translated_lines": [
+          "The hill’s flower sways in the breeze,",
+          "In the shadow of ancient trees.",
+          "It stands tall, proud and free,",
+          "A symbol of eternity."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "references to hill deities and worship",
+        "metaphor_spans": [
+          {
+            "source_term": "चिंग्दा फुरम्बा लाईगुम",
+            "abstract_meaning": "Divine or ethereal beauty"
+          },
+          {
+            "source_term": "नुंगी दरेइ",
+            "abstract_meaning": "Resilience in harsh conditions"
+          },
+          {
+            "source_term": "चिंग्लई थाबी",
+            "abstract_meaning": "Rare and natural elegance"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "चिंग्लई",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "थावा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मरिंगाओबा",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ताओई",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "नैरेइबा",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "लाई",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "चिंग्लई",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पोरं",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पंगक",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "फुरंबी लाई",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मरंगलाओ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7668,
+      "source_term_checks": {
+        "entities_total": 11,
+        "entities_dropped": 0,
+        "metaphors_total": 9,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

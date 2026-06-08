@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1280",
+  "poem_title": "Nilavum Malargalum",
+  "language": "Tamil",
+  "original_poem": "நிலவும் மலரும் இசைபடைத்து  \nவித்யாசமாகி என் மனதின்  \nவிடுதியில் காட்சியளிக்க,  \nஉனது நெஞ்சில் நான் ஒரு பாதை!",
+  "translated_poem": "The moon and flowers compose music,  \nUniquely presenting in my heart’s  \nAbode, revealing to the world,  \nI am a path within your heart!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8641,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "நிலவும் மலரும் இசைபடைத்து",
+          "வித்யாசமாகி என் மனதின்",
+          "விடுதியில் காட்சியளிக்க,",
+          "உனது நெஞ்சில் நான் ஒரு பாதை!"
+        ],
+        "translated_lines": [
+          "The moon and flowers compose music,",
+          "Uniquely presenting in my heart’s",
+          "Abode, revealing to the world,",
+          "I am a path within your heart!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "Path in your heart",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "நிலவும் மலரும் இசைபடைத்து",
+          "வித்யாசமாகி என் மனதின்",
+          "விடுதியில் காட்சியளிக்க,",
+          "உனது நெஞ்சில் நான் ஒரு பாதை!"
+        ],
+        "translated_lines": [
+          "The moon and flowers compose music,",
+          "Uniquely presenting in my heart’s",
+          "Abode, revealing to the world,",
+          "I am a path within your heart!"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Adds 'revealing to the world' unnecessarily",
+        "metaphor_spans": [
+          {
+            "source_term": "மனதின் விடுதியில்",
+            "abstract_meaning": "Mind as a temporary dwelling"
+          },
+          {
+            "source_term": "நான் ஒரு பாதை",
+            "abstract_meaning": "Speaker as a path to heart"
+          },
+          {
+            "source_term": "நிலவும் மலரும் இசைபடைத்து",
+            "abstract_meaning": "Nature creating a harmonious atmosphere"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "இசை",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8641,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

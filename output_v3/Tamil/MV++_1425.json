@@ -1,0 +1,119 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1425",
+  "poem_title": "Kannanin Vaasal",
+  "language": "Tamil",
+  "original_poem": "கண்ணனின் வாசல்,  \nஉன் செந்நெல் போல,  \nஎன் கண்ணில் பொன் நிறம்,  \nகாதலின் கனி ஆகின்றது!",
+  "translated_poem": "The entrance of Krishna,  \nLike your golden paddy,  \nIn my eyes, the hue of gold,  \nBecomes the fruit of love!",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8515,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கண்ணனின் வாசல்,",
+          "உன் செந்நெல் போல,",
+          "என் கண்ணில் பொன் நிறம்,",
+          "காதலின் கனி ஆகின்றது!"
+        ],
+        "translated_lines": [
+          "The entrance of Krishna,",
+          "Like your golden paddy,",
+          "In my eyes, the hue of gold,",
+          "Becomes the fruit of love!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Fruit of divine love",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கண்ணனின் வாசல்,",
+          "உன் செந்நெல் போல,",
+          "என் கண்ணில் பொன் நிறம்,",
+          "காதலின் கனி ஆகின்றது!"
+        ],
+        "translated_lines": [
+          "The entrance of Krishna,",
+          "Like your golden paddy,",
+          "In my eyes, the hue of gold,",
+          "Becomes the fruit of love!"
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "sennel means red paddy, not golden paddy",
+        "metaphor_spans": [
+          {
+            "source_term": "காதலின் கனி",
+            "abstract_meaning": "Sweet result of love"
+          },
+          {
+            "source_term": "பொன் நிறம்",
+            "abstract_meaning": "Radiant vision of the beloved"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "செந்நெல்",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8515,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 2,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 2,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "கண்ணன்",
+      "note": "entity_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "காதல்",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1169",
+  "poem_title": "Dev Boren",
+  "language": "Konkani",
+  "original_poem": "देव बोरें  \nआम्हां  \nजिवंत ठेवील,  \nसंपूर्ण आकाशात  \nउगवलेली आशा.",
+  "translated_poem": "God will save us,  \nKeeping us alive,  \nIn the vast sky,  \nHope rises anew,  \nFilling our hearts.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7741,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "देव बोरें",
+          "आम्हां",
+          "जिवंत ठेवील,",
+          "संपूर्ण आकाशात",
+          "उगवलेली आशा."
+        ],
+        "translated_lines": [
+          "God will save us,",
+          "Keeping us alive,",
+          "In the vast sky,",
+          "Hope rises anew,",
+          "Filling our hearts."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Hope in God",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "देव बोरें",
+          "आम्हां",
+          "जिवंत ठेवील,",
+          "संपूर्ण आकाशात",
+          "उगवलेली आशा."
+        ],
+        "translated_lines": [
+          "God will save us,",
+          "Keeping us alive,",
+          "In the vast sky,",
+          "Hope rises anew,",
+          "Filling our hearts."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Adds 'filling our hearts' not in original",
+        "metaphor_spans": [
+          {
+            "source_term": "उगवलेली आशा",
+            "abstract_meaning": "Hope as a rising sun"
+          },
+          {
+            "source_term": "संपूर्ण आकाशात",
+            "abstract_meaning": "Universal presence of optimism"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "देव",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "आशा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7741,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

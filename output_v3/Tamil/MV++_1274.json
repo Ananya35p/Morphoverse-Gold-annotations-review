@@ -1,0 +1,104 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1274",
+  "poem_title": "Kurunthogai",
+  "language": "Tamil",
+  "original_poem": "கூட்டம் கடந்து வருவன காணின்  \nவீட்டம் எனவொன்றோ விளைந்ததே நெஞ்சே  \nகாட்டின் கழுமல் தழீஇயக் கண்ணின்  \nநாடன் வருவான் எனக் கண்டதே நெஞ்சே",
+  "translated_poem": "As the crowds pass by,  \nIs there something called home, O heart?  \nAt the sight of a flower in the forest,  \nDid you think the lover would come, O heart?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.909,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கூட்டம் கடந்து வருவன காணின்",
+          "வீட்டம் எனவொன்றோ விளைந்ததே நெஞ்சே",
+          "காட்டின் கழுமல் தழீஇயக் கண்ணின்",
+          "நாடன் வருவான் எனக் கண்டதே நெஞ்சே"
+        ],
+        "translated_lines": [
+          "As the crowds pass by,",
+          "Is there something called home, O heart?",
+          "At the sight of a flower in the forest,",
+          "Did you think the lover would come, O heart?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "anticipating lover's arrival",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கூட்டம் கடந்து வருவன காணின்",
+          "வீட்டம் எனவொன்றோ விளைந்ததே நெஞ்சே",
+          "காட்டின் கழுமல் தழீஇயக் கண்ணின்",
+          "நாடன் வருவான் எனக் கண்டதே நெஞ்சே"
+        ],
+        "translated_lines": [
+          "As the crowds pass by,",
+          "Is there something called home, O heart?",
+          "At the sight of a flower in the forest,",
+          "Did you think the lover would come, O heart?"
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "nuance of nadan as chief of landscape",
+        "metaphor_spans": [
+          {
+            "source_term": "வீட்டம்",
+            "abstract_meaning": "End of suffering or liberation"
+          },
+          {
+            "source_term": "கழுமல் தழீஇயக் கண்ணின்",
+            "abstract_meaning": "Eyes blurred by anxious longing"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "வீட்டம்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.909,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

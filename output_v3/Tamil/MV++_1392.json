@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1392",
+  "poem_title": "Aasaiyin Kovil",
+  "language": "Tamil",
+  "original_poem": "ஆசையின் கோவில்,  \nஉன் உள்ளத்தில் எழுந்தது,  \nஎன் இதயத்தின் தேவதை,  \nகாதலின் கடலில் அலைகிறது!",
+  "translated_poem": "Temple of desire,  \nEmerged in your heart,  \nThe angel of my soul,  \nWaves in the sea of love!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9859,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆசையின் கோவில்,",
+          "உன் உள்ளத்தில் எழுந்தது,",
+          "என் இதயத்தின் தேவதை,",
+          "காதலின் கடலில் அலைகிறது!"
+        ],
+        "translated_lines": [
+          "Temple of desire,",
+          "Emerged in your heart,",
+          "The angel of my soul,",
+          "Waves in the sea of love!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "Angel of my heart",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆசையின் கோவில்,",
+          "உன் உள்ளத்தில் எழுந்தது,",
+          "என் இதயத்தின் தேவதை,",
+          "காதலின் கடலில் அலைகிறது!"
+        ],
+        "translated_lines": [
+          "Temple of desire,",
+          "Emerged in your heart,",
+          "The angel of my soul,",
+          "Waves in the sea of love!"
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ஆசையின் கோவில்",
+            "abstract_meaning": "Desire as a sacred structure"
+          },
+          {
+            "source_term": "என் இதயத்தின் தேவதை",
+            "abstract_meaning": "Beloved as a divine being"
+          },
+          {
+            "source_term": "காதலின் கடலில்",
+            "abstract_meaning": "Love as a vast ocean"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "கோவில்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "தேவதை",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9859,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1167",
+  "poem_title": "Zali Vhalan",
+  "language": "Konkani",
+  "original_poem": "झली व्हालं  \nतो आला,  \nसंपूर्ण आकाशाचं  \nगौरव करून  \nतुला प्रिय करतो.",
+  "translated_poem": "The lover came,  \nHonoring the entire sky,  \nI cherish you,  \nIn every whisper,  \nWith love so profound.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7717,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "झली व्हालं",
+          "तो आला,",
+          "संपूर्ण आकाशाचं",
+          "गौरव करून",
+          "तुला प्रिय करतो."
+        ],
+        "translated_lines": [
+          "The lover came,",
+          "Honoring the entire sky,",
+          "I cherish you,",
+          "In every whisper,",
+          "With love so profound."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Glorious arrival of love",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "झली व्हालं",
+          "तो आला,",
+          "संपूर्ण आकाशाचं",
+          "गौरव करून",
+          "तुला प्रिय करतो."
+        ],
+        "translated_lines": [
+          "The lover came,",
+          "Honoring the entire sky,",
+          "I cherish you,",
+          "In every whisper,",
+          "With love so profound."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Adds extra poetic lines not in source",
+        "metaphor_spans": [
+          {
+            "source_term": "झली व्हालं",
+            "abstract_meaning": "Overflowing presence or arrival"
+          },
+          {
+            "source_term": "संपूर्ण आकाशाचं गौरव",
+            "abstract_meaning": "Divine or celestial honor"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "गौरव",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "प्रिय",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7717,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

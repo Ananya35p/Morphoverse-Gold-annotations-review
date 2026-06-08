@@ -1,0 +1,246 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1249",
+  "poem_title": "Sufi Kafis",
+  "language": "Sindhi",
+  "original_poem": "محبت ۾ سوئڻ نٿو آ،  \nدرد جو آ شوق ڪيو،  \nسيرڻ جو نه آ،  \nبلڪ صوفيا جو آ،  \nهوا ذڪر جيڪي،  \nتنگي ۾ ڪا خوشبو آ،  \nمحبت جو تذڪرو آ.\n\nروحاني جو سفر،  \nجتي رسوائي ناهي،  \nمحبت جو عالم آ،  \nروح ته نازڪ آ،  \nبلڪل سچو آ،  \nمحبت جو حقيقي آ،  \nجنهن سان ئي رشتو جو آ،  \nجنهن سان جوش جو آ،  \nرنگين محبت جو آ.",
+  "translated_poem": "In love, there is no rest,  \nOnly the ache of longing,  \nIt is not merely a stroll,  \nBut the essence of the Sufis,  \nWhere fragrant whispers dwell,  \nIn the depth of hardship,  \nThe tale of love unfolds.\n\nA spiritual journey,  \nWhere shame does not exist,  \nThe realm of love thrives,  \nThe soul is delicate,  \nCompletely true,  \nThe reality of love,  \nWith which every bond exists,  \nIn fervor and color,  \nThe essence of love shines.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7842,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "محبت ۾ سوئڻ نٿو آ،",
+          "درد جو آ شوق ڪيو،",
+          "سيرڻ جو نه آ،",
+          "بلڪ صوفيا جو آ،",
+          "هوا ذڪر جيڪي،",
+          "تنگي ۾ ڪا خوشبو آ،",
+          "محبت جو تذڪرو آ."
+        ],
+        "translated_lines": [
+          "In love, there is no rest,",
+          "Only the ache of longing,",
+          "It is not merely a stroll,",
+          "But the essence of the Sufis,",
+          "Where fragrant whispers dwell,",
+          "In the depth of hardship,",
+          "The tale of love unfolds."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 9,
+        "source_lines": [
+          "روحاني جو سفر،",
+          "جتي رسوائي ناهي،",
+          "محبت جو عالم آ،",
+          "روح ته نازڪ آ،",
+          "بلڪل سچو آ،",
+          "محبت جو حقيقي آ،",
+          "جنهن سان ئي رشتو جو آ،",
+          "جنهن سان جوش جو آ،",
+          "رنگين محبت جو آ."
+        ],
+        "translated_lines": [
+          "A spiritual journey,",
+          "Where shame does not exist,",
+          "The realm of love thrives,",
+          "The soul is delicate,",
+          "Completely true,",
+          "The reality of love,",
+          "With which every bond exists,",
+          "In fervor and color,",
+          "The essence of love shines."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "True spiritual love",
+    "translation_fidelity_score": 0.75,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "محبت ۾ سوئڻ نٿو آ،",
+          "درد جو آ شوق ڪيو،",
+          "سيرڻ جو نه آ،",
+          "بلڪ صوفيا جو آ،",
+          "هوا ذڪر جيڪي،",
+          "تنگي ۾ ڪا خوشبو آ،",
+          "محبت جو تذڪرو آ."
+        ],
+        "translated_lines": [
+          "In love, there is no rest,",
+          "Only the ache of longing,",
+          "It is not merely a stroll,",
+          "But the essence of the Sufis,",
+          "Where fragrant whispers dwell,",
+          "In the depth of hardship,",
+          "The tale of love unfolds."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Loses the specific Sufi concept of dhikr",
+        "metaphor_spans": [
+          {
+            "source_term": "درد جو آ شوق ڪيو",
+            "abstract_meaning": "Embracing suffering for spiritual growth"
+          },
+          {
+            "source_term": "تنگي ۾ ڪا خوشبو آ",
+            "abstract_meaning": "Divine grace within hardship"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 9,
+        "source_lines": [
+          "روحاني جو سفر،",
+          "جتي رسوائي ناهي،",
+          "محبت جو عالم آ،",
+          "روح ته نازڪ آ،",
+          "بلڪل سچو آ،",
+          "محبت جو حقيقي آ،",
+          "جنهن سان ئي رشتو جو آ،",
+          "جنهن سان جوش جو آ،",
+          "رنگين محبت جو آ."
+        ],
+        "translated_lines": [
+          "A spiritual journey,",
+          "Where shame does not exist,",
+          "The realm of love thrives,",
+          "The soul is delicate,",
+          "Completely true,",
+          "The reality of love,",
+          "With which every bond exists,",
+          "In fervor and color,",
+          "The essence of love shines."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "روحاني جو سفر",
+            "abstract_meaning": "Path of spiritual enlightenment"
+          },
+          {
+            "source_term": "محبت جو عالم",
+            "abstract_meaning": "State of divine affection"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "محبت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "درد",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "شوق",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "صوفيا",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ذڪر",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "روحاني جو سفر",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "محبت جو عالم",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "روح",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "محبت جو حقيقي",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7842,
+      "source_term_checks": {
+        "entities_total": 9,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1253",
+  "poem_title": "Chinnanjiru Kiliye",
+  "language": "Tamil",
+  "original_poem": "சின்னஞ்சிறு கிளியே கண்ணம்மா செந்தென்னை அழகே!\nஎன்னையே கொஞ்சம் பாரு கண்ணம்மா எங்குச் சென்றாய்?\n\nபாடல் விரும்பு வான்சுடர் பெண்ணே செந்தென்னை அழகே!\nபாரதியின் உள்ளத்தில் நிறைந்தே பொங்குதடி மகிழ்ச்சி!\n\nதாயே பிறந்த நாளின் பெருமை உள்ளம் இனிது கண்ணம்மா!",
+  "translated_poem": "My little bird, O Kannamma, beauty like crimson oil!\nJust look at me for a while, Kannamma, where have you gone?\n\nLover of songs, bright as the stars, crimson beauty like oil!\nIn Bharati’s heart, you’ve filled it with overflowing joy!\n\nMother, born on a day of greatness, my heart is sweet with Kannamma!",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8698,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "சின்னஞ்சிறு கிளியே கண்ணம்மா செந்தென்னை அழகே!",
+          "என்னையே கொஞ்சம் பாரு கண்ணம்மா எங்குச் சென்றாய்?"
+        ],
+        "translated_lines": [
+          "My little bird, O Kannamma, beauty like crimson oil!",
+          "Just look at me for a while, Kannamma, where have you gone?"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "பாடல் விரும்பு வான்சுடர் பெண்ணே செந்தென்னை அழகே!",
+          "பாரதியின் உள்ளத்தில் நிறைந்தே பொங்குதடி மகிழ்ச்சி!"
+        ],
+        "translated_lines": [
+          "Lover of songs, bright as the stars, crimson beauty like oil!",
+          "In Bharati’s heart, you’ve filled it with overflowing joy!"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 1,
+        "source_lines": [
+          "தாயே பிறந்த நாளின் பெருமை உள்ளம் இனிது கண்ணம்மா!"
+        ],
+        "translated_lines": [
+          "Mother, born on a day of greatness, my heart is sweet with Kannamma!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Joyful birthday celebration",
+    "translation_fidelity_score": 0.666667,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "சின்னஞ்சிறு கிளியே கண்ணம்மா செந்தென்னை அழகே!",
+          "என்னையே கொஞ்சம் பாரு கண்ணம்மா எங்குச் சென்றாய்?"
+        ],
+        "translated_lines": [
+          "My little bird, O Kannamma, beauty like crimson oil!",
+          "Just look at me for a while, Kannamma, where have you gone?"
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "crimson oil misinterprets red coconut palm imagery",
+        "metaphor_spans": [
+          {
+            "source_term": "சின்னஞ்சிறு கிளியே",
+            "abstract_meaning": "Beloved child or dear one"
+          },
+          {
+            "source_term": "கண்ணம்மா",
+            "abstract_meaning": "Person as precious as eyes"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "பாடல் விரும்பு வான்சுடர் பெண்ணே செந்தென்னை அழகே!",
+          "பாரதியின் உள்ளத்தில் நிறைந்தே பொங்குதடி மகிழ்ச்சி!"
+        ],
+        "translated_lines": [
+          "Lover of songs, bright as the stars, crimson beauty like oil!",
+          "In Bharati’s heart, you’ve filled it with overflowing joy!"
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Mistranslates red coconut tree as oil",
+        "metaphor_spans": [
+          {
+            "source_term": "வான்சுடர்",
+            "abstract_meaning": "Radiant divine light or inspiration"
+          },
+          {
+            "source_term": "பொங்குதடி மகிழ்ச்சி",
+            "abstract_meaning": "Overwhelming and intense happiness"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 1,
+        "source_lines": [
+          "தாயே பிறந்த நாளின் பெருமை உள்ளம் இனிது கண்ணம்மா!"
+        ],
+        "translated_lines": [
+          "Mother, born on a day of greatness, my heart is sweet with Kannamma!"
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "உள்ளம் இனிது",
+            "abstract_meaning": "Heart feels immense joy"
+          },
+          {
+            "source_term": "கண்ணம்மா",
+            "abstract_meaning": "Beloved personified as divine"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "கண்ணம்மா",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "பாடல்",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "வான்சுடர்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "செந்தென்னை",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "கண்ணம்மா",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8698,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 1,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "பிறந்த நாள்",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

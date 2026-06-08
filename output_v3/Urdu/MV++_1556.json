@@ -1,0 +1,282 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1556",
+  "poem_title": "Chand Se Mukhda",
+  "language": "Urdu",
+  "original_poem": "چاند سے مکھڑا\n\nچاند سے مکھڑا تیری آنکھوں کا جادو\nدیکھوں تو جھک جائے یہ میری نگاہوں کا جادو\n\nساری دنیا کا رنگ دیکھوں\nپھر بھی مجھے تیرے چہرے کی روشنی میں سجدہ ہے\n\nگزرے پل کے گزر جانے کا دکھ بھی\nہنس کر بھی میرے دل کی دھڑکنوں میں ہوتا ہے\n\nچاہت کا یہ جادو، محبت کا یہ جال\nچاند سے مکھڑے کی گود میں سجے رہیں گے",
+  "translated_poem": "Face Like the Moon\n\nYour face, like the moon,\nHolds the magic of your eyes,\nWhen I gaze, this magic\nMakes my sight bow low.\n\nI see the colors of the world,\nYet, I bow in the light of your face.\n\nThe sorrow of passing moments\nAlso becomes a joy, as\nI smile through the beating of my heart.\n\nThis magic of love, this web of affection,\nWill always be adorned in the lap of your face like the moon.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8654,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "چاند سے مکھڑا"
+        ],
+        "translated_lines": [
+          "Face Like the Moon"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "چاند سے مکھڑا تیری آنکھوں کا جادو",
+          "دیکھوں تو جھک جائے یہ میری نگاہوں کا جادو"
+        ],
+        "translated_lines": [
+          "Your face, like the moon,",
+          "Holds the magic of your eyes,",
+          "When I gaze, this magic",
+          "Makes my sight bow low."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "ساری دنیا کا رنگ دیکھوں",
+          "پھر بھی مجھے تیرے چہرے کی روشنی میں سجدہ ہے"
+        ],
+        "translated_lines": [
+          "I see the colors of the world,",
+          "Yet, I bow in the light of your face."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "گزرے پل کے گزر جانے کا دکھ بھی",
+          "ہنس کر بھی میرے دل کی دھڑکنوں میں ہوتا ہے"
+        ],
+        "translated_lines": [
+          "The sorrow of passing moments",
+          "Also becomes a joy, as",
+          "I smile through the beating of my heart."
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 2,
+        "source_lines": [
+          "چاہت کا یہ جادو، محبت کا یہ جال",
+          "چاند سے مکھڑے کی گود میں سجے رہیں گے"
+        ],
+        "translated_lines": [
+          "This magic of love, this web of affection,",
+          "Will always be adorned in the lap of your face like the moon."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "deep romantic devotion",
+    "translation_fidelity_score": 0.7,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "چاند سے مکھڑا"
+        ],
+        "translated_lines": [
+          "Face Like the Moon"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "چاند سے مکھڑا",
+            "abstract_meaning": "Radiant and beautiful face"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "چاند سے مکھڑا تیری آنکھوں کا جادو",
+          "دیکھوں تو جھک جائے یہ میری نگاہوں کا جادو"
+        ],
+        "translated_lines": [
+          "Your face, like the moon,",
+          "Holds the magic of your eyes,",
+          "When I gaze, this magic",
+          "Makes my sight bow low."
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Misses the magic of the speaker's gaze",
+        "metaphor_spans": [
+          {
+            "source_term": "چاند سے مکھڑا",
+            "abstract_meaning": "Radiant and beautiful face"
+          },
+          {
+            "source_term": "آنکھوں کا جادو",
+            "abstract_meaning": "Captivating power of the eyes"
+          },
+          {
+            "source_term": "نگاہوں کا جادو",
+            "abstract_meaning": "Enchanting effect of a gaze"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "ساری دنیا کا رنگ دیکھوں",
+          "پھر بھی مجھے تیرے چہرے کی روشنی میں سجدہ ہے"
+        ],
+        "translated_lines": [
+          "I see the colors of the world,",
+          "Yet, I bow in the light of your face."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "sajdah specifically means prostration, not just bowing",
+        "metaphor_spans": [
+          {
+            "source_term": "ساری دنیا کا رنگ",
+            "abstract_meaning": "Worldly attractions and distractions"
+          },
+          {
+            "source_term": "تیرے چہرے کی روشنی",
+            "abstract_meaning": "Divine guidance or spiritual beauty"
+          },
+          {
+            "source_term": "سجدہ",
+            "abstract_meaning": "Ultimate devotion and total submission"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "گزرے پل کے گزر جانے کا دکھ بھی",
+          "ہنس کر بھی میرے دل کی دھڑکنوں میں ہوتا ہے"
+        ],
+        "translated_lines": [
+          "The sorrow of passing moments",
+          "Also becomes a joy, as",
+          "I smile through the beating of my heart."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Original says sorrow persists despite smiling",
+        "metaphor_spans": [
+          {
+            "source_term": "دل کی دھڑکنوں میں",
+            "abstract_meaning": "Constant internal presence of sorrow"
+          },
+          {
+            "source_term": "ہنس کر",
+            "abstract_meaning": "Masking internal pain with joy"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 2,
+        "source_lines": [
+          "چاہت کا یہ جادو، محبت کا یہ جال",
+          "چاند سے مکھڑے کی گود میں سجے رہیں گے"
+        ],
+        "translated_lines": [
+          "This magic of love, this web of affection,",
+          "Will always be adorned in the lap of your face like the moon."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "چاہت کا یہ جادو",
+            "abstract_meaning": "Love's enchanting and mystical power"
+          },
+          {
+            "source_term": "محبت کا یہ جال",
+            "abstract_meaning": "Captivation or entrapment by love"
+          },
+          {
+            "source_term": "چاند سے مکھڑے",
+            "abstract_meaning": "Radiant beauty of the beloved"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "چاند",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "مکھڑا",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سجدہ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "چاند",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 5,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8654,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 12,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

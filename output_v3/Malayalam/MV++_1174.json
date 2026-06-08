@@ -1,0 +1,111 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1174",
+  "poem_title": "Oru Nattu Vakkukaran",
+  "language": "Malayalam",
+  "original_poem": "ഒരു നാട്ടു വാക്കുകാരൻ  \nസത്യത്തിന്റെ ഉള്ളിളക്കം  \nവാക്കുകളിൽ താനായ്കൊണ്ട്  \nകാട്ടിയിടുന്ന  \nവഴിതിരിവ് പോലെ.",
+  "translated_poem": "A village wordsmith,  \nWeaving the tremors of truth,  \nCarving paths,  \nAs if revealing  \nA turn in the road.",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9876,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ഒരു നാട്ടു വാക്കുകാരൻ",
+          "സത്യത്തിന്റെ ഉള്ളിളക്കം",
+          "വാക്കുകളിൽ താനായ്കൊണ്ട്",
+          "കാട്ടിയിടുന്ന",
+          "വഴിതിരിവ് പോലെ."
+        ],
+        "translated_lines": [
+          "A village wordsmith,",
+          "Weaving the tremors of truth,",
+          "Carving paths,",
+          "As if revealing",
+          "A turn in the road."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Rustic wordsmith's truth",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ഒരു നാട്ടു വാക്കുകാരൻ",
+          "സത്യത്തിന്റെ ഉള്ളിളക്കം",
+          "വാക്കുകളിൽ താനായ്കൊണ്ട്",
+          "കാട്ടിയിടുന്ന",
+          "വഴിതിരിവ് പോലെ."
+        ],
+        "translated_lines": [
+          "A village wordsmith,",
+          "Weaving the tremors of truth,",
+          "Carving paths,",
+          "As if revealing",
+          "A turn in the road."
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "misses embodying truth in his own words",
+        "metaphor_spans": [
+          {
+            "source_term": "സത്യത്തിന്റെ ഉള്ളിളക്കം",
+            "abstract_meaning": "Deep inner resonance of truth"
+          },
+          {
+            "source_term": "വഴിതിരിവ് പോലെ",
+            "abstract_meaning": "A transformative moment or revelation"
+          },
+          {
+            "source_term": "നാട്ടു വാക്കുകാരൻ",
+            "abstract_meaning": "Authentic and simple communicator"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9876,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 1,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "സത്യം",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

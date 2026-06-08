@@ -1,0 +1,244 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1078",
+  "poem_title": "Buddha Ka Kya Kasoor Tha",
+  "language": "Kannada",
+  "original_poem": "बुद्ध का क्या कसूर था?  \nवह तो शांति का पुजारी था,  \nवह तो प्रेम का प्रचारक था,  \nवह तो करुणा का अवतार था।  \n\nफिर क्यों उसके देश में हिंसा की आग जलती है?  \nक्यों लोग एक-दूसरे का खून बहाते हैं?  \nक्या हमने उसकी सीख को भुला दिया?  \nक्या हमने उसकी बातों को अनसुना कर दिया?  \n\nबुद्ध का क्या कसूर था?  \nवह तो मूक है, वह तो अश्रुत है,  \nपर उसकी करुणा का स्वर अमर है,  \nक्या हम उसकी करुणा को फिर से सुन पाएंगे?",
+  "translated_poem": "What was Buddha’s fault?  \nHe was a worshipper of peace,  \nHe was a preacher of love,  \nHe was the incarnation of compassion.  \n\nThen why does the fire of violence burn in his land?  \nWhy do people spill each other’s blood?  \nHave we forgotten his teachings?  \nHave we ignored his words?  \n\nWhat was Buddha’s fault?  \nHe is silent; he is unheard,  \nBut the voice of his compassion is eternal.  \nWill we be able to hear his compassion once more?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.934,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "बुद्ध का क्या कसूर था?",
+          "वह तो शांति का पुजारी था,",
+          "वह तो प्रेम का प्रचारक था,",
+          "वह तो करुणा का अवतार था।"
+        ],
+        "translated_lines": [
+          "What was Buddha’s fault?",
+          "He was a worshipper of peace,",
+          "He was a preacher of love,",
+          "He was the incarnation of compassion."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "फिर क्यों उसके देश में हिंसा की आग जलती है?",
+          "क्यों लोग एक-दूसरे का खून बहाते हैं?",
+          "क्या हमने उसकी सीख को भुला दिया?",
+          "क्या हमने उसकी बातों को अनसुना कर दिया?"
+        ],
+        "translated_lines": [
+          "Then why does the fire of violence burn in his land?",
+          "Why do people spill each other’s blood?",
+          "Have we forgotten his teachings?",
+          "Have we ignored his words?"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "बुद्ध का क्या कसूर था?",
+          "वह तो मूक है, वह तो अश्रुत है,",
+          "पर उसकी करुणा का स्वर अमर है,",
+          "क्या हम उसकी करुणा को फिर से सुन पाएंगे?"
+        ],
+        "translated_lines": [
+          "What was Buddha’s fault?",
+          "He is silent; he is unheard,",
+          "But the voice of his compassion is eternal.",
+          "Will we be able to hear his compassion once more?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "Plea for lost compassion",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "बुद्ध का क्या कसूर था?",
+          "वह तो शांति का पुजारी था,",
+          "वह तो प्रेम का प्रचारक था,",
+          "वह तो करुणा का अवतार था।"
+        ],
+        "translated_lines": [
+          "What was Buddha’s fault?",
+          "He was a worshipper of peace,",
+          "He was a preacher of love,",
+          "He was the incarnation of compassion."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "शांति का पुजारी",
+            "abstract_meaning": "Devoted advocate for peace"
+          },
+          {
+            "source_term": "करुणा का अवतार",
+            "abstract_meaning": "Embodiment of deep mercy"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "फिर क्यों उसके देश में हिंसा की आग जलती है?",
+          "क्यों लोग एक-दूसरे का खून बहाते हैं?",
+          "क्या हमने उसकी सीख को भुला दिया?",
+          "क्या हमने उसकी बातों को अनसुना कर दिया?"
+        ],
+        "translated_lines": [
+          "Then why does the fire of violence burn in his land?",
+          "Why do people spill each other’s blood?",
+          "Have we forgotten his teachings?",
+          "Have we ignored his words?"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हिंसा की आग",
+            "abstract_meaning": "Destructive nature of conflict"
+          },
+          {
+            "source_term": "खून बहाते",
+            "abstract_meaning": "Committing acts of violence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "बुद्ध का क्या कसूर था?",
+          "वह तो मूक है, वह तो अश्रुत है,",
+          "पर उसकी करुणा का स्वर अमर है,",
+          "क्या हम उसकी करुणा को फिर से सुन पाएंगे?"
+        ],
+        "translated_lines": [
+          "What was Buddha’s fault?",
+          "He is silent; he is unheard,",
+          "But the voice of his compassion is eternal.",
+          "Will we be able to hear his compassion once more?"
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "वह तो मूक है",
+            "abstract_meaning": "Silence of the enlightened state"
+          },
+          {
+            "source_term": "करुणा का स्वर",
+            "abstract_meaning": "Eternal message of universal empathy"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "बुद्ध",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "शांति",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "प्रेम",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "करुणा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "अवतार",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "बुद्ध",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "करुणा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.934,
+      "source_term_checks": {
+        "entities_total": 7,
+        "entities_dropped": 0,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

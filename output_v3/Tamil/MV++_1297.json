@@ -1,0 +1,99 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1297",
+  "poem_title": "Kannanum Kanni",
+  "language": "Tamil",
+  "original_poem": "கண்ணனும் கன்னியும்,  \nகாதல் நாடகத்தில் வந்தார்,  \nகண்ணின் அழகு நின்றால்,  \nஎன் இதயம் அஞ்சும்!",
+  "translated_poem": "Krishna and the maiden,  \nHave come in the play of love.  \nIf beauty halts in the eyes,  \nMy heart trembles!",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9091,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கண்ணனும் கன்னியும்,",
+          "காதல் நாடகத்தில் வந்தார்,",
+          "கண்ணின் அழகு நின்றால்,",
+          "என் இதயம் அஞ்சும்!"
+        ],
+        "translated_lines": [
+          "Krishna and the maiden,",
+          "Have come in the play of love.",
+          "If beauty halts in the eyes,",
+          "My heart trembles!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "overwhelmed by beauty",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கண்ணனும் கன்னியும்,",
+          "காதல் நாடகத்தில் வந்தார்,",
+          "கண்ணின் அழகு நின்றால்,",
+          "என் இதயம் அஞ்சும்!"
+        ],
+        "translated_lines": [
+          "Krishna and the maiden,",
+          "Have come in the play of love.",
+          "If beauty halts in the eyes,",
+          "My heart trembles!"
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "காதல் நாடகத்தில்",
+            "abstract_meaning": "Romantic relationship as a play"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9091,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 1,
+        "metaphors_total": 1,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "கண்ணன்",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

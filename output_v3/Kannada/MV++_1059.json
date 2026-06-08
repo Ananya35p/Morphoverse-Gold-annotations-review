@@ -1,0 +1,240 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1059",
+  "poem_title": "Mitti Ke Diye",
+  "language": "Kannada",
+  "original_poem": "मिट्टी के दिए, जलते हैं  \nसूरज की किरणों से, सजे रहते हैं  \nअंधेरे में, जलते हुए  \nउम्मीद की ज्वाला हर एक को देते हैं  \n\nमिट्टी के दिए, बिना कुछ कहे  \nसुनते हैं हर दर्द, हर आह  \nसभी के पास अपना एक राग है  \nजो रात भर जलता है और चलता है  \n\nमिट्टी के दिए, धीरे-धीरे  \nकभी बुझते हैं, कभी जलते हैं  \nउनकी राह भी अनदेखी सी है  \nपर कभी वो बुझने नहीं देते",
+  "translated_poem": "Clay lamps, they burn,  \nAdorned with the rays of the sun.  \nIn the darkness, burning bright,  \nThey give the flame of hope to all.\n\nClay lamps, without uttering a word,  \nListen to every pain, every sigh.  \nEach one has its own song,  \nWhich burns and moves through the night.\n\nClay lamps, slowly,  \nSometimes they fade, sometimes they burn.  \nTheir path seems unnoticed,  \nBut they never let their light die.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8951,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी के दिए, जलते हैं",
+          "सूरज की किरणों से, सजे रहते हैं",
+          "अंधेरे में, जलते हुए",
+          "उम्मीद की ज्वाला हर एक को देते हैं"
+        ],
+        "translated_lines": [
+          "Clay lamps, they burn,",
+          "Adorned with the rays of the sun.",
+          "In the darkness, burning bright,",
+          "They give the flame of hope to all."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी के दिए, बिना कुछ कहे",
+          "सुनते हैं हर दर्द, हर आह",
+          "सभी के पास अपना एक राग है",
+          "जो रात भर जलता है और चलता है"
+        ],
+        "translated_lines": [
+          "Clay lamps, without uttering a word,",
+          "Listen to every pain, every sigh.",
+          "Each one has its own song,",
+          "Which burns and moves through the night."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी के दिए, धीरे-धीरे",
+          "कभी बुझते हैं, कभी जलते हैं",
+          "उनकी राह भी अनदेखी सी है",
+          "पर कभी वो बुझने नहीं देते"
+        ],
+        "translated_lines": [
+          "Clay lamps, slowly,",
+          "Sometimes they fade, sometimes they burn.",
+          "Their path seems unnoticed,",
+          "But they never let their light die."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Enduring hope in darkness",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी के दिए, जलते हैं",
+          "सूरज की किरणों से, सजे रहते हैं",
+          "अंधेरे में, जलते हुए",
+          "उम्मीद की ज्वाला हर एक को देते हैं"
+        ],
+        "translated_lines": [
+          "Clay lamps, they burn,",
+          "Adorned with the rays of the sun.",
+          "In the darkness, burning bright,",
+          "They give the flame of hope to all."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "मिट्टी के दिए",
+            "abstract_meaning": "Humble human lives"
+          },
+          {
+            "source_term": "उम्मीद की ज्वाला",
+            "abstract_meaning": "Persistent optimism and resilience"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी के दिए, बिना कुछ कहे",
+          "सुनते हैं हर दर्द, हर आह",
+          "सभी के पास अपना एक राग है",
+          "जो रात भर जलता है और चलता है"
+        ],
+        "translated_lines": [
+          "Clay lamps, without uttering a word,",
+          "Listen to every pain, every sigh.",
+          "Each one has its own song,",
+          "Which burns and moves through the night."
+        ],
+        "emotion": "resilience",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "मिट्टी के दिए",
+            "abstract_meaning": "Fragile human lives"
+          },
+          {
+            "source_term": "सुनते हैं हर दर्द",
+            "abstract_meaning": "Silent witnesses to suffering"
+          },
+          {
+            "source_term": "अपना एक राग",
+            "abstract_meaning": "Unique individual life stories"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी के दिए, धीरे-धीरे",
+          "कभी बुझते हैं, कभी जलते हैं",
+          "उनकी राह भी अनदेखी सी है",
+          "पर कभी वो बुझने नहीं देते"
+        ],
+        "translated_lines": [
+          "Clay lamps, slowly,",
+          "Sometimes they fade, sometimes they burn.",
+          "Their path seems unnoticed,",
+          "But they never let their light die."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "मिट्टी के दिए",
+            "abstract_meaning": "Fragile human lives or hope"
+          },
+          {
+            "source_term": "कभी बुझते हैं, कभी जलते हैं",
+            "abstract_meaning": "Life's fluctuating struggles and successes"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "मिट्टी के दिए",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सूरज",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "उम्मीद की ज्वाला",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मिट्टी के दिए",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "राग",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मिट्टी के दिए",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8951,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 7,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

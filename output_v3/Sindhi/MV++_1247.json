@@ -1,0 +1,198 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1247",
+  "poem_title": "Moomal Rano",
+  "language": "Sindhi",
+  "original_poem": "محبوب آيو جيءَ ۾،  \nساهه گهڙي ٿر ٿرن،  \nپڻين پارين جي،  \nلائي راڻو ڪن،  \nآسا مور مٿي سندر،  \nسُپڻي موئن،  \nمومل مور ٿيا،  \nڏيئي ڳڻين ڏيئي ڳڻين.\n\nريءَ ريءَ جوڳين،  \nجوڳين جيءُ سڙي سڙي،  \nپتڻ راڻا کڻي ڳرين،  \nجوڳين سڄڻ سندر ٿيا،  \nآسڻ ڳڻين آسڻ ڳڻين.",
+  "translated_poem": "The beloved came into my soul,  \nBreath trembles in every moment,  \nI clutch the bangles on my wrists,  \nHolding Rano in my heart.  \nYearning above all, the mind in splendor,  \nIn dreams, I die for him,  \nMoomal waits, counting her sorrows,  \nCounting and counting her sorrows.\n\nFor the ascetics who tread this path,  \nTheir soul burns as they walk,  \nRano, take the ferry across,  \nThe ascetics have become one with their beloved,  \nCounting their hopes, counting their hopes.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned_low",
+    "alignment_confidence": 0.6881,
+    "alignment_note": "Alignment acceptable but not high (confidence=0.6881).",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 8,
+        "source_lines": [
+          "محبوب آيو جيءَ ۾،",
+          "ساهه گهڙي ٿر ٿرن،",
+          "پڻين پارين جي،",
+          "لائي راڻو ڪن،",
+          "آسا مور مٿي سندر،",
+          "سُپڻي موئن،",
+          "مومل مور ٿيا،",
+          "ڏيئي ڳڻين ڏيئي ڳڻين."
+        ],
+        "translated_lines": [
+          "The beloved came into my soul,",
+          "Breath trembles in every moment,",
+          "I clutch the bangles on my wrists,",
+          "Holding Rano in my heart.",
+          "Yearning above all, the mind in splendor,",
+          "In dreams, I die for him,",
+          "Moomal waits, counting her sorrows,",
+          "Counting and counting her sorrows."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "ريءَ ريءَ جوڳين،",
+          "جوڳين جيءُ سڙي سڙي،",
+          "پتڻ راڻا کڻي ڳرين،",
+          "جوڳين سڄڻ سندر ٿيا،",
+          "آسڻ ڳڻين آسڻ ڳڻين."
+        ],
+        "translated_lines": [
+          "For the ascetics who tread this path,",
+          "Their soul burns as they walk,",
+          "Rano, take the ferry across,",
+          "The ascetics have become one with their beloved,",
+          "Counting their hopes, counting their hopes."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "Pain of separation",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 8,
+        "source_lines": [
+          "محبوب آيو جيءَ ۾،",
+          "ساهه گهڙي ٿر ٿرن،",
+          "پڻين پارين جي،",
+          "لائي راڻو ڪن،",
+          "آسا مور مٿي سندر،",
+          "سُپڻي موئن،",
+          "مومل مور ٿيا،",
+          "ڏيئي ڳڻين ڏيئي ڳڻين."
+        ],
+        "translated_lines": [
+          "The beloved came into my soul,",
+          "Breath trembles in every moment,",
+          "I clutch the bangles on my wrists,",
+          "Holding Rano in my heart.",
+          "Yearning above all, the mind in splendor,",
+          "In dreams, I die for him,",
+          "Moomal waits, counting her sorrows,",
+          "Counting and counting her sorrows."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Literal imagery is adapted for poetic flow",
+        "metaphor_spans": [
+          {
+            "source_term": "محبوب آيو جيءَ ۾",
+            "abstract_meaning": "Divine presence within the soul"
+          },
+          {
+            "source_term": "مومل مور ٿيا",
+            "abstract_meaning": "Transformation through spiritual beauty"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "ريءَ ريءَ جوڳين،",
+          "جوڳين جيءُ سڙي سڙي،",
+          "پتڻ راڻا کڻي ڳرين،",
+          "جوڳين سڄڻ سندر ٿيا،",
+          "آسڻ ڳڻين آسڻ ڳڻين."
+        ],
+        "translated_lines": [
+          "For the ascetics who tread this path,",
+          "Their soul burns as they walk,",
+          "Rano, take the ferry across,",
+          "The ascetics have become one with their beloved,",
+          "Counting their hopes, counting their hopes."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Aasan refers to ascetic seats, not hopes",
+        "metaphor_spans": [
+          {
+            "source_term": "جيءُ سڙي سڙي",
+            "abstract_meaning": "Intense spiritual longing"
+          },
+          {
+            "source_term": "پتڻ راڻا کڻي ڳرين",
+            "abstract_meaning": "Crossing the threshold of existence"
+          },
+          {
+            "source_term": "آسڻ ڳڻين",
+            "abstract_meaning": "Dedication to spiritual discipline"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "جوڳين",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "راڻا",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سڄڻ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "آسڻ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned_low",
+      "alignment_confidence": 0.6881,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

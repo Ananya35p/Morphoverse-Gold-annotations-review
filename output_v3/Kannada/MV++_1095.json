@@ -1,0 +1,174 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1095",
+  "poem_title": "Prateeksha Mein Viraasat",
+  "language": "Kannada",
+  "original_poem": "विरासत में मिली मुझे प्रतीक्षा,  \nहर एक सुबह, एक नया सपना,  \nऔर शामें—कुछ भूले हुए गीत,  \nधुंधली यादों में गुमनाम।\n\nहर रात का एक लंबा सन्नाटा,  \nजिसमें सिमट जाता है सारा दिन,  \nकहीं दूर जलती एक लौ की उम्मीद,  \nविरासत में मिली मुझे प्रतीक्षा।",
+  "translated_poem": "Inherited, I received waiting,  \nEach morning, a new dream,  \nAnd evenings—some forgotten songs,  \nLost in the mist of fading memories.\n\nA long silence of each night,  \nWhere the whole day shrinks,  \nA distant flame of hope burning,  \nInherited, I received waiting.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9424,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "विरासत में मिली मुझे प्रतीक्षा,",
+          "हर एक सुबह, एक नया सपना,",
+          "और शामें—कुछ भूले हुए गीत,",
+          "धुंधली यादों में गुमनाम।"
+        ],
+        "translated_lines": [
+          "Inherited, I received waiting,",
+          "Each morning, a new dream,",
+          "And evenings—some forgotten songs,",
+          "Lost in the mist of fading memories."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "हर रात का एक लंबा सन्नाटा,",
+          "जिसमें सिमट जाता है सारा दिन,",
+          "कहीं दूर जलती एक लौ की उम्मीद,",
+          "विरासत में मिली मुझे प्रतीक्षा।"
+        ],
+        "translated_lines": [
+          "A long silence of each night,",
+          "Where the whole day shrinks,",
+          "A distant flame of hope burning,",
+          "Inherited, I received waiting."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "endless melancholic waiting",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "विरासत में मिली मुझे प्रतीक्षा,",
+          "हर एक सुबह, एक नया सपना,",
+          "और शामें—कुछ भूले हुए गीत,",
+          "धुंधली यादों में गुमनाम।"
+        ],
+        "translated_lines": [
+          "Inherited, I received waiting,",
+          "Each morning, a new dream,",
+          "And evenings—some forgotten songs,",
+          "Lost in the mist of fading memories."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "विरासत में मिली मुझे प्रतीक्षा",
+            "abstract_meaning": "Waiting passed down through generations"
+          },
+          {
+            "source_term": "शामें—कुछ भूले हुए गीत",
+            "abstract_meaning": "Evenings representing fading memories"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "हर रात का एक लंबा सन्नाटा,",
+          "जिसमें सिमट जाता है सारा दिन,",
+          "कहीं दूर जलती एक लौ की उम्मीद,",
+          "विरासत में मिली मुझे प्रतीक्षा।"
+        ],
+        "translated_lines": [
+          "A long silence of each night,",
+          "Where the whole day shrinks,",
+          "A distant flame of hope burning,",
+          "Inherited, I received waiting."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "जलती एक लौ की उम्मीद",
+            "abstract_meaning": "Persistent hope amidst darkness"
+          },
+          {
+            "source_term": "विरासत में मिली मुझे प्रतीक्षा",
+            "abstract_meaning": "Inescapable or generational longing"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "विरासत",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "गीत",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "प्रतीक्षा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "विरासत",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9424,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

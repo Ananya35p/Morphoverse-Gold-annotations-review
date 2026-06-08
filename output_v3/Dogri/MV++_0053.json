@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0053",
+  "poem_title": "Jeevan",
+  "language": "Dogri",
+  "original_poem": "जीवन\nजीवन दी राह,\nसपने बुनदी हौंसले नाल,\nहर मोड़ ते इक नवा जोश,\nरुकना तां है नहीं।",
+  "translated_poem": "Life\nThe path of life,\nWeaving dreams with courage,\nAt every turn, a new zeal,\nStopping is not an option.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8634,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "जीवन",
+          "जीवन दी राह,",
+          "सपने बुनदी हौंसले नाल,",
+          "हर मोड़ ते इक नवा जोश,",
+          "रुकना तां है नहीं।"
+        ],
+        "translated_lines": [
+          "Life",
+          "The path of life,",
+          "Weaving dreams with courage,",
+          "At every turn, a new zeal,",
+          "Stopping is not an option."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "Unstoppable journey of life",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "जीवन",
+          "जीवन दी राह,",
+          "सपने बुनदी हौंसले नाल,",
+          "हर मोड़ ते इक नवा जोश,",
+          "रुकना तां है नहीं।"
+        ],
+        "translated_lines": [
+          "Life",
+          "The path of life,",
+          "Weaving dreams with courage,",
+          "At every turn, a new zeal,",
+          "Stopping is not an option."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "जीवन दी राह",
+            "abstract_meaning": "life as a journey"
+          },
+          {
+            "source_term": "सपने बुनदी",
+            "abstract_meaning": "creating aspirations through effort"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "जीवन",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "जीवन दी राह",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8634,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

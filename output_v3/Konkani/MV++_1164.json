@@ -1,0 +1,112 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1164",
+  "poem_title": "Aamche Sukh Dilem",
+  "language": "Konkani",
+  "original_poem": "आमच्या सुख दिलं  \nतुला,  \nआमच्या प्रेमाचा  \nसंपूर्ण भरत  \nखूप सुख देऊन गेला.",
+  "translated_poem": "I gave you happiness,  \nWith all my love,  \nEnveloping you in  \nThe essence of my heart,  \nBringing you joy anew.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7802,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "आमच्या सुख दिलं",
+          "तुला,",
+          "आमच्या प्रेमाचा",
+          "संपूर्ण भरत",
+          "खूप सुख देऊन गेला."
+        ],
+        "translated_lines": [
+          "I gave you happiness,",
+          "With all my love,",
+          "Enveloping you in",
+          "The essence of my heart,",
+          "Bringing you joy anew."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Remembering shared happiness",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "आमच्या सुख दिलं",
+          "तुला,",
+          "आमच्या प्रेमाचा",
+          "संपूर्ण भरत",
+          "खूप सुख देऊन गेला."
+        ],
+        "translated_lines": [
+          "I gave you happiness,",
+          "With all my love,",
+          "Enveloping you in",
+          "The essence of my heart,",
+          "Bringing you joy anew."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Alters literal phrasing for poetic effect",
+        "metaphor_spans": [
+          {
+            "source_term": "आमच्या प्रेमाचा संपूर्ण भरत",
+            "abstract_meaning": "Abundance of love like high tide"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "सुख",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "प्रेम",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7802,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 1,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

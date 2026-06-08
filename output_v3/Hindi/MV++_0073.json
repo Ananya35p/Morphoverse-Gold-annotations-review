@@ -1,0 +1,364 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0073",
+  "poem_title": "Ek Chadar Maili Si",
+  "language": "Hindi",
+  "original_poem": "एक चादर मैली सी\nकोई खड़ी है बगिया में\nबगिया में फूलों से भरी\nबगिया में खुशबू है\nपर चादर की धारियां\nकुचली कुचली सी हैं।\n\nचादर में है धूल\nबगिया की हसीन सुबह में\nसूरज की किरणों में\nचादर की सिलाई को\nवो सब देख रही है।\n\nउसके हाथ में छड़ी\nआँखों में आंसू\nदिमाग में ख्याल\nफूलों की पंखुड़ियों पर\nचादर का साम्राज्य है।\n\nएक चादर मैली सी\nधुंधला सा चेहरा लिए\nहाथ में खुशबू की साड़ी लिए\nहंसने की ख्वाहिश लिए\nसोने की ख्वाहिश लिए।\n\nबगिया की खुशबू में\nधुंधला सा चेहरा है\nचादर की पहचान है\nवो तो एक कहानी है।",
+  "translated_poem": "A dirty blanket\nstands in the garden,\nthe garden filled with flowers,\nthe garden full of fragrance,\nbut the stripes of the blanket\nare crumpled and crushed.\n\nThe blanket is dusty\nin the beautiful morning of the garden,\nin the rays of the sun,\nthe seams of the blanket\nare being watched by all.\n\nIn her hand is a stick,\ntears in her eyes,\nthoughts in her mind,\non the petals of the flowers,\nlies the empire of the blanket.\n\nA dirty blanket\nwith a blurred face,\nholding a fragrant sari\nwith a wish to laugh,\nwith a desire to shine.\n\nIn the fragrance of the garden,\nthere is a blurred face,\nthe blanket has an identity,\nit tells a story.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8596,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "एक चादर मैली सी",
+          "कोई खड़ी है बगिया में",
+          "बगिया में फूलों से भरी",
+          "बगिया में खुशबू है",
+          "पर चादर की धारियां",
+          "कुचली कुचली सी हैं।"
+        ],
+        "translated_lines": [
+          "A dirty blanket",
+          "stands in the garden,",
+          "the garden filled with flowers,",
+          "the garden full of fragrance,",
+          "but the stripes of the blanket",
+          "are crumpled and crushed."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "चादर में है धूल",
+          "बगिया की हसीन सुबह में",
+          "सूरज की किरणों में",
+          "चादर की सिलाई को",
+          "वो सब देख रही है।"
+        ],
+        "translated_lines": [
+          "The blanket is dusty",
+          "in the beautiful morning of the garden,",
+          "in the rays of the sun,",
+          "the seams of the blanket",
+          "are being watched by all."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 5,
+        "source_lines": [
+          "उसके हाथ में छड़ी",
+          "आँखों में आंसू",
+          "दिमाग में ख्याल",
+          "फूलों की पंखुड़ियों पर",
+          "चादर का साम्राज्य है।"
+        ],
+        "translated_lines": [
+          "In her hand is a stick,",
+          "tears in her eyes,",
+          "thoughts in her mind,",
+          "on the petals of the flowers,",
+          "lies the empire of the blanket."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 5,
+        "source_lines": [
+          "एक चादर मैली सी",
+          "धुंधला सा चेहरा लिए",
+          "हाथ में खुशबू की साड़ी लिए",
+          "हंसने की ख्वाहिश लिए",
+          "सोने की ख्वाहिश लिए।"
+        ],
+        "translated_lines": [
+          "A dirty blanket",
+          "with a blurred face,",
+          "holding a fragrant sari",
+          "with a wish to laugh,",
+          "with a desire to shine."
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "बगिया की खुशबू में",
+          "धुंधला सा चेहरा है",
+          "चादर की पहचान है",
+          "वो तो एक कहानी है।"
+        ],
+        "translated_lines": [
+          "In the fragrance of the garden,",
+          "there is a blurred face,",
+          "the blanket has an identity,",
+          "it tells a story."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "Sorrow amidst beauty",
+    "translation_fidelity_score": 0.6,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "एक चादर मैली सी",
+          "कोई खड़ी है बगिया में",
+          "बगिया में फूलों से भरी",
+          "बगिया में खुशबू है",
+          "पर चादर की धारियां",
+          "कुचली कुचली सी हैं।"
+        ],
+        "translated_lines": [
+          "A dirty blanket",
+          "stands in the garden,",
+          "the garden filled with flowers,",
+          "the garden full of fragrance,",
+          "but the stripes of the blanket",
+          "are crumpled and crushed."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Misses 'koi', making the blanket stand",
+        "metaphor_spans": [
+          {
+            "source_term": "एक चादर मैली सी",
+            "abstract_meaning": "A tarnished life or reputation"
+          },
+          {
+            "source_term": "बगिया",
+            "abstract_meaning": "The world or social environment"
+          },
+          {
+            "source_term": "कुचली कुचली सी",
+            "abstract_meaning": "Signs of past trauma"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "चादर में है धूल",
+          "बगिया की हसीन सुबह में",
+          "सूरज की किरणों में",
+          "चादर की सिलाई को",
+          "वो सब देख रही है।"
+        ],
+        "translated_lines": [
+          "The blanket is dusty",
+          "in the beautiful morning of the garden,",
+          "in the rays of the sun,",
+          "the seams of the blanket",
+          "are being watched by all."
+        ],
+        "emotion": "peace",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "Female subject 'she' mistranslated as 'by all'",
+        "metaphor_spans": [
+          {
+            "source_term": "चादर में है धूल",
+            "abstract_meaning": "Flaws or impurities in life"
+          },
+          {
+            "source_term": "चादर की सिलाई",
+            "abstract_meaning": "The intricate structure of life"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 5,
+        "source_lines": [
+          "उसके हाथ में छड़ी",
+          "आँखों में आंसू",
+          "दिमाग में ख्याल",
+          "फूलों की पंखुड़ियों पर",
+          "चादर का साम्राज्य है।"
+        ],
+        "translated_lines": [
+          "In her hand is a stick,",
+          "tears in her eyes,",
+          "thoughts in her mind,",
+          "on the petals of the flowers,",
+          "lies the empire of the blanket."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "चादर का साम्राज्य",
+            "abstract_meaning": "Widespread layer covering something"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 5,
+        "source_lines": [
+          "एक चादर मैली सी",
+          "धुंधला सा चेहरा लिए",
+          "हाथ में खुशबू की साड़ी लिए",
+          "हंसने की ख्वाहिश लिए",
+          "सोने की ख्वाहिश लिए।"
+        ],
+        "translated_lines": [
+          "A dirty blanket",
+          "with a blurred face,",
+          "holding a fragrant sari",
+          "with a wish to laugh,",
+          "with a desire to shine."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Mistranslates 'sone' as shine instead of sleep",
+        "metaphor_spans": [
+          {
+            "source_term": "एक चादर मैली सी",
+            "abstract_meaning": "Tainted life or burdened existence"
+          },
+          {
+            "source_term": "धुंधला सा चेहरा",
+            "abstract_meaning": "Fading identity or unclear self"
+          },
+          {
+            "source_term": "खुशबू की साड़ी",
+            "abstract_meaning": "Fragile memories of better times"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "बगिया की खुशबू में",
+          "धुंधला सा चेहरा है",
+          "चादर की पहचान है",
+          "वो तो एक कहानी है।"
+        ],
+        "translated_lines": [
+          "In the fragrance of the garden,",
+          "there is a blurred face,",
+          "the blanket has an identity,",
+          "it tells a story."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "lost direct metaphor 'is a story'",
+        "metaphor_spans": [
+          {
+            "source_term": "धुंधला सा चेहरा",
+            "abstract_meaning": "Fading memory of a person"
+          },
+          {
+            "source_term": "चादर की पहचान",
+            "abstract_meaning": "Familiarity of domestic legacy"
+          },
+          {
+            "source_term": "वो तो एक कहानी है",
+            "abstract_meaning": "Life reduced to a narrative"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "चादर",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "चादर",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ख्याल",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "चादर",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "चादर",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "साड़ी",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "चादर",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 5,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8596,
+      "source_term_checks": {
+        "entities_total": 7,
+        "entities_dropped": 0,
+        "metaphors_total": 12,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

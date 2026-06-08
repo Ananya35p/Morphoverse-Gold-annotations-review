@@ -1,0 +1,259 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1215",
+  "poem_title": "Loona",
+  "language": "Punjabi",
+  "original_poem": "ਲੂਣਾ\n\nਜਿਸ ਦਿਨ ਸੂਰਜ ਨਵਾਂ ਚੜ੍ਹਿਆ,\nਅਸੀਂ ਬਾਬੇ ਨਾਲੋਂ ਸੁਣਿਆ ਸੀ,\nਇਹ ਧਰਤੀ ਕੁੜੀ ਜੰਮੀ ਹੈ,\nਪੈਰੀਆਂ ਨੀਂਹਾਂ ਰੱਖਦੀ ਹੈ।\n\nਜਦੋਂ ਵੇਲੇ ਦਿਨ ਢਲਿਆ ਸੀ,\nਤੇ ਬਾਬਾ ਪਿੰਡੋਂ ਲੈਂਦਾ ਸੀ,\nਆਪਣੀ ਕੁੜੀ ਦੇ ਜਨਮ ਦਾ ਸੋਗ,\nਮਾਂ ਵਾਂਗ ਬੜਾ ਕੁਝ ਦਿੰਦਾ ਸੀ,\nਲੂਣਾ ਸੀ ਧਰਤੀ ਦਾ ਨਾਮ,\nਤੇ ਸਾਡੇ ਪਿੰਡ ਦੀ ਢੱਲ ਹੀ ਸੀ।",
+  "translated_poem": "The day the new sun arose,\nWe heard from the village elder,\nThis earth has given birth to a daughter,\nWho walks the path with humble steps.\n\nWhen the day waned,\nAnd the elder took his leave from the village,\nHe grieved the birth of his daughter,\nAs a mother would give so much,\nLoona was the name of the earth,\nAnd she was the slope of our village.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 2,
+    "alignment_status": "alignment_risk",
+    "alignment_confidence": 0.4151,
+    "alignment_note": "Low alignment confidence (0.4151); source=3 translated=2; min_pair_cosine=1.0. Stanza-level labels not trusted.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "ਲੂਣਾ"
+        ],
+        "translated_lines": [
+          "The day the new sun arose,",
+          "We heard from the village elder,",
+          "This earth has given birth to a daughter,",
+          "Who walks the path with humble steps."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ਜਿਸ ਦਿਨ ਸੂਰਜ ਨਵਾਂ ਚੜ੍ਹਿਆ,",
+          "ਅਸੀਂ ਬਾਬੇ ਨਾਲੋਂ ਸੁਣਿਆ ਸੀ,",
+          "ਇਹ ਧਰਤੀ ਕੁੜੀ ਜੰਮੀ ਹੈ,",
+          "ਪੈਰੀਆਂ ਨੀਂਹਾਂ ਰੱਖਦੀ ਹੈ।"
+        ],
+        "translated_lines": [
+          "When the day waned,",
+          "And the elder took his leave from the village,",
+          "He grieved the birth of his daughter,",
+          "As a mother would give so much,",
+          "Loona was the name of the earth,",
+          "And she was the slope of our village."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 6,
+        "source_lines": [
+          "ਜਦੋਂ ਵੇਲੇ ਦਿਨ ਢਲਿਆ ਸੀ,",
+          "ਤੇ ਬਾਬਾ ਪਿੰਡੋਂ ਲੈਂਦਾ ਸੀ,",
+          "ਆਪਣੀ ਕੁੜੀ ਦੇ ਜਨਮ ਦਾ ਸੋਗ,",
+          "ਮਾਂ ਵਾਂਗ ਬੜਾ ਕੁਝ ਦਿੰਦਾ ਸੀ,",
+          "ਲੂਣਾ ਸੀ ਧਰਤੀ ਦਾ ਨਾਮ,",
+          "ਤੇ ਸਾਡੇ ਪਿੰਡ ਦੀ ਢੱਲ ਹੀ ਸੀ।"
+        ],
+        "translated_lines": []
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "Grief of female birth",
+    "translation_fidelity_score": 0.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "ਲੂਣਾ"
+        ],
+        "translated_lines": [
+          "The day the new sun arose,",
+          "We heard from the village elder,",
+          "This earth has given birth to a daughter,",
+          "Who walks the path with humble steps."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "lost",
+        "loss_note": "Source text is missing the actual stanza",
+        "metaphor_spans": []
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ਜਿਸ ਦਿਨ ਸੂਰਜ ਨਵਾਂ ਚੜ੍ਹਿਆ,",
+          "ਅਸੀਂ ਬਾਬੇ ਨਾਲੋਂ ਸੁਣਿਆ ਸੀ,",
+          "ਇਹ ਧਰਤੀ ਕੁੜੀ ਜੰਮੀ ਹੈ,",
+          "ਪੈਰੀਆਂ ਨੀਂਹਾਂ ਰੱਖਦੀ ਹੈ।"
+        ],
+        "translated_lines": [
+          "When the day waned,",
+          "And the elder took his leave from the village,",
+          "He grieved the birth of his daughter,",
+          "As a mother would give so much,",
+          "Loona was the name of the earth,",
+          "And she was the slope of our village."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "lost",
+        "loss_note": "Completely mistranslated, added unrelated lines and imagery",
+        "metaphor_spans": [
+          {
+            "source_term": "ਸੂਰਜ ਨਵਾਂ ਚੜ੍ਹਿਆ",
+            "abstract_meaning": "Dawn of a new era"
+          },
+          {
+            "source_term": "ਧਰਤੀ ਕੁੜੀ ਜੰਮੀ ਹੈ",
+            "abstract_meaning": "Earth as a nurturing life-form"
+          },
+          {
+            "source_term": "ਪੈਰੀਆਂ ਨੀਂਹਾਂ ਰੱਖਦੀ ਹੈ",
+            "abstract_meaning": "Establishing deep ancestral roots"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 6,
+        "source_lines": [
+          "ਜਦੋਂ ਵੇਲੇ ਦਿਨ ਢਲਿਆ ਸੀ,",
+          "ਤੇ ਬਾਬਾ ਪਿੰਡੋਂ ਲੈਂਦਾ ਸੀ,",
+          "ਆਪਣੀ ਕੁੜੀ ਦੇ ਜਨਮ ਦਾ ਸੋਗ,",
+          "ਮਾਂ ਵਾਂਗ ਬੜਾ ਕੁਝ ਦਿੰਦਾ ਸੀ,",
+          "ਲੂਣਾ ਸੀ ਧਰਤੀ ਦਾ ਨਾਮ,",
+          "ਤੇ ਸਾਡੇ ਪਿੰਡ ਦੀ ਢੱਲ ਹੀ ਸੀ।"
+        ],
+        "translated_lines": [],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "lost",
+        "loss_note": "No translation provided",
+        "metaphor_spans": [
+          {
+            "source_term": "ਲੂਣਾ ਸੀ ਧਰਤੀ ਦਾ ਨਾਮ",
+            "abstract_meaning": "Luna represents the fertile land"
+          },
+          {
+            "source_term": "ਸਾਡੇ ਪਿੰਡ ਦੀ ਢੱਲ ਹੀ ਸੀ",
+            "abstract_meaning": "Symbolizes the village's decline"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ਲੂਣਾ",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਸੂਰਜ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਬਾਬੇ",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਧਰਤੀ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਲੂਣਾ",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਕੁੜੀ ਦੇ ਜਨਮ ਦਾ ਸੋਗ",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "alignment_risk",
+      "alignment_confidence": 0.4151,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 7,
+        "metaphors_dropped": 2
+      },
+      "low_confidence_stanza_count": 3,
+      "review_item_count": 5,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "ਅੱਗ ਦਾ ਦਰਿਆ",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "ਚੰਦਨ ਦੀ ਦੇਹੀ",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.stanzas[1]",
+      "severity": "medium",
+      "resolved_value": "lost",
+      "model_value": "lost",
+      "note": "stanza_in_alignment_risk_poem"
+    },
+    {
+      "field_path": "annotation.stanzas[2]",
+      "severity": "medium",
+      "resolved_value": "lost",
+      "model_value": "lost",
+      "note": "stanza_in_alignment_risk_poem"
+    },
+    {
+      "field_path": "annotation.stanzas[3]",
+      "severity": "medium",
+      "resolved_value": "lost",
+      "model_value": "lost",
+      "note": "stanza_in_alignment_risk_poem"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

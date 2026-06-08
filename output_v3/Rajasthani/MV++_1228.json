@@ -1,0 +1,104 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1228",
+  "poem_title": "Mhari Ghoomar",
+  "language": "Rajasthani",
+  "original_poem": "म्हारी घूमर, धरती रे रंग री छांव।\nपगला रास रौ झूमत, हिवड़े रो गीत गाव।",
+  "translated_poem": "My Ghoomar, the shade of the earth's colors,  \nDancing in a swirling rhythm, singing a song of the heart.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8059,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "म्हारी घूमर, धरती रे रंग री छांव।",
+          "पगला रास रौ झूमत, हिवड़े रो गीत गाव।"
+        ],
+        "translated_lines": [
+          "My Ghoomar, the shade of the earth's colors,",
+          "Dancing in a swirling rhythm, singing a song of the heart."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Joyful traditional dance",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "म्हारी घूमर, धरती रे रंग री छांव।",
+          "पगला रास रौ झूमत, हिवड़े रो गीत गाव।"
+        ],
+        "translated_lines": [
+          "My Ghoomar, the shade of the earth's colors,",
+          "Dancing in a swirling rhythm, singing a song of the heart."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "omits literal reference to dancing feet",
+        "metaphor_spans": [
+          {
+            "source_term": "धरती रे रंग री छांव",
+            "abstract_meaning": "Reflection of cultural heritage"
+          },
+          {
+            "source_term": "हिवड़े रो गीत",
+            "abstract_meaning": "Expression of deep inner joy"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "घूमर",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "रास",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8059,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

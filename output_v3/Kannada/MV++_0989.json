@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0989",
+  "poem_title": "Aakasha Deepa",
+  "language": "Kannada",
+  "original_poem": "ಆಕಾಶದ ದೀಪವು ಹೊತ್ತಿಹುದು,  \nಬೀಳದಿರಲಿ ತಂಗಾಳಿ,  \nಅದ್ವಿತೀಯವು ಬೆಳಗಲಿ,  \nಅದಕೆ ನೆರಳಿಲ್ಲದಿರಲಿ.",
+  "translated_poem": "The lamp in the sky is lit,  \nLet the breeze not extinguish it,  \nMay it shine unmatched,  \nMay it have no shadow.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8343,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಆಕಾಶದ ದೀಪವು ಹೊತ್ತಿಹುದು,",
+          "ಬೀಳದಿರಲಿ ತಂಗಾಳಿ,",
+          "ಅದ್ವಿತೀಯವು ಬೆಳಗಲಿ,",
+          "ಅದಕೆ ನೆರಳಿಲ್ಲದಿರಲಿ."
+        ],
+        "translated_lines": [
+          "The lamp in the sky is lit,",
+          "Let the breeze not extinguish it,",
+          "May it shine unmatched,",
+          "May it have no shadow."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Lamp of the sky",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಆಕಾಶದ ದೀಪವು ಹೊತ್ತಿಹುದು,",
+          "ಬೀಳದಿರಲಿ ತಂಗಾಳಿ,",
+          "ಅದ್ವಿತೀಯವು ಬೆಳಗಲಿ,",
+          "ಅದಕೆ ನೆರಳಿಲ್ಲದಿರಲಿ."
+        ],
+        "translated_lines": [
+          "The lamp in the sky is lit,",
+          "Let the breeze not extinguish it,",
+          "May it shine unmatched,",
+          "May it have no shadow."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಆಕಾಶದ ದೀಪವು",
+            "abstract_meaning": "Divine light or the sun"
+          },
+          {
+            "source_term": "ತಂಗಾಳಿ",
+            "abstract_meaning": "Disturbing worldly influences"
+          },
+          {
+            "source_term": "ನೆರಳಿಲ್ಲದಿರಲಿ",
+            "abstract_meaning": "State of pure enlightenment"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಆಕಾಶದ ದೀಪ",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಅದ್ವಿತೀಯ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8343,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

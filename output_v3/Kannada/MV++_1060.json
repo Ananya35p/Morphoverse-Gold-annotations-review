@@ -1,0 +1,220 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1060",
+  "poem_title": "Aag Ka Dariya",
+  "language": "Kannada",
+  "original_poem": "आग का दरिया है, जिसमें\nनदियाँ डूब जाती हैं,\nजिसकी लहरों में गूंजती हैं\nआत्माएँ, जो बुझ जाती हैं।\n\nआग का दरिया है, जिसमें\nहर सपना जलकर खाक हो जाता है,\nहर विश्वास, हर ताम-झाम\nएक पल में राख हो जाता है।\n\nआग का दरिया है, जिसमें\nतूफान का जो भी संगठित हुआ,\nस्मृति की लपटों में वह\nयादों की तरह उड़ जाता है।",
+  "translated_poem": "It is a river of fire, where\nRivers drown,\nIn whose waves echo\nSouls that fade away.\n\nIt is a river of fire, where\nEvery dream turns to ashes,\nEvery belief, every adornment,\nIn an instant, turns to dust.\n\nIt is a river of fire, where\nWhatever storm was once united,\nIn the flames of memory,\nIt flies away like a thought.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.914,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "आग का दरिया है, जिसमें",
+          "नदियाँ डूब जाती हैं,",
+          "जिसकी लहरों में गूंजती हैं",
+          "आत्माएँ, जो बुझ जाती हैं।"
+        ],
+        "translated_lines": [
+          "It is a river of fire, where",
+          "Rivers drown,",
+          "In whose waves echo",
+          "Souls that fade away."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "आग का दरिया है, जिसमें",
+          "हर सपना जलकर खाक हो जाता है,",
+          "हर विश्वास, हर ताम-झाम",
+          "एक पल में राख हो जाता है।"
+        ],
+        "translated_lines": [
+          "It is a river of fire, where",
+          "Every dream turns to ashes,",
+          "Every belief, every adornment,",
+          "In an instant, turns to dust."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "आग का दरिया है, जिसमें",
+          "तूफान का जो भी संगठित हुआ,",
+          "स्मृति की लपटों में वह",
+          "यादों की तरह उड़ जाता है।"
+        ],
+        "translated_lines": [
+          "It is a river of fire, where",
+          "Whatever storm was once united,",
+          "In the flames of memory,",
+          "It flies away like a thought."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "ashes of lost dreams",
+    "translation_fidelity_score": 0.833333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "आग का दरिया है, जिसमें",
+          "नदियाँ डूब जाती हैं,",
+          "जिसकी लहरों में गूंजती हैं",
+          "आत्माएँ, जो बुझ जाती हैं।"
+        ],
+        "translated_lines": [
+          "It is a river of fire, where",
+          "Rivers drown,",
+          "In whose waves echo",
+          "Souls that fade away."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "आग का दरिया",
+            "abstract_meaning": "Intense passion or destructive suffering"
+          },
+          {
+            "source_term": "नदियाँ डूब जाती हैं",
+            "abstract_meaning": "Individual identities lost in passion"
+          },
+          {
+            "source_term": "आत्माएँ, जो बुझ जाती हैं",
+            "abstract_meaning": "Loss of life or spirit"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "आग का दरिया है, जिसमें",
+          "हर सपना जलकर खाक हो जाता है,",
+          "हर विश्वास, हर ताम-झाम",
+          "एक पल में राख हो जाता है।"
+        ],
+        "translated_lines": [
+          "It is a river of fire, where",
+          "Every dream turns to ashes,",
+          "Every belief, every adornment,",
+          "In an instant, turns to dust."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "आग का दरिया",
+            "abstract_meaning": "Life's intense hardships and suffering"
+          },
+          {
+            "source_term": "सपना जलकर खाक",
+            "abstract_meaning": "Complete destruction of one's hopes"
+          },
+          {
+            "source_term": "ताम-झाम",
+            "abstract_meaning": "Superficial worldly vanity and display"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "आग का दरिया है, जिसमें",
+          "तूफान का जो भी संगठित हुआ,",
+          "स्मृति की लपटों में वह",
+          "यादों की तरह उड़ जाता है।"
+        ],
+        "translated_lines": [
+          "It is a river of fire, where",
+          "Whatever storm was once united,",
+          "In the flames of memory,",
+          "It flies away like a thought."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "translated memories as thought",
+        "metaphor_spans": [
+          {
+            "source_term": "आग का दरिया",
+            "abstract_meaning": "Life's intense trials or passion"
+          },
+          {
+            "source_term": "स्मृति की लपटों",
+            "abstract_meaning": "Consuming nature of memories"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "आत्माएँ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "विश्वास",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "स्मृति",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.914,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 8,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

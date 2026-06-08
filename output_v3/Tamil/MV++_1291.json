@@ -1,0 +1,120 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1291",
+  "poem_title": "Aayiram Thamarai",
+  "language": "Tamil",
+  "original_poem": "ஆயிரம் தாமரை,  \nதாங்கி வரும் ஆனந்தம்,  \nஎன் கண்களில் விளக்கும்  \nஅந்த உன்னதம்!",
+  "translated_poem": "A thousand lotuses,  \nBearing the joy that comes,  \nShining in my eyes  \nThat supreme beauty!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8929,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆயிரம் தாமரை,",
+          "தாங்கி வரும் ஆனந்தம்,",
+          "என் கண்களில் விளக்கும்",
+          "அந்த உன்னதம்!"
+        ],
+        "translated_lines": [
+          "A thousand lotuses,",
+          "Bearing the joy that comes,",
+          "Shining in my eyes",
+          "That supreme beauty!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Pure joyful exaltation",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆயிரம் தாமரை,",
+          "தாங்கி வரும் ஆனந்தம்,",
+          "என் கண்களில் விளக்கும்",
+          "அந்த உன்னதம்!"
+        ],
+        "translated_lines": [
+          "A thousand lotuses,",
+          "Bearing the joy that comes,",
+          "Shining in my eyes",
+          "That supreme beauty!"
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ஆயிரம் தாமரை",
+            "abstract_meaning": "Abundant beauty or spiritual awakening"
+          },
+          {
+            "source_term": "தாங்கி வரும் ஆனந்தம்",
+            "abstract_meaning": "Joy as a tangible presence"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ஆயிரம் தாமரை",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ஆனந்தம்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "உன்னதம்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8929,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

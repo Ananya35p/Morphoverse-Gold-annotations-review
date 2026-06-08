@@ -1,0 +1,120 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1272",
+  "poem_title": "Vazhga Valamudan",
+  "language": "Tamil",
+  "original_poem": "வாழ்க வளமுடன்  \nவாழ்க வளமுடன்  \nமாசிலா வீணையும் மண்ணினில் ஆடுக  \nதேசியக்கொடி உயரப் பறக்குக",
+  "translated_poem": "Live with prosperity,  \nLive with abundance.  \nLet the pure veena resonate across the land,  \nLet the national flag fly high and proud.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7857,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "வாழ்க வளமுடன்",
+          "வாழ்க வளமுடன்",
+          "மாசிலா வீணையும் மண்ணினில் ஆடுக",
+          "தேசியக்கொடி உயரப் பறக்குக"
+        ],
+        "translated_lines": [
+          "Live with prosperity,",
+          "Live with abundance.",
+          "Let the pure veena resonate across the land,",
+          "Let the national flag fly high and proud."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "celebrating national pride",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "வாழ்க வளமுடன்",
+          "வாழ்க வளமுடன்",
+          "மாசிலா வீணையும் மண்ணினில் ஆடுக",
+          "தேசியக்கொடி உயரப் பறக்குக"
+        ],
+        "translated_lines": [
+          "Live with prosperity,",
+          "Live with abundance.",
+          "Let the pure veena resonate across the land,",
+          "Let the national flag fly high and proud."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "மாசிலா வீணையும்",
+            "abstract_meaning": "Purity of culture and arts"
+          },
+          {
+            "source_term": "தேசியக்கொடி உயரப் பறக்குக",
+            "abstract_meaning": "National pride and sovereignty"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "வாழ்க வளமுடன்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "வீணை",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "தேசியக்கொடி",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7857,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

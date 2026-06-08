@@ -1,0 +1,95 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1153",
+  "poem_title": "Ghazal",
+  "language": "Kashmiri",
+  "original_poem": "تٕو آدرِس پٲٹھ چھٕ کتھ پٲنچھ کھسےٚ وْٹھی؟  \nخانہ خرَبات سنی سیٚتھ چھیُ وچھیُ؟  \nزوٚنِم بَرٔ تہِ یوٚدُر بٲپتھ پٲٹھ وچھ وٚوٚدم  \nکٹھیُم غِبار سڑُ، پٲٹھ خرےٚ دریشہٚس کۄچھٲی؟",
+  "translated_poem": "I went looking for you—where did you vanish?  \nThe tavern was deserted—have you left it too?  \nI went from street to street in search of you,  \nAll I found was dust—where is the door to your house?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9138,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "تٕو آدرِس پٲٹھ چھٕ کتھ پٲنچھ کھسےٚ وْٹھی؟",
+          "خانہ خرَبات سنی سیٚتھ چھیُ وچھیُ؟",
+          "زوٚنِم بَرٔ تہِ یوٚدُر بٲپتھ پٲٹھ وچھ وٚوٚدم",
+          "کٹھیُم غِبار سڑُ، پٲٹھ خرےٚ دریشہٚس کۄچھٲی؟"
+        ],
+        "translated_lines": [
+          "I went looking for you—where did you vanish?",
+          "The tavern was deserted—have you left it too?",
+          "I went from street to street in search of you,",
+          "All I found was dust—where is the door to your house?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "expressing deep sorrow",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "تٕو آدرِس پٲٹھ چھٕ کتھ پٲنچھ کھسےٚ وْٹھی؟",
+          "خانہ خرَبات سنی سیٚتھ چھیُ وچھیُ؟",
+          "زوٚنِم بَرٔ تہِ یوٚدُر بٲپتھ پٲٹھ وچھ وٚوٚدم",
+          "کٹھیُم غِبار سڑُ، پٲٹھ خرےٚ دریشہٚس کۄچھٲی؟"
+        ],
+        "translated_lines": [
+          "I went looking for you—where did you vanish?",
+          "The tavern was deserted—have you left it too?",
+          "I went from street to street in search of you,",
+          "All I found was dust—where is the door to your house?"
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "خانہ خرَبات",
+            "abstract_meaning": "State of spiritual desolation"
+          },
+          {
+            "source_term": "غِبار",
+            "abstract_meaning": "Lingering grief or worldly burden"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9138,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

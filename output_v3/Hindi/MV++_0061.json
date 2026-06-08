@@ -1,0 +1,186 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0061",
+  "poem_title": "Agnibeena",
+  "language": "Hindi",
+  "original_poem": "वीणा वादिनी, वर दे!  \nप्रिय स्वतंत्र-रवी, वर दे!\nउज्ज्वल गगन का छोर, चीर  \nअग्नि-बाण सा सब ओर वीर  \nविकट प्रलय का कर नाद,  \nखोल दे अब मृतिका के जाल।\n\nधधकता रहे, यह ह्रदय  \nप्रज्वलित प्राणों में, फिर से  \nगाए यह जीवन वीणा,  \nप्रलय में भी अमर हो जाना।",
+  "translated_poem": "O Lute of Fire, grant us your boon!  \nBless us, dear light of freedom's noon!  \nPierce the radiant sky, like flame,  \nA hero’s call, fearless in name,  \nRoar with a fury, with thunder’s might,  \nBreak the chains of death’s endless night.\n\nLet this heart burn, with passion aglow,  \nAnd through all lives, let courage grow,  \nLet the lute of life sing on,  \nEven through the storm, let it live on.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7649,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "वीणा वादिनी, वर दे!",
+          "प्रिय स्वतंत्र-रवी, वर दे!",
+          "उज्ज्वल गगन का छोर, चीर",
+          "अग्नि-बाण सा सब ओर वीर",
+          "विकट प्रलय का कर नाद,",
+          "खोल दे अब मृतिका के जाल।"
+        ],
+        "translated_lines": [
+          "O Lute of Fire, grant us your boon!",
+          "Bless us, dear light of freedom's noon!",
+          "Pierce the radiant sky, like flame,",
+          "A hero’s call, fearless in name,",
+          "Roar with a fury, with thunder’s might,",
+          "Break the chains of death’s endless night."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "धधकता रहे, यह ह्रदय",
+          "प्रज्वलित प्राणों में, फिर से",
+          "गाए यह जीवन वीणा,",
+          "प्रलय में भी अमर हो जाना।"
+        ],
+        "translated_lines": [
+          "Let this heart burn, with passion aglow,",
+          "And through all lives, let courage grow,",
+          "Let the lute of life sing on,",
+          "Even through the storm, let it live on."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Plea for empowerment",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "वीणा वादिनी, वर दे!",
+          "प्रिय स्वतंत्र-रवी, वर दे!",
+          "उज्ज्वल गगन का छोर, चीर",
+          "अग्नि-बाण सा सब ओर वीर",
+          "विकट प्रलय का कर नाद,",
+          "खोल दे अब मृतिका के जाल।"
+        ],
+        "translated_lines": [
+          "O Lute of Fire, grant us your boon!",
+          "Bless us, dear light of freedom's noon!",
+          "Pierce the radiant sky, like flame,",
+          "A hero’s call, fearless in name,",
+          "Roar with a fury, with thunder’s might,",
+          "Break the chains of death’s endless night."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "partial",
+        "loss_note": "shifts veena player to lute of fire",
+        "metaphor_spans": [
+          {
+            "source_term": "स्वतंत्र-रवी",
+            "abstract_meaning": "Sun of freedom and enlightenment"
+          },
+          {
+            "source_term": "मृतिका के जाल",
+            "abstract_meaning": "Bonds of mortality and ignorance"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "धधकता रहे, यह ह्रदय",
+          "प्रज्वलित प्राणों में, फिर से",
+          "गाए यह जीवन वीणा,",
+          "प्रलय में भी अमर हो जाना।"
+        ],
+        "translated_lines": [
+          "Let this heart burn, with passion aglow,",
+          "And through all lives, let courage grow,",
+          "Let the lute of life sing on,",
+          "Even through the storm, let it live on."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "partial",
+        "loss_note": "softens apocalypse to storm, adds courage",
+        "metaphor_spans": [
+          {
+            "source_term": "धधकता रहे, यह ह्रदय",
+            "abstract_meaning": "Heart as an eternal flame"
+          },
+          {
+            "source_term": "जीवन वीणा",
+            "abstract_meaning": "Life as a musical instrument"
+          },
+          {
+            "source_term": "प्रज्वलित प्राणों",
+            "abstract_meaning": "Life force as intense fire"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "प्राण",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "वीणा",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "प्रलय",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "अमर",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7649,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

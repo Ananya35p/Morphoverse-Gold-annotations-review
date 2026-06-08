@@ -1,0 +1,208 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1558",
+  "poem_title": "Ek Shayar Ka Khat",
+  "language": "Urdu",
+  "original_poem": "یہ خط ہے ایک شاعر کا  \nجو لکھا ہے اس نے پیار کا  \nمحبت کی کچھ باتیں ہیں  \nزندگی کی کچھ راتیں ہیں  \n\nیہ شہر کی وہ گلیاں ہیں  \nجہاں خواب بُنے جاتے ہیں  \nوہ خواب جو کسی نے دیکھے  \nاور کسی کے دل میں رہتے  \n\nیہ دل ہے ایک آئینہ سا  \nجو چپکے سے ٹوٹ جاتا  \nپھر جڑتا، پھر بکھرتا ہے  \nمحبت میں وہی ہوتا ہے",
+  "translated_poem": "This is a letter from a poet,  \nWritten with love as he wrote it.  \nSome tales of love fill each line,  \nAnd moments of life intertwined.  \n\nThese are the alleys of the city,  \nWhere dreams are woven so pretty.  \nDreams that someone dared to see,  \nAnd live on in someone’s memory.  \n\nThe heart is like a fragile glass,  \nBreaking in silence as moments pass.  \nThen it mends, only to break again,  \nFor this is the fate of love's domain.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7894,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "یہ خط ہے ایک شاعر کا",
+          "جو لکھا ہے اس نے پیار کا",
+          "محبت کی کچھ باتیں ہیں",
+          "زندگی کی کچھ راتیں ہیں"
+        ],
+        "translated_lines": [
+          "This is a letter from a poet,",
+          "Written with love as he wrote it.",
+          "Some tales of love fill each line,",
+          "And moments of life intertwined."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "یہ شہر کی وہ گلیاں ہیں",
+          "جہاں خواب بُنے جاتے ہیں",
+          "وہ خواب جو کسی نے دیکھے",
+          "اور کسی کے دل میں رہتے"
+        ],
+        "translated_lines": [
+          "These are the alleys of the city,",
+          "Where dreams are woven so pretty.",
+          "Dreams that someone dared to see,",
+          "And live on in someone’s memory."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "یہ دل ہے ایک آئینہ سا",
+          "جو چپکے سے ٹوٹ جاتا",
+          "پھر جڑتا، پھر بکھرتا ہے",
+          "محبت میں وہی ہوتا ہے"
+        ],
+        "translated_lines": [
+          "The heart is like a fragile glass,",
+          "Breaking in silence as moments pass.",
+          "Then it mends, only to break again,",
+          "For this is the fate of love's domain."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "fragile nature of love",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "یہ خط ہے ایک شاعر کا",
+          "جو لکھا ہے اس نے پیار کا",
+          "محبت کی کچھ باتیں ہیں",
+          "زندگی کی کچھ راتیں ہیں"
+        ],
+        "translated_lines": [
+          "This is a letter from a poet,",
+          "Written with love as he wrote it.",
+          "Some tales of love fill each line,",
+          "And moments of life intertwined."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Lost literal 'nights' and 'talks' for rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "زندگی کی کچھ راتیں",
+            "abstract_meaning": "Significant or dark life phases"
+          },
+          {
+            "source_term": "یہ خط",
+            "abstract_meaning": "The poem as a message"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "یہ شہر کی وہ گلیاں ہیں",
+          "جہاں خواب بُنے جاتے ہیں",
+          "وہ خواب جو کسی نے دیکھے",
+          "اور کسی کے دل میں رہتے"
+        ],
+        "translated_lines": [
+          "These are the alleys of the city,",
+          "Where dreams are woven so pretty.",
+          "Dreams that someone dared to see,",
+          "And live on in someone’s memory."
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Changed heart to memory, added filler words",
+        "metaphor_spans": [
+          {
+            "source_term": "خواب بُنے جاتے ہیں",
+            "abstract_meaning": "Creating or nurturing aspirations"
+          },
+          {
+            "source_term": "کسی کے دل میں رہتے",
+            "abstract_meaning": "Cherishing or preserving deep desires"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "یہ دل ہے ایک آئینہ سا",
+          "جو چپکے سے ٹوٹ جاتا",
+          "پھر جڑتا، پھر بکھرتا ہے",
+          "محبت میں وہی ہوتا ہے"
+        ],
+        "translated_lines": [
+          "The heart is like a fragile glass,",
+          "Breaking in silence as moments pass.",
+          "Then it mends, only to break again,",
+          "For this is the fate of love's domain."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "mirror metaphor changed to fragile glass",
+        "metaphor_spans": [
+          {
+            "source_term": "دل ہے ایک آئینہ سا",
+            "abstract_meaning": "Fragility and reflection of emotions"
+          },
+          {
+            "source_term": "ٹوٹ جاتا",
+            "abstract_meaning": "Experiencing emotional heartbreak"
+          },
+          {
+            "source_term": "بکھرتا ہے",
+            "abstract_meaning": "Losing inner peace or stability"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "محبت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "محبت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7894,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 7,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1212",
+  "poem_title": "Ajj Aakhaan Waris Shah Nu",
+  "language": "Punjabi",
+  "original_poem": "ਅੱਜ ਆਖਾਂ ਵਾਰਿਸ ਸ਼ਾਹ ਨੂੰ, ਕਿਤੋਂ ਕਬਰਾਂ ਵਿੱਚੋਂ ਬੋਲ\nਤੇ ਅੱਜ ਕਿਤਾਬ-ਏ-ਇਸ਼ਕ ਦਾ, ਕੋਈ ਅਗਲਾ ਵਰਕਾ ਫੋਲ\n\nਇੱਕ ਰੋਈ ਸੀ ਧੀ ਪੰਜਾਬ ਦੀ, ਤੂੰ ਲਿਖ ਲਿਖ ਮਾਰੇ ਵੈਨ\nਅੱਜ ਲੱਖਾਂ ਧੀਆਂ ਰੋ ਰਹੀਆਂ, ਤੈਨੂੰ ਵਾਰਿਸ ਸ਼ਾਹ ਨੂੰ ਕਹਿਨ\n\nਉਠ ਦਰਦਮੰਦਾਂ ਦੀ ਦਰਦ ਦੀ, ਤੂੰ ਲਿਖ ਲਿਖ ਸਾਹ ਨੰਵੇਂ\nਅੱਜ ਦੇ ਖੂਨ ਰੰਗੇ ਖੇਤਾਂ ਤੋਂ, ਵਾਰਿਸ ਸ਼ਾਹ ਕਈਆਂ ਨਵੇਂ\n\nਰੋਹਾਂ ਡਿੱਲਾਂ ਪਿਆਰੀਆਂ, ਦੇ ਇਸ਼ਕਾਂ ਸੱਜਣਾਂ ਦੀ\nਅੱਜ ਤਰਸ ਵਿੰਡੀ ਆਂਵਣੀ, ਫਿਰਦੀ ਪਿੰਡਾਂ ਸਜਣਾਂ ਦੀ\n\nਧਰਤੀ ਤੇ ਕੁਹੜੇ ਵੇਲਾਂ, ਕੁਝ ਭੀ ਦਿਲ ਤੋਂ ਮਿੱਟਦੇ ਨਹੀਂ\nਇਕ ਵਾਰ ਵਾਰਿਸ ਸ਼ਾਹ, ਤੂੰ ਵਾਰਿਸ ਸ਼ਾਹ ਨਹੀਂ ਲਿਖਿਆ ਤਾਂਹੀ!",
+  "translated_poem": "Today, I call Waris Shah, speak from your grave\nAnd turn to the next page of the book of love\n\nOnce, a daughter of Punjab wept, and you wrote a long saga of pain\nToday, a million daughters cry to you, Waris Shah, speak up again\n\nRise, O compassionate soul, and look at your Punjab\nFields are lined with corpses and blood rains through the sky\n\nThe beloveds once adorned by your songs now wander homeless and forlorn\nThe land of love is barren, and despair looms large in every home\n\nThe callousness that has taken root will not be erased so soon\nOnly you, Waris Shah, can write again the tale of a broken hearted world.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8587,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "ਅੱਜ ਆਖਾਂ ਵਾਰਿਸ ਸ਼ਾਹ ਨੂੰ, ਕਿਤੋਂ ਕਬਰਾਂ ਵਿੱਚੋਂ ਬੋਲ",
+          "ਤੇ ਅੱਜ ਕਿਤਾਬ-ਏ-ਇਸ਼ਕ ਦਾ, ਕੋਈ ਅਗਲਾ ਵਰਕਾ ਫੋਲ"
+        ],
+        "translated_lines": [
+          "Today, I call Waris Shah, speak from your grave",
+          "And turn to the next page of the book of love"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "ਇੱਕ ਰੋਈ ਸੀ ਧੀ ਪੰਜਾਬ ਦੀ, ਤੂੰ ਲਿਖ ਲਿਖ ਮਾਰੇ ਵੈਨ",
+          "ਅੱਜ ਲੱਖਾਂ ਧੀਆਂ ਰੋ ਰਹੀਆਂ, ਤੈਨੂੰ ਵਾਰਿਸ ਸ਼ਾਹ ਨੂੰ ਕਹਿਨ"
+        ],
+        "translated_lines": [
+          "Once, a daughter of Punjab wept, and you wrote a long saga of pain",
+          "Today, a million daughters cry to you, Waris Shah, speak up again"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "ਉਠ ਦਰਦਮੰਦਾਂ ਦੀ ਦਰਦ ਦੀ, ਤੂੰ ਲਿਖ ਲਿਖ ਸਾਹ ਨੰਵੇਂ",
+          "ਅੱਜ ਦੇ ਖੂਨ ਰੰਗੇ ਖੇਤਾਂ ਤੋਂ, ਵਾਰਿਸ ਸ਼ਾਹ ਕਈਆਂ ਨਵੇਂ"
+        ],
+        "translated_lines": [
+          "Rise, O compassionate soul, and look at your Punjab",
+          "Fields are lined with corpses and blood rains through the sky"
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "ਰੋਹਾਂ ਡਿੱਲਾਂ ਪਿਆਰੀਆਂ, ਦੇ ਇਸ਼ਕਾਂ ਸੱਜਣਾਂ ਦੀ",
+          "ਅੱਜ ਤਰਸ ਵਿੰਡੀ ਆਂਵਣੀ, ਫਿਰਦੀ ਪਿੰਡਾਂ ਸਜਣਾਂ ਦੀ"
+        ],
+        "translated_lines": [
+          "The beloveds once adorned by your songs now wander homeless and forlorn",
+          "The land of love is barren, and despair looms large in every home"
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 2,
+        "source_lines": [
+          "ਧਰਤੀ ਤੇ ਕੁਹੜੇ ਵੇਲਾਂ, ਕੁਝ ਭੀ ਦਿਲ ਤੋਂ ਮਿੱਟਦੇ ਨਹੀਂ",
+          "ਇਕ ਵਾਰ ਵਾਰਿਸ ਸ਼ਾਹ, ਤੂੰ ਵਾਰਿਸ ਸ਼ਾਹ ਨਹੀਂ ਲਿਖਿਆ ਤਾਂਹੀ!"
+        ],
+        "translated_lines": [
+          "The callousness that has taken root will not be erased so soon",
+          "Only you, Waris Shah, can write again the tale of a broken hearted world."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "grief over divided Punjab",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "ਅੱਜ ਆਖਾਂ ਵਾਰਿਸ ਸ਼ਾਹ ਨੂੰ, ਕਿਤੋਂ ਕਬਰਾਂ ਵਿੱਚੋਂ ਬੋਲ",
+          "ਤੇ ਅੱਜ ਕਿਤਾਬ-ਏ-ਇਸ਼ਕ ਦਾ, ਕੋਈ ਅਗਲਾ ਵਰਕਾ ਫੋਲ"
+        ],
+        "translated_lines": [
+          "Today, I call Waris Shah, speak from your grave",
+          "And turn to the next page of the book of love"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "misses 'somewhere' and plural 'graves'",
+        "metaphor_spans": [
+          {
+            "source_term": "ਕਿਤਾਬ-ਏ-ਇਸ਼ਕ",
+            "abstract_meaning": "Punjab's shared cultural narrative"
+          },
+          {
+            "source_term": "ਅਗਲਾ ਵਰਕਾ",
+            "abstract_meaning": "A new chapter of history"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "ਇੱਕ ਰੋਈ ਸੀ ਧੀ ਪੰਜਾਬ ਦੀ, ਤੂੰ ਲਿਖ ਲਿਖ ਮਾਰੇ ਵੈਨ",
+          "ਅੱਜ ਲੱਖਾਂ ਧੀਆਂ ਰੋ ਰਹੀਆਂ, ਤੈਨੂੰ ਵਾਰਿਸ ਸ਼ਾਹ ਨੂੰ ਕਹਿਨ"
+        ],
+        "translated_lines": [
+          "Once, a daughter of Punjab wept, and you wrote a long saga of pain",
+          "Today, a million daughters cry to you, Waris Shah, speak up again"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "visceral wailing softened to saga of pain",
+        "metaphor_spans": [
+          {
+            "source_term": "ਧੀ ਪੰਜਾਬ ਦੀ",
+            "abstract_meaning": "Symbolizes Heer or Punjab's soul"
+          },
+          {
+            "source_term": "ਮਾਰੇ ਵੈਨ",
+            "abstract_meaning": "Intense poetic expression of grief"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "ਉਠ ਦਰਦਮੰਦਾਂ ਦੀ ਦਰਦ ਦੀ, ਤੂੰ ਲਿਖ ਲਿਖ ਸਾਹ ਨੰਵੇਂ",
+          "ਅੱਜ ਦੇ ਖੂਨ ਰੰਗੇ ਖੇਤਾਂ ਤੋਂ, ਵਾਰਿਸ ਸ਼ਾਹ ਕਈਆਂ ਨਵੇਂ"
+        ],
+        "translated_lines": [
+          "Rise, O compassionate soul, and look at your Punjab",
+          "Fields are lined with corpses and blood rains through the sky"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "misses writing imagery and new Waris Shahs",
+        "metaphor_spans": [
+          {
+            "source_term": "ਸਾਹ ਨੰਵੇਂ",
+            "abstract_meaning": "New hope or life"
+          },
+          {
+            "source_term": "ਖੂਨ ਰੰਗੇ ਖੇਤਾਂ",
+            "abstract_meaning": "Violence and massacre"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "ਰੋਹਾਂ ਡਿੱਲਾਂ ਪਿਆਰੀਆਂ, ਦੇ ਇਸ਼ਕਾਂ ਸੱਜਣਾਂ ਦੀ",
+          "ਅੱਜ ਤਰਸ ਵਿੰਡੀ ਆਂਵਣੀ, ਫਿਰਦੀ ਪਿੰਡਾਂ ਸਜਣਾਂ ਦੀ"
+        ],
+        "translated_lines": [
+          "The beloveds once adorned by your songs now wander homeless and forlorn",
+          "The land of love is barren, and despair looms large in every home"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Adds unstated metaphors, loses specific village imagery",
+        "metaphor_spans": [
+          {
+            "source_term": "ਰੋਹਾਂ ਡਿੱਲਾਂ",
+            "abstract_meaning": "Deep spiritual and emotional bond"
+          },
+          {
+            "source_term": "ਤਰਸ ਵਿੰਡੀ",
+            "abstract_meaning": "Intense feeling of empathetic longing"
+          },
+          {
+            "source_term": "ਪਿੰਡਾਂ ਸਜਣਾਂ ਦੀ",
+            "abstract_meaning": "Landscape of the beloved's memory"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 2,
+        "source_lines": [
+          "ਧਰਤੀ ਤੇ ਕੁਹੜੇ ਵੇਲਾਂ, ਕੁਝ ਭੀ ਦਿਲ ਤੋਂ ਮਿੱਟਦੇ ਨਹੀਂ",
+          "ਇਕ ਵਾਰ ਵਾਰਿਸ ਸ਼ਾਹ, ਤੂੰ ਵਾਰਿਸ ਸ਼ਾਹ ਨਹੀਂ ਲਿਖਿਆ ਤਾਂਹੀ!"
+        ],
+        "translated_lines": [
+          "The callousness that has taken root will not be erased so soon",
+          "Only you, Waris Shah, can write again the tale of a broken hearted world."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Loses literal phrasing of the second line",
+        "metaphor_spans": [
+          {
+            "source_term": "ਕੁਹੜੇ ਵੇਲਾਂ",
+            "abstract_meaning": "Deep-seated sorrows or sins"
+          },
+          {
+            "source_term": "ਵਾਰਿਸ ਸ਼ਾਹ",
+            "abstract_meaning": "Ultimate poetic truth or legacy"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ਵਾਰਿਸ ਸ਼ਾਹ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਇਸ਼ਕ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਪੰਜਾਬ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਵੈਨ",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਵਾਰਿਸ ਸ਼ਾਹ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਰੋਹਾਂ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਇਸ਼ਕਾਂ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਪਿੰਡਾਂ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8587,
+      "source_term_checks": {
+        "entities_total": 8,
+        "entities_dropped": 0,
+        "metaphors_total": 11,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

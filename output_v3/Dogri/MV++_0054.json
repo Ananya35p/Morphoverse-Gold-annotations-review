@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0054",
+  "poem_title": "Dharti",
+  "language": "Dogri",
+  "original_poem": "धरती\nधरती दी गोद,\nसदियां दी कहानी सुणावे,\nधरती दे रंगां विच सजीले,\nजीवन दे रंग।",
+  "translated_poem": "The Earth\nThe lap of the earth,\nTelling tales of centuries,\nAdorned with the colors of the soil,\nThe hues of life.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8091,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "धरती",
+          "धरती दी गोद,",
+          "सदियां दी कहानी सुणावे,",
+          "धरती दे रंगां विच सजीले,",
+          "जीवन दे रंग।"
+        ],
+        "translated_lines": [
+          "The Earth",
+          "The lap of the earth,",
+          "Telling tales of centuries,",
+          "Adorned with the colors of the soil,",
+          "The hues of life."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Contemplating earth's history",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "धरती",
+          "धरती दी गोद,",
+          "सदियां दी कहानी सुणावे,",
+          "धरती दे रंगां विच सजीले,",
+          "जीवन दे रंग।"
+        ],
+        "translated_lines": [
+          "The Earth",
+          "The lap of the earth,",
+          "Telling tales of centuries,",
+          "Adorned with the colors of the soil,",
+          "The hues of life."
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "धरती दी गोद",
+            "abstract_meaning": "Nurturing and protective nature"
+          },
+          {
+            "source_term": "जीवन दे रंग",
+            "abstract_meaning": "Diversity of human experiences"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "धरती",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "जीवन",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8091,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

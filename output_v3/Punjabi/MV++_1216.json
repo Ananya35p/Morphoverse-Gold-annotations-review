@@ -1,0 +1,182 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1216",
+  "poem_title": "Maan Da Mandir",
+  "language": "Punjabi",
+  "original_poem": "ਮਨ ਦਾ ਮੰਦਰ\nਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?\nਰੰਗਾਂ ਵਾਲੀ ਮਿੱਟੀ ਕਿੱਥੋਂ ਲਿਆਈ ਜਾਵੇ?\nਇਸ ਵਿੱਚ ਜੋਤ ਕਿਵੇਂ ਜਗਾਈ ਜਾਵੇ?\nਪ੍ਰੇਮ ਦੇ ਫੁੱਲ ਕਿਵੇਂ ਖਿਲਾਏ ਜਾਵਣ?\nਇਸ ਵਿੱਚ ਭਗਤਾਂ ਦੇ ਕੀਰਤਨ ਕਿਵੇਂ ਵਸਾਏ ਜਾਵਣ?\n\nਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?\nਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?",
+  "translated_poem": "Temple of the Mind\nHow can the temple of the mind be built?\nWhere can the colored clay be found?\nHow can the light within be kindled?\nHow can flowers of love bloom in it?\nHow can the hymns of devotees be instilled within?\n\nHow can the temple of the mind be built?\nHow can the temple of the mind be built?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8728,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "ਮਨ ਦਾ ਮੰਦਰ",
+          "ਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?",
+          "ਰੰਗਾਂ ਵਾਲੀ ਮਿੱਟੀ ਕਿੱਥੋਂ ਲਿਆਈ ਜਾਵੇ?",
+          "ਇਸ ਵਿੱਚ ਜੋਤ ਕਿਵੇਂ ਜਗਾਈ ਜਾਵੇ?",
+          "ਪ੍ਰੇਮ ਦੇ ਫੁੱਲ ਕਿਵੇਂ ਖਿਲਾਏ ਜਾਵਣ?",
+          "ਇਸ ਵਿੱਚ ਭਗਤਾਂ ਦੇ ਕੀਰਤਨ ਕਿਵੇਂ ਵਸਾਏ ਜਾਵਣ?"
+        ],
+        "translated_lines": [
+          "Temple of the Mind",
+          "How can the temple of the mind be built?",
+          "Where can the colored clay be found?",
+          "How can the light within be kindled?",
+          "How can flowers of love bloom in it?",
+          "How can the hymns of devotees be instilled within?"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "ਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?",
+          "ਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?"
+        ],
+        "translated_lines": [
+          "How can the temple of the mind be built?",
+          "How can the temple of the mind be built?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "seeking inner devotion",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "ਮਨ ਦਾ ਮੰਦਰ",
+          "ਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?",
+          "ਰੰਗਾਂ ਵਾਲੀ ਮਿੱਟੀ ਕਿੱਥੋਂ ਲਿਆਈ ਜਾਵੇ?",
+          "ਇਸ ਵਿੱਚ ਜੋਤ ਕਿਵੇਂ ਜਗਾਈ ਜਾਵੇ?",
+          "ਪ੍ਰੇਮ ਦੇ ਫੁੱਲ ਕਿਵੇਂ ਖਿਲਾਏ ਜਾਵਣ?",
+          "ਇਸ ਵਿੱਚ ਭਗਤਾਂ ਦੇ ਕੀਰਤਨ ਕਿਵੇਂ ਵਸਾਏ ਜਾਵਣ?"
+        ],
+        "translated_lines": [
+          "Temple of the Mind",
+          "How can the temple of the mind be built?",
+          "Where can the colored clay be found?",
+          "How can the light within be kindled?",
+          "How can flowers of love bloom in it?",
+          "How can the hymns of devotees be instilled within?"
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਮਨ ਦਾ ਮੰਦਰ",
+            "abstract_meaning": "The mind as sacred temple"
+          },
+          {
+            "source_term": "ਪ੍ਰੇਮ ਦੇ ਫੁੱਲ",
+            "abstract_meaning": "Love expressed as blooming flowers"
+          },
+          {
+            "source_term": "ਜੋਤ",
+            "abstract_meaning": "Inner light of spiritual wisdom"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "ਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?",
+          "ਇਹ ਮਨ ਦਾ ਮੰਦਰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ?"
+        ],
+        "translated_lines": [
+          "How can the temple of the mind be built?",
+          "How can the temple of the mind be built?"
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਮਨ ਦਾ ਮੰਦਰ",
+            "abstract_meaning": "Mind as a sacred sanctuary"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ਮਨ ਦਾ ਮੰਦਰ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਜੋਤ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਪ੍ਰੇਮ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਕੀਰਤਨ",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਮਨ ਦਾ ਮੰਦਰ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8728,
+      "source_term_checks": {
+        "entities_total": 5,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1278",
+  "poem_title": "Oru Poovukkum",
+  "language": "Tamil",
+  "original_poem": "ஒரு பூவுக்குப் பூமி உன்னைக் கொண்டது  \nஇளமைக்குத் தன்னிலே நிற்க வேண்டும்  \nகண்ணின் கனவுக்குள் நீ கனிந்தால்  \nபூவே, உன் பேரினில் நான் வாழவே!",
+  "translated_poem": "The earth cradles you, a single flower,  \nIn youth, you must bloom and stand tall.  \nIf you blossom within the dreams of my eyes,  \nO flower, in your name, I shall live forever!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8607,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஒரு பூவுக்குப் பூமி உன்னைக் கொண்டது",
+          "இளமைக்குத் தன்னிலே நிற்க வேண்டும்",
+          "கண்ணின் கனவுக்குள் நீ கனிந்தால்",
+          "பூவே, உன் பேரினில் நான் வாழவே!"
+        ],
+        "translated_lines": [
+          "The earth cradles you, a single flower,",
+          "In youth, you must bloom and stand tall.",
+          "If you blossom within the dreams of my eyes,",
+          "O flower, in your name, I shall live forever!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "Living in your name",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஒரு பூவுக்குப் பூமி உன்னைக் கொண்டது",
+          "இளமைக்குத் தன்னிலே நிற்க வேண்டும்",
+          "கண்ணின் கனவுக்குள் நீ கனிந்தால்",
+          "பூவே, உன் பேரினில் நான் வாழவே!"
+        ],
+        "translated_lines": [
+          "The earth cradles you, a single flower,",
+          "In youth, you must bloom and stand tall.",
+          "If you blossom within the dreams of my eyes,",
+          "O flower, in your name, I shall live forever!"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "கண்ணின் கனவுக்குள் நீ கனிந்தால்",
+            "abstract_meaning": "Love maturing within a dream"
+          },
+          {
+            "source_term": "பூவே",
+            "abstract_meaning": "Beloved addressed as a flower"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8607,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

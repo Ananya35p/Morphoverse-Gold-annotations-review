@@ -1,0 +1,132 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1159",
+  "poem_title": "Sukh Roshan",
+  "language": "Kashmiri",
+  "original_poem": "سُکھ روشَن  \nکھو چھو کٕھنٕ اَزَل،  \nکُن سُکھ بٲندے چھٕ  \nوٚسٕ پٲٛنٛدھٕ بٕنیٚس۔  \nسُکھ روشَن، سُکھ روشَن،  \nپُھلٕ گونٕن تِیٚنٕ گٕوٚرٕ۔",
+  "translated_poem": "Bright happiness,  \nIt is eternal,  \nWhat joy it brings,  \nAs blossoms burst forth.  \nBright happiness, bright happiness,  \nFlowers bloom in their glory.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.913,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "سُکھ روشَن",
+          "کھو چھو کٕھنٕ اَزَل،",
+          "کُن سُکھ بٲندے چھٕ",
+          "وٚسٕ پٲٛنٛدھٕ بٕنیٚس۔",
+          "سُکھ روشَن، سُکھ روشَن،",
+          "پُھلٕ گونٕن تِیٚنٕ گٕوٚرٕ۔"
+        ],
+        "translated_lines": [
+          "Bright happiness,",
+          "It is eternal,",
+          "What joy it brings,",
+          "As blossoms burst forth.",
+          "Bright happiness, bright happiness,",
+          "Flowers bloom in their glory."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Radiant eternal joy",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "سُکھ روشَن",
+          "کھو چھو کٕھنٕ اَزَل،",
+          "کُن سُکھ بٲندے چھٕ",
+          "وٚسٕ پٲٛنٛدھٕ بٕنیٚس۔",
+          "سُکھ روشَن، سُکھ روشَن،",
+          "پُھلٕ گونٕن تِیٚنٕ گٕوٚرٕ۔"
+        ],
+        "translated_lines": [
+          "Bright happiness,",
+          "It is eternal,",
+          "What joy it brings,",
+          "As blossoms burst forth.",
+          "Bright happiness, bright happiness,",
+          "Flowers bloom in their glory."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "سُکھ روشَن",
+            "abstract_meaning": "Joy as illuminating light"
+          },
+          {
+            "source_term": "کھو چھو کٕھنٕ اَزَل",
+            "abstract_meaning": "Fear as an eternal void"
+          },
+          {
+            "source_term": "پُھلٕ گونٕن تِیٚنٕ گٕوٚرٕ",
+            "abstract_meaning": "Beauty blooming within darkness"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "سُکھ روشَن",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "اَزَل",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "کُن",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.913,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

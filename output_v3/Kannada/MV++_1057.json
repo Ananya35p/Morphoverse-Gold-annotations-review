@@ -1,0 +1,221 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1057",
+  "poem_title": "Safar Mein Dhoop To Hogi",
+  "language": "Kannada",
+  "original_poem": "सफ़र में धूप तो होगी,  \nचाँदनी रातें नहीं होंगी।  \nलेकिन जहाँ तक तुम चल सको,  \nतुम्हारे साथ मेरी राहें होंगी।  \n\nसूरज की किरणों में छिपी,  \nचाँद की चाँदनी में बसी,  \nहवाओं में, बादलों में कहीं,  \nमेरे ख्वाबों की महक होगी।  \n\nसफ़र में धूप तो होगी,  \nलेकिन तुम अकेले नहीं रहोगे।  \nसारे आलम की रोशनी तुम्हारे साथ होगी,  \nमेरे ख्वाबों की छाँव में।",
+  "translated_poem": "There will be sunlight on the journey,  \nThere will be no moonlit nights.  \nBut as far as you can walk,  \nMy paths will be with you.\n\nHidden in the rays of the sun,  \nDwelling in the moonlight,  \nIn the winds, in the clouds somewhere,  \nThere will be the fragrance of my dreams.\n\nThere will be sunlight on the journey,  \nBut you will not walk alone.  \nThe light of the whole world will be with you,  \nIn the shadow of my dreams.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8661,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "सफ़र में धूप तो होगी,",
+          "चाँदनी रातें नहीं होंगी।",
+          "लेकिन जहाँ तक तुम चल सको,",
+          "तुम्हारे साथ मेरी राहें होंगी।"
+        ],
+        "translated_lines": [
+          "There will be sunlight on the journey,",
+          "There will be no moonlit nights.",
+          "But as far as you can walk,",
+          "My paths will be with you."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "सूरज की किरणों में छिपी,",
+          "चाँद की चाँदनी में बसी,",
+          "हवाओं में, बादलों में कहीं,",
+          "मेरे ख्वाबों की महक होगी।"
+        ],
+        "translated_lines": [
+          "Hidden in the rays of the sun,",
+          "Dwelling in the moonlight,",
+          "In the winds, in the clouds somewhere,",
+          "There will be the fragrance of my dreams."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "सफ़र में धूप तो होगी,",
+          "लेकिन तुम अकेले नहीं रहोगे।",
+          "सारे आलम की रोशनी तुम्हारे साथ होगी,",
+          "मेरे ख्वाबों की छाँव में।"
+        ],
+        "translated_lines": [
+          "There will be sunlight on the journey,",
+          "But you will not walk alone.",
+          "The light of the whole world will be with you,",
+          "In the shadow of my dreams."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "Promise of companionship",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "सफ़र में धूप तो होगी,",
+          "चाँदनी रातें नहीं होंगी।",
+          "लेकिन जहाँ तक तुम चल सको,",
+          "तुम्हारे साथ मेरी राहें होंगी।"
+        ],
+        "translated_lines": [
+          "There will be sunlight on the journey,",
+          "There will be no moonlit nights.",
+          "But as far as you can walk,",
+          "My paths will be with you."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": []
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "सूरज की किरणों में छिपी,",
+          "चाँद की चाँदनी में बसी,",
+          "हवाओं में, बादलों में कहीं,",
+          "मेरे ख्वाबों की महक होगी।"
+        ],
+        "translated_lines": [
+          "Hidden in the rays of the sun,",
+          "Dwelling in the moonlight,",
+          "In the winds, in the clouds somewhere,",
+          "There will be the fragrance of my dreams."
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "सूरज की किरणों में छिपी",
+            "abstract_meaning": "Hope hidden in light"
+          },
+          {
+            "source_term": "ख्वाबों की महक",
+            "abstract_meaning": "Essence of aspirations"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "सफ़र में धूप तो होगी,",
+          "लेकिन तुम अकेले नहीं रहोगे।",
+          "सारे आलम की रोशनी तुम्हारे साथ होगी,",
+          "मेरे ख्वाबों की छाँव में।"
+        ],
+        "translated_lines": [
+          "There will be sunlight on the journey,",
+          "But you will not walk alone.",
+          "The light of the whole world will be with you,",
+          "In the shadow of my dreams."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "सफ़र",
+            "abstract_meaning": "Life's journey"
+          },
+          {
+            "source_term": "धूप",
+            "abstract_meaning": "Hardships and challenges"
+          },
+          {
+            "source_term": "ख्वाबों की छाँव",
+            "abstract_meaning": "Comfort of shared aspirations"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "सूरज",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "चाँद",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8661,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 8,
+        "metaphors_dropped": 3
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 3,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "ಧೂಪ್",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "ಚಾಂದನೀ ರಾತೇಂ",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "ರಾಹೇಂ",
+      "note": "metaphor_source_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

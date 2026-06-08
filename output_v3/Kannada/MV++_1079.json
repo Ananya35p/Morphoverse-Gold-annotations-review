@@ -1,0 +1,224 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1079",
+  "poem_title": "Usne Kaha Tha",
+  "language": "Kannada",
+  "original_poem": "उसने कहा था कि दर्द को समझो,  \nकि जब कोई रोता है तो आकाश भी उसकी पीड़ा में झुकता है।  \nउसने कहा था कि घावों के भीतर छुपे हैं अनगिनत फूल,  \nजो खिलने का इंतज़ार कर रहे हैं।  \n\nउसने कहा था कि कभी किसी के आंसूओं को हल्के में मत लेना,  \nक्योंकि हर आंसू की एक कहानी होती है।  \nउसने कहा था कि प्रेम सिर्फ़ एक शब्द नहीं,  \nयह एक दुनिया है, जिसमें बसी है सच्चाई और करुणा।  \n\nउसने कहा था कि कभी मत भूलना  \nकि एक इंसान की आत्मा कितनी नाज़ुक होती है,  \nऔर जब हम उस पर चोट करते हैं,  \nतो हम खुद अपने वजूद को भी चोट पहुँचाते हैं।",
+  "translated_poem": "She had said to understand the pain,  \nthat when someone cries, the sky also bends in their sorrow.  \nShe had said that countless flowers lie hidden in wounds,  \nwaiting to bloom.  \n\nShe had said to never take someone’s tears lightly,  \nfor each tear has a story.  \nShe had said that love is not just a word,  \nit’s a world where truth and compassion reside.  \n\nShe had said to never forget  \nhow delicate a person’s soul can be,  \nand when we hurt them,  \nwe wound our own being as well.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.942,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "उसने कहा था कि दर्द को समझो,",
+          "कि जब कोई रोता है तो आकाश भी उसकी पीड़ा में झुकता है।",
+          "उसने कहा था कि घावों के भीतर छुपे हैं अनगिनत फूल,",
+          "जो खिलने का इंतज़ार कर रहे हैं।"
+        ],
+        "translated_lines": [
+          "She had said to understand the pain,",
+          "that when someone cries, the sky also bends in their sorrow.",
+          "She had said that countless flowers lie hidden in wounds,",
+          "waiting to bloom."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "उसने कहा था कि कभी किसी के आंसूओं को हल्के में मत लेना,",
+          "क्योंकि हर आंसू की एक कहानी होती है।",
+          "उसने कहा था कि प्रेम सिर्फ़ एक शब्द नहीं,",
+          "यह एक दुनिया है, जिसमें बसी है सच्चाई और करुणा।"
+        ],
+        "translated_lines": [
+          "She had said to never take someone’s tears lightly,",
+          "for each tear has a story.",
+          "She had said that love is not just a word,",
+          "it’s a world where truth and compassion reside."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "उसने कहा था कि कभी मत भूलना",
+          "कि एक इंसान की आत्मा कितनी नाज़ुक होती है,",
+          "और जब हम उस पर चोट करते हैं,",
+          "तो हम खुद अपने वजूद को भी चोट पहुँचाते हैं।"
+        ],
+        "translated_lines": [
+          "She had said to never forget",
+          "how delicate a person’s soul can be,",
+          "and when we hurt them,",
+          "we wound our own being as well."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Empathy and compassion",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "उसने कहा था कि दर्द को समझो,",
+          "कि जब कोई रोता है तो आकाश भी उसकी पीड़ा में झुकता है।",
+          "उसने कहा था कि घावों के भीतर छुपे हैं अनगिनत फूल,",
+          "जो खिलने का इंतज़ार कर रहे हैं।"
+        ],
+        "translated_lines": [
+          "She had said to understand the pain,",
+          "that when someone cries, the sky also bends in their sorrow.",
+          "She had said that countless flowers lie hidden in wounds,",
+          "waiting to bloom."
+        ],
+        "emotion": "resilience",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "आकाश भी उसकी पीड़ा में झुकता है",
+            "abstract_meaning": "Universal empathy for human suffering"
+          },
+          {
+            "source_term": "घावों के भीतर छुपे हैं अनगिनत फूल",
+            "abstract_meaning": "Potential for beauty within pain"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "उसने कहा था कि कभी किसी के आंसूओं को हल्के में मत लेना,",
+          "क्योंकि हर आंसू की एक कहानी होती है।",
+          "उसने कहा था कि प्रेम सिर्फ़ एक शब्द नहीं,",
+          "यह एक दुनिया है, जिसमें बसी है सच्चाई और करुणा।"
+        ],
+        "translated_lines": [
+          "She had said to never take someone’s tears lightly,",
+          "for each tear has a story.",
+          "She had said that love is not just a word,",
+          "it’s a world where truth and compassion reside."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हर आंसू की एक कहानी होती है",
+            "abstract_meaning": "Tears symbolize hidden human suffering"
+          },
+          {
+            "source_term": "यह एक दुनिया है",
+            "abstract_meaning": "Love is a vast existence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "उसने कहा था कि कभी मत भूलना",
+          "कि एक इंसान की आत्मा कितनी नाज़ुक होती है,",
+          "और जब हम उस पर चोट करते हैं,",
+          "तो हम खुद अपने वजूद को भी चोट पहुँचाते हैं।"
+        ],
+        "translated_lines": [
+          "She had said to never forget",
+          "how delicate a person’s soul can be,",
+          "and when we hurt them,",
+          "we wound our own being as well."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "आत्मा कितनी नाज़ुक होती है",
+            "abstract_meaning": "Vulnerability of human inner self"
+          },
+          {
+            "source_term": "उस पर चोट करते हैं",
+            "abstract_meaning": "Inflicting emotional or spiritual pain"
+          },
+          {
+            "source_term": "अपने वजूद को भी चोट पहुँचाते हैं",
+            "abstract_meaning": "Self-destruction through harming others"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "प्रेम",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सच्चाई",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "करुणा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "आत्मा",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.942,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 7,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

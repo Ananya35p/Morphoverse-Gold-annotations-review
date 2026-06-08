@@ -1,0 +1,112 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1257",
+  "poem_title": "Azhagiya Tamil Magan",
+  "language": "Tamil",
+  "original_poem": "அழகிய தமிழ் மகன்\nஅன்னையின் கண்ணீர் நதி\nமனத்தை ஆளும் ஆற்றல்\nஉள்ளத்தில் கொண்டே உளர்மால்.",
+  "translated_poem": "The beautiful Tamil youth\nThe river of a mother’s tears\nThe strength that rules the mind\nResiding in the heart, it sways.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.822,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "அழகிய தமிழ் மகன்",
+          "அன்னையின் கண்ணீர் நதி",
+          "மனத்தை ஆளும் ஆற்றல்",
+          "உள்ளத்தில் கொண்டே உளர்மால்."
+        ],
+        "translated_lines": [
+          "The beautiful Tamil youth",
+          "The river of a mother’s tears",
+          "The strength that rules the mind",
+          "Residing in the heart, it sways."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Inner strength amidst sorrow",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "அழகிய தமிழ் மகன்",
+          "அன்னையின் கண்ணீர் நதி",
+          "மனத்தை ஆளும் ஆற்றல்",
+          "உள்ளத்தில் கொண்டே உளர்மால்."
+        ],
+        "translated_lines": [
+          "The beautiful Tamil youth",
+          "The river of a mother’s tears",
+          "The strength that rules the mind",
+          "Residing in the heart, it sways."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "magan means son, not just youth",
+        "metaphor_spans": [
+          {
+            "source_term": "அன்னையின் கண்ணீர் நதி",
+            "abstract_meaning": "Immense sorrow or suffering"
+          },
+          {
+            "source_term": "மனத்தை ஆளும் ஆற்றல்",
+            "abstract_meaning": "Strong emotional or mental influence"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "தமிழ் மகன்",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "மால்",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.822,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

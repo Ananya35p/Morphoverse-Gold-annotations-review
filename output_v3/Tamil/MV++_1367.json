@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1367",
+  "poem_title": "Oliyin Sirippu",
+  "language": "Tamil",
+  "original_poem": "ஒளியின் சிரிப்பு,  \nஉன் முகத்தில் மிளிர,  \nஎன் இருளின் பாதையில்,  \nவிழியாக ஏறுகிறது!",
+  "translated_poem": "The smile of light,  \nShining on your face,  \nOn the path of my darkness,  \nRises as a guiding lamp!",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8945,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஒளியின் சிரிப்பு,",
+          "உன் முகத்தில் மிளிர,",
+          "என் இருளின் பாதையில்,",
+          "விழியாக ஏறுகிறது!"
+        ],
+        "translated_lines": [
+          "The smile of light,",
+          "Shining on your face,",
+          "On the path of my darkness,",
+          "Rises as a guiding lamp!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Guiding light in darkness",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஒளியின் சிரிப்பு,",
+          "உன் முகத்தில் மிளிர,",
+          "என் இருளின் பாதையில்,",
+          "விழியாக ஏறுகிறது!"
+        ],
+        "translated_lines": [
+          "The smile of light,",
+          "Shining on your face,",
+          "On the path of my darkness,",
+          "Rises as a guiding lamp!"
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "vizhi (eye) translated as guiding lamp",
+        "metaphor_spans": [
+          {
+            "source_term": "ஒளியின் சிரிப்பு",
+            "abstract_meaning": "Radiant joy or bright expression"
+          },
+          {
+            "source_term": "இருளின் பாதையில்",
+            "abstract_meaning": "A period of life's hardships"
+          },
+          {
+            "source_term": "விழியாக ஏறுகிறது",
+            "abstract_meaning": "Becoming a guiding vision"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ஒளி",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8945,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 1,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "இருள்",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

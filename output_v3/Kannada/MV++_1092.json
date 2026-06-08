@@ -1,0 +1,174 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1092",
+  "poem_title": "Hawa Hoon Main",
+  "language": "Kannada",
+  "original_poem": "हवा हूँ मैं,  \nमुक्त गगन में बहता,  \nकभी मंद, कभी तेज़,  \nबिना किसी बंधन के।\n\nमैं छूता हूँ पर्वत,  \nमैं खेलता हूँ सागर के साथ,  \nमैं चलता हूँ निरंतर,  \nन रोक सके कोई भी राह।",
+  "translated_poem": "I am the wind,  \nFlowing free in the open sky,  \nSometimes gentle, sometimes fierce,  \nWith no bounds to tie.\n\nI touch the mountains,  \nI play with the sea,  \nI move endlessly,  \nNo path can hinder me.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8836,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "हवा हूँ मैं,",
+          "मुक्त गगन में बहता,",
+          "कभी मंद, कभी तेज़,",
+          "बिना किसी बंधन के।"
+        ],
+        "translated_lines": [
+          "I am the wind,",
+          "Flowing free in the open sky,",
+          "Sometimes gentle, sometimes fierce,",
+          "With no bounds to tie."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मैं छूता हूँ पर्वत,",
+          "मैं खेलता हूँ सागर के साथ,",
+          "मैं चलता हूँ निरंतर,",
+          "न रोक सके कोई भी राह।"
+        ],
+        "translated_lines": [
+          "I touch the mountains,",
+          "I play with the sea,",
+          "I move endlessly,",
+          "No path can hinder me."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "Unstoppable free wind",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "हवा हूँ मैं,",
+          "मुक्त गगन में बहता,",
+          "कभी मंद, कभी तेज़,",
+          "बिना किसी बंधन के।"
+        ],
+        "translated_lines": [
+          "I am the wind,",
+          "Flowing free in the open sky,",
+          "Sometimes gentle, sometimes fierce,",
+          "With no bounds to tie."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हवा हूँ मैं",
+            "abstract_meaning": "Symbolizes absolute freedom and spirit"
+          },
+          {
+            "source_term": "मुक्त गगन",
+            "abstract_meaning": "Represents a limitless, unrestricted life"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मैं छूता हूँ पर्वत,",
+          "मैं खेलता हूँ सागर के साथ,",
+          "मैं चलता हूँ निरंतर,",
+          "न रोक सके कोई भी राह।"
+        ],
+        "translated_lines": [
+          "I touch the mountains,",
+          "I play with the sea,",
+          "I move endlessly,",
+          "No path can hinder me."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "छूता हूँ पर्वत",
+            "abstract_meaning": "Achieving great heights"
+          },
+          {
+            "source_term": "खेलता हूँ सागर के साथ",
+            "abstract_meaning": "Mastering immense challenges"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "मुक्त",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "बंधन",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पर्वत",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सागर",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8836,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

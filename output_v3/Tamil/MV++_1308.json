@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1308",
+  "poem_title": "Aasaiyil Poonthendral",
+  "language": "Tamil",
+  "original_poem": "ஆசையிலே பூந்தென்றல்,  \nஎன் இதயத்தைக் குலுங்கும்,  \nஉன் நினைவின் வாசனை,  \nஎன் பாதையில் வரும்!",
+  "translated_poem": "In desire, the gentle breeze,  \nShakes my heart with delight,  \nThe fragrance of your memory,  \nComes walking on my path!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8446,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆசையிலே பூந்தென்றல்,",
+          "என் இதயத்தைக் குலுங்கும்,",
+          "உன் நினைவின் வாசனை,",
+          "என் பாதையில் வரும்!"
+        ],
+        "translated_lines": [
+          "In desire, the gentle breeze,",
+          "Shakes my heart with delight,",
+          "The fragrance of your memory,",
+          "Comes walking on my path!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Fragrance of your memory",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆசையிலே பூந்தென்றல்,",
+          "என் இதயத்தைக் குலுங்கும்,",
+          "உன் நினைவின் வாசனை,",
+          "என் பாதையில் வரும்!"
+        ],
+        "translated_lines": [
+          "In desire, the gentle breeze,",
+          "Shakes my heart with delight,",
+          "The fragrance of your memory,",
+          "Comes walking on my path!"
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "added words 'with delight' and 'walking'",
+        "metaphor_spans": [
+          {
+            "source_term": "ஆசையிலே பூந்தென்றல்",
+            "abstract_meaning": "Desire as a gentle breeze"
+          },
+          {
+            "source_term": "உன் நினைவின் வாசனை",
+            "abstract_meaning": "Memories lingering like a scent"
+          },
+          {
+            "source_term": "என் இதயத்தைக் குலுங்கும்",
+            "abstract_meaning": "Emotions stirring the heart deeply"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "தென்றல்",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ஆசை",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8446,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

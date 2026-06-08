@@ -1,0 +1,122 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1141",
+  "poem_title": "Kuvempu Naadu",
+  "language": "Kannada",
+  "original_poem": "ಕುವೆಂಪು ನಾಡು,\nಅದ್ಭುತ ನದಿಯ ಬೊಂಬೆಯಾದ ಮಣ್ಣಿನ ಮೆಟ್ಟಿಲು,\nಹಾರಿದ ಹಕ್ಕಿಯ ರೆಕ್ಕೆ,\nಅವನ ಬಾಳಲ್ಲಿ ಹೊಕ್ಕಿತು,\nಪರಿಮಳದ ಎಳೆಯ ಬೆಣ್ಣೆಯ ಹಳ್ಳಿಯೊಳಗೆ.",
+  "translated_poem": "The land of Kuvempu,\nThe wonderful steps of soil, \nLike the gentle stream,\nSoars high with wings,\nIn his life,\nInside the valley of fragrant butter.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9155,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ಕುವೆಂಪು ನಾಡು,",
+          "ಅದ್ಭುತ ನದಿಯ ಬೊಂಬೆಯಾದ ಮಣ್ಣಿನ ಮೆಟ್ಟಿಲು,",
+          "ಹಾರಿದ ಹಕ್ಕಿಯ ರೆಕ್ಕೆ,",
+          "ಅವನ ಬಾಳಲ್ಲಿ ಹೊಕ್ಕಿತು,",
+          "ಪರಿಮಳದ ಎಳೆಯ ಬೆಣ್ಣೆಯ ಹಳ್ಳಿಯೊಳಗೆ."
+        ],
+        "translated_lines": [
+          "The land of Kuvempu,",
+          "The wonderful steps of soil,",
+          "Like the gentle stream,",
+          "Soars high with wings,",
+          "In his life,",
+          "Inside the valley of fragrant butter."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Memories of Kuvempu's land",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ಕುವೆಂಪು ನಾಡು,",
+          "ಅದ್ಭುತ ನದಿಯ ಬೊಂಬೆಯಾದ ಮಣ್ಣಿನ ಮೆಟ್ಟಿಲು,",
+          "ಹಾರಿದ ಹಕ್ಕಿಯ ರೆಕ್ಕೆ,",
+          "ಅವನ ಬಾಳಲ್ಲಿ ಹೊಕ್ಕಿತು,",
+          "ಪರಿಮಳದ ಎಳೆಯ ಬೆಣ್ಣೆಯ ಹಳ್ಳಿಯೊಳಗೆ."
+        ],
+        "translated_lines": [
+          "The land of Kuvempu,",
+          "The wonderful steps of soil,",
+          "Like the gentle stream,",
+          "Soars high with wings,",
+          "In his life,",
+          "Inside the valley of fragrant butter."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Missed 'entered', 'bird', and 'village' mistranslated",
+        "metaphor_spans": [
+          {
+            "source_term": "ನದಿಯ ಬೊಂಬೆಯಾದ ಮಣ್ಣಿನ ಮೆಟ್ಟಿಲು",
+            "abstract_meaning": "Fragile bond between nature and earth"
+          },
+          {
+            "source_term": "ಹಾರಿದ ಹಕ್ಕಿಯ ರೆಕ್ಕೆ",
+            "abstract_meaning": "Spirit of freedom and flight"
+          },
+          {
+            "source_term": "ಪರಿಮಳದ ಎಳೆಯ ಬೆಣ್ಣೆಯ ಹಳ್ಳಿಯೊಳಗೆ",
+            "abstract_meaning": "Pure essence of rural life"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಕುವೆಂಪು ನಾಡು",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ನದಿ",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9155,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

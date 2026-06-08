@@ -1,0 +1,174 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1135",
+  "poem_title": "Uluva Yogi",
+  "language": "Kannada",
+  "original_poem": "ಉಳುವ ಯೋಗಿ, ತಾವು ಉಳುವದಕೆ ಹೊಡೆತವ ತಾಳದಿರಲಿ,  \nಹಕ್ಕಿಯೂ ನೆಲವನವನು ನುಂಗಿ ನುಂಗಿ ಕೊಲ್ಲದಿರಲಿ.  \nಬಟ್ಟೆಯೂ ಹೊಡವದಿರಲಿ. ಬಟ್ಟೆಯ ಬಾಗಿಲು ಬಡಿಸಿ  \nಬುದ್ಧಿಯೂ ಹಗುರದಿರಲಿ, ಹೃದಯ ಹಾರಾಡದಿರಲಿ.\n\nಮಣ್ಣಿಗೆ ಮಣಿಸದಿರಲಿ, ಬೀರೆಯೂ ಗಟ್ಟಿಯಾದಿರಲಿ,  \nಭೂಮಿಗೆ ತಾಕದಿರಲಿ, ಹುಲ್ಲಹಾದಿಯ ಬೀಜದಂತೆ,  \nಬೆಳೆಯೂ ಬೇಗ ನಶಿಸದಿರಲಿ. ಬೆನ್ನು ಬಿಡದ ಶ್ರಮ  \nಚಿಗುರಿಯೆ ಶಿಖರವಾಗಲಿ, ಹಾಸು ಹಾಸು ಕೊರೆದು ಬಾಳಲಿ.",
+  "translated_poem": "The ploughing yogi, let not the strikes of labor tire you,  \nLet not the bird devour the land, swallowing it bite by bite.  \nLet not the cloth wear out. Do not knock on the cloth’s door,  \nLet not the mind be light, nor let the heart flutter with dismay.\n\nYield not to the soil, may your grip on the plough remain strong,  \nLet no seed scatter like grass, untouching the ground.  \nLet not the crops vanish fast, perseverance like the rooted tree,  \nBlossom to heights, let life carve itself from effort’s blade.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7788,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಉಳುವ ಯೋಗಿ, ತಾವು ಉಳುವದಕೆ ಹೊಡೆತವ ತಾಳದಿರಲಿ,",
+          "ಹಕ್ಕಿಯೂ ನೆಲವನವನು ನುಂಗಿ ನುಂಗಿ ಕೊಲ್ಲದಿರಲಿ.",
+          "ಬಟ್ಟೆಯೂ ಹೊಡವದಿರಲಿ. ಬಟ್ಟೆಯ ಬಾಗಿಲು ಬಡಿಸಿ",
+          "ಬುದ್ಧಿಯೂ ಹಗುರದಿರಲಿ, ಹೃದಯ ಹಾರಾಡದಿರಲಿ."
+        ],
+        "translated_lines": [
+          "The ploughing yogi, let not the strikes of labor tire you,",
+          "Let not the bird devour the land, swallowing it bite by bite.",
+          "Let not the cloth wear out. Do not knock on the cloth’s door,",
+          "Let not the mind be light, nor let the heart flutter with dismay."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಮಣ್ಣಿಗೆ ಮಣಿಸದಿರಲಿ, ಬೀರೆಯೂ ಗಟ್ಟಿಯಾದಿರಲಿ,",
+          "ಭೂಮಿಗೆ ತಾಕದಿರಲಿ, ಹುಲ್ಲಹಾದಿಯ ಬೀಜದಂತೆ,",
+          "ಬೆಳೆಯೂ ಬೇಗ ನಶಿಸದಿರಲಿ. ಬೆನ್ನು ಬಿಡದ ಶ್ರಮ",
+          "ಚಿಗುರಿಯೆ ಶಿಖರವಾಗಲಿ, ಹಾಸು ಹಾಸು ಕೊರೆದು ಬಾಳಲಿ."
+        ],
+        "translated_lines": [
+          "Yield not to the soil, may your grip on the plough remain strong,",
+          "Let no seed scatter like grass, untouching the ground.",
+          "Let not the crops vanish fast, perseverance like the rooted tree,",
+          "Blossom to heights, let life carve itself from effort’s blade."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "prayer for the farmer",
+    "translation_fidelity_score": 0.75,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಉಳುವ ಯೋಗಿ, ತಾವು ಉಳುವದಕೆ ಹೊಡೆತವ ತಾಳದಿರಲಿ,",
+          "ಹಕ್ಕಿಯೂ ನೆಲವನವನು ನುಂಗಿ ನುಂಗಿ ಕೊಲ್ಲದಿರಲಿ.",
+          "ಬಟ್ಟೆಯೂ ಹೊಡವದಿರಲಿ. ಬಟ್ಟೆಯ ಬಾಗಿಲು ಬಡಿಸಿ",
+          "ಬುದ್ಧಿಯೂ ಹಗುರದಿರಲಿ, ಹೃದಯ ಹಾರಾಡದಿರಲಿ."
+        ],
+        "translated_lines": [
+          "The ploughing yogi, let not the strikes of labor tire you,",
+          "Let not the bird devour the land, swallowing it bite by bite.",
+          "Let not the cloth wear out. Do not knock on the cloth’s door,",
+          "Let not the mind be light, nor let the heart flutter with dismay."
+        ],
+        "emotion": "resilience",
+        "tone": "prayer",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಉಳುವ ಯೋಗಿ",
+            "abstract_meaning": "Farmer as a spiritual practitioner"
+          },
+          {
+            "source_term": "ಬಟ್ಟೆಯ ಬಾಗಿಲು",
+            "abstract_meaning": "Material or physical limitations"
+          },
+          {
+            "source_term": "ಹೃದಯ ಹಾರಾಡದಿರಲಿ",
+            "abstract_meaning": "Avoiding emotional restlessness"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಮಣ್ಣಿಗೆ ಮಣಿಸದಿರಲಿ, ಬೀರೆಯೂ ಗಟ್ಟಿಯಾದಿರಲಿ,",
+          "ಭೂಮಿಗೆ ತಾಕದಿರಲಿ, ಹುಲ್ಲಹಾದಿಯ ಬೀಜದಂತೆ,",
+          "ಬೆಳೆಯೂ ಬೇಗ ನಶಿಸದಿರಲಿ. ಬೆನ್ನು ಬಿಡದ ಶ್ರಮ",
+          "ಚಿಗುರಿಯೆ ಶಿಖರವಾಗಲಿ, ಹಾಸು ಹಾಸು ಕೊರೆದು ಬಾಳಲಿ."
+        ],
+        "translated_lines": [
+          "Yield not to the soil, may your grip on the plough remain strong,",
+          "Let no seed scatter like grass, untouching the ground.",
+          "Let not the crops vanish fast, perseverance like the rooted tree,",
+          "Blossom to heights, let life carve itself from effort’s blade."
+        ],
+        "emotion": "resilience",
+        "tone": "prayer",
+        "translation_quality": "partial",
+        "loss_note": "added rooted tree imagery, altered literal back-breaking effort",
+        "metaphor_spans": [
+          {
+            "source_term": "ಚಿಗುರಿಯೆ ಶಿಖರವಾಗಲಿ",
+            "abstract_meaning": "Small beginnings reaching great heights"
+          },
+          {
+            "source_term": "ಬೆನ್ನು ಬಿಡದ ಶ್ರಮ",
+            "abstract_meaning": "Persistent and tireless effort"
+          },
+          {
+            "source_term": "ಮಣ್ಣಿಗೆ ಮಣಿಸದಿರಲಿ",
+            "abstract_meaning": "Not succumbing to failure"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಯೋಗಿ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಬುದ್ಧಿ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಶ್ರಮ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7788,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

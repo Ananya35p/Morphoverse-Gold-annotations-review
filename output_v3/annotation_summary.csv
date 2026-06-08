@@ -1,0 +1,167 @@
+schema_version,prompt_version,poem_id,poem_title,language,status,model,confidence,needs_human_review,stanza_count,alignment_status,alignment_confidence,entities_dropped,metaphors_dropped,low_confidence_stanza_count,translation_fidelity_score,review_item_count
+5,9,MV++_0001,O Mur Apunar Desh,Assamese,completed,gemini-chunked,high,False,1,aligned,0.8766,0,0,0,1.0,0
+5,9,MV++_0003,Nadi,Assamese,completed,gemini-chunked,high,False,1,aligned,0.8457,0,0,0,1.0,0
+5,9,MV++_0004,Brahmaputra,Assamese,completed,gemini-chunked,low,True,1,aligned,0.8424,0,2,0,1.0,2
+5,9,MV++_0006,Jibon,Assamese,completed,gemini-chunked,low,True,1,aligned,0.8154,0,1,0,1.0,1
+5,9,MV++_0007,Pratima,Assamese,completed,gemini-chunked,high,False,1,aligned,0.8418,0,0,0,1.0,0
+5,9,MV++_0008,Chitto Jetha Bhayshunyo,Bengali,completed,gemini-chunked,low,False,1,aligned,0.9424,0,0,0,0.5,0
+5,9,MV++_0009,Banalata Sen,Bengali,completed,gemini-chunked,high,False,5,aligned,0.8647,0,0,0,0.8,0
+5,9,MV++_0010,Aaj Nover Sukh,Bengali,completed,gemini-chunked,high,False,5,aligned,0.81,0,0,0,0.8,0
+5,9,MV++_0011,O Amar Desher Mati,Bengali,completed,gemini-chunked,high,False,4,aligned,0.8417,0,0,0,0.75,0
+5,9,MV++_0013,Anondolokey,Bengali,completed,gemini-chunked,low,False,3,aligned,0.7657,0,0,0,0.5,0
+5,9,MV++_0036,Bodo Gwsing,Bodo,completed,gemini-chunked,high,False,1,aligned,0.8948,0,0,0,1.0,0
+5,9,MV++_0037,Phul Gwsing,Bodo,completed,gemini-chunked,low,False,1,aligned,0.9855,0,0,0,0.5,0
+5,9,MV++_0038,Kokrajhar,Bodo,completed,gemini-chunked,high,False,1,aligned,0.9448,0,0,0,1.0,0
+5,9,MV++_0039,Bodo Rakhang,Bodo,completed,gemini-chunked,high,False,1,aligned,0.8885,0,0,0,1.0,0
+5,9,MV++_0042,Dharma,Bodo,completed,gemini-chunked,high,False,1,aligned,0.8692,0,0,0,1.0,0
+5,9,MV++_0046,Sukoon,Dogri,completed,gemini-chunked,high,False,1,aligned,0.9681,0,0,0,1.0,0
+5,9,MV++_0048,Chandna,Dogri,completed,gemini-chunked,high,False,1,aligned,0.8313,0,0,0,1.0,0
+5,9,MV++_0050,Kashmir,Dogri,completed,gemini-chunked,high,False,1,aligned,0.9118,0,0,0,1.0,0
+5,9,MV++_0052,Ghar,Dogri,completed,gemini-chunked,high,False,1,aligned,0.8337,0,0,0,1.0,0
+5,9,MV++_0053,Jeevan,Dogri,completed,gemini-chunked,high,False,1,aligned,0.8634,0,0,0,1.0,0
+5,9,MV++_0054,Dharti,Dogri,completed,gemini-chunked,high,False,1,aligned,0.8091,0,0,0,1.0,0
+5,9,MV++_0055,Mara Pranad,Gujarati,completed,gemini-chunked,high,False,1,aligned,0.9478,0,0,0,1.0,0
+5,9,MV++_0061,Agnibeena,Hindi,completed,gemini-chunked,low,False,2,aligned,0.7649,0,0,0,0.5,0
+5,9,MV++_0073,Ek Chadar Maili Si,Hindi,completed,gemini-chunked,high,False,5,aligned,0.8596,0,0,0,0.6,0
+5,9,MV++_0084,Sitaron Se Aage Jahan,Hindi,completed,gemini-chunked,high,False,2,aligned,0.8897,0,0,0,0.75,0
+5,9,MV++_0105,Saare Jahan Se Achha,Hindi,completed,gemini-chunked,high,False,3,aligned,0.8823,0,0,0,0.833333,0
+5,9,MV++_0108,Tumhare Haath Ki Chudiyan,Hindi,completed,gemini-chunked,high,False,2,aligned,0.8867,0,0,0,0.75,0
+5,9,MV++_0906,Adaviyu,Kannada,completed,gemini-chunked,low,False,1,aligned,0.8767,0,0,0,0.5,0
+5,9,MV++_0974,Kaveri,Kannada,completed,gemini-chunked,high,False,1,aligned,0.9172,0,0,0,1.0,0
+5,9,MV++_0982,Ganga,Kannada,completed,gemini-chunked,high,False,1,aligned,0.8569,0,0,0,1.0,0
+5,9,MV++_0989,Aakasha Deepa,Kannada,completed,gemini-chunked,high,False,1,aligned,0.8343,0,0,0,1.0,0
+5,9,MV++_1042,Prithvi Ki Santaan,Kannada,completed,gemini-chunked,high,False,3,aligned,0.9011,0,0,0,0.666667,0
+5,9,MV++_1045,Kaidi Aur Kokila,Kannada,completed,gemini-chunked,high,False,3,aligned,0.91,0,0,0,0.666667,0
+5,9,MV++_1047,Doosra Sita,Kannada,completed,gemini-chunked,low,False,3,aligned,0.9036,0,0,0,0.5,0
+5,9,MV++_1048,Ram Ka Prem Patra,Kannada,completed,gemini-chunked,high,False,3,aligned,0.8987,0,0,0,0.666667,0
+5,9,MV++_1054,Parinde Ki Chah,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8615,0,0,0,1.0,0
+5,9,MV++_1057,Safar Mein Dhoop To Hogi,Kannada,completed,gemini-chunked,low,True,3,aligned,0.8661,0,3,0,1.0,3
+5,9,MV++_1059,Mitti Ke Diye,Kannada,completed,gemini-chunked,high,False,3,aligned,0.8951,0,0,0,1.0,0
+5,9,MV++_1060,Aag Ka Dariya,Kannada,completed,gemini-chunked,high,False,3,aligned,0.914,0,0,0,0.833333,0
+5,9,MV++_1071,A Lone Tree,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8779,0,0,0,1.0,0
+5,9,MV++_1072,Shahar Mein Ghar Nahin,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8777,0,0,0,1.0,0
+5,9,MV++_1075,Panchhi Nadiyan Pawan Ke Jhonke,Kannada,completed,gemini-chunked,high,False,3,aligned,0.8885,0,0,0,0.833333,0
+5,9,MV++_1076,Prithvi Ki Pukar,Kannada,completed,gemini-chunked,high,False,1,aligned,0.9335,0,0,0,1.0,0
+5,9,MV++_1078,Buddha Ka Kya Kasoor Tha,Kannada,completed,gemini-chunked,high,False,3,aligned,0.934,0,0,0,1.0,0
+5,9,MV++_1079,Usne Kaha Tha,Kannada,completed,gemini-chunked,high,False,3,aligned,0.942,0,0,0,1.0,0
+5,9,MV++_1085,Krishna Ki Chetavani,Kannada,completed,gemini-chunked,high,False,1,aligned,0.9,0,0,0,1.0,0
+5,9,MV++_1092,Hawa Hoon Main,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8836,0,0,0,1.0,0
+5,9,MV++_1094,Trikaal Sandhya,Kannada,completed,gemini-chunked,high,False,2,aligned,0.9482,0,0,0,1.0,0
+5,9,MV++_1095,Prateeksha Mein Viraasat,Kannada,completed,gemini-chunked,high,False,2,aligned,0.9424,0,0,0,1.0,0
+5,9,MV++_1096,Pyar Ka Prateek,Kannada,completed,gemini-chunked,high,False,2,aligned,0.9615,0,0,0,1.0,0
+5,9,MV++_1113,Mankuthimmana Kagga,Kannada,completed,gemini-chunked,low,False,1,aligned,0.7933,0,0,0,0.5,0
+5,9,MV++_1116,Mareyada Haadu,Kannada,completed,gemini-chunked,low,True,3,aligned,0.8128,0,1,0,0.833333,1
+5,9,MV++_1118,Udayavagali Namma Cheluva Kannada Naadu,Kannada,completed,gemini-chunked,high,False,3,aligned,0.9237,0,0,0,0.833333,0
+5,9,MV++_1119,Elliruve Nanna Krishna,Kannada,completed,gemini-chunked,high,False,3,aligned,0.9275,0,0,0,0.833333,0
+5,9,MV++_1121,Kannada,Kannada,salvaged,gemini-chunked,low,True,2,aligned,0.9527,1,0,0,1.0,1
+5,9,MV++_1122,Mysuru Mallige,Kannada,completed,gemini-chunked,high,False,2,aligned,0.9069,0,0,0,0.75,0
+5,9,MV++_1123,Hachchevu Kannadada Deepa,Kannada,salvaged,gemini-chunked,low,True,2,aligned,0.8327,1,0,0,0.75,1
+5,9,MV++_1129,Huttidare Kannada Naadu,Kannada,completed,gemini-chunked,low,False,2,aligned,0.8882,0,0,0,0.5,0
+5,9,MV++_1135,Uluva Yogi,Kannada,completed,gemini-chunked,high,False,2,aligned,0.7788,0,0,0,0.75,0
+5,9,MV++_1136,Mugilu Male,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8237,0,0,0,1.0,0
+5,9,MV++_1137,Malegalalli Madumagalu,Kannada,completed,gemini-chunked,low,False,2,aligned,0.871,0,0,0,0.5,0
+5,9,MV++_1141,Kuvempu Naadu,Kannada,completed,gemini-chunked,low,False,1,aligned,0.9155,0,0,0,0.5,0
+5,9,MV++_1152,Rinda Posh Maal,Kashmiri,completed,gemini-chunked,low,False,1,aligned,0.8976,0,0,0,0.5,0
+5,9,MV++_1153,Ghazal,Kashmiri,completed,gemini-chunked,high,False,1,aligned,0.9138,0,0,0,1.0,0
+5,9,MV++_1154,Me Chhum Aash Paghich,Kashmiri,completed,gemini-chunked,high,False,1,aligned,0.8213,0,0,0,1.0,0
+5,9,MV++_1155,Vuchhum Yaar Gachun,Kashmiri,completed,gemini-chunked,low,False,1,aligned,0.8161,0,0,0,0.5,0
+5,9,MV++_1156,Kashmir,Kashmiri,completed,gemini-chunked,high,False,3,aligned,0.8177,0,0,0,0.833333,0
+5,9,MV++_1157,Yemberzal,Kashmiri,completed,gemini-chunked,low,False,1,aligned,0.8867,0,0,0,0.5,0
+5,9,MV++_1158,Sonte Posh,Kashmiri,completed,gemini-chunked,low,False,1,aligned,0.7932,0,0,0,0.5,0
+5,9,MV++_1159,Sukh Roshan,Kashmiri,completed,gemini-chunked,high,False,1,aligned,0.913,0,0,0,1.0,0
+5,9,MV++_1164,Aamche Sukh Dilem,Konkani,completed,gemini-chunked,low,False,1,aligned,0.7802,0,0,0,0.5,0
+5,9,MV++_1165,Mhojea Konnan,Konkani,completed,gemini-chunked,low,False,1,aligned,0.7724,0,0,0,0.5,0
+5,9,MV++_1166,Bhatkar,Konkani,completed,gemini-chunked,low,False,1,aligned_low,0.6872,0,0,0,0.5,0
+5,9,MV++_1167,Zali Vhalan,Konkani,completed,gemini-chunked,low,False,1,aligned,0.7717,0,0,0,0.5,0
+5,9,MV++_1169,Dev Boren,Konkani,completed,gemini-chunked,low,False,1,aligned,0.7741,0,0,0,0.5,0
+5,9,MV++_1171,Tuka Zaum Aas,Konkani,completed,gemini-chunked,low,False,1,aligned,0.8484,0,0,0,0.5,0
+5,9,MV++_1172,Nashik Zatam,Konkani,completed,gemini-chunked,high,False,1,aligned,0.8258,0,0,0,1.0,0
+5,9,MV++_1174,Oru Nattu Vakkukaran,Malayalam,salvaged,gemini-chunked,low,True,1,aligned,0.9876,1,0,0,0.5,1
+5,9,MV++_1176,Kaaladi,Malayalam,completed,gemini-chunked,low,False,1,aligned,0.9531,0,0,0,0.5,0
+5,9,MV++_1178,Nenjathai Killikkurissukal,Malayalam,completed,gemini-chunked,low,False,1,aligned,0.9727,0,0,0,0.5,0
+5,9,MV++_1179,Bharatheeyam,Malayalam,completed,gemini-chunked,high,False,1,aligned,0.95,0,0,0,1.0,0
+5,9,MV++_1180,Nizhalattam,Malayalam,completed,gemini-chunked,low,False,1,aligned,0.7543,0,0,0,0.5,0
+5,9,MV++_1182,Naranathu Bhranthan,Malayalam,completed,gemini-chunked,low,False,1,aligned,0.9885,0,0,0,0.5,0
+5,9,MV++_1184,Siring,Manipuri,completed,gemini-chunked,low,False,3,aligned,0.7777,0,0,0,0.5,0
+5,9,MV++_1185,Eigi Ningthem,Manipuri,salvaged,gemini-chunked,low,True,3,aligned,0.7988,1,0,0,0.333333,1
+5,9,MV++_1186,Chingda Satpi,Manipuri,completed,gemini-chunked,low,False,3,aligned,0.7668,0,0,0,0.5,0
+5,9,MV++_1187,Thainagi,Manipuri,completed,gemini-chunked,low,False,2,aligned,0.7542,0,0,0,0.25,0
+5,9,MV++_1188,Turel,Manipuri,completed,gemini-chunked,low,False,2,aligned_low,0.7271,0,0,0,0.5,0
+5,9,MV++_1190,Nakoshi,Marathi,completed,gemini-chunked,low,False,1,aligned,0.9586,0,0,0,0.5,0
+5,9,MV++_1191,Gandhi Mala Bhetla,Marathi,completed,gemini-chunked,high,False,1,aligned,0.945,0,0,0,1.0,0
+5,9,MV++_1194,Mi Zaad Boltoy,Marathi,completed,gemini-chunked,low,False,1,aligned,0.85,0,0,0,0.5,0
+5,9,MV++_1196,Aakashacha Paay,Marathi,completed,gemini-chunked,low,False,1,aligned,0.8743,0,0,0,0.5,0
+5,9,MV++_1197,Maze Mrityu,Marathi,completed,gemini-chunked,high,False,1,aligned,0.8881,0,0,0,1.0,0
+5,9,MV++_1199,Bande Utkala Janani,Odia,completed,gemini-chunked,low,False,1,aligned,0.8035,0,0,0,0.5,0
+5,9,MV++_1200,Dali Jhia,Odia,completed,gemini-chunked,low,False,1,aligned,0.8528,0,0,0,0.5,0
+5,9,MV++_1201,Kalinga Gatha,Odia,completed,gemini-chunked,high,False,1,aligned,0.7618,0,0,0,1.0,0
+5,9,MV++_1202,Bhagavad Gita,Odia,completed,gemini-chunked,high,False,1,aligned,0.7718,0,0,0,1.0,0
+5,9,MV++_1204,Samudra,Odia,completed,gemini-chunked,low,False,1,aligned,0.9467,0,0,0,0.5,0
+5,9,MV++_1207,Kanta Bada,Odia,completed,gemini-chunked,high,False,1,aligned,0.7943,0,0,0,1.0,0
+5,9,MV++_1212,Ajj Aakhaan Waris Shah Nu,Punjabi,completed,gemini-chunked,low,False,5,aligned,0.8587,0,0,0,0.5,0
+5,9,MV++_1214,Mitti Di Dheri,Punjabi,completed,gemini-chunked,high,False,2,aligned,0.9769,0,0,0,0.75,0
+5,9,MV++_1215,Loona,Punjabi,completed,gemini-chunked,low,True,3,alignment_risk,0.4151,0,2,3,0.0,5
+5,9,MV++_1216,Maan Da Mandir,Punjabi,completed,gemini-chunked,high,False,2,aligned,0.8728,0,0,0,1.0,0
+5,9,MV++_1217,Punjab Di Mitti,Punjabi,completed,gemini-chunked,high,False,2,aligned,0.8298,0,0,0,1.0,0
+5,9,MV++_1218,Ik Raat Samundar Kinare,Punjabi,completed,gemini-chunked,high,False,2,aligned,0.8957,0,0,0,1.0,0
+5,9,MV++_1220,Jithe Ik Raat Baithi Aa,Punjabi,completed,gemini-chunked,low,False,2,aligned,0.9085,0,0,0,0.5,0
+5,9,MV++_1221,Kandhan Ton Paar,Punjabi,completed,gemini-chunked,high,False,2,aligned,0.9318,0,0,0,1.0,0
+5,9,MV++_1225,Bulleya Ki Jaana Main Kaun,Punjabi,completed,gemini-chunked,low,False,3,aligned,0.8386,0,0,0,0.5,0
+5,9,MV++_1228,Mhari Ghoomar,Rajasthani,completed,gemini-chunked,low,False,1,aligned,0.8059,0,0,0,0.5,0
+5,9,MV++_1230,Thar Ri Gathri,Rajasthani,completed,gemini-chunked,low,False,1,aligned,0.91,0,0,0,0.5,0
+5,9,MV++_1231,Rangila Rajasthan,Rajasthani,completed,gemini-chunked,low,False,1,aligned,0.8988,0,0,0,0.5,0
+5,9,MV++_1233,Padharo Mhare Desh,Rajasthani,completed,gemini-chunked,low,False,1,aligned,0.8438,0,0,0,0.5,0
+5,9,MV++_1234,Kesariya Balam,Rajasthani,completed,gemini-chunked,low,False,1,aligned,0.9315,0,0,0,0.5,0
+5,9,MV++_1235,Bhagavad Gita,Sanskrit,salvaged,gemini-chunked,low,True,2,aligned,0.7583,3,2,0,1.0,5
+5,9,MV++_1237,Dalkhata,Santhali,completed,gemini-chunked,high,False,5,aligned,0.8223,0,0,0,0.6,0
+5,9,MV++_1238,Santhal Rebellion,Santhali,completed,gemini-chunked,high,False,5,aligned,0.8941,0,0,0,0.7,0
+5,9,MV++_1239,Jitna Pahar,Santhali,completed,gemini-chunked,high,False,5,aligned,0.8141,0,0,0,1.0,0
+5,9,MV++_1240,Baha Dhan,Santhali,completed,gemini-chunked,high,False,4,aligned,0.8093,0,0,0,0.75,0
+5,9,MV++_1241,Madhur Bhanwar,Santhali,completed,gemini-chunked,low,False,3,aligned,0.7845,0,0,0,0.5,0
+5,9,MV++_1242,Ho Jamalo,Sindhi,completed,gemini-chunked,high,False,1,aligned,0.8012,0,0,0,1.0,0
+5,9,MV++_1243,Pyar Ja Geet,Sindhi,completed,gemini-chunked,high,False,2,aligned,0.9209,0,0,0,1.0,0
+5,9,MV++_1247,Moomal Rano,Sindhi,completed,gemini-chunked,low,False,2,aligned_low,0.6881,0,0,0,0.5,0
+5,9,MV++_1248,Utho Jaago,Sindhi,completed,gemini-chunked,high,False,2,aligned,0.7631,0,0,0,0.75,0
+5,9,MV++_1249,Sufi Kafis,Sindhi,completed,gemini-chunked,high,False,2,aligned,0.7842,0,0,0,0.75,0
+5,9,MV++_1253,Chinnanjiru Kiliye,Tamil,salvaged,gemini-chunked,low,True,3,aligned,0.8698,1,0,0,0.666667,1
+5,9,MV++_1254,Kanne Kalaimaane,Tamil,completed,gemini-chunked,low,False,1,aligned,0.9959,0,0,0,0.5,0
+5,9,MV++_1255,Kamba Ramayanam,Tamil,completed,gemini-chunked,low,False,1,aligned,0.7826,0,0,0,0.5,0
+5,9,MV++_1257,Azhagiya Tamil Magan,Tamil,completed,gemini-chunked,low,False,1,aligned,0.822,0,0,0,0.5,0
+5,9,MV++_1262,Nalladhor Veenai,Tamil,completed,gemini-chunked,low,False,1,aligned,0.9885,0,0,0,0.5,0
+5,9,MV++_1267,Oru Ponn Malai Pozhudhu,Tamil,completed,gemini-chunked,low,False,1,aligned,0.9298,0,0,0,0.5,0
+5,9,MV++_1268,Nilave Ennidam Nerungathae,Tamil,completed,gemini-chunked,high,False,1,aligned,0.9647,0,0,0,1.0,0
+5,9,MV++_1271,Aagaya Gangai,Tamil,completed,gemini-chunked,high,False,1,aligned,0.8615,0,0,0,1.0,0
+5,9,MV++_1272,Vazhga Valamudan,Tamil,completed,gemini-chunked,high,False,1,aligned,0.7857,0,0,0,1.0,0
+5,9,MV++_1274,Kurunthogai,Tamil,completed,gemini-chunked,low,False,1,aligned,0.909,0,0,0,0.5,0
+5,9,MV++_1275,Kanniththin Siru Penn,Tamil,completed,gemini-chunked,high,False,1,aligned,0.9439,0,0,0,1.0,0
+5,9,MV++_1278,Oru Poovukkum,Tamil,completed,gemini-chunked,high,False,1,aligned,0.8607,0,0,0,1.0,0
+5,9,MV++_1279,Vennilave Vennilave,Tamil,completed,gemini-chunked,low,False,1,aligned,0.9015,0,0,0,0.5,0
+5,9,MV++_1280,Nilavum Malargalum,Tamil,completed,gemini-chunked,low,False,1,aligned,0.8641,0,0,0,0.5,0
+5,9,MV++_1284,Kannanin Satham,Tamil,salvaged,gemini-chunked,low,True,1,aligned,0.8302,2,1,0,1.0,3
+5,9,MV++_1291,Aayiram Thamarai,Tamil,completed,gemini-chunked,high,False,1,aligned,0.8929,0,0,0,1.0,0
+5,9,MV++_1297,Kannanum Kanni,Tamil,salvaged,gemini-chunked,low,True,1,aligned,0.9091,1,0,0,1.0,1
+5,9,MV++_1308,Aasaiyil Poonthendral,Tamil,completed,gemini-chunked,low,False,1,aligned,0.8446,0,0,0,0.5,0
+5,9,MV++_1346,Aazhi,Tamil,completed,gemini-chunked,low,False,1,aligned,0.92,0,0,0,0.5,0
+5,9,MV++_1351,Nilavin Oli,Tamil,salvaged,gemini-chunked,low,True,1,aligned,0.9528,1,0,0,1.0,1
+5,9,MV++_1362,Azhagiya Tamil Magan,Tamil,completed,gemini-chunked,high,False,1,aligned,0.8854,0,0,0,1.0,0
+5,9,MV++_1367,Oliyin Sirippu,Tamil,salvaged,gemini-chunked,low,True,1,aligned,0.8945,1,0,0,0.5,1
+5,9,MV++_1380,Thunaiyin Mozhi,Tamil,completed,gemini-chunked,high,False,1,aligned,0.8636,0,0,0,1.0,0
+5,9,MV++_1392,Aasaiyin Kovil,Tamil,completed,gemini-chunked,high,False,1,aligned,0.9859,0,0,0,1.0,0
+5,9,MV++_1421,Kaadhalin Kovil,Tamil,completed,gemini-chunked,high,False,1,aligned,0.901,0,0,0,1.0,0
+5,9,MV++_1424,Iravu Malarum,Tamil,completed,gemini-chunked,high,False,1,aligned,0.8688,0,0,0,1.0,0
+5,9,MV++_1425,Kannanin Vaasal,Tamil,salvaged,gemini-chunked,low,True,1,aligned,0.8515,2,0,0,0.5,2
+5,9,MV++_1426,Malargal Innum,Tamil,completed,gemini-chunked,high,False,1,aligned,0.8731,0,0,0,1.0,0
+5,9,MV++_1433,Vasanta Rutu,Telugu,completed,gemini-chunked,low,False,1,aligned,0.814,0,0,0,0.5,0
+5,9,MV++_1434,Anumantha Vamsam,Telugu,completed,gemini-chunked,high,False,1,aligned,0.8552,0,0,0,1.0,0
+5,9,MV++_1440,Oh neeli Chandamama,Telugu,completed,gemini-chunked,low,True,6,aligned_low,0.6934,0,1,0,0.25,1
+5,9,MV++_1443,Oh Jabilamma,Telugu,completed,gemini-chunked,low,False,12,aligned,0.8462,0,0,0,0.375,0
+5,9,MV++_1445,Thali Neku Padabivandanam,Telugu,completed,gemini-chunked,low,False,2,aligned,0.9849,0,0,0,0.5,0
+5,9,MV++_1550,Hum Dekhenge,Urdu,completed,gemini-chunked,high,False,1,aligned,0.8166,0,0,0,1.0,0
+5,9,MV++_1554,Yeh Daag Daag Ujala,Urdu,completed,gemini-chunked,high,False,3,aligned,0.8994,0,0,0,1.0,0
+5,9,MV++_1556,Chand Se Mukhda,Urdu,completed,gemini-chunked,high,False,5,aligned,0.8654,0,0,0,0.7,0
+5,9,MV++_1557,Dil Ki Baat,Urdu,completed,gemini-chunked,low,False,5,aligned,0.8089,0,0,0,0.5,0
+5,9,MV++_1558,Ek Shayar Ka Khat,Urdu,completed,gemini-chunked,low,False,3,aligned,0.7894,0,0,0,0.5,0
+5,9,MV++_1559,Mujhse Pehli Si Mohabbat,Urdu,completed,gemini-chunked,low,False,5,aligned_low,0.7832,0,0,0,0.2,0
+5,9,MV++_1561,Yeh Daag Daag Ujala,Urdu,completed,gemini-chunked,low,False,1,aligned,0.9133,0,0,0,0.5,0
+5,9,MV++_1569,Yeh Daag Daag Ujala,Urdu,completed,gemini-chunked,low,False,9,aligned,0.822,0,0,0,0.5,0
+5,9,MV++_1570,Kaifiyaat,Urdu,completed,gemini-chunked,low,False,4,aligned,0.9007,0,0,0,0.5,0

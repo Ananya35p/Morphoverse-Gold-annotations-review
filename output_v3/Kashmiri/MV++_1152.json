@@ -1,0 +1,128 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1152",
+  "poem_title": "Rinda Posh Maal",
+  "language": "Kashmiri",
+  "original_poem": "رِندہ پوشھ مال، گِندہ پوشھ مال  \nریشی واریہ نیاؤ، سہز پوشھ مال  \nہری ساری نوَ باغ، برکھہ دیار نۄندہ چھوک گول  \nہندہ کوسہ پاں لاری، ما زرۄ گندہ پوشھ مال  \nرِندہ پوشھھ مال، گِندہ پوشھھ مال۔",
+  "translated_poem": "The fair maidens blossom, the garden blooms,  \nIn the vale of saints, spring has arrived.  \nEvery garden is green, flowers shower,  \nFragrance spreads from every path, oh dear,  \nThe fair maidens blossom, the garden blooms.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8976,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "رِندہ پوشھ مال، گِندہ پوشھ مال",
+          "ریشی واریہ نیاؤ، سہز پوشھ مال",
+          "ہری ساری نوَ باغ، برکھہ دیار نۄندہ چھوک گول",
+          "ہندہ کوسہ پاں لاری، ما زرۄ گندہ پوشھ مال",
+          "رِندہ پوشھھ مال، گِندہ پوشھھ مال۔"
+        ],
+        "translated_lines": [
+          "The fair maidens blossom, the garden blooms,",
+          "In the vale of saints, spring has arrived.",
+          "Every garden is green, flowers shower,",
+          "Fragrance spreads from every path, oh dear,",
+          "The fair maidens blossom, the garden blooms."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Festive flower garland",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "رِندہ پوشھ مال، گِندہ پوشھ مال",
+          "ریشی واریہ نیاؤ، سہز پوشھ مال",
+          "ہری ساری نوَ باغ، برکھہ دیار نۄندہ چھوک گول",
+          "ہندہ کوسہ پاں لاری، ما زرۄ گندہ پوشھ مال",
+          "رِندہ پوشھھ مال، گِندہ پوشھھ مال۔"
+        ],
+        "translated_lines": [
+          "The fair maidens blossom, the garden blooms,",
+          "In the vale of saints, spring has arrived.",
+          "Every garden is green, flowers shower,",
+          "Fragrance spreads from every path, oh dear,",
+          "The fair maidens blossom, the garden blooms."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Literal flower garland metaphor adapted to maidens",
+        "metaphor_spans": [
+          {
+            "source_term": "رِندہ پوشھ مال",
+            "abstract_meaning": "Garland for the carefree mystic"
+          },
+          {
+            "source_term": "ریشی واریہ",
+            "abstract_meaning": "Sacred garden of the saints"
+          },
+          {
+            "source_term": "سہز پوشھ مال",
+            "abstract_meaning": "Garland of innate spiritual beauty"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ریشی واریہ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سہز",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ہری",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8976,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1116",
+  "poem_title": "Mareyada Haadu",
+  "language": "Kannada",
+  "original_poem": "ಮರೆಯದ ಹಾಡು ಹಂಬಲದ ಹಾಡು  \nಮುಗಿಯದ ಹಾಡು ಕನಸುಗಳ ಹಾಡು  \nಬೇಸರ ತೊಳೆದು ಕುಣಿಯುವ ಹಾಡು  \nಹೊಸ ಬೆಳಕಿನ ತವಕದ ಹಾಡು.  \n\nಬೆಳಕೇ ಬರಲು ಮಡಿವುದಿಲ್ಲ  \nಹತ್ತಿದ ದೀಪವು ಮುಗಿಯುವುದಿಲ್ಲ  \nಕನಸು ಕಂಡಂತೆ ಮುಗಿಯುವುದಿಲ್ಲ  \nಹೇಳುವ ಹಂಬಲದ ಹಾಡು!  \n\nತುಂಬಿದ ಎದೆಗಳ ತೀರದ ಹಾಡು  \nಬೆಳಕಿನ ಚಿಮ್ಮುವ ಕನಸುಗಳ ಹಾಡು  \nತಮಸ್ಸಿಗೆ ಬೇಕಾದ ಮುದ್ದಿನ ಹಾಡು  \nಮಗುವೆ ನಗುತಿರುವ ಹಾಡು!",
+  "translated_poem": "The song of freedom, a song of longing,  \nAn endless song, a song of dreams,  \nA song that sheds the weariness,  \nA song yearning for new light.  \n\nThe light will never fade,  \nThe lamp that has been lit will not end,  \nLike a dream, it will not cease,  \nThis song of longing speaks!  \n\nA song from full hearts, never ending,  \nA song of dreams bursting with light,  \nA sweet song the darkness craves,  \nA child smiling in the song!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8128,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಮರೆಯದ ಹಾಡು ಹಂಬಲದ ಹಾಡು",
+          "ಮುಗಿಯದ ಹಾಡು ಕನಸುಗಳ ಹಾಡು",
+          "ಬೇಸರ ತೊಳೆದು ಕುಣಿಯುವ ಹಾಡು",
+          "ಹೊಸ ಬೆಳಕಿನ ತವಕದ ಹಾಡು."
+        ],
+        "translated_lines": [
+          "The song of freedom, a song of longing,",
+          "An endless song, a song of dreams,",
+          "A song that sheds the weariness,",
+          "A song yearning for new light."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಬೆಳಕೇ ಬರಲು ಮಡಿವುದಿಲ್ಲ",
+          "ಹತ್ತಿದ ದೀಪವು ಮುಗಿಯುವುದಿಲ್ಲ",
+          "ಕನಸು ಕಂಡಂತೆ ಮುಗಿಯುವುದಿಲ್ಲ",
+          "ಹೇಳುವ ಹಂಬಲದ ಹಾಡು!"
+        ],
+        "translated_lines": [
+          "The light will never fade,",
+          "The lamp that has been lit will not end,",
+          "Like a dream, it will not cease,",
+          "This song of longing speaks!"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ತುಂಬಿದ ಎದೆಗಳ ತೀರದ ಹಾಡು",
+          "ಬೆಳಕಿನ ಚಿಮ್ಮುವ ಕನಸುಗಳ ಹಾಡು",
+          "ತಮಸ್ಸಿಗೆ ಬೇಕಾದ ಮುದ್ದಿನ ಹಾಡು",
+          "ಮಗುವೆ ನಗುತಿರುವ ಹಾಡು!"
+        ],
+        "translated_lines": [
+          "A song from full hearts, never ending,",
+          "A song of dreams bursting with light,",
+          "A sweet song the darkness craves,",
+          "A child smiling in the song!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "celebrating hope and light",
+    "translation_fidelity_score": 0.833333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಮರೆಯದ ಹಾಡು ಹಂಬಲದ ಹಾಡು",
+          "ಮುಗಿಯದ ಹಾಡು ಕನಸುಗಳ ಹಾಡು",
+          "ಬೇಸರ ತೊಳೆದು ಕುಣಿಯುವ ಹಾಡು",
+          "ಹೊಸ ಬೆಳಕಿನ ತವಕದ ಹಾಡು."
+        ],
+        "translated_lines": [
+          "The song of freedom, a song of longing,",
+          "An endless song, a song of dreams,",
+          "A song that sheds the weariness,",
+          "A song yearning for new light."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "unforgettable translated as freedom, dancing is omitted",
+        "metaphor_spans": [
+          {
+            "source_term": "ಹೊಸ ಬೆಳಕಿನ ತವಕದ ಹಾಡು",
+            "abstract_meaning": "Hope for a better future"
+          },
+          {
+            "source_term": "ಬೇಸರ ತೊಳೆದು ಕುಣಿಯುವ ಹಾಡು",
+            "abstract_meaning": "Joy overcoming sadness"
+          },
+          {
+            "source_term": "ಕನಸುಗಳ ಹಾಡು",
+            "abstract_meaning": "Expression of deep aspirations"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಬೆಳಕೇ ಬರಲು ಮಡಿವುದಿಲ್ಲ",
+          "ಹತ್ತಿದ ದೀಪವು ಮುಗಿಯುವುದಿಲ್ಲ",
+          "ಕನಸು ಕಂಡಂತೆ ಮುಗಿಯುವುದಿಲ್ಲ",
+          "ಹೇಳುವ ಹಂಬಲದ ಹಾಡು!"
+        ],
+        "translated_lines": [
+          "The light will never fade,",
+          "The lamp that has been lit will not end,",
+          "Like a dream, it will not cease,",
+          "This song of longing speaks!"
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಹತ್ತಿದ ದೀಪವು",
+            "abstract_meaning": "Enduring inspiration or hope"
+          },
+          {
+            "source_term": "ಹಂಬಲದ ಹಾಡು",
+            "abstract_meaning": "Unending desire for expression"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ತುಂಬಿದ ಎದೆಗಳ ತೀರದ ಹಾಡು",
+          "ಬೆಳಕಿನ ಚಿಮ್ಮುವ ಕನಸುಗಳ ಹಾಡು",
+          "ತಮಸ್ಸಿಗೆ ಬೇಕಾದ ಮುದ್ದಿನ ಹಾಡು",
+          "ಮಗುವೆ ನಗುತಿರುವ ಹಾಡು!"
+        ],
+        "translated_lines": [
+          "A song from full hearts, never ending,",
+          "A song of dreams bursting with light,",
+          "A sweet song the darkness craves,",
+          "A child smiling in the song!"
+        ],
+        "emotion": "celebration",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ತುಂಬಿದ ಎದೆಗಳ ತೀರ",
+            "abstract_meaning": "Emotional fulfillment and depth"
+          },
+          {
+            "source_term": "ತಮಸ್ಸಿಗೆ ಬೇಕಾದ ಮುದ್ದಿನ ಹಾಡು",
+            "abstract_meaning": "Comfort amidst ignorance or gloom"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ತಮಸ್ಸಿಗೆ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8128,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 8,
+        "metaphors_dropped": 1
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.stanzas[3].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "ಬೆಳಕಿನ ಚಿಮ್ಮುವ ಕನಸುಗಳು",
+      "note": "metaphor_source_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

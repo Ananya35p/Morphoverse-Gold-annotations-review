@@ -1,0 +1,112 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0052",
+  "poem_title": "Ghar",
+  "language": "Dogri",
+  "original_poem": "घर\nघर दी खुशबू\nमिट्टी विच रची-बसी,\nहर दीवार ते इक कहानी,\nसपने सजदे, साये विच।",
+  "translated_poem": "Home\nThe fragrance of home\nWoven into the soil,\nEvery wall tells a story,\nDreams blossoming in its shade.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8337,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "घर",
+          "घर दी खुशबू",
+          "मिट्टी विच रची-बसी,",
+          "हर दीवार ते इक कहानी,",
+          "सपने सजदे, साये विच।"
+        ],
+        "translated_lines": [
+          "Home",
+          "The fragrance of home",
+          "Woven into the soil,",
+          "Every wall tells a story,",
+          "Dreams blossoming in its shade."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "nostalgic comforting warmth",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "घर",
+          "घर दी खुशबू",
+          "मिट्टी विच रची-बसी,",
+          "हर दीवार ते इक कहानी,",
+          "सपने सजदे, साये विच।"
+        ],
+        "translated_lines": [
+          "Home",
+          "The fragrance of home",
+          "Woven into the soil,",
+          "Every wall tells a story,",
+          "Dreams blossoming in its shade."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "मिट्टी विच रची-बसी",
+            "abstract_meaning": "Deeply rooted cultural identity"
+          },
+          {
+            "source_term": "हर दीवार ते इक कहानी",
+            "abstract_meaning": "Walls representing lived memories"
+          },
+          {
+            "source_term": "सपने सजदे",
+            "abstract_meaning": "Aspirations flourishing within the home"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "मिट्टी",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8337,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

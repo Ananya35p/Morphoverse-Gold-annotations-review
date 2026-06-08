@@ -1,0 +1,128 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1199",
+  "poem_title": "Bande Utkala Janani",
+  "language": "Odia",
+  "original_poem": "ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ  \nମାଟି ଭାରସା  \nସୂର୍ଯ୍ୟ ଚନ୍ଦ୍ର ଦେଖି  \nମୁ ନାଚିବା ପାଇଁ  \nତୁମର ଗର୍ବ ଉଠାଉଛି।",
+  "translated_poem": "Salute to Utkala Mother,  \nThe earth is heavy,  \nSeeing the sun and moon,  \nI am here to dance,  \nYour pride rises within me.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8035,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ",
+          "ମାଟି ଭାରସା",
+          "ସୂର୍ଯ୍ୟ ଚନ୍ଦ୍ର ଦେଖି",
+          "ମୁ ନାଚିବା ପାଇଁ",
+          "ତୁମର ଗର୍ବ ଉଠାଉଛି।"
+        ],
+        "translated_lines": [
+          "Salute to Utkala Mother,",
+          "The earth is heavy,",
+          "Seeing the sun and moon,",
+          "I am here to dance,",
+          "Your pride rises within me."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Praising Mother Utkala",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ",
+          "ମାଟି ଭାରସା",
+          "ସୂର୍ଯ୍ୟ ଚନ୍ଦ୍ର ଦେଖି",
+          "ମୁ ନାଚିବା ପାଇଁ",
+          "ତୁମର ଗର୍ବ ଉଠାଉଛି।"
+        ],
+        "translated_lines": [
+          "Salute to Utkala Mother,",
+          "The earth is heavy,",
+          "Seeing the sun and moon,",
+          "I am here to dance,",
+          "Your pride rises within me."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "bharasa means trust, not heavy",
+        "metaphor_spans": [
+          {
+            "source_term": "ଉତ୍କଳ ଜନନୀ",
+            "abstract_meaning": "Land personified as a mother"
+          },
+          {
+            "source_term": "ମାଟି ଭାରସା",
+            "abstract_meaning": "The land as ultimate support"
+          },
+          {
+            "source_term": "ଗର୍ବ ଉଠାଉଛି",
+            "abstract_meaning": "Bringing honor to the nation"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ଉତ୍କଳ ଜନନୀ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ସୂର୍ଯ୍ୟ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ଚନ୍ଦ୍ର",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8035,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

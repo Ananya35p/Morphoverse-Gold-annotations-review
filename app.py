@@ -11,17 +11,9 @@ from utils.io_utils import (
     append_audit_log,
     ensure_app_dirs,
     load_raw_poems,
-    load_review_queue,
-    load_reviews_for_poem,
     load_reviewed_index,
-    make_review_zip,
-    next_review_number,
     now_iso,
     review_id,
-    reviewer_id_from_number,
-    review_number_from_reviewer_id,
-    reviewed_output_path,
-    save_json,
     resolve_data_dir,
 )
 from utils.review_utils import (
@@ -42,11 +34,28 @@ from utils.schema_utils import (
     ALLOWED_CULTURE_CATEGORIES,
     ALLOWED_EMOTIONS,
     REVIEW_ACTIONS,
+    REVIEW_ACTIONS_EXISTING,
     REVIEW_CONFIDENCE,
     REVIEW_DECISIONS,
     REVIEW_STATUS_FILTERS,
 )
-from utils.storage_utils import load_remote_review_ids, persistent_storage_label, save_review_to_persistent_storage
+from utils.reviewer_store import load_user_poem_review, save_poem_review
+from utils.auth_utils import (
+    init_auth_state,
+    logout,
+    render_instructions_if_needed,
+    require_login,
+    show_instructions_dialog,
+)
+from utils.ui_utils import (
+    LANGUAGE_UI_CSS,
+    clear_language_setup,
+    init_ui_state,
+    language_key,
+    render_top_bar,
+    require_language_setup,
+)
+from utils.storage_utils import save_review_to_persistent_storage
 
 
 st.set_page_config(
@@ -172,7 +181,7 @@ CUSTOM_CSS = """
 }
 </style>
 """
-st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
+st.markdown(CUSTOM_CSS + LANGUAGE_UI_CSS, unsafe_allow_html=True)
 
 
 def badge(text: str, kind: str = "gray") -> str:
@@ -353,21 +362,92 @@ def get_low_agreement_notes(raw: Dict[str, Any]) -> List[str]:
 def poem_option_label(raw: Dict[str, Any], reviewed_index: Dict[str, Dict[str, Any]]) -> str:
     poem_id = get_poem_id(raw)
     title = get_title(raw)
+    short_title = title if len(title) <= 42 else f"{title[:39]}..."
     status = get_current_review_status(raw, reviewed_index).replace("_", " ")
     agreement = get_agreement(raw) or "n/a"
-    return f"{poem_id} | {title} | {status} | agreement: {agreement}"
+    return f"{poem_id} · {short_title} · {status} · {agreement}"
 
 
-def review_action_column() -> st.column_config.SelectboxColumn:
+def review_action_column(include_add: bool = True) -> st.column_config.SelectboxColumn:
+    options = REVIEW_ACTIONS if include_add else REVIEW_ACTIONS_EXISTING
     return st.column_config.SelectboxColumn(
-        "Action - click to choose",
-        help="Dropdown: keep = correct, modify = corrected, remove = exclude from final annotations, add = new reviewer row.",
-        options=REVIEW_ACTIONS,
+        "Action",
+        help="keep = correct (read-only for culture) · modify · remove · add (new rows only)",
+        options=options,
         required=True,
     )
 
 
-def metrics_block(poems: List[Dict[str, Any]], reviewed_index: Dict[str, Dict[str, Any]]):
+def mark_original_rows(df: pd.DataFrame) -> pd.DataFrame:
+    out = df.copy()
+    if "_is_original" not in out.columns:
+        out["_is_original"] = True
+    out["_is_original"] = out["_is_original"].fillna(False).astype(bool)
+    return out
+
+
+def build_keep_disabled_mask(df: pd.DataFrame, action_col: str = "review_action") -> pd.DataFrame:
+    disabled = pd.DataFrame(False, index=df.index, columns=df.columns)
+    if df.empty:
+        return disabled
+    for idx in df.index:
+        if str(df.at[idx, action_col]).strip() == "keep":
+            for col in df.columns:
+                if col not in {action_col, "_is_original"}:
+                    disabled.at[idx, col] = True
+    return disabled
+
+
+def strip_internal_columns(df: pd.DataFrame) -> pd.DataFrame:
+    return df.drop(columns=["_is_original"], errors="ignore")
+
+
+def validate_existing_row_actions(df: pd.DataFrame, section: str, key_col: str) -> List[str]:
+    errors: List[str] = []
+    if df is None or df.empty or "_is_original" not in df.columns:
+        return errors
+    for idx, rec in enumerate(df.fillna("").to_dict(orient="records"), start=1):
+        is_original = rec.get("_is_original") is True or str(rec.get("_is_original", "")).lower() == "true"
+        if is_original and str(rec.get("review_action", "")).strip() == "add":
+            row_name = str(rec.get(key_col, "")).strip() or f"row {idx}"
+            errors.append(f"{section} ({row_name}): 'add' is only for new rows you create.")
+    return errors
+
+
+def validate_culture_keep_unchanged(
+    edited: pd.DataFrame,
+    original: pd.DataFrame,
+    key_col: str = "text",
+) -> List[str]:
+    errors: List[str] = []
+    if edited is None or original is None or edited.empty or original.empty:
+        return errors
+    original_by_key = {
+        str(row.get(key_col, "")).strip(): row
+        for row in original.fillna("").to_dict(orient="records")
+        if str(row.get(key_col, "")).strip()
+    }
+    for rec in edited.fillna("").to_dict(orient="records"):
+        if str(rec.get("review_action", "")).strip() != "keep":
+            continue
+        row_name = str(rec.get(key_col, "")).strip()
+        source = original_by_key.get(row_name)
+        if not source:
+            continue
+        compare_cols = [c for c in edited.columns if c not in {"review_action", "reviewer_comment", "_is_original"}]
+        for col in compare_cols:
+            if str(rec.get(col, "")).strip() != str(source.get(col, "")).strip():
+                errors.append(
+                    f"Culture entities ({row_name}): rows marked keep cannot be edited. "
+                    "Change the action to modify if you need to correct this row."
+                )
+                break
+    return errors
+
+
+def metrics_block(poems: List[Dict[str, Any]], reviewed_index: Dict[str, Dict[str, Any]], language: str | None = None):
+    if language:
+        poems = [p for p in poems if language_key(p) == language]
     total = len(poems)
     reviewed = len([p for p in poems if get_poem_id(p) in reviewed_index])
     pending = total - reviewed
@@ -398,34 +478,50 @@ def metrics_block(poems: List[Dict[str, Any]], reviewed_index: Dict[str, Dict[st
 
 
 def df_editor_culture(df: pd.DataFrame, key: str) -> pd.DataFrame:
-    return st.data_editor(
-        df,
+    df = mark_original_rows(df)
+    display_cols = [
+        "review_action",
+        "text",
+        "category",
+        "preserved",
+        "english_gloss",
+        "romanization",
+        "translation_note",
+        "stanza_index",
+        "confidence",
+        "reviewer_comment",
+        "_is_original",
+    ]
+    for col in display_cols:
+        if col not in df.columns and col != "_is_original":
+            df[col] = ""
+    editor_df = df[display_cols].copy()
+    if isinstance(st.session_state.get(key), pd.DataFrame):
+        editor_df = st.session_state[key]
+    edited = st.data_editor(
+        editor_df,
         key=key,
         use_container_width=True,
         hide_index=True,
         num_rows="dynamic",
-        column_order=[
-            "review_action",
-            "text",
-            "category",
-            "preserved",
-            "english_gloss",
-            "romanization",
-            "translation_note",
-            "stanza_index",
-            "confidence",
-            "reviewer_comment",
-        ],
+        disabled=build_keep_disabled_mask(editor_df),
         column_config={
-            "category": st.column_config.SelectboxColumn("category (dropdown)", options=ALLOWED_CULTURE_CATEGORIES),
-            "review_action": review_action_column(),
+            "category": st.column_config.SelectboxColumn("category", options=ALLOWED_CULTURE_CATEGORIES),
+            "review_action": review_action_column(include_add=True),
             "reviewer_comment": st.column_config.TextColumn("reviewer_comment", width="large"),
+            "_is_original": None,
         },
     )
+    if edited is None:
+        return df
+    if "_is_original" in edited.columns:
+        edited.loc[edited["_is_original"].isna(), "_is_original"] = False
+    return edited
 
 
 def df_editor_metaphor(df: pd.DataFrame, key: str) -> pd.DataFrame:
-    return st.data_editor(
+    df = mark_original_rows(df)
+    edited = st.data_editor(
         df,
         key=key,
         use_container_width=True,
@@ -440,18 +536,22 @@ def df_editor_metaphor(df: pd.DataFrame, key: str) -> pd.DataFrame:
             "stanza_index",
             "confidence",
             "reviewer_comment",
+            "_is_original",
         ],
         column_config={
-            "review_action": review_action_column(),
+            "review_action": review_action_column(include_add=True),
             "abstract_meaning": st.column_config.TextColumn("abstract_meaning", width="large"),
             "visual_hint": st.column_config.TextColumn("visual_hint", width="large"),
             "reviewer_comment": st.column_config.TextColumn("reviewer_comment", width="large"),
+            "_is_original": None,
         },
     )
+    return edited if edited is not None else df
 
 
 def df_editor_emotion(df: pd.DataFrame, key: str) -> pd.DataFrame:
-    return st.data_editor(
+    df = mark_original_rows(df)
+    edited = st.data_editor(
         df,
         key=key,
         use_container_width=True,
@@ -466,17 +566,21 @@ def df_editor_emotion(df: pd.DataFrame, key: str) -> pd.DataFrame:
             "loss_note",
             "confidence",
             "reviewer_comment",
+            "_is_original",
         ],
         column_config={
-            "emotion": st.column_config.SelectboxColumn("emotion (dropdown)", options=ALLOWED_EMOTIONS),
-            "review_action": review_action_column(),
+            "emotion": st.column_config.SelectboxColumn("emotion", options=ALLOWED_EMOTIONS),
+            "review_action": review_action_column(include_add=True),
             "reviewer_comment": st.column_config.TextColumn("reviewer_comment", width="large"),
+            "_is_original": None,
         },
     )
+    return edited if edited is not None else df
 
 
 def df_editor_motif(df: pd.DataFrame, key: str) -> pd.DataFrame:
-    return st.data_editor(
+    df = mark_original_rows(df)
+    edited = st.data_editor(
         df,
         key=key,
         use_container_width=True,
@@ -490,57 +594,62 @@ def df_editor_motif(df: pd.DataFrame, key: str) -> pd.DataFrame:
             "stanza_index",
             "confidence",
             "reviewer_comment",
+            "_is_original",
         ],
         column_config={
             "keep_for_image_generation": st.column_config.CheckboxColumn("keep_for_image_generation"),
-            "review_action": review_action_column(),
+            "review_action": review_action_column(include_add=True),
             "reviewer_comment": st.column_config.TextColumn("reviewer_comment", width="large"),
+            "_is_original": None,
         },
     )
+    return edited if edited is not None else df
 
+
+init_auth_state()
+init_ui_state()
+logged_in_user = require_login()
+render_instructions_if_needed()
 
 ensure_app_dirs()
 data_dir = resolve_data_dir()
 poems = load_raw_poems(data_dir)
 reviewed_index = load_reviewed_index()
-review_queue_df = load_review_queue(data_dir)
-
-st.markdown(
-    """
-    <div class="mv-hero">
-        <h1>MorphoVerse++ Human Review</h1>
-        <div class="small-muted">
-            Inspect poem text, compare translations, correct annotation tables, and save reviewer-approved gold JSON files.
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
 
 if not data_dir.exists():
     st.error(
-        f"Raw data folder not found: `{data_dir}`. Put `outputs_new_4` under `review_app/data/outputs_new_4` "
-        "or run the app from a directory containing `outputs_new_4`."
+        f"Raw data folder not found: `{data_dir}`. Place the `output_v3` folder in the project root."
     )
     st.stop()
 
 if not poems:
-    st.warning("No poem JSON files found after exclusions. Bodo and MV++_1443 are intentionally skipped.")
+    st.warning("No low-confidence poems found. Check that `output_v3/annotation_summary.csv` is present.")
     st.stop()
 
+st.caption(f"Loaded **{len(poems)}** low-confidence poems from `{data_dir}`")
+
+selected_languages, language = require_language_setup(
+    poems, reviewed_index, get_poem_id, logged_in_user
+)
+
+render_top_bar(language, logged_in_user)
+
 with st.sidebar:
-    st.header("Reviewer")
-    st.caption("No reviewer ID is needed. The app assigns the next review number for the selected poem.")
+    st.header("Navigation")
+    if len(selected_languages) > 1:
+        language = st.selectbox("Active language", selected_languages, index=selected_languages.index(language))
+        st.session_state.selected_language = language
+    else:
+        st.caption(f"Language: **{language}**")
 
-    st.divider()
+    if st.button("Change languages", use_container_width=True, type="secondary"):
+        clear_language_setup()
+        st.rerun()
 
-    languages = sorted({str(p.get("language") or p.get("_language_folder") or "Unknown") for p in poems})
-    language = st.selectbox("Language", languages)
-
-    status_filter = st.selectbox("Review status filter", REVIEW_STATUS_FILTERS, index=0)
+    status_filter = st.selectbox("Show poems", REVIEW_STATUS_FILTERS, index=0)
 
     language_poems = filter_poems(poems, language, status_filter, reviewed_index)
-    search_query = st.text_input("Search poem", placeholder="ID or title").strip().lower()
+    search_query = st.text_input("Search", placeholder="Poem ID or title").strip().lower()
     if search_query:
         language_poems = [
             p
@@ -548,116 +657,50 @@ with st.sidebar:
             if search_query in get_poem_id(p).lower() or search_query in get_title(p).lower()
         ]
     if not language_poems:
-        st.warning("No poems match this language/status filter.")
+        st.warning("No poems match this filter. Try a different status or search term.")
         st.stop()
 
     poem_options = {
         poem_option_label(p, reviewed_index): get_poem_id(p) for p in language_poems
     }
-    selected_label = st.selectbox("Poem", list(poem_options.keys()))
+    poem_labels = list(poem_options.keys())
+    selected_label = st.selectbox("Select poem to review", poem_labels, index=0)
     selected_poem_id = poem_options[selected_label]
 
     st.divider()
-    st.subheader("Progress")
-    metrics_block(poems, reviewed_index)
-
-    st.divider()
-    st.caption(f"Submission storage: {persistent_storage_label()}")
-    zip_path = make_review_zip()
-    if zip_path and zip_path.exists():
-        with zip_path.open("rb") as f:
-            st.download_button(
-                "Download reviewed JSON ZIP",
-                data=f,
-                file_name="reviewed_outputs.zip",
-                mime="application/zip",
-                use_container_width=True,
-            )
+    st.caption(f"Signed in as **{logged_in_user}**")
+    if st.button("Review instructions", use_container_width=True):
+        st.session_state.show_instructions = True
+        st.session_state.instructions_completed = False
+        show_instructions_dialog()
+    if st.button("Sign out", use_container_width=True):
+        logout()
+        st.rerun()
 
 raw = next(p for p in language_poems if get_poem_id(p) == selected_poem_id)
 poem_id = get_poem_id(raw)
 poem_language = str(raw.get("language") or raw.get("_language_folder") or language)
 title = get_title(raw)
-reviewed = None
-all_poem_reviews = load_reviews_for_poem(poem_language, poem_id)
-remote_reviewer_ids = load_remote_review_ids(poem_id)
-remote_reviews = [{"reviewer_id": reviewer_id} for reviewer_id in remote_reviewer_ids]
-assigned_review_number = next_review_number(all_poem_reviews + remote_reviews)
-assigned_reviewer_id = reviewer_id_from_number(assigned_review_number)
+reviewed = load_user_poem_review(logged_in_user, poem_id)
 current_review_status = get_current_review_status(raw, reviewed_index)
+original_culture_df = normalize_culture_entities(raw)
 
+st.markdown('<div class="section-header">Poem overview</div>', unsafe_allow_html=True)
 st.subheader(title)
 st.markdown(
     badge(poem_id, "blue")
     + badge(poem_language, "gray")
-    + badge(f"Review: {current_review_status}", status_badge_kind(current_review_status))
-    + badge(f"Agreement: {get_agreement(raw) or 'n/a'}", agreement_badge_kind(get_agreement(raw))),
+    + badge(f"Status: {current_review_status}", status_badge_kind(current_review_status)),
     unsafe_allow_html=True,
 )
-if all_poem_reviews:
-    reviewers = ", ".join(sorted({str(r.get("reviewer_id") or "unknown") for r in all_poem_reviews}))
-    st.info(f"Existing local reviews for this poem: {len(all_poem_reviews)} submission(s): {reviewers}.")
-if remote_reviewer_ids:
-    st.info(f"Existing Supabase reviews for this poem: {len(remote_reviewer_ids)} submission(s).")
-st.success(f"This submission will be saved as `{assigned_reviewer_id}` for this poem.")
-
-if poem_id == "MV++_1443" or poem_language == "Bodo":
-    st.error("This poem is excluded from the review workflow.")
-    st.stop()
+if reviewed:
+    st.info("You have a saved draft for this poem. Submitting again will update your review.")
+else:
+    st.caption("Your review will be saved under your name and visible only to admins.")
 
 culture_df, metaphor_df, emotion_df, motif_df = load_initial_tables(raw, reviewed)
-stanza_df = get_stanza_rows(raw)
 
-summary_cols = st.columns(5)
-summary_cols[0].metric("Stanzas", row_count(stanza_df))
-summary_cols[1].metric("Culture", row_count(culture_df))
-summary_cols[2].metric("Metaphors", row_count(metaphor_df))
-summary_cols[3].metric("Emotions", row_count(emotion_df))
-summary_cols[4].metric("Visual motifs", row_count(motif_df))
-
-attention_items = "".join(f"<li>{safe_text(note)}</li>" for note in get_low_agreement_notes(raw))
-st.markdown(
-    f"""
-    <div class="mv-card">
-        <div class="mv-section-title"><strong>Review focus</strong></div>
-        <ul class="attention-list">{attention_items}</ul>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.markdown(
-    """
-    <div class="mv-card">
-        <div class="mv-section-title"><strong>Reviewer steps</strong></div>
-        <ol class="review-steps">
-            <li><strong>Your job:</strong> correct the annotation tables below. The current values were generated automatically and may be wrong or incomplete.</li>
-            <li><strong>Read</strong> the original poem and English translation first, then review each open annotation box.</li>
-            <li><strong>Edit only what is needed:</strong> click a wrong cell to fix it, add a row if an important annotation is missing, or mark a bad row as remove.</li>
-            <li><strong>Use <code>review_action</code>:</strong> keep = correct as-is, modify = you corrected it, remove = wrong/not useful, add = new row added by you.</li>
-            <li><strong>Submit</strong> the final decision at the bottom after checking the annotation boxes.</li>
-        </ol>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.markdown(
-    """
-    <div class="mv-card">
-        <div class="mv-section-title"><strong>Blank or missing values</strong></div>
-        <div class="field-guide">
-            <p>Blank cells are expected in some columns. They usually mean one of three things: the automatic annotation did not provide that detail, the field is optional, or the field does not apply to that row.</p>
-            <p>You do not need to fill every blank. Fill a blank only when the missing value is important for the final corrected annotation.</p>
-            <p>Examples: <code>literal_meaning</code>, <code>visual_hint</code>, <code>importance</code>, and <code>loss_note</code> can stay blank when there is nothing useful to add. Important fields such as the term/metaphor/motif text, emotion, category, preserved value, and review action should not be blank.</p>
-            <p>Always fill <code>reviewer_comment</code> when you mark a row as <code>modify</code>, <code>remove</code>, or <code>add</code>.</p>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.markdown("### Quick Review")
+st.markdown('<div class="section-header">Read the poem</div>', unsafe_allow_html=True)
 st.markdown('<div class="quick-review-band"></div>', unsafe_allow_html=True)
 
 poem_left, poem_right = st.columns(2)
@@ -668,88 +711,44 @@ with poem_right:
     st.markdown('<div class="poem-label">English translation</div>', unsafe_allow_html=True)
     st.markdown(f'<div class="poem-box">{safe_text(get_translation(raw))}</div>', unsafe_allow_html=True)
 
-st.markdown("### Review annotations")
-st.info(
-    "Edit directly in the tables below. The first column is `Action - click to choose`; click any action cell "
-    "to open the dropdown and choose `keep`, `modify`, `remove`, or `add`."
-)
+st.markdown('<div class="section-header">Edit annotations</div>', unsafe_allow_html=True)
+st.caption("Click any cell to edit. Use the **Action** column: keep · modify · remove · add")
 
-with st.expander(f"Culture entities ({row_count(culture_df)})", expanded=row_count(culture_df) > 0):
-    st.info(
-        "What to do: keep real cultural terms, correct wrong terms/categories, add missed important terms, "
-        "and mark irrelevant rows as `remove`. `preserved` means whether the cultural term or its meaning is "
-        "still clear in the English translation. Use true/yes if preserved; false/no if the meaning is lost, "
-        "softened, mistranslated, or omitted. Blank gloss/romanization/translation notes can stay blank unless "
-        "you know the missing value and it helps the annotation."
-    )
+tab_culture, tab_metaphor, tab_emotion, tab_motif = st.tabs([
+    f"Culture ({row_count(culture_df)})",
+    f"Metaphors ({row_count(metaphor_df)})",
+    f"Emotions ({row_count(emotion_df)})",
+    f"Visual motifs ({row_count(motif_df)})",
+])
+
+with tab_culture:
+    st.caption("Rows marked **keep** are read-only. Use **modify** to edit a row.")
     edited_culture_df = df_editor_culture(culture_df, key=f"culture_{poem_id}")
 
-with st.expander(f"Metaphors ({row_count(metaphor_df)})", expanded=row_count(metaphor_df) > 0):
-    st.info(
-        "What to do: keep only phrases that are truly figurative. `source_text` should be the metaphor phrase "
-        "from the poem. `literal_meaning` is optional and may be blank. `abstract_meaning` should explain what "
-        "the metaphor suggests emotionally or conceptually. `visual_hint` is optional; fill it only if a clear "
-        "visual image would help. Remove literal phrases, duplicates, or invented metaphors."
-    )
+with tab_metaphor:
+    st.caption("Keep only truly figurative phrases. Remove literal or invented metaphors.")
     edited_metaphor_df = df_editor_metaphor(metaphor_df, key=f"metaphor_{poem_id}")
 
-with st.expander(f"Stanza emotions ({row_count(emotion_df)})", expanded=row_count(emotion_df) > 0):
-    st.info(
-        "What to do: check each stanza's main emotion and tone against the poem. Change `emotion` if the label "
-        "is wrong. `translation_quality` should describe whether the English translation is faithful enough. "
-        "`loss_note` can be blank when nothing important is lost; fill it if cultural meaning, imagery, emotion, "
-        "wordplay, or tone is missing in translation."
-    )
+with tab_emotion:
+    st.caption("Check each stanza's emotion and tone against the poem and translation.")
     edited_emotion_df = df_editor_emotion(emotion_df, key=f"emotion_{poem_id}")
 
-with st.expander(f"Visual motifs ({row_count(motif_df)})", expanded=row_count(motif_df) > 0):
-    st.info(
-        "What to do: keep motifs that are concrete, visual, and actually present in the poem. "
-        "`keep_for_image_generation` should be checked only when the motif would help create a faithful image. "
-        "`importance` may be blank; fill it only if you want to mark a motif as central, supporting, or minor. "
-        "Remove vague, repeated, generic, or invented motifs."
-    )
+with tab_motif:
+    st.caption("Keep concrete visual motifs present in the poem. Remove vague or generic items.")
     edited_motif_df = df_editor_motif(motif_df, key=f"motif_{poem_id}")
 
-if not review_queue_df.empty and "poem_id" in review_queue_df.columns:
-    poem_disagreements = review_queue_df[review_queue_df["poem_id"].astype(str) == poem_id]
-    if not poem_disagreements.empty:
-        with st.expander(f"Disagreement details ({len(poem_disagreements)})", expanded=True):
-            st.info(
-                "These are places where the source models disagreed. Use them as extra guidance while "
-                "checking the annotation tables above."
-            )
-            visible_cols = [
-                col
-                for col in [
-                    "field_path",
-                    "agreement",
-                    "resolved_value",
-                    "claude_value",
-                    "gpt_value",
-                    "gemini_value",
-                    "note",
-                ]
-                if col in poem_disagreements.columns
-            ]
-            st.dataframe(poem_disagreements[visible_cols], use_container_width=True, hide_index=True)
-
 with st.container():
-    st.markdown("### Final Human Decision")
-    st.info(
-        "Choose the final status after editing. Use `approved` only if the annotations were already good. "
-        "Use `approved_with_corrections` if you fixed anything. Use `needs_major_revision` or `rejected` "
-        "only when the annotation is too poor to trust; include a reason in the comment box."
+    st.markdown('<div class="section-header">Submit your review</div>', unsafe_allow_html=True)
+    st.caption(
+        "Use **approved** only if nothing changed. Use **approved_with_corrections** if you edited any row. "
+        "Add a reason for major revision or rejection."
     )
 
     previous_decision = reviewed.get("reviewer_decision", {}) if reviewed else {}
     previous_status = reviewed.get("review_status", "approved_with_corrections") if reviewed else "approved_with_corrections"
     previous_confidence = reviewed.get("reviewer_confidence", "medium") if reviewed else "medium"
-    if reviewed:
-        st.info("You already have a saved review for this poem. Submitting again will update only your own review file.")
 
     with st.form(key=f"decision_form_{poem_id}", clear_on_submit=False):
-        form_reviewer_id = st.text_input("Submission number", value=assigned_reviewer_id, disabled=True)
         decision = st.selectbox(
             "Overall decision",
             REVIEW_DECISIONS,
@@ -775,24 +774,28 @@ with st.container():
             errors.append("Reason/comment is mandatory for needs_major_revision or rejected.")
         if not confirm:
             errors.append("Please confirm that you reviewed this poem.")
-        errors.extend(validate_review_table(edited_culture_df, "Culture entities", "text", ["category", "preserved"]))
-        errors.extend(validate_review_table(edited_metaphor_df, "Metaphors", "source_text", ["abstract_meaning"]))
-        errors.extend(validate_review_table(edited_emotion_df, "Stanza emotions", "stanza_index", ["emotion"]))
-        errors.extend(validate_review_table(edited_motif_df, "Visual motifs", "motif", ["keep_for_image_generation"]))
-        if decision == "approved" and has_review_edits(edited_culture_df, edited_metaphor_df, edited_emotion_df, edited_motif_df):
+        culture_clean = strip_internal_columns(edited_culture_df)
+        metaphor_clean = strip_internal_columns(edited_metaphor_df)
+        emotion_clean = strip_internal_columns(edited_emotion_df)
+        motif_clean = strip_internal_columns(edited_motif_df)
+
+        errors.extend(validate_review_table(culture_clean, "Culture entities", "text", ["category", "preserved"]))
+        errors.extend(validate_review_table(metaphor_clean, "Metaphors", "source_text", ["abstract_meaning"]))
+        errors.extend(validate_review_table(emotion_clean, "Stanza emotions", "stanza_index", ["emotion"]))
+        errors.extend(validate_review_table(motif_clean, "Visual motifs", "motif", ["keep_for_image_generation"]))
+        errors.extend(validate_existing_row_actions(culture_clean, "Culture entities", "text"))
+        errors.extend(validate_existing_row_actions(metaphor_clean, "Metaphors", "source_text"))
+        errors.extend(validate_existing_row_actions(emotion_clean, "Stanza emotions", "stanza_index"))
+        errors.extend(validate_existing_row_actions(motif_clean, "Visual motifs", "motif"))
+        errors.extend(validate_culture_keep_unchanged(culture_clean, mark_original_rows(original_culture_df)))
+        if decision == "approved" and has_review_edits(culture_clean, metaphor_clean, emotion_clean, motif_clean):
             errors.append("Use approved_with_corrections because at least one row is marked modify, remove, or add.")
 
         if errors:
             for err in errors:
                 st.error(err)
         else:
-            latest_local_reviews = load_reviews_for_poem(poem_language, poem_id)
-            latest_remote_ids = load_remote_review_ids(poem_id)
-            latest_remote_reviews = [{"reviewer_id": reviewer_id} for reviewer_id in latest_remote_ids]
-            submitted_reviewer_id = reviewer_id_from_number(next_review_number(latest_local_reviews + latest_remote_reviews))
-            while reviewed_output_path(poem_language, poem_id, submitted_reviewer_id).exists():
-                submitted_reviewer_id = reviewer_id_from_number(review_number_from_reviewer_id(submitted_reviewer_id) + 1)
-            output_path = reviewed_output_path(poem_language, poem_id, submitted_reviewer_id)
+            submitted_reviewer_id = logged_in_user
             reviewed_at = now_iso()
 
             payload = {
@@ -802,22 +805,23 @@ with st.container():
                 "title": title,
                 "review_status": decision,
                 "reviewer_id": submitted_reviewer_id,
+                "logged_in_user": logged_in_user,
                 "reviewer_confidence": confidence,
                 "reviewed_at": reviewed_at,
                 "original_poem": get_original_poem(raw),
                 "english_translation": get_translation(raw),
                 "source_annotation_file": raw.get("_source_file", ""),
                 "final_annotations": {
-                    "culture_entities": cleaned_records(edited_culture_df, "text"),
-                    "metaphor_spans": cleaned_records(edited_metaphor_df, "source_text"),
-                    "stanza_emotions": cleaned_records(edited_emotion_df, "stanza_index"),
-                    "visual_motifs": cleaned_records(edited_motif_df, "motif"),
+                    "culture_entities": cleaned_records(culture_clean, "text"),
+                    "metaphor_spans": cleaned_records(metaphor_clean, "source_text"),
+                    "stanza_emotions": cleaned_records(emotion_clean, "stanza_index"),
+                    "visual_motifs": cleaned_records(motif_clean, "motif"),
                 },
                 "review_changes": {
-                    "culture_entities": changed_records(edited_culture_df, "text"),
-                    "metaphor_spans": changed_records(edited_metaphor_df, "source_text"),
-                    "stanza_emotions": changed_records(edited_emotion_df, "stanza_index"),
-                    "visual_motifs": changed_records(edited_motif_df, "motif"),
+                    "culture_entities": changed_records(culture_clean, "text"),
+                    "metaphor_spans": changed_records(metaphor_clean, "source_text"),
+                    "stanza_emotions": changed_records(emotion_clean, "stanza_index"),
+                    "visual_motifs": changed_records(motif_clean, "motif"),
                 },
                 "reviewer_decision": {
                     "decision": decision,
@@ -826,7 +830,7 @@ with st.container():
                 "raw_llm_annotation_snapshot": raw,
             }
 
-            save_json(output_path, payload)
+            save_poem_review(logged_in_user, poem_id, payload)
 
             audit_entry = {
                 "event": "review_submitted",
@@ -834,18 +838,18 @@ with st.container():
                 "poem_id": poem_id,
                 "language": poem_language,
                 "reviewer_id": submitted_reviewer_id,
+                "logged_in_user": logged_in_user,
                 "decision": decision,
                 "reviewer_confidence": confidence,
                 "reviewed_at": reviewed_at,
-                "output_file": str(output_path),
+                "storage": "reviewer_submissions",
             }
             append_audit_log(audit_entry)
 
             persistent_ok, persistent_message = save_review_to_persistent_storage(payload, audit_entry)
 
-            st.success(f"Review saved successfully: `{output_path}`")
+            st.success("Your review was saved successfully.")
             if persistent_ok:
                 st.success(persistent_message)
-            else:
-                st.warning(persistent_message)
-            st.info("Refresh the page to update sidebar metrics immediately.")
+            elif persistent_message:
+                st.caption(persistent_message)

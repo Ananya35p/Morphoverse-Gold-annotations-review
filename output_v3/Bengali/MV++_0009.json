@@ -1,0 +1,348 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0009",
+  "poem_title": "Banalata Sen",
+  "language": "Bengali",
+  "original_poem": "শ্রাবণী নিশার গভীর নীরবতা,\nশালিকের বীণায়, একটি শুদ্ধ গানের সুরে।\nএত দীর্ঘ দিনের ক্লান্তি, এত রাতে,\nবিরুদ্ধ প্রান্তর, বিস্তৃত শূন্যতার ঢাল।\n \nবহু রাত আমার বিশ্রামহীন,\nবহু শারদ অতিক্রান্ত।\nসেই রাতে, অচেতন চরণ,\nবহু পথে পায়ে মাড়িয়ে যাওয়ার পরে,\nবহু দগ্ধ নিশাতীর্থে ফিরে আসার পরে,\nসেই রাতে, মায়াবী চেনা,\nবদলে যায় সব কিছু,\nপাল্টে যায় চারদিকের সমুদ্র।\n\nসন্ধ্যার পূর্ণিমা স্নিগ্ধতা,\nঅথবা অগ্নি পতঙ্গ উড়াল।\nবিরক্তির মাঝে, এমন এক রূপ-চোখ,\nতুমি নিঃশব্দে,\nগহন গহনে, সামনে।\n \nআমি আবার ফিরে আসবো,\nএই বিচিত্র দেশে।\nযেখানে প্রেম, আশা, সুগন্ধ।\n\nমাঝে মাঝে ফিরে আসবো,\nসেই অন্ধকার পথে,\nযেখানে মুক্তির সূচনা।",
+  "translated_poem": "In the deep silence of the rainy night,\nIn the melody of the oriole's lute,\nThe weariness of so many days,\nIn the vast emptiness of a divided landscape.\n\nMany nights I have spent restless,\nMany autumns have passed.\nThat night, in an unconscious step,\nAfter treading many paths,\nAfter returning from many burning shores,\nThat night, a familiar spell,\nEverything changes,\nThe sea around me shifts.\n\nThe evening full moon's serenity,\nOr the fluttering of fireflies.\nIn the midst of annoyance, such a lovely gaze,\nYou, in silence,\nIn the depth of the void, stand before me.\n\nI will return again,\nTo this diverse land.\nWhere love, hope, fragrance abound.\n\nFrom time to time, I will return,\nAlong that dark path,\nWhere the dawn of liberation begins.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8647,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "শ্রাবণী নিশার গভীর নীরবতা,",
+          "শালিকের বীণায়, একটি শুদ্ধ গানের সুরে।",
+          "এত দীর্ঘ দিনের ক্লান্তি, এত রাতে,",
+          "বিরুদ্ধ প্রান্তর, বিস্তৃত শূন্যতার ঢাল।"
+        ],
+        "translated_lines": [
+          "In the deep silence of the rainy night,",
+          "In the melody of the oriole's lute,",
+          "The weariness of so many days,",
+          "In the vast emptiness of a divided landscape."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 8,
+        "source_lines": [
+          "বহু রাত আমার বিশ্রামহীন,",
+          "বহু শারদ অতিক্রান্ত।",
+          "সেই রাতে, অচেতন চরণ,",
+          "বহু পথে পায়ে মাড়িয়ে যাওয়ার পরে,",
+          "বহু দগ্ধ নিশাতীর্থে ফিরে আসার পরে,",
+          "সেই রাতে, মায়াবী চেনা,",
+          "বদলে যায় সব কিছু,",
+          "পাল্টে যায় চারদিকের সমুদ্র।"
+        ],
+        "translated_lines": [
+          "Many nights I have spent restless,",
+          "Many autumns have passed.",
+          "That night, in an unconscious step,",
+          "After treading many paths,",
+          "After returning from many burning shores,",
+          "That night, a familiar spell,",
+          "Everything changes,",
+          "The sea around me shifts."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 5,
+        "source_lines": [
+          "সন্ধ্যার পূর্ণিমা স্নিগ্ধতা,",
+          "অথবা অগ্নি পতঙ্গ উড়াল।",
+          "বিরক্তির মাঝে, এমন এক রূপ-চোখ,",
+          "তুমি নিঃশব্দে,",
+          "গহন গহনে, সামনে।"
+        ],
+        "translated_lines": [
+          "The evening full moon's serenity,",
+          "Or the fluttering of fireflies.",
+          "In the midst of annoyance, such a lovely gaze,",
+          "You, in silence,",
+          "In the depth of the void, stand before me."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 3,
+        "source_lines": [
+          "আমি আবার ফিরে আসবো,",
+          "এই বিচিত্র দেশে।",
+          "যেখানে প্রেম, আশা, সুগন্ধ।"
+        ],
+        "translated_lines": [
+          "I will return again,",
+          "To this diverse land.",
+          "Where love, hope, fragrance abound."
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 3,
+        "source_lines": [
+          "মাঝে মাঝে ফিরে আসবো,",
+          "সেই অন্ধকার পথে,",
+          "যেখানে মুক্তির সূচনা।"
+        ],
+        "translated_lines": [
+          "From time to time, I will return,",
+          "Along that dark path,",
+          "Where the dawn of liberation begins."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Hopeful journey of return",
+    "translation_fidelity_score": 0.8,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "শ্রাবণী নিশার গভীর নীরবতা,",
+          "শালিকের বীণায়, একটি শুদ্ধ গানের সুরে।",
+          "এত দীর্ঘ দিনের ক্লান্তি, এত রাতে,",
+          "বিরুদ্ধ প্রান্তর, বিস্তৃত শূন্যতার ঢাল।"
+        ],
+        "translated_lines": [
+          "In the deep silence of the rainy night,",
+          "In the melody of the oriole's lute,",
+          "The weariness of so many days,",
+          "In the vast emptiness of a divided landscape."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Misses pure song, late night, and slope",
+        "metaphor_spans": [
+          {
+            "source_term": "শালিকের বীণায়",
+            "abstract_meaning": "Melodious nature or bird's song"
+          },
+          {
+            "source_term": "বিস্তৃত শূন্যতার ঢাল",
+            "abstract_meaning": "Protection found in isolation"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 8,
+        "source_lines": [
+          "বহু রাত আমার বিশ্রামহীন,",
+          "বহু শারদ অতিক্রান্ত।",
+          "সেই রাতে, অচেতন চরণ,",
+          "বহু পথে পায়ে মাড়িয়ে যাওয়ার পরে,",
+          "বহু দগ্ধ নিশাতীর্থে ফিরে আসার পরে,",
+          "সেই রাতে, মায়াবী চেনা,",
+          "বদলে যায় সব কিছু,",
+          "পাল্টে যায় চারদিকের সমুদ্র।"
+        ],
+        "translated_lines": [
+          "Many nights I have spent restless,",
+          "Many autumns have passed.",
+          "That night, in an unconscious step,",
+          "After treading many paths,",
+          "After returning from many burning shores,",
+          "That night, a familiar spell,",
+          "Everything changes,",
+          "The sea around me shifts."
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "loses the meaning of night-pilgrimages",
+        "metaphor_spans": [
+          {
+            "source_term": "দগ্ধ নিশাতীর্থে",
+            "abstract_meaning": "Painful past experiences"
+          },
+          {
+            "source_term": "অচেতন চরণ",
+            "abstract_meaning": "Weary, aimless life journey"
+          },
+          {
+            "source_term": "চারদিকের সমুদ্র",
+            "abstract_meaning": "Vast, changing reality of life"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 5,
+        "source_lines": [
+          "সন্ধ্যার পূর্ণিমা স্নিগ্ধতা,",
+          "অথবা অগ্নি পতঙ্গ উড়াল।",
+          "বিরক্তির মাঝে, এমন এক রূপ-চোখ,",
+          "তুমি নিঃশব্দে,",
+          "গহন গহনে, সামনে।"
+        ],
+        "translated_lines": [
+          "The evening full moon's serenity,",
+          "Or the fluttering of fireflies.",
+          "In the midst of annoyance, such a lovely gaze,",
+          "You, in silence,",
+          "In the depth of the void, stand before me."
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "অগ্নি পতঙ্গ উড়াল",
+            "abstract_meaning": "Self-destructive passion or attraction"
+          },
+          {
+            "source_term": "রূপ-চোখ",
+            "abstract_meaning": "A captivating, soulful gaze"
+          },
+          {
+            "source_term": "গহন গহনে",
+            "abstract_meaning": "Profound depths of the soul"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 3,
+        "source_lines": [
+          "আমি আবার ফিরে আসবো,",
+          "এই বিচিত্র দেশে।",
+          "যেখানে প্রেম, আশা, সুগন্ধ।"
+        ],
+        "translated_lines": [
+          "I will return again,",
+          "To this diverse land.",
+          "Where love, hope, fragrance abound."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "সুগন্ধ",
+            "abstract_meaning": "Essence of beauty and goodness"
+          },
+          {
+            "source_term": "বিচিত্র দেশে",
+            "abstract_meaning": "The multifaceted nature of life"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 3,
+        "source_lines": [
+          "মাঝে মাঝে ফিরে আসবো,",
+          "সেই অন্ধকার পথে,",
+          "যেখানে মুক্তির সূচনা।"
+        ],
+        "translated_lines": [
+          "From time to time, I will return,",
+          "Along that dark path,",
+          "Where the dawn of liberation begins."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "অন্ধকার পথে",
+            "abstract_meaning": "Journey through struggle or uncertainty"
+          },
+          {
+            "source_term": "মুক্তির সূচনা",
+            "abstract_meaning": "Start of spiritual or personal freedom"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "শ্রাবণী",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "বীণা",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "পূর্ণিমা",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "অগ্নি",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "প্রেম",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "মুক্তির",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 5,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8647,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 12,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

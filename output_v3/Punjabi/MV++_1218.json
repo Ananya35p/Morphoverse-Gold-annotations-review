@@ -1,0 +1,147 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1218",
+  "poem_title": "Ik Raat Samundar Kinare",
+  "language": "Punjabi",
+  "original_poem": "ਇਕ ਰਾਤ ਸਮੁੰਦਰ ਕਿਨਾਰੇ\nਹਵਾਵਾਂ ਨੇ ਕਿਹਾ—\nਤੂੰ ਹਾਸਿਆਂ ਦੇ ਪਿੰਜਰੇ 'ਚੋਂ\nਪਿਆਰ ਦੇ ਪਰਿੰਦਿਆਂ ਨੂੰ ਉਡਾ ਦੇ।\n\nਇਕ ਰਾਤ ਸਮੁੰਦਰ ਕਿਨਾਰੇ\nਮੈਂ ਆਪਣੀ ਨਜ਼ਰਾਂ ਨਾਲ\nਅਕਾਸ਼ ਦੇ ਆਲਿੰਗਨ ਵਿੱਚ ਜੁੜੀ ਇੱਕ ਲਹਿਰ ਨੂੰ ਵੇਖਿਆ,\nਤੇ ਸੋਚਿਆ, ਕੀ ਅਸੀਂ ਵੀ\nਕਦੇ ਇਸ ਤਰ੍ਹਾਂ ਮਿਲਾਂਗੇ?",
+  "translated_poem": "A Night by the Seashore\nOne night by the seashore\nThe winds whispered—\nRelease the birds of love\nFrom the cage of laughter.\n\nOne night by the seashore\nI watched with my eyes\nA wave embrace the sky,\nAnd wondered, will we too\nEver meet like that?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8957,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ਇਕ ਰਾਤ ਸਮੁੰਦਰ ਕਿਨਾਰੇ",
+          "ਹਵਾਵਾਂ ਨੇ ਕਿਹਾ—",
+          "ਤੂੰ ਹਾਸਿਆਂ ਦੇ ਪਿੰਜਰੇ 'ਚੋਂ",
+          "ਪਿਆਰ ਦੇ ਪਰਿੰਦਿਆਂ ਨੂੰ ਉਡਾ ਦੇ।"
+        ],
+        "translated_lines": [
+          "A Night by the Seashore",
+          "One night by the seashore",
+          "The winds whispered—",
+          "Release the birds of love",
+          "From the cage of laughter."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "ਇਕ ਰਾਤ ਸਮੁੰਦਰ ਕਿਨਾਰੇ",
+          "ਮੈਂ ਆਪਣੀ ਨਜ਼ਰਾਂ ਨਾਲ",
+          "ਅਕਾਸ਼ ਦੇ ਆਲਿੰਗਨ ਵਿੱਚ ਜੁੜੀ ਇੱਕ ਲਹਿਰ ਨੂੰ ਵੇਖਿਆ,",
+          "ਤੇ ਸੋਚਿਆ, ਕੀ ਅਸੀਂ ਵੀ",
+          "ਕਦੇ ਇਸ ਤਰ੍ਹਾਂ ਮਿਲਾਂਗੇ?"
+        ],
+        "translated_lines": [
+          "One night by the seashore",
+          "I watched with my eyes",
+          "A wave embrace the sky,",
+          "And wondered, will we too",
+          "Ever meet like that?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "longing for connection",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ਇਕ ਰਾਤ ਸਮੁੰਦਰ ਕਿਨਾਰੇ",
+          "ਹਵਾਵਾਂ ਨੇ ਕਿਹਾ—",
+          "ਤੂੰ ਹਾਸਿਆਂ ਦੇ ਪਿੰਜਰੇ 'ਚੋਂ",
+          "ਪਿਆਰ ਦੇ ਪਰਿੰਦਿਆਂ ਨੂੰ ਉਡਾ ਦੇ।"
+        ],
+        "translated_lines": [
+          "A Night by the Seashore",
+          "One night by the seashore",
+          "The winds whispered—",
+          "Release the birds of love",
+          "From the cage of laughter."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਹਾਸਿਆਂ ਦੇ ਪਿੰਜਰੇ",
+            "abstract_meaning": "Superficial joy trapping true emotions"
+          },
+          {
+            "source_term": "ਪਿਆਰ ਦੇ ਪਰਿੰਦਿਆਂ",
+            "abstract_meaning": "Inner feelings seeking freedom"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "ਇਕ ਰਾਤ ਸਮੁੰਦਰ ਕਿਨਾਰੇ",
+          "ਮੈਂ ਆਪਣੀ ਨਜ਼ਰਾਂ ਨਾਲ",
+          "ਅਕਾਸ਼ ਦੇ ਆਲਿੰਗਨ ਵਿੱਚ ਜੁੜੀ ਇੱਕ ਲਹਿਰ ਨੂੰ ਵੇਖਿਆ,",
+          "ਤੇ ਸੋਚਿਆ, ਕੀ ਅਸੀਂ ਵੀ",
+          "ਕਦੇ ਇਸ ਤਰ੍ਹਾਂ ਮਿਲਾਂਗੇ?"
+        ],
+        "translated_lines": [
+          "One night by the seashore",
+          "I watched with my eyes",
+          "A wave embrace the sky,",
+          "And wondered, will we too",
+          "Ever meet like that?"
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਅਕਾਸ਼ ਦੇ ਆਲਿੰਗਨ",
+            "abstract_meaning": "Infinite or divine union"
+          },
+          {
+            "source_term": "ਜੁੜੀ ਇੱਕ ਲਹਿਰ",
+            "abstract_meaning": "Soul's longing for connection"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8957,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

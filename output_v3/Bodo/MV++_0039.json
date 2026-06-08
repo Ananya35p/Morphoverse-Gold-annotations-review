@@ -1,0 +1,132 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0039",
+  "poem_title": "Bodo Rakhang",
+  "language": "Bodo",
+  "original_poem": "बोडो राखंग\nबोडो राखंग, तुमार पहिचान\nसंस्कृति, धरोहर, मोर गर्व,\nमोर हृदयले गुनगुन\nजन्मभूमि जिवित।",
+  "translated_poem": "Bodo Identity\nBodo Identity, your recognition\nCulture, heritage, my pride,\nIn my heart, a hum\nOf my birthplace alive.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8885,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "बोडो राखंग",
+          "बोडो राखंग, तुमार पहिचान",
+          "संस्कृति, धरोहर, मोर गर्व,",
+          "मोर हृदयले गुनगुन",
+          "जन्मभूमि जिवित।"
+        ],
+        "translated_lines": [
+          "Bodo Identity",
+          "Bodo Identity, your recognition",
+          "Culture, heritage, my pride,",
+          "In my heart, a hum",
+          "Of my birthplace alive."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Deep cultural pride",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "बोडो राखंग",
+          "बोडो राखंग, तुमार पहिचान",
+          "संस्कृति, धरोहर, मोर गर्व,",
+          "मोर हृदयले गुनगुन",
+          "जन्मभूमि जिवित।"
+        ],
+        "translated_lines": [
+          "Bodo Identity",
+          "Bodo Identity, your recognition",
+          "Culture, heritage, my pride,",
+          "In my heart, a hum",
+          "Of my birthplace alive."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "मोर हृदयले गुनगुन",
+            "abstract_meaning": "Deep emotional resonance and love"
+          },
+          {
+            "source_term": "जन्मभूमि जिवित",
+            "abstract_meaning": "Enduring spirit of the homeland"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "बोडो राखंग",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "संस्कृति",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "धरोहर",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "जन्मभूमि",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8885,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

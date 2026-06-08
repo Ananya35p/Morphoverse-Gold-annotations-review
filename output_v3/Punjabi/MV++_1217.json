@@ -1,0 +1,174 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1217",
+  "poem_title": "Punjab Di Mitti",
+  "language": "Punjabi",
+  "original_poem": "ਪੰਜਾਬ ਦੀ ਮਿੱਟੀ  \nਇਹ ਮਿੱਟੀ ਪੰਜਾਬ ਦੀ ਹੈ,  \nਇਸ ਵਿਚ ਸੁਗੰਧ ਹੈ ਪਿਆਰ ਦੀ,  \nਇਸ ਵਿਚ ਰੌਣਕ ਹੈ ਜੀਵਨ ਦੀ,  \nਇਸ ਵਿਚ ਖੁਸ਼ਬੂ ਹੈ ਖੇਤਾਂ ਦੀ।  \n\nਇਸ ਮਿੱਟੀ ਨੇ ਸਜਾਏ ਨੇ ਅਨੰਕ ਸ਼ਹੀਦ,  \nਜੋ ਇਸ ਦੀ ਰੱਖਿਆ ਲਈ ਮਰ ਮਿੱਟੇ,  \nਇਹ ਮਿੱਟੀ ਪੰਜਾਬ ਦੀ ਹੈ,  \nਇਸ ਵਿਚ ਵਸਦਾ ਹੈ ਇਤਿਹਾਸ।",
+  "translated_poem": "The Soil of Punjab  \nThis soil belongs to Punjab,  \nIt carries the fragrance of love,  \nIt holds the brightness of life,  \nIt is filled with the scent of the fields.  \n\nThis soil has nurtured countless martyrs,  \nWho laid down their lives for its defense,  \nThis soil belongs to Punjab,  \nIt holds the history within.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8298,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ਪੰਜਾਬ ਦੀ ਮਿੱਟੀ",
+          "ਇਹ ਮਿੱਟੀ ਪੰਜਾਬ ਦੀ ਹੈ,",
+          "ਇਸ ਵਿਚ ਸੁਗੰਧ ਹੈ ਪਿਆਰ ਦੀ,",
+          "ਇਸ ਵਿਚ ਰੌਣਕ ਹੈ ਜੀਵਨ ਦੀ,",
+          "ਇਸ ਵਿਚ ਖੁਸ਼ਬੂ ਹੈ ਖੇਤਾਂ ਦੀ।"
+        ],
+        "translated_lines": [
+          "The Soil of Punjab",
+          "This soil belongs to Punjab,",
+          "It carries the fragrance of love,",
+          "It holds the brightness of life,",
+          "It is filled with the scent of the fields."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ਇਸ ਮਿੱਟੀ ਨੇ ਸਜਾਏ ਨੇ ਅਨੰਕ ਸ਼ਹੀਦ,",
+          "ਜੋ ਇਸ ਦੀ ਰੱਖਿਆ ਲਈ ਮਰ ਮਿੱਟੇ,",
+          "ਇਹ ਮਿੱਟੀ ਪੰਜਾਬ ਦੀ ਹੈ,",
+          "ਇਸ ਵਿਚ ਵਸਦਾ ਹੈ ਇਤਿਹਾਸ।"
+        ],
+        "translated_lines": [
+          "This soil has nurtured countless martyrs,",
+          "Who laid down their lives for its defense,",
+          "This soil belongs to Punjab,",
+          "It holds the history within."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Honoring Punjab's heritage",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ਪੰਜਾਬ ਦੀ ਮਿੱਟੀ",
+          "ਇਹ ਮਿੱਟੀ ਪੰਜਾਬ ਦੀ ਹੈ,",
+          "ਇਸ ਵਿਚ ਸੁਗੰਧ ਹੈ ਪਿਆਰ ਦੀ,",
+          "ਇਸ ਵਿਚ ਰੌਣਕ ਹੈ ਜੀਵਨ ਦੀ,",
+          "ਇਸ ਵਿਚ ਖੁਸ਼ਬੂ ਹੈ ਖੇਤਾਂ ਦੀ।"
+        ],
+        "translated_lines": [
+          "The Soil of Punjab",
+          "This soil belongs to Punjab,",
+          "It carries the fragrance of love,",
+          "It holds the brightness of life,",
+          "It is filled with the scent of the fields."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਸੁਗੰਧ ਹੈ ਪਿਆਰ ਦੀ",
+            "abstract_meaning": "Love permeates the land's essence"
+          },
+          {
+            "source_term": "ਰੌਣਕ ਹੈ ਜੀਵਨ ਦੀ",
+            "abstract_meaning": "The land embodies vibrant existence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ਇਸ ਮਿੱਟੀ ਨੇ ਸਜਾਏ ਨੇ ਅਨੰਕ ਸ਼ਹੀਦ,",
+          "ਜੋ ਇਸ ਦੀ ਰੱਖਿਆ ਲਈ ਮਰ ਮਿੱਟੇ,",
+          "ਇਹ ਮਿੱਟੀ ਪੰਜਾਬ ਦੀ ਹੈ,",
+          "ਇਸ ਵਿਚ ਵਸਦਾ ਹੈ ਇਤਿਹਾਸ।"
+        ],
+        "translated_lines": [
+          "This soil has nurtured countless martyrs,",
+          "Who laid down their lives for its defense,",
+          "This soil belongs to Punjab,",
+          "It holds the history within."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਮਿੱਟੀ ਨੇ ਸਜਾਏ",
+            "abstract_meaning": "Land honoring its fallen heroes"
+          },
+          {
+            "source_term": "ਮਰ ਮਿੱਟੇ",
+            "abstract_meaning": "Ultimate sacrifice for the motherland"
+          },
+          {
+            "source_term": "ਵਸਦਾ ਹੈ ਇਤਿਹਾਸ",
+            "abstract_meaning": "Soil preserves the past's legacy"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ਪੰਜਾਬ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਸ਼ਹੀਦ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਪੰਜਾਬ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8298,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

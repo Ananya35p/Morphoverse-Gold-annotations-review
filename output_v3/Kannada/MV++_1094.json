@@ -1,0 +1,162 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1094",
+  "poem_title": "Trikaal Sandhya",
+  "language": "Kannada",
+  "original_poem": "तीनों समय का संध्या बेला,  \nजब सूरज ढलता है धीरे-धीरे,  \nहर एक रंग में घुल जाती है एक छाया,  \nऔर हवा में घुल जाती है एक खामोशी।\n\nसूरज कहता है अलविदा,  \nधरती बिछा देती है अपनी चादर,  \nऔर आसमान सहेजता है दिनभर की कहानी,  \nइस त्रिकाल संध्या के आलोक में।",
+  "translated_poem": "Twilight of the three times,  \nAs the sun sets slowly,  \nEvery hue merges with a shadow,  \nAnd silence dissolves into the air.\n\nThe sun bids goodbye,  \nThe earth spreads out its blanket,  \nAnd the sky gathers the day's tale,  \nIn the glow of this twilight of three times.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9482,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "तीनों समय का संध्या बेला,",
+          "जब सूरज ढलता है धीरे-धीरे,",
+          "हर एक रंग में घुल जाती है एक छाया,",
+          "और हवा में घुल जाती है एक खामोशी।"
+        ],
+        "translated_lines": [
+          "Twilight of the three times,",
+          "As the sun sets slowly,",
+          "Every hue merges with a shadow,",
+          "And silence dissolves into the air."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "सूरज कहता है अलविदा,",
+          "धरती बिछा देती है अपनी चादर,",
+          "और आसमान सहेजता है दिनभर की कहानी,",
+          "इस त्रिकाल संध्या के आलोक में।"
+        ],
+        "translated_lines": [
+          "The sun bids goodbye,",
+          "The earth spreads out its blanket,",
+          "And the sky gathers the day's tale,",
+          "In the glow of this twilight of three times."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "peaceful twilight transition",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "तीनों समय का संध्या बेला,",
+          "जब सूरज ढलता है धीरे-धीरे,",
+          "हर एक रंग में घुल जाती है एक छाया,",
+          "और हवा में घुल जाती है एक खामोशी।"
+        ],
+        "translated_lines": [
+          "Twilight of the three times,",
+          "As the sun sets slowly,",
+          "Every hue merges with a shadow,",
+          "And silence dissolves into the air."
+        ],
+        "emotion": "peace",
+        "tone": "whisper",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हर एक रंग में घुल जाती है एक छाया",
+            "abstract_meaning": "Darkness overtaking life's vibrancy"
+          },
+          {
+            "source_term": "हवा में घुल जाती है एक खामोशी",
+            "abstract_meaning": "Pervasive stillness or peace"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "सूरज कहता है अलविदा,",
+          "धरती बिछा देती है अपनी चादर,",
+          "और आसमान सहेजता है दिनभर की कहानी,",
+          "इस त्रिकाल संध्या के आलोक में।"
+        ],
+        "translated_lines": [
+          "The sun bids goodbye,",
+          "The earth spreads out its blanket,",
+          "And the sky gathers the day's tale,",
+          "In the glow of this twilight of three times."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "धरती बिछा देती है अपनी चादर",
+            "abstract_meaning": "Darkness spreading over the land"
+          },
+          {
+            "source_term": "आसमान सहेजता है दिनभर की कहानी",
+            "abstract_meaning": "Sky retaining the day's events"
+          },
+          {
+            "source_term": "सूरज कहता है अलविदा",
+            "abstract_meaning": "The sun setting"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "संध्या बेला",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "त्रिकाल संध्या",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9482,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

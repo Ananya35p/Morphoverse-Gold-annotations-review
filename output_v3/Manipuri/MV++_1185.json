@@ -1,0 +1,276 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1185",
+  "poem_title": "Eigi Ningthem",
+  "language": "Manipuri",
+  "original_poem": "एगी निंगथेम सिरंग ईरा,  \nहेंगु सनेगी फन्नबा मनोरा।  \nईमली नांगबा एमदी खंगब,  \nनुमिदां चेंबा थागेब हांबा।\n\nनिंगोल ईरेईबा निंगथोंबा,  \nइयुंपुरंगई शिंगमशुंबा।  \nफिरमदेंगबा हुमपीडंग,  \nइरेईबा तीरोंग थोंबा।\n\nमारूम संगई पुंगिंग मारा,  \nसिरिंग ईरेई थोंगबा पारा।  \nपुंगकपी नुम्बा पंगनींगबा,  \nएगी निंगथेम इरेई थोंबा।",
+  "translated_poem": "My beloved, a blossom in spring,  \nA joy that no other love could bring.  \nIn your eyes, I find a dream,  \nThat flows like a river, a timeless stream.\n\nYour laughter, like a gentle breeze,  \nFills my heart and puts me at ease.  \nIn your embrace, I feel complete,  \nA warmth that makes my soul retreat.\n\nUnder the moon, our love shall grow,  \nA bond like no other, forever to show.  \nMy beloved, you are my all,  \nWith you, I rise; with you, I fall.",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7988,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "एगी निंगथेम सिरंग ईरा,",
+          "हेंगु सनेगी फन्नबा मनोरा।",
+          "ईमली नांगबा एमदी खंगब,",
+          "नुमिदां चेंबा थागेब हांबा।"
+        ],
+        "translated_lines": [
+          "My beloved, a blossom in spring,",
+          "A joy that no other love could bring.",
+          "In your eyes, I find a dream,",
+          "That flows like a river, a timeless stream."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "निंगोल ईरेईबा निंगथोंबा,",
+          "इयुंपुरंगई शिंगमशुंबा।",
+          "फिरमदेंगबा हुमपीडंग,",
+          "इरेईबा तीरोंग थोंबा।"
+        ],
+        "translated_lines": [
+          "Your laughter, like a gentle breeze,",
+          "Fills my heart and puts me at ease.",
+          "In your embrace, I feel complete,",
+          "A warmth that makes my soul retreat."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "मारूम संगई पुंगिंग मारा,",
+          "सिरिंग ईरेई थोंगबा पारा।",
+          "पुंगकपी नुम्बा पंगनींगबा,",
+          "एगी निंगथेम इरेई थोंबा।"
+        ],
+        "translated_lines": [
+          "Under the moon, our love shall grow,",
+          "A bond like no other, forever to show.",
+          "My beloved, you are my all,",
+          "With you, I rise; with you, I fall."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Praising the beloved son",
+    "translation_fidelity_score": 0.333333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "एगी निंगथेम सिरंग ईरा,",
+          "हेंगु सनेगी फन्नबा मनोरा।",
+          "ईमली नांगबा एमदी खंगब,",
+          "नुमिदां चेंबा थागेब हांबा।"
+        ],
+        "translated_lines": [
+          "My beloved, a blossom in spring,",
+          "A joy that no other love could bring.",
+          "In your eyes, I find a dream,",
+          "That flows like a river, a timeless stream."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Original evening and moon imagery is lost",
+        "metaphor_spans": [
+          {
+            "source_term": "एगी निंगथेम",
+            "abstract_meaning": "Beloved or precious person"
+          },
+          {
+            "source_term": "हेंगु सनेगी",
+            "abstract_meaning": "Precious or divine life vessel"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "निंगोल ईरेईबा निंगथोंबा,",
+          "इयुंपुरंगई शिंगमशुंबा।",
+          "फिरमदेंगबा हुमपीडंग,",
+          "इरेईबा तीरोंग थोंबा।"
+        ],
+        "translated_lines": [
+          "Your laughter, like a gentle breeze,",
+          "Fills my heart and puts me at ease.",
+          "In your embrace, I feel complete,",
+          "A warmth that makes my soul retreat."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "lost",
+        "loss_note": "Lost cultural references for generic romantic English verse",
+        "metaphor_spans": [
+          {
+            "source_term": "निंगोल ईरेईबा निंगथोंबा",
+            "abstract_meaning": "Divine ruler of the waters"
+          },
+          {
+            "source_term": "इयुंपुरंगई शिंगमशुंबा",
+            "abstract_meaning": "Guardian of the ancestral home"
+          },
+          {
+            "source_term": "इरेईबा तीरोंग थोंबा",
+            "abstract_meaning": "Controller of the life flow"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "मारूम संगई पुंगिंग मारा,",
+          "सिरिंग ईरेई थोंगबा पारा।",
+          "पुंगकपी नुम्बा पंगनींगबा,",
+          "एगी निंगथेम इरेई थोंबा।"
+        ],
+        "translated_lines": [
+          "Under the moon, our love shall grow,",
+          "A bond like no other, forever to show.",
+          "My beloved, you are my all,",
+          "With you, I rise; with you, I fall."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Specific cultural imagery replaced by generic tropes",
+        "metaphor_spans": [
+          {
+            "source_term": "मारूम संगई",
+            "abstract_meaning": "Hidden inner essence"
+          },
+          {
+            "source_term": "सिरिंग ईरेई",
+            "abstract_meaning": "Vital life force"
+          },
+          {
+            "source_term": "एगी निंगथेम",
+            "abstract_meaning": "The soul's divine ruler"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "निंगथेम",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सिरंग ईरा",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मनोरा",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "निंगथोंबा",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "इरेईबा",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "इयुंपुरंगई",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "तीरोंग थोंबा",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "संगई",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "निंगथेम",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7988,
+      "source_term_checks": {
+        "entities_total": 10,
+        "entities_dropped": 1,
+        "metaphors_total": 8,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "इरेई थोंगबा",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1121",
+  "poem_title": "Kannada",
+  "language": "Kannada",
+  "original_poem": "ಕನ್ನಡ ನಾಡಿಗೆ ನನ್ನ ಪ್ರಣಾಮಗಳು,  \nಈ ನಾಡಿನ ಉಲ್ಲಾಸಗಳಿಗೆ ನನ್ನ ವಂದನೆಗಳು,  \nನಿನ್ನ ಪ್ರೀತಿ ನನ್ನ ಹೃದಯವನ್ನು ಬೆರೆಸಿದೆ,  \nನೀನೆನಗೂ ಪರಮ ಸಂಪತ್ತು, ಕನ್ನಡ.  \n\nಕನ್ನಡ, ನೀನು ನನ್ನ ಜೀವ,  \nನಿನ್ನ ನಾಡಿನಲ್ಲಿ ಹುಟ್ಟಿದ ಕಮಲ.  \nಕನ್ನಡ ನಾಡಿನ ಸೊಬಗಿನಲ್ಲಿ,  \nನಾನು ಇಲ್ಲಿಯೇ ಹೊಳೆಯುತ್ತೇನೆ.",
+  "translated_poem": "Salutations to the Kannada land,  \nMy greetings to the joys of this land,  \nYour love has mixed in my heart,  \nYou are my ultimate treasure, Kannada.  \n\nKannada, you are my life,  \nA lotus born in your soil.  \nIn the beauty of the Kannada land,  \nI shine right here.",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9527,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಕನ್ನಡ ನಾಡಿಗೆ ನನ್ನ ಪ್ರಣಾಮಗಳು,",
+          "ಈ ನಾಡಿನ ಉಲ್ಲಾಸಗಳಿಗೆ ನನ್ನ ವಂದನೆಗಳು,",
+          "ನಿನ್ನ ಪ್ರೀತಿ ನನ್ನ ಹೃದಯವನ್ನು ಬೆರೆಸಿದೆ,",
+          "ನೀನೆನಗೂ ಪರಮ ಸಂಪತ್ತು, ಕನ್ನಡ."
+        ],
+        "translated_lines": [
+          "Salutations to the Kannada land,",
+          "My greetings to the joys of this land,",
+          "Your love has mixed in my heart,",
+          "You are my ultimate treasure, Kannada."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಕನ್ನಡ, ನೀನು ನನ್ನ ಜೀವ,",
+          "ನಿನ್ನ ನಾಡಿನಲ್ಲಿ ಹುಟ್ಟಿದ ಕಮಲ.",
+          "ಕನ್ನಡ ನಾಡಿನ ಸೊಬಗಿನಲ್ಲಿ,",
+          "ನಾನು ಇಲ್ಲಿಯೇ ಹೊಳೆಯುತ್ತೇನೆ."
+        ],
+        "translated_lines": [
+          "Kannada, you are my life,",
+          "A lotus born in your soil.",
+          "In the beauty of the Kannada land,",
+          "I shine right here."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Devotion to homeland",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಕನ್ನಡ ನಾಡಿಗೆ ನನ್ನ ಪ್ರಣಾಮಗಳು,",
+          "ಈ ನಾಡಿನ ಉಲ್ಲಾಸಗಳಿಗೆ ನನ್ನ ವಂದನೆಗಳು,",
+          "ನಿನ್ನ ಪ್ರೀತಿ ನನ್ನ ಹೃದಯವನ್ನು ಬೆರೆಸಿದೆ,",
+          "ನೀನೆನಗೂ ಪರಮ ಸಂಪತ್ತು, ಕನ್ನಡ."
+        ],
+        "translated_lines": [
+          "Salutations to the Kannada land,",
+          "My greetings to the joys of this land,",
+          "Your love has mixed in my heart,",
+          "You are my ultimate treasure, Kannada."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ನಿನ್ನ ಪ್ರೀತಿ ನನ್ನ ಹೃದಯವನ್ನು ಬೆರೆಸಿದೆ",
+            "abstract_meaning": "Deep emotional bond with the land"
+          },
+          {
+            "source_term": "ಪರಮ ಸಂಪತ್ತು",
+            "abstract_meaning": "Language as a precious treasure"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಕನ್ನಡ, ನೀನು ನನ್ನ ಜೀವ,",
+          "ನಿನ್ನ ನಾಡಿನಲ್ಲಿ ಹುಟ್ಟಿದ ಕಮಲ.",
+          "ಕನ್ನಡ ನಾಡಿನ ಸೊಬಗಿನಲ್ಲಿ,",
+          "ನಾನು ಇಲ್ಲಿಯೇ ಹೊಳೆಯುತ್ತೇನೆ."
+        ],
+        "translated_lines": [
+          "Kannada, you are my life,",
+          "A lotus born in your soil.",
+          "In the beauty of the Kannada land,",
+          "I shine right here."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ನೀನು ನನ್ನ ಜೀವ",
+            "abstract_meaning": "Language is the speaker's lifeblood"
+          },
+          {
+            "source_term": "ಹುಟ್ಟಿದ ಕಮಲ",
+            "abstract_meaning": "Speaker as a flourishing entity"
+          },
+          {
+            "source_term": "ಹೊಳೆಯುತ್ತೇನೆ",
+            "abstract_meaning": "Prospering or achieving success"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಪ್ರಣಾಮಗಳು",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಪರಮ ಸಂಪತ್ತು",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಕನ್ನಡ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಕಮಲ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9527,
+      "source_term_checks": {
+        "entities_total": 5,
+        "entities_dropped": 1,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "ಕನ್ನಡ ನಾಡು",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1113",
+  "poem_title": "Mankuthimmana Kagga",
+  "language": "Kannada",
+  "original_poem": "ಹೆಣ್ಣೆನಿಂಹುದು ಹೀನವಲ್ಲ, ಪುರಾಣಿಗಳಂ\nಅಣಕಿಸಿದಳು ಬಂಗಾರದ ಮಣಿ ಸುತ್ತಿಗೆ;\nಅಡಿವಾಣಿಯನು ಮೀರಿ ಕೇಳಲಾದರೆ \nಮಿಡಿವುದೆಲ್ಲ ನಿನಗೆ ಕಿಡಿಯೆನುವಂತೆ, ಮಂಕುತಿಮ್ಮ\nಮಹಾಸಿನ ಸಿರಿ ಮಹಾಸುಖವುಳ್ಳವರ \nನಿಸ್ಸಾರವಾದ ಉಸಿರು, ದುಃಖವೇನು? \nವೃಥಾಸಾಕ್ಷಿ ಬೇರೆ ಬೇಡ, ಸರಿಯಾದ ದಾರಿ \nನಿನಗಾಗದಂತೆ ಕಾಯಿತು, ಮಂಕುತಿಮ್ಮ.\nಉಪಮೆಗೊಡವೇನೇನೂ, ಒಳ್ಳೆಯವನೆ \nತಪವಿರುಹೊತ್ತಿಸಿಕೊಳ್ಳುವ ಸ್ವರ್ಗದೀಪವೊ, \nಮಾಪಿದೇನು ಬದುಕಿನ ದಾರಿ ತನ್ನ ಧರ್ಮದ \nಮೇಲೆ ಚಲನಯೆ ಅದ್ಯತ್ಮವೆನಿಸುವುದು ಮಂಕುತಿಮ್ಮ.\nಆಗದು ಏನೂ ಆಗದು, ದ್ರವಿಸುವುದು \nಬೀಗದೊಡನೆ ಬಾಗುವ, ಧರೆ ನಾಟದಂತೆ; \nಅಧಿಕಾರ ಬಲಕ್ಕು ಹೇಳುಕ್ಕು ಬಲುಕಟ್ಟಾ, \nಬದಲಾಗುವ ಜನರು ತೊಳೆಯುವುದಾದರೆ ಮಂಕುತಿಮ್ಮ.",
+  "translated_poem": "To be born a woman is not inferior, nor to be mocked,\nLike a golden gem wrapped in silk she stands;\nBut if you cannot listen to the voice from within,\nAll the world will seem like fire burning you, Dull Thimma.\nThe wealth of the greatest is fleeting,  \nEven their breath is empty, what's sorrow?  \nNo need for vain witnesses, the right path  \nHas been waiting just for you, Dull Thimma.\nWhat need of comparison, O noble one?  \nThe lamp of heaven is lit through your penance,  \nMeasure the path of life by your own duty  \nAnd move forward, for this is the essence of spirituality, Dull Thimma.\nNothing happens, nothing will change,  \nLike a key turning softly, bending the door;  \nPower and authority may speak loudly,  \nBut it is the people who will eventually cleanse, Dull Thimma.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7933,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 16,
+        "source_lines": [
+          "ಹೆಣ್ಣೆನಿಂಹುದು ಹೀನವಲ್ಲ, ಪುರಾಣಿಗಳಂ",
+          "ಅಣಕಿಸಿದಳು ಬಂಗಾರದ ಮಣಿ ಸುತ್ತಿಗೆ;",
+          "ಅಡಿವಾಣಿಯನು ಮೀರಿ ಕೇಳಲಾದರೆ",
+          "ಮಿಡಿವುದೆಲ್ಲ ನಿನಗೆ ಕಿಡಿಯೆನುವಂತೆ, ಮಂಕುತಿಮ್ಮ",
+          "ಮಹಾಸಿನ ಸಿರಿ ಮಹಾಸುಖವುಳ್ಳವರ",
+          "ನಿಸ್ಸಾರವಾದ ಉಸಿರು, ದುಃಖವೇನು?",
+          "ವೃಥಾಸಾಕ್ಷಿ ಬೇರೆ ಬೇಡ, ಸರಿಯಾದ ದಾರಿ",
+          "ನಿನಗಾಗದಂತೆ ಕಾಯಿತು, ಮಂಕುತಿಮ್ಮ.",
+          "ಉಪಮೆಗೊಡವೇನೇನೂ, ಒಳ್ಳೆಯವನೆ",
+          "ತಪವಿರುಹೊತ್ತಿಸಿಕೊಳ್ಳುವ ಸ್ವರ್ಗದೀಪವೊ,",
+          "ಮಾಪಿದೇನು ಬದುಕಿನ ದಾರಿ ತನ್ನ ಧರ್ಮದ",
+          "ಮೇಲೆ ಚಲನಯೆ ಅದ್ಯತ್ಮವೆನಿಸುವುದು ಮಂಕುತಿಮ್ಮ.",
+          "ಆಗದು ಏನೂ ಆಗದು, ದ್ರವಿಸುವುದು",
+          "ಬೀಗದೊಡನೆ ಬಾಗುವ, ಧರೆ ನಾಟದಂತೆ;",
+          "ಅಧಿಕಾರ ಬಲಕ್ಕು ಹೇಳುಕ್ಕು ಬಲುಕಟ್ಟಾ,",
+          "ಬದಲಾಗುವ ಜನರು ತೊಳೆಯುವುದಾದರೆ ಮಂಕುತಿಮ್ಮ."
+        ],
+        "translated_lines": [
+          "To be born a woman is not inferior, nor to be mocked,",
+          "Like a golden gem wrapped in silk she stands;",
+          "But if you cannot listen to the voice from within,",
+          "All the world will seem like fire burning you, Dull Thimma.",
+          "The wealth of the greatest is fleeting,",
+          "Even their breath is empty, what's sorrow?",
+          "No need for vain witnesses, the right path",
+          "Has been waiting just for you, Dull Thimma.",
+          "What need of comparison, O noble one?",
+          "The lamp of heaven is lit through your penance,",
+          "Measure the path of life by your own duty",
+          "And move forward, for this is the essence of spirituality, Dull Thimma.",
+          "Nothing happens, nothing will change,",
+          "Like a key turning softly, bending the door;",
+          "Power and authority may speak loudly,",
+          "But it is the people who will eventually cleanse, Dull Thimma."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Philosophical life wisdom",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 16,
+        "source_lines": [
+          "ಹೆಣ್ಣೆನಿಂಹುದು ಹೀನವಲ್ಲ, ಪುರಾಣಿಗಳಂ",
+          "ಅಣಕಿಸಿದಳು ಬಂಗಾರದ ಮಣಿ ಸುತ್ತಿಗೆ;",
+          "ಅಡಿವಾಣಿಯನು ಮೀರಿ ಕೇಳಲಾದರೆ",
+          "ಮಿಡಿವುದೆಲ್ಲ ನಿನಗೆ ಕಿಡಿಯೆನುವಂತೆ, ಮಂಕುತಿಮ್ಮ",
+          "ಮಹಾಸಿನ ಸಿರಿ ಮಹಾಸುಖವುಳ್ಳವರ",
+          "ನಿಸ್ಸಾರವಾದ ಉಸಿರು, ದುಃಖವೇನು?",
+          "ವೃಥಾಸಾಕ್ಷಿ ಬೇರೆ ಬೇಡ, ಸರಿಯಾದ ದಾರಿ",
+          "ನಿನಗಾಗದಂತೆ ಕಾಯಿತು, ಮಂಕುತಿಮ್ಮ.",
+          "ಉಪಮೆಗೊಡವೇನೇನೂ, ಒಳ್ಳೆಯವನೆ",
+          "ತಪವಿರುಹೊತ್ತಿಸಿಕೊಳ್ಳುವ ಸ್ವರ್ಗದೀಪವೊ,",
+          "ಮಾಪಿದೇನು ಬದುಕಿನ ದಾರಿ ತನ್ನ ಧರ್ಮದ",
+          "ಮೇಲೆ ಚಲನಯೆ ಅದ್ಯತ್ಮವೆನಿಸುವುದು ಮಂಕುತಿಮ್ಮ.",
+          "ಆಗದು ಏನೂ ಆಗದು, ದ್ರವಿಸುವುದು",
+          "ಬೀಗದೊಡನೆ ಬಾಗುವ, ಧರೆ ನಾಟದಂತೆ;",
+          "ಅಧಿಕಾರ ಬಲಕ್ಕು ಹೇಳುಕ್ಕು ಬಲುಕಟ್ಟಾ,",
+          "ಬದಲಾಗುವ ಜನರು ತೊಳೆಯುವುದಾದರೆ ಮಂಕುತಿಮ್ಮ."
+        ],
+        "translated_lines": [
+          "To be born a woman is not inferior, nor to be mocked,",
+          "Like a golden gem wrapped in silk she stands;",
+          "But if you cannot listen to the voice from within,",
+          "All the world will seem like fire burning you, Dull Thimma.",
+          "The wealth of the greatest is fleeting,",
+          "Even their breath is empty, what's sorrow?",
+          "No need for vain witnesses, the right path",
+          "Has been waiting just for you, Dull Thimma.",
+          "What need of comparison, O noble one?",
+          "The lamp of heaven is lit through your penance,",
+          "Measure the path of life by your own duty",
+          "And move forward, for this is the essence of spirituality, Dull Thimma.",
+          "Nothing happens, nothing will change,",
+          "Like a key turning softly, bending the door;",
+          "Power and authority may speak loudly,",
+          "But it is the people who will eventually cleanse, Dull Thimma."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "poetic liberties taken with literal word meanings",
+        "metaphor_spans": [
+          {
+            "source_term": "ಬಂಗಾರದ ಮಣಿ ಸುತ್ತಿಗೆ",
+            "abstract_meaning": "Small yet powerful spiritual force"
+          },
+          {
+            "source_term": "ಸ್ವರ್ಗದೀಪವೊ",
+            "abstract_meaning": "Divine light of spiritual truth"
+          },
+          {
+            "source_term": "ಬದುಕಿನ ದಾರಿ",
+            "abstract_meaning": "The journey of human existence"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7933,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

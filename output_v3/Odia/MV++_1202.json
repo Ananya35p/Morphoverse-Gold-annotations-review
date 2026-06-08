@@ -1,0 +1,91 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1202",
+  "poem_title": "Bhagavad Gita",
+  "language": "Odia",
+  "original_poem": "भगवद्गीता  \nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।  \nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥",
+  "translated_poem": "The Bhagavad Gita  \nIn the field of righteousness, in Kurukshetra, gathered to battle,  \nMy sons and the sons of Pandu, what did they do, O Sanjaya?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7718,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 3,
+        "source_lines": [
+          "भगवद्गीता",
+          "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।",
+          "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥"
+        ],
+        "translated_lines": [
+          "The Bhagavad Gita",
+          "In the field of righteousness, in Kurukshetra, gathered to battle,",
+          "My sons and the sons of Pandu, what did they do, O Sanjaya?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "Inquiring about the war",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 3,
+        "source_lines": [
+          "भगवद्गीता",
+          "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।",
+          "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥"
+        ],
+        "translated_lines": [
+          "The Bhagavad Gita",
+          "In the field of righteousness, in Kurukshetra, gathered to battle,",
+          "My sons and the sons of Pandu, what did they do, O Sanjaya?"
+        ],
+        "emotion": "fear",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "धर्मक्षेत्रे",
+            "abstract_meaning": "Field of moral righteousness"
+          },
+          {
+            "source_term": "कुरुक्षेत्रे",
+            "abstract_meaning": "Field of human action"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7718,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1235",
+  "poem_title": "Bhagavad Gita",
+  "language": "Sanskrit",
+  "original_poem": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥\n\nन हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।\nअवाप्य भूमावसपत्नमृद्धं राज्यं सुराणामपि चाधिपत्यम्॥",
+  "translated_poem": "In the field of righteousness, in the field of Kurukshetra,\nGathered are those eager for battle, my sons and the sons of Pandu—what did they do, O Sanjaya?\n\nFor I see not that which would remove my sorrow, which dries up my senses.\nEven if I should gain undisputed sovereignty over the earth and mastery over the gods.",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7583,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।",
+          "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥"
+        ],
+        "translated_lines": [
+          "In the field of righteousness, in the field of Kurukshetra,",
+          "Gathered are those eager for battle, my sons and the sons of Pandu—what did they do, O Sanjaya?"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।",
+          "अवाप्य भूमावसपत्नमृद्धं राज्यं सुराणामपि चाधिपत्यम्॥"
+        ],
+        "translated_lines": [
+          "For I see not that which would remove my sorrow, which dries up my senses.",
+          "Even if I should gain undisputed sovereignty over the earth and mastery over the gods."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "sorrow on the battlefield",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।",
+          "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥"
+        ],
+        "translated_lines": [
+          "In the field of righteousness, in the field of Kurukshetra,",
+          "Gathered are those eager for battle, my sons and the sons of Pandu—what did they do, O Sanjaya?"
+        ],
+        "emotion": "fear",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "धर्मक्षेत्रे",
+            "abstract_meaning": "Internal field of moral struggle"
+          },
+          {
+            "source_term": "कुरुक्षेत्रे",
+            "abstract_meaning": "The body as field of action"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।",
+          "अवाप्य भूमावसपत्नमृद्धं राज्यं सुराणामपि चाधिपत्यम्॥"
+        ],
+        "translated_lines": [
+          "For I see not that which would remove my sorrow, which dries up my senses.",
+          "Even if I should gain undisputed sovereignty over the earth and mastery over the gods."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "सुराणामपि चाधिपत्यम्",
+            "abstract_meaning": "Ultimate celestial or divine authority"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7583,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 3,
+        "metaphors_total": 5,
+        "metaphors_dropped": 2
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 5,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.stanzas[2].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "शोकमुच्छोषणमिन्द्रियाणाम्",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.stanzas[2].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "असपत्नमृद्धं राज्यं",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "सुराणाम्",
+      "note": "entity_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "शोकम्",
+      "note": "entity_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "इन्द्रियाणाम्",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

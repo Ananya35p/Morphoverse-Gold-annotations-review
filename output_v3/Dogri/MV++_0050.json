@@ -1,0 +1,114 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0050",
+  "poem_title": "Kashmir",
+  "language": "Dogri",
+  "original_poem": "कश्मीर\nकश्मीर दी वादियां\nसपने लिपटीं, धुंध विच,\nधरती दे जन्नत दी खुशबू\nसांझी करे दिलां नाल।",
+  "translated_poem": "The valleys of Kashmir\nWrapped in dreams, in mist,\nThe scent of heaven on earth\nShared with hearts alike.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9118,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "कश्मीर",
+          "कश्मीर दी वादियां",
+          "सपने लिपटीं, धुंध विच,",
+          "धरती दे जन्नत दी खुशबू",
+          "सांझी करे दिलां नाल।"
+        ],
+        "translated_lines": [
+          "The valleys of Kashmir",
+          "Wrapped in dreams, in mist,",
+          "The scent of heaven on earth",
+          "Shared with hearts alike."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "admiring earthly paradise",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "कश्मीर",
+          "कश्मीर दी वादियां",
+          "सपने लिपटीं, धुंध विच,",
+          "धरती दे जन्नत दी खुशबू",
+          "सांझी करे दिलां नाल।"
+        ],
+        "translated_lines": [
+          "The valleys of Kashmir",
+          "Wrapped in dreams, in mist,",
+          "The scent of heaven on earth",
+          "Shared with hearts alike."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "सपने लिपटीं",
+            "abstract_meaning": "Ethereal and surreal beauty"
+          },
+          {
+            "source_term": "धरती दे जन्नत",
+            "abstract_meaning": "Supreme earthly beauty"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "कश्मीर",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "जन्नत",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9118,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

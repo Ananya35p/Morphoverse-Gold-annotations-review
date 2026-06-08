@@ -1,0 +1,220 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1119",
+  "poem_title": "Elliruve Nanna Krishna",
+  "language": "Kannada",
+  "original_poem": "ಎಲ್ಲಿರುವೆ ನನ್ನ ಕೃಷ್ಣಾ  \nನೀನು ಎಲ್ಲೆಲ್ಲಿದೆ ನನ್ನ ಭಗವಂತ  \nಹೆಸರಲ್ಲಿ ಹೆಸರಾಗಿರುವ ನಿನ್ನ  \nನಿನ್ನೊಳಗೆ ಹೋಗಬೇಕೆಂದು ಹಾರೈಸುತ್ತೇನೆ.  \n\nನಿನ್ನ ಸುಮ್ಮನಾದ ನಡಿಗೆಲ್ಲ  \nನಿನಗೊಂದು ತಲೆಕೆಡಿತಲ್ಲ,  \nನಿನ್ನ ಸುಂದರ ನಗುವಾಗ,  \nನನ್ನ ಹೃದಯ ಹಾರಿದೊಡನೆ.  \n\nನೀನು ನನ್ನ ನಡಿಗೆ ಇದ್ದರೆ,  \nನಾನು ಇಲ್ಲಿಯೇ ಬಾಳುತ್ತೇನೆ,  \nನೀನು ನನ್ನ ಪರದಲ್ಲಿ ನಿಲ್ಲುತ್ತಿದ್ದರೆ,  \nನನ್ನ ಧರ್ಮವನ್ನು ಸದಾ ನೆನೆಸುತ್ತೇನೆ.",
+  "translated_poem": "Where are you, my Krishna?  \nWhere is my Lord everywhere?  \nIn the name that carries your essence,  \nI long to enter into you.  \n\nIn your silent walk,  \nThere is no trouble for you,  \nWhen you smile beautifully,  \nMy heart takes flight.  \n\nIf you walk with me,  \nI will live right here,  \nIf you stand by my side,  \nI will always remember my duty.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9275,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಎಲ್ಲಿರುವೆ ನನ್ನ ಕೃಷ್ಣಾ",
+          "ನೀನು ಎಲ್ಲೆಲ್ಲಿದೆ ನನ್ನ ಭಗವಂತ",
+          "ಹೆಸರಲ್ಲಿ ಹೆಸರಾಗಿರುವ ನಿನ್ನ",
+          "ನಿನ್ನೊಳಗೆ ಹೋಗಬೇಕೆಂದು ಹಾರೈಸುತ್ತೇನೆ."
+        ],
+        "translated_lines": [
+          "Where are you, my Krishna?",
+          "Where is my Lord everywhere?",
+          "In the name that carries your essence,",
+          "I long to enter into you."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ನಿನ್ನ ಸುಮ್ಮನಾದ ನಡಿಗೆಲ್ಲ",
+          "ನಿನಗೊಂದು ತಲೆಕೆಡಿತಲ್ಲ,",
+          "ನಿನ್ನ ಸುಂದರ ನಗುವಾಗ,",
+          "ನನ್ನ ಹೃದಯ ಹಾರಿದೊಡನೆ."
+        ],
+        "translated_lines": [
+          "In your silent walk,",
+          "There is no trouble for you,",
+          "When you smile beautifully,",
+          "My heart takes flight."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ನೀನು ನನ್ನ ನಡಿಗೆ ಇದ್ದರೆ,",
+          "ನಾನು ಇಲ್ಲಿಯೇ ಬಾಳುತ್ತೇನೆ,",
+          "ನೀನು ನನ್ನ ಪರದಲ್ಲಿ ನಿಲ್ಲುತ್ತಿದ್ದರೆ,",
+          "ನನ್ನ ಧರ್ಮವನ್ನು ಸದಾ ನೆನೆಸುತ್ತೇನೆ."
+        ],
+        "translated_lines": [
+          "If you walk with me,",
+          "I will live right here,",
+          "If you stand by my side,",
+          "I will always remember my duty."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Seeking divine union",
+    "translation_fidelity_score": 0.833333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಎಲ್ಲಿರುವೆ ನನ್ನ ಕೃಷ್ಣಾ",
+          "ನೀನು ಎಲ್ಲೆಲ್ಲಿದೆ ನನ್ನ ಭಗವಂತ",
+          "ಹೆಸರಲ್ಲಿ ಹೆಸರಾಗಿರುವ ನಿನ್ನ",
+          "ನಿನ್ನೊಳಗೆ ಹೋಗಬೇಕೆಂದು ಹಾರೈಸುತ್ತೇನೆ."
+        ],
+        "translated_lines": [
+          "Where are you, my Krishna?",
+          "Where is my Lord everywhere?",
+          "In the name that carries your essence,",
+          "I long to enter into you."
+        ],
+        "emotion": "longing",
+        "tone": "prayer",
+        "translation_quality": "partial",
+        "loss_note": "Awkward phrasing in second line; poetic liberties taken",
+        "metaphor_spans": [
+          {
+            "source_term": "ಹೆಸರಲ್ಲಿ ಹೆಸರಾಗಿರುವ",
+            "abstract_meaning": "Divine essence within all names"
+          },
+          {
+            "source_term": "ನಿನ್ನೊಳಗೆ ಹೋಗಬೇಕೆಂದು",
+            "abstract_meaning": "Spiritual union with the divine"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ನಿನ್ನ ಸುಮ್ಮನಾದ ನಡಿಗೆಲ್ಲ",
+          "ನಿನಗೊಂದು ತಲೆಕೆಡಿತಲ್ಲ,",
+          "ನಿನ್ನ ಸುಂದರ ನಗುವಾಗ,",
+          "ನನ್ನ ಹೃದಯ ಹಾರಿದೊಡನೆ."
+        ],
+        "translated_lines": [
+          "In your silent walk,",
+          "There is no trouble for you,",
+          "When you smile beautifully,",
+          "My heart takes flight."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ತಲೆಕೆಡಿತಲ್ಲ",
+            "abstract_meaning": "Mental confusion or deep worry"
+          },
+          {
+            "source_term": "ಹೃದಯ ಹಾರಿದೊಡನೆ",
+            "abstract_meaning": "Sudden intense excitement or love"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ನೀನು ನನ್ನ ನಡಿಗೆ ಇದ್ದರೆ,",
+          "ನಾನು ಇಲ್ಲಿಯೇ ಬಾಳುತ್ತೇನೆ,",
+          "ನೀನು ನನ್ನ ಪರದಲ್ಲಿ ನಿಲ್ಲುತ್ತಿದ್ದರೆ,",
+          "ನನ್ನ ಧರ್ಮವನ್ನು ಸದಾ ನೆನೆಸುತ್ತೇನೆ."
+        ],
+        "translated_lines": [
+          "If you walk with me,",
+          "I will live right here,",
+          "If you stand by my side,",
+          "I will always remember my duty."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ನೀನು ನನ್ನ ನಡಿಗೆ",
+            "abstract_meaning": "You are my life's direction"
+          },
+          {
+            "source_term": "ನನ್ನ ಪರದಲ್ಲಿ ನಿಲ್ಲುತ್ತಿದ್ದರೆ",
+            "abstract_meaning": "Being a source of support"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಕೃಷ್ಣಾ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಭಗವಂತ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ನಿನ್ನೊಳಗೆ ಹೋಗಬೇಕೆಂದು",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಧರ್ಮ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9275,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1240",
+  "poem_title": "Baha Dhan",
+  "language": "Santhali",
+  "original_poem": "बहा धन,  \nफसल की लहर,  \nकृषक की मेहनत का,  \nअति सुखद असर।\n\nसूरज की किरणें,  \nधरती का आंचल,  \nहरियाली की चादर,  \nखुशियों का संबल।\n\nमिट्टी की खुशबू,  \nफसलों का रंग,  \nहर खेत में बिखरे,  \nजीवन का उमंग।\n\nपरिश्रम का फल,  \nसपनों का संसार,  \nबहा धन की क़द्र,  \nसच्चा है ये प्यार।",
+  "translated_poem": "The abundant harvest,  \nWaves of crops,  \nThe toil of the farmer,  \nA most joyous effect.\n\nSun's rays shining,  \nThe earth's embrace,  \nA blanket of greenery,  \nSupport of happiness.\n\nThe scent of soil,  \nThe color of crops,  \nScattered in every field,  \nThe essence of life.\n\nThe fruit of hard work,  \nA world of dreams,  \nThe value of the abundant harvest,  \nThis love is true.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 4,
+    "source_stanza_count": 4,
+    "translated_stanza_count": 4,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8093,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "बहा धन,",
+          "फसल की लहर,",
+          "कृषक की मेहनत का,",
+          "अति सुखद असर।"
+        ],
+        "translated_lines": [
+          "The abundant harvest,",
+          "Waves of crops,",
+          "The toil of the farmer,",
+          "A most joyous effect."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "सूरज की किरणें,",
+          "धरती का आंचल,",
+          "हरियाली की चादर,",
+          "खुशियों का संबल।"
+        ],
+        "translated_lines": [
+          "Sun's rays shining,",
+          "The earth's embrace,",
+          "A blanket of greenery,",
+          "Support of happiness."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी की खुशबू,",
+          "फसलों का रंग,",
+          "हर खेत में बिखरे,",
+          "जीवन का उमंग।"
+        ],
+        "translated_lines": [
+          "The scent of soil,",
+          "The color of crops,",
+          "Scattered in every field,",
+          "The essence of life."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "परिश्रम का फल,",
+          "सपनों का संसार,",
+          "बहा धन की क़द्र,",
+          "सच्चा है ये प्यार।"
+        ],
+        "translated_lines": [
+          "The fruit of hard work,",
+          "A world of dreams,",
+          "The value of the abundant harvest,",
+          "This love is true."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "joy of harvest",
+    "translation_fidelity_score": 0.75,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "बहा धन,",
+          "फसल की लहर,",
+          "कृषक की मेहनत का,",
+          "अति सुखद असर।"
+        ],
+        "translated_lines": [
+          "The abundant harvest,",
+          "Waves of crops,",
+          "The toil of the farmer,",
+          "A most joyous effect."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "बहा धन",
+            "abstract_meaning": "Prosperity through nature's beauty"
+          },
+          {
+            "source_term": "फसल की लहर",
+            "abstract_meaning": "Abundant growth of crops"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "सूरज की किरणें,",
+          "धरती का आंचल,",
+          "हरियाली की चादर,",
+          "खुशियों का संबल।"
+        ],
+        "translated_lines": [
+          "Sun's rays shining,",
+          "The earth's embrace,",
+          "A blanket of greenery,",
+          "Support of happiness."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "धरती का आंचल",
+            "abstract_meaning": "Earth as a nurturing mother"
+          },
+          {
+            "source_term": "हरियाली की चादर",
+            "abstract_meaning": "Lush green covering over land"
+          },
+          {
+            "source_term": "खुशियों का संबल",
+            "abstract_meaning": "Happiness as a life support"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "मिट्टी की खुशबू,",
+          "फसलों का रंग,",
+          "हर खेत में बिखरे,",
+          "जीवन का उमंग।"
+        ],
+        "translated_lines": [
+          "The scent of soil,",
+          "The color of crops,",
+          "Scattered in every field,",
+          "The essence of life."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "loses the sense of joy or enthusiasm",
+        "metaphor_spans": [
+          {
+            "source_term": "मिट्टी की खुशबू",
+            "abstract_meaning": "Deep connection to the land"
+          },
+          {
+            "source_term": "फसलों का रंग",
+            "abstract_meaning": "Symbol of prosperity and growth"
+          },
+          {
+            "source_term": "जीवन का उमंग",
+            "abstract_meaning": "Vitality and joy of existence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "परिश्रम का फल,",
+          "सपनों का संसार,",
+          "बहा धन की क़द्र,",
+          "सच्चा है ये प्यार।"
+        ],
+        "translated_lines": [
+          "The fruit of hard work,",
+          "A world of dreams,",
+          "The value of the abundant harvest,",
+          "This love is true."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "misses literal meaning of flowing or flower wealth",
+        "metaphor_spans": [
+          {
+            "source_term": "परिश्रम का फल",
+            "abstract_meaning": "Reward for hard work"
+          },
+          {
+            "source_term": "सपनों का संसार",
+            "abstract_meaning": "Realm of aspirations"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "बहा",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सूरज",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "धरती",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8093,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 10,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

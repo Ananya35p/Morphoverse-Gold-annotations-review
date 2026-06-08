@@ -1,0 +1,104 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1233",
+  "poem_title": "Padharo Mhare Desh",
+  "language": "Rajasthani",
+  "original_poem": "पधारो म्हारे देश,  \nसपनों में रंग भर्यो म्हारो देस।  \nगांवां री गलियां, सुहावणी भूमि,  \nसुरज रा सोने ज्यूं उजेला देस।",
+  "translated_poem": "Welcome to my land,  \nWhere dreams are painted in hues so grand.  \nThe village lanes, the land so sweet,  \nLike the sun’s golden glow, my land’s heartbeat.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8438,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "पधारो म्हारे देश,",
+          "सपनों में रंग भर्यो म्हारो देस।",
+          "गांवां री गलियां, सुहावणी भूमि,",
+          "सुरज रा सोने ज्यूं उजेला देस।"
+        ],
+        "translated_lines": [
+          "Welcome to my land,",
+          "Where dreams are painted in hues so grand.",
+          "The village lanes, the land so sweet,",
+          "Like the sun’s golden glow, my land’s heartbeat."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "welcoming to homeland",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "पधारो म्हारे देश,",
+          "सपनों में रंग भर्यो म्हारो देस।",
+          "गांवां री गलियां, सुहावणी भूमि,",
+          "सुरज रा सोने ज्यूं उजेला देस।"
+        ],
+        "translated_lines": [
+          "Welcome to my land,",
+          "Where dreams are painted in hues so grand.",
+          "The village lanes, the land so sweet,",
+          "Like the sun’s golden glow, my land’s heartbeat."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Added 'heartbeat' for rhyme, altered 'bright' imagery",
+        "metaphor_spans": [
+          {
+            "source_term": "सपनों में रंग भर्यो",
+            "abstract_meaning": "Vibrant land of fulfilled aspirations"
+          },
+          {
+            "source_term": "सुरज रा सोने ज्यूं उजेला",
+            "abstract_meaning": "Radiant prosperity and divine brilliance"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "पधारो म्हारे देश",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8438,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

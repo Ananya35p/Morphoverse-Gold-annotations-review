@@ -1,0 +1,120 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1176",
+  "poem_title": "Kaaladi",
+  "language": "Malayalam",
+  "original_poem": "കാലടി  \nഎന്റെ ജീവിതത്തിന്റെ  \nവഴി,  \nഅവസാനം തേടുന്നു  \nഒരു സൂക്ഷ്മബോധം.",
+  "translated_poem": "The path,  \nOf my life,  \nSeeking the end,  \nIt follows  \nA quiet intuition.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9531,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "കാലടി",
+          "എന്റെ ജീവിതത്തിന്റെ",
+          "വഴി,",
+          "അവസാനം തേടുന്നു",
+          "ഒരു സൂക്ഷ്മബോധം."
+        ],
+        "translated_lines": [
+          "The path,",
+          "Of my life,",
+          "Seeking the end,",
+          "It follows",
+          "A quiet intuition."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Awareness of life's path",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "കാലടി",
+          "എന്റെ ജീവിതത്തിന്റെ",
+          "വഴി,",
+          "അവസാനം തേടുന്നു",
+          "ഒരു സൂക്ഷ്മബോധം."
+        ],
+        "translated_lines": [
+          "The path,",
+          "Of my life,",
+          "Seeking the end,",
+          "It follows",
+          "A quiet intuition."
+        ],
+        "emotion": "peace",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "misses the word footstep (kaaladi)",
+        "metaphor_spans": [
+          {
+            "source_term": "ജീവിതത്തിന്റെ വഴി",
+            "abstract_meaning": "Journey of human existence"
+          },
+          {
+            "source_term": "കാലടി",
+            "abstract_meaning": "Mark of one's past actions"
+          },
+          {
+            "source_term": "സൂക്ഷ്മബോധം",
+            "abstract_meaning": "Ultimate spiritual or intellectual clarity"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "കാലടി",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "സൂക്ഷ്മബോധം",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9531,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

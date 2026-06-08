@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1346",
+  "poem_title": "Aazhi",
+  "language": "Tamil",
+  "original_poem": "ஆழியின் அலை,  \nஉன் உள்ளத்திற்குள் வரும்,  \nநினைவுகளின் நிலவுக்கு,  \nஎன் காதல் விடைபோல்!",
+  "translated_poem": "The wave of the ocean,  \nFlows into your heart,  \nTo the moon of memories,  \nLike my love’s escape!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.92,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆழியின் அலை,",
+          "உன் உள்ளத்திற்குள் வரும்,",
+          "நினைவுகளின் நிலவுக்கு,",
+          "என் காதல் விடைபோல்!"
+        ],
+        "translated_lines": [
+          "The wave of the ocean,",
+          "Flows into your heart,",
+          "To the moon of memories,",
+          "Like my love’s escape!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Love's answering wave",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆழியின் அலை,",
+          "உன் உள்ளத்திற்குள் வரும்,",
+          "நினைவுகளின் நிலவுக்கு,",
+          "என் காதல் விடைபோல்!"
+        ],
+        "translated_lines": [
+          "The wave of the ocean,",
+          "Flows into your heart,",
+          "To the moon of memories,",
+          "Like my love’s escape!"
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "vidai means answer or farewell, not escape",
+        "metaphor_spans": [
+          {
+            "source_term": "ஆழியின் அலை",
+            "abstract_meaning": "Emotions entering the mind"
+          },
+          {
+            "source_term": "நினைவுகளின் நிலவு",
+            "abstract_meaning": "Memories illuminating the mind"
+          },
+          {
+            "source_term": "காதல் விடைபோல்",
+            "abstract_meaning": "Love as a definitive solution"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ஆழி",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.92,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

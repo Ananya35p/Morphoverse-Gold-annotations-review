@@ -1,0 +1,114 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0004",
+  "poem_title": "Brahmaputra",
+  "language": "Assamese",
+  "original_poem": "ব্ৰহ্মপুত্ৰ\nব্ৰহ্মপুত্ৰ, তোমাৰ স্রোত\nহৃদয়ৰ গভীৰতাত বয়,\nমোৰ চিন্তাৰ সঙ্গীতত\nবহা তোমাৰ গতি।",
+  "translated_poem": "The Brahmaputra\nO Brahmaputra, your flow\nMoves in the depths of the heart,\nIn the melody of my thoughts\nFlows your rhythm.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8424,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ব্ৰহ্মপুত্ৰ",
+          "ব্ৰহ্মপুত্ৰ, তোমাৰ স্রোত",
+          "হৃদয়ৰ গভীৰতাত বয়,",
+          "মোৰ চিন্তাৰ সঙ্গীতত",
+          "বহা তোমাৰ গতি।"
+        ],
+        "translated_lines": [
+          "The Brahmaputra",
+          "O Brahmaputra, your flow",
+          "Moves in the depths of the heart,",
+          "In the melody of my thoughts",
+          "Flows your rhythm."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "river flows within",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ব্ৰহ্মপুত্ৰ",
+          "ব্ৰহ্মপুত্ৰ, তোমাৰ স্রোত",
+          "হৃদয়ৰ গভীৰতাত বয়,",
+          "মোৰ চিন্তাৰ সঙ্গীতত",
+          "বহা তোমাৰ গতি।"
+        ],
+        "translated_lines": [
+          "The Brahmaputra",
+          "O Brahmaputra, your flow",
+          "Moves in the depths of the heart,",
+          "In the melody of my thoughts",
+          "Flows your rhythm."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": []
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ব্ৰহ্মপুত্ৰ",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8424,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 2
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 2,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "তোমাৰ স্রোত / হৃদয়ৰ গভীৰতাত বয়",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "মোৰ চিন্তাৰ সঙ্গীতত / বহা তোমাৰ গতি",
+      "note": "metaphor_source_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

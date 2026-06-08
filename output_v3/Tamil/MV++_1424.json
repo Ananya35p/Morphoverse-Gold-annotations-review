@@ -1,0 +1,95 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1424",
+  "poem_title": "Iravu Malarum",
+  "language": "Tamil",
+  "original_poem": "இரவு மலரும்,  \nஉன் நினைவின் வாசலில்,  \nஎன் இதயம் ஒலிக்கும்,  \nகாதலின் காதல் குரலில்!",
+  "translated_poem": "Night blooms,  \nAt the doorstep of your memory,  \nMy heart resonates,  \nIn the voice of love's affection!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8688,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "இரவு மலரும்,",
+          "உன் நினைவின் வாசலில்,",
+          "என் இதயம் ஒலிக்கும்,",
+          "காதலின் காதல் குரலில்!"
+        ],
+        "translated_lines": [
+          "Night blooms,",
+          "At the doorstep of your memory,",
+          "My heart resonates,",
+          "In the voice of love's affection!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Echoes of love",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "இரவு மலரும்,",
+          "உன் நினைவின் வாசலில்,",
+          "என் இதயம் ஒலிக்கும்,",
+          "காதலின் காதல் குரலில்!"
+        ],
+        "translated_lines": [
+          "Night blooms,",
+          "At the doorstep of your memory,",
+          "My heart resonates,",
+          "In the voice of love's affection!"
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "இரவு மலரும்",
+            "abstract_meaning": "Night unfolding or beginning"
+          },
+          {
+            "source_term": "உன் நினைவின் வாசலில்",
+            "abstract_meaning": "Entering the realm of memories"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8688,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

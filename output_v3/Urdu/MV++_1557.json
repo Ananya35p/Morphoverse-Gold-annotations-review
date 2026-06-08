@@ -1,0 +1,296 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1557",
+  "poem_title": "Dil Ki Baat",
+  "language": "Urdu",
+  "original_poem": "دل کی بات\n\nدل کی بات کچھ اس طرح کہی جائے\nخاموشی میں بھی محبت کی زبان بولی جائے\n\nآنکھوں سے خوابوں کی چمک چوری کی جائے\nپھولوں کی خوشبو میں خیالوں کو بھولی جائے\n\nہاتھوں کی لکیروں میں چھپی کہانی ہو\nسکوت میں بھی عشق کی جانی ہو\n\nسایوں میں چھپے احساس کی روشنی ہو\nدل کی بات کچھ اس طرح کہی جائے",
+  "translated_poem": "The Heart's Tale\n\nLet the heart's tale be told this way:\nEven in silence, the language of love must sway.\n\nSteal the shimmer of dreams from the eyes,\nIn the fragrance of flowers, let thoughts arise.\n\nThere’s a story hidden in the lines of hands,\nIn silence, let the essence of love withstands.\n\nLet there be light from feelings that hide in the shade,\nLet the heart's tale be told in this gentle parade.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8089,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "دل کی بات"
+        ],
+        "translated_lines": [
+          "The Heart's Tale"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "دل کی بات کچھ اس طرح کہی جائے",
+          "خاموشی میں بھی محبت کی زبان بولی جائے"
+        ],
+        "translated_lines": [
+          "Let the heart's tale be told this way:",
+          "Even in silence, the language of love must sway."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "آنکھوں سے خوابوں کی چمک چوری کی جائے",
+          "پھولوں کی خوشبو میں خیالوں کو بھولی جائے"
+        ],
+        "translated_lines": [
+          "Steal the shimmer of dreams from the eyes,",
+          "In the fragrance of flowers, let thoughts arise."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "ہاتھوں کی لکیروں میں چھپی کہانی ہو",
+          "سکوت میں بھی عشق کی جانی ہو"
+        ],
+        "translated_lines": [
+          "There’s a story hidden in the lines of hands,",
+          "In silence, let the essence of love withstands."
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 2,
+        "source_lines": [
+          "سایوں میں چھپے احساس کی روشنی ہو",
+          "دل کی بات کچھ اس طرح کہی جائے"
+        ],
+        "translated_lines": [
+          "Let there be light from feelings that hide in the shade,",
+          "Let the heart's tale be told in this gentle parade."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Silent language of love",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "دل کی بات"
+        ],
+        "translated_lines": [
+          "The Heart's Tale"
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "baat translates closer to word or matter",
+        "metaphor_spans": [
+          {
+            "source_term": "دل کی بات",
+            "abstract_meaning": "Innermost feelings or hidden secrets"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "دل کی بات کچھ اس طرح کہی جائے",
+          "خاموشی میں بھی محبت کی زبان بولی جائے"
+        ],
+        "translated_lines": [
+          "Let the heart's tale be told this way:",
+          "Even in silence, the language of love must sway."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "changed 'spoken' to 'sway' for rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "دل کی بات",
+            "abstract_meaning": "Inner feelings and deep emotions"
+          },
+          {
+            "source_term": "محبت کی زبان",
+            "abstract_meaning": "Non-verbal expression of affection"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "آنکھوں سے خوابوں کی چمک چوری کی جائے",
+          "پھولوں کی خوشبو میں خیالوں کو بھولی جائے"
+        ],
+        "translated_lines": [
+          "Steal the shimmer of dreams from the eyes,",
+          "In the fragrance of flowers, let thoughts arise."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "'bhooli jaye' means forgotten, not arise",
+        "metaphor_spans": [
+          {
+            "source_term": "خوابوں کی چمک",
+            "abstract_meaning": "Hope or future aspirations"
+          },
+          {
+            "source_term": "پھولوں کی خوشبو",
+            "abstract_meaning": "Sensory distractions or fleeting beauty"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "ہاتھوں کی لکیروں میں چھپی کہانی ہو",
+          "سکوت میں بھی عشق کی جانی ہو"
+        ],
+        "translated_lines": [
+          "There’s a story hidden in the lines of hands,",
+          "In silence, let the essence of love withstands."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "translates jaani (beloved/life) as withstands",
+        "metaphor_spans": [
+          {
+            "source_term": "ہاتھوں کی لکیروں میں چھپی کہانی",
+            "abstract_meaning": "Predestined fate or life's journey"
+          },
+          {
+            "source_term": "سکوت میں بھی عشق کی جانی",
+            "abstract_meaning": "Profound devotion within silence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 2,
+        "source_lines": [
+          "سایوں میں چھپے احساس کی روشنی ہو",
+          "دل کی بات کچھ اس طرح کہی جائے"
+        ],
+        "translated_lines": [
+          "Let there be light from feelings that hide in the shade,",
+          "Let the heart's tale be told in this gentle parade."
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "added 'gentle parade' for rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "سایوں میں چھپے احساس",
+            "abstract_meaning": "Suppressed or subconscious emotions"
+          },
+          {
+            "source_term": "احساس کی روشنی",
+            "abstract_meaning": "Clarity or revelation of emotion"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "دل",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "محبت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "خاموشی",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "عشق",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سکوت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ہاتھوں کی لکیروں",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "احساس",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 5,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "دل",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 5,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8089,
+      "source_term_checks": {
+        "entities_total": 8,
+        "entities_dropped": 0,
+        "metaphors_total": 9,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

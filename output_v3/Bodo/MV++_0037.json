@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0037",
+  "poem_title": "Phul Gwsing",
+  "language": "Bodo",
+  "original_poem": "फुल ग्वसिंग\nफुल ग्वसिंग, तुमार सुगंध\nमोन गुथा, हृदय भरि,\nमोर सपना गितार\nसंगीत गुनगुन।",
+  "translated_poem": "Flower Song\nFlower song, your fragrance\nWeaves in my heart,\nIn my dreams,\nMelodies hum.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9855,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "फुल ग्वसिंग",
+          "फुल ग्वसिंग, तुमार सुगंध",
+          "मोन गुथा, हृदय भरि,",
+          "मोर सपना गितार",
+          "संगीत गुनगुन।"
+        ],
+        "translated_lines": [
+          "Flower Song",
+          "Flower song, your fragrance",
+          "Weaves in my heart,",
+          "In my dreams,",
+          "Melodies hum."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Joyful floral reverie",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "फुल ग्वसिंग",
+          "फुल ग्वसिंग, तुमार सुगंध",
+          "मोन गुथा, हृदय भरि,",
+          "मोर सपना गितार",
+          "संगीत गुनगुन।"
+        ],
+        "translated_lines": [
+          "Flower Song",
+          "Flower song, your fragrance",
+          "Weaves in my heart,",
+          "In my dreams,",
+          "Melodies hum."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "omits 'heart full' and 'guitar'",
+        "metaphor_spans": [
+          {
+            "source_term": "मोर सपना गितार",
+            "abstract_meaning": "Inner dreams as musical expression"
+          },
+          {
+            "source_term": "फुल ग्वसिंग",
+            "abstract_meaning": "A person's radiant beauty"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "संगीत",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9855,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0105",
+  "poem_title": "Saare Jahan Se Achha",
+  "language": "Hindi",
+  "original_poem": "सारे जहाँ से अच्छा, हिन्दोसिता हमारा,  \nहम बुलबुलें हैं इसकी, ये गुलसितां हमारा।  \n\nग़ुर्बत में हों अगर हम, रहता है दिल वतन में,  \nसमझो वहीं हमें भी दिल हो जहाँ हमारा।  \n\nमज़हब नहीं सिखाता आपस में बैर रखना,  \nहिंदी हैं हम, वतन है हिन्दोस्तां हमारा।",
+  "translated_poem": "Better than the entire world, is our Hindustan,  \nWe are its nightingales, and it’s our garden land.  \n\nEven if we are in exile, our hearts reside at home,  \nWherever our hearts may be, there lies our homeland.  \n\nReligion does not teach us to harbor enmity,  \nWe are Indians, and India is our motherland.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8823,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "सारे जहाँ से अच्छा, हिन्दोसिता हमारा,",
+          "हम बुलबुलें हैं इसकी, ये गुलसितां हमारा।"
+        ],
+        "translated_lines": [
+          "Better than the entire world, is our Hindustan,",
+          "We are its nightingales, and it’s our garden land."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "ग़ुर्बत में हों अगर हम, रहता है दिल वतन में,",
+          "समझो वहीं हमें भी दिल हो जहाँ हमारा।"
+        ],
+        "translated_lines": [
+          "Even if we are in exile, our hearts reside at home,",
+          "Wherever our hearts may be, there lies our homeland."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "मज़हब नहीं सिखाता आपस में बैर रखना,",
+          "हिंदी हैं हम, वतन है हिन्दोस्तां हमारा।"
+        ],
+        "translated_lines": [
+          "Religion does not teach us to harbor enmity,",
+          "We are Indians, and India is our motherland."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "patriotic pride and unity",
+    "translation_fidelity_score": 0.833333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "सारे जहाँ से अच्छा, हिन्दोसिता हमारा,",
+          "हम बुलबुलें हैं इसकी, ये गुलसितां हमारा।"
+        ],
+        "translated_lines": [
+          "Better than the entire world, is our Hindustan,",
+          "We are its nightingales, and it’s our garden land."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हम बुलबुलें हैं इसकी",
+            "abstract_meaning": "Citizens as its singing birds"
+          },
+          {
+            "source_term": "ये गुलसितां हमारा",
+            "abstract_meaning": "India as a blooming garden"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "ग़ुर्बत में हों अगर हम, रहता है दिल वतन में,",
+          "समझो वहीं हमें भी दिल हो जहाँ हमारा।"
+        ],
+        "translated_lines": [
+          "Even if we are in exile, our hearts reside at home,",
+          "Wherever our hearts may be, there lies our homeland."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "misses 'consider us to be there'",
+        "metaphor_spans": [
+          {
+            "source_term": "रहता है दिल वतन में",
+            "abstract_meaning": "True presence is where love lies"
+          },
+          {
+            "source_term": "दिल हो जहाँ हमारा",
+            "abstract_meaning": "Identity resides with one's affections"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "मज़हब नहीं सिखाता आपस में बैर रखना,",
+          "हिंदी हैं हम, वतन है हिन्दोस्तां हमारा।"
+        ],
+        "translated_lines": [
+          "Religion does not teach us to harbor enmity,",
+          "We are Indians, and India is our motherland."
+        ],
+        "emotion": "peace",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हिंदी हैं हम",
+            "abstract_meaning": "Identity as people of India"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "हिन्दोसिता",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "वतन",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मज़हब",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "हिंदी",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "हिन्दोस्तां",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8823,
+      "source_term_checks": {
+        "entities_total": 5,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1225",
+  "poem_title": "Bulleya Ki Jaana Main Kaun",
+  "language": "Punjabi",
+  "original_poem": "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ  \nਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ,  \nਨਾ ਮੈਂ ਮੋਮਿਨ ਵਿਚ ਮਸਿਤਾਂ,  \nਨਾ ਮੈਂ ਵੇਚ ਵੇਚਾਂ ਵਿਚ ਗੱਡਾਂ,  \nਨਾ ਮੈਂ ਪੱਕਾ ਵਿੱਚ ਪਲਿਤਾਂ,  \nਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।\n\nਨਾ ਮੈਂ ਭੀਤਾਂ ਵਿੱਚ ਰਹਿੰਦਾ,  \nਨਾ ਮੈਂ ਪਿੰਡਾਂ ਵਿੱਚ ਆਵਾਂ,  \nਨਾ ਮੈਂ ਮਸਜਿਦ ਨਾ ਮੈਂ ਮੰਦਰ,  \nਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।\n\nਨਾ ਮੈਂ ਨਰਕਾਂ ਵਿੱਚ ਜਾਵਾਂ,  \nਨਾ ਮੈਂ ਫਰਦਾਂ ਵਿੱਚ ਪਾਇਆ,  \nਨਾ ਮੈਂ ਆਦਮੀ, ਨਾ ਮੈਂ ਹਾਵਾਂ,  \nਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।",
+  "translated_poem": "Bulleya, What Do I Know of Myself?  \nBulleya, what do I know of myself?  \nNeither I am in the mosque with the faithful,  \nNor I am in the rituals of pious traders,  \nNor I am pure among the impure,  \nBulleya, what do I know of myself?\n\nNeither I dwell in the walls of existence,  \nNor I roam in villages,  \nNeither in the mosque nor in the temple,  \nBulleya, what do I know of myself?\n\nNeither I go to hell,  \nNor am I caught in deeds,  \nNeither I am man, nor am I spirit,  \nBulleya, what do I know of myself?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8386,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ,",
+          "ਨਾ ਮੈਂ ਮੋਮਿਨ ਵਿਚ ਮਸਿਤਾਂ,",
+          "ਨਾ ਮੈਂ ਵੇਚ ਵੇਚਾਂ ਵਿਚ ਗੱਡਾਂ,",
+          "ਨਾ ਮੈਂ ਪੱਕਾ ਵਿੱਚ ਪਲਿਤਾਂ,",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।"
+        ],
+        "translated_lines": [
+          "Bulleya, What Do I Know of Myself?",
+          "Bulleya, what do I know of myself?",
+          "Neither I am in the mosque with the faithful,",
+          "Nor I am in the rituals of pious traders,",
+          "Nor I am pure among the impure,",
+          "Bulleya, what do I know of myself?"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ਨਾ ਮੈਂ ਭੀਤਾਂ ਵਿੱਚ ਰਹਿੰਦਾ,",
+          "ਨਾ ਮੈਂ ਪਿੰਡਾਂ ਵਿੱਚ ਆਵਾਂ,",
+          "ਨਾ ਮੈਂ ਮਸਜਿਦ ਨਾ ਮੈਂ ਮੰਦਰ,",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।"
+        ],
+        "translated_lines": [
+          "Neither I dwell in the walls of existence,",
+          "Nor I roam in villages,",
+          "Neither in the mosque nor in the temple,",
+          "Bulleya, what do I know of myself?"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ਨਾ ਮੈਂ ਨਰਕਾਂ ਵਿੱਚ ਜਾਵਾਂ,",
+          "ਨਾ ਮੈਂ ਫਰਦਾਂ ਵਿੱਚ ਪਾਇਆ,",
+          "ਨਾ ਮੈਂ ਆਦਮੀ, ਨਾ ਮੈਂ ਹਾਵਾਂ,",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।"
+        ],
+        "translated_lines": [
+          "Neither I go to hell,",
+          "Nor am I caught in deeds,",
+          "Neither I am man, nor am I spirit,",
+          "Bulleya, what do I know of myself?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Spiritual self-discovery",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ,",
+          "ਨਾ ਮੈਂ ਮੋਮਿਨ ਵਿਚ ਮਸਿਤਾਂ,",
+          "ਨਾ ਮੈਂ ਵੇਚ ਵੇਚਾਂ ਵਿਚ ਗੱਡਾਂ,",
+          "ਨਾ ਮੈਂ ਪੱਕਾ ਵਿੱਚ ਪਲਿਤਾਂ,",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।"
+        ],
+        "translated_lines": [
+          "Bulleya, What Do I Know of Myself?",
+          "Bulleya, what do I know of myself?",
+          "Neither I am in the mosque with the faithful,",
+          "Nor I am in the rituals of pious traders,",
+          "Nor I am pure among the impure,",
+          "Bulleya, what do I know of myself?"
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "loses rhythmic cadence and cultural nuance of terms",
+        "metaphor_spans": [
+          {
+            "source_term": "ਮੋਮਿਨ ਵਿਚ ਮਸਿਤਾਂ",
+            "abstract_meaning": "Orthodox religious identity"
+          },
+          {
+            "source_term": "ਵੇਚ ਵੇਚਾਂ ਵਿਚ ਗੱਡਾਂ",
+            "abstract_meaning": "Scriptural or ritualistic traditions"
+          },
+          {
+            "source_term": "ਪੱਕਾ ਵਿੱਚ ਪਲਿਤਾਂ",
+            "abstract_meaning": "Duality of purity and impurity"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ਨਾ ਮੈਂ ਭੀਤਾਂ ਵਿੱਚ ਰਹਿੰਦਾ,",
+          "ਨਾ ਮੈਂ ਪਿੰਡਾਂ ਵਿੱਚ ਆਵਾਂ,",
+          "ਨਾ ਮੈਂ ਮਸਜਿਦ ਨਾ ਮੈਂ ਮੰਦਰ,",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।"
+        ],
+        "translated_lines": [
+          "Neither I dwell in the walls of existence,",
+          "Nor I roam in villages,",
+          "Neither in the mosque nor in the temple,",
+          "Bulleya, what do I know of myself?"
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "added 'of existence' not in original text",
+        "metaphor_spans": [
+          {
+            "source_term": "ਭੀਤਾਂ",
+            "abstract_meaning": "Physical or material boundaries"
+          },
+          {
+            "source_term": "ਮਸਜਿਦ",
+            "abstract_meaning": "Organized religious identity"
+          },
+          {
+            "source_term": "ਮੰਦਰ",
+            "abstract_meaning": "Institutionalized faith"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "ਨਾ ਮੈਂ ਨਰਕਾਂ ਵਿੱਚ ਜਾਵਾਂ,",
+          "ਨਾ ਮੈਂ ਫਰਦਾਂ ਵਿੱਚ ਪਾਇਆ,",
+          "ਨਾ ਮੈਂ ਆਦਮੀ, ਨਾ ਮੈਂ ਹਾਵਾਂ,",
+          "ਬੁੱਲਿਆ ਕੀ ਜਾਣਾ ਮੈਂ ਕੌਣ।"
+        ],
+        "translated_lines": [
+          "Neither I go to hell,",
+          "Nor am I caught in deeds,",
+          "Neither I am man, nor am I spirit,",
+          "Bulleya, what do I know of myself?"
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "misses Adam and Eve reference in aadmi hawan",
+        "metaphor_spans": [
+          {
+            "source_term": "ਫਰਦਾਂ ਵਿੱਚ ਪਾਇਆ",
+            "abstract_meaning": "Worldly identity or karmic records"
+          },
+          {
+            "source_term": "ਹਾਵਾਂ",
+            "abstract_meaning": "Primordial feminine or human desire"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ਨਰਕਾਂ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਫਰਦਾਂ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਆਦਮੀ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਹਾਵਾਂ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8386,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 8,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

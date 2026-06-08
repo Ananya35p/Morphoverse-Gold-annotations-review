@@ -1,0 +1,135 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0906",
+  "poem_title": "Adaviyu",
+  "language": "Kannada",
+  "original_poem": "ಅಡವಿಯು\nಅದರ ಅಡಗಿದ ಬದುಕಿನಲ್ಲಿ\nಅಂತೆಯೇ ಕಂಡ ಆಕಾಶ\nಬೇಲಿ ಹಾಕಿದ ಚಿತ್ರ, \nಅರಳಿದ ಪಲ್ಲಟ, \nಮಲ್ಲಿಗೆ ಸುತ್ತಿ ತೇಲಿದ\nಅಂದಾದರೇನು ಇಲ್ಲ.\nನಿತ್ಯವೇ ಬದಲಾಗುವುದು,\nಅದರ ದಾರಿಯೆಲ್ಲವೂ;\nಬೇಲಿ ಹಾಕಿದ ಚಿತ್ರವನ್ನು\nಬೇಲಿ ಹಾಕಿದ ಮಗ\nಮರಿಯೇ ಅಲ್ಲ\nಅಂದ ಹಾಗೆ ಹೆಣೆಯಲಾಗಿದೆ.",
+  "translated_poem": "The forest\nIn its hidden life,\nThe sky appears as it is,\nA picture enclosed, \nA flutter of the branches, \nSurrounded by jasmine\nWhat is there to speak of.\nEverything will change,\nAll its paths;\nThe picture enclosed\nIs enclosed by a child\nNot even a tree\nIs drawn that way.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8767,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 13,
+        "source_lines": [
+          "ಅಡವಿಯು",
+          "ಅದರ ಅಡಗಿದ ಬದುಕಿನಲ್ಲಿ",
+          "ಅಂತೆಯೇ ಕಂಡ ಆಕಾಶ",
+          "ಬೇಲಿ ಹಾಕಿದ ಚಿತ್ರ,",
+          "ಅರಳಿದ ಪಲ್ಲಟ,",
+          "ಮಲ್ಲಿಗೆ ಸುತ್ತಿ ತೇಲಿದ",
+          "ಅಂದಾದರೇನು ಇಲ್ಲ.",
+          "ನಿತ್ಯವೇ ಬದಲಾಗುವುದು,",
+          "ಅದರ ದಾರಿಯೆಲ್ಲವೂ;",
+          "ಬೇಲಿ ಹಾಕಿದ ಚಿತ್ರವನ್ನು",
+          "ಬೇಲಿ ಹಾಕಿದ ಮಗ",
+          "ಮರಿಯೇ ಅಲ್ಲ",
+          "ಅಂದ ಹಾಗೆ ಹೆಣೆಯಲಾಗಿದೆ."
+        ],
+        "translated_lines": [
+          "The forest",
+          "In its hidden life,",
+          "The sky appears as it is,",
+          "A picture enclosed,",
+          "A flutter of the branches,",
+          "Surrounded by jasmine",
+          "What is there to speak of.",
+          "Everything will change,",
+          "All its paths;",
+          "The picture enclosed",
+          "Is enclosed by a child",
+          "Not even a tree",
+          "Is drawn that way."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Nature's constant change",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 13,
+        "source_lines": [
+          "ಅಡವಿಯು",
+          "ಅದರ ಅಡಗಿದ ಬದುಕಿನಲ್ಲಿ",
+          "ಅಂತೆಯೇ ಕಂಡ ಆಕಾಶ",
+          "ಬೇಲಿ ಹಾಕಿದ ಚಿತ್ರ,",
+          "ಅರಳಿದ ಪಲ್ಲಟ,",
+          "ಮಲ್ಲಿಗೆ ಸುತ್ತಿ ತೇಲಿದ",
+          "ಅಂದಾದರೇನು ಇಲ್ಲ.",
+          "ನಿತ್ಯವೇ ಬದಲಾಗುವುದು,",
+          "ಅದರ ದಾರಿಯೆಲ್ಲವೂ;",
+          "ಬೇಲಿ ಹಾಕಿದ ಚಿತ್ರವನ್ನು",
+          "ಬೇಲಿ ಹಾಕಿದ ಮಗ",
+          "ಮರಿಯೇ ಅಲ್ಲ",
+          "ಅಂದ ಹಾಗೆ ಹೆಣೆಯಲಾಗಿದೆ."
+        ],
+        "translated_lines": [
+          "The forest",
+          "In its hidden life,",
+          "The sky appears as it is,",
+          "A picture enclosed,",
+          "A flutter of the branches,",
+          "Surrounded by jasmine",
+          "What is there to speak of.",
+          "Everything will change,",
+          "All its paths;",
+          "The picture enclosed",
+          "Is enclosed by a child",
+          "Not even a tree",
+          "Is drawn that way."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Mistranslated mari (young) as tree",
+        "metaphor_spans": [
+          {
+            "source_term": "ಬೇಲಿ ಹಾಕಿದ ಚಿತ್ರ",
+            "abstract_meaning": "Restricted perspective of the world"
+          },
+          {
+            "source_term": "ಅರಳಿದ ಪಲ್ಲಟ",
+            "abstract_meaning": "The unfolding of constant change"
+          },
+          {
+            "source_term": "ಬೇಲಿ ಹಾಕಿದ ಮಗ",
+            "abstract_meaning": "A person trapped by limitations"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8767,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

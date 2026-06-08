@@ -1,0 +1,136 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1207",
+  "poem_title": "Kanta Bada",
+  "language": "Odia",
+  "original_poem": "କନ୍ତ ବଡା  \nଏକ ଅସ୍ଥିର ହୃଦୟ,  \nମନର ଝରଣା,  \nବଦଳିବାରେ ସମର୍ଥ।  \nଯେତେବେଳେ ଏହା ନୂତନ ଦିଗକୁ ଯାଇଥାଏ,  \nତେବେ ମନେ ଯାତ୍ରା,  \nହୃଦୟର କଥା।  \nଏହା ସଂବେଦନାର ନଦୀ,  \nଏହା ନେଇ ଅନେକ କଥା।",
+  "translated_poem": "The Fickle Heart  \nA restless heart,  \nA cascade of the mind,  \nCapable of change.  \nWhenever it journeys to a new direction,  \nIt remembers the voyage,  \nThe tales of the heart.  \nIt is a river of emotions,  \nIt carries many stories.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7943,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 9,
+        "source_lines": [
+          "କନ୍ତ ବଡା",
+          "ଏକ ଅସ୍ଥିର ହୃଦୟ,",
+          "ମନର ଝରଣା,",
+          "ବଦଳିବାରେ ସମର୍ଥ।",
+          "ଯେତେବେଳେ ଏହା ନୂତନ ଦିଗକୁ ଯାଇଥାଏ,",
+          "ତେବେ ମନେ ଯାତ୍ରା,",
+          "ହୃଦୟର କଥା।",
+          "ଏହା ସଂବେଦନାର ନଦୀ,",
+          "ଏହା ନେଇ ଅନେକ କଥା।"
+        ],
+        "translated_lines": [
+          "The Fickle Heart",
+          "A restless heart,",
+          "A cascade of the mind,",
+          "Capable of change.",
+          "Whenever it journeys to a new direction,",
+          "It remembers the voyage,",
+          "The tales of the heart.",
+          "It is a river of emotions,",
+          "It carries many stories."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "journey of emotions",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 9,
+        "source_lines": [
+          "କନ୍ତ ବଡା",
+          "ଏକ ଅସ୍ଥିର ହୃଦୟ,",
+          "ମନର ଝରଣା,",
+          "ବଦଳିବାରେ ସମର୍ଥ।",
+          "ଯେତେବେଳେ ଏହା ନୂତନ ଦିଗକୁ ଯାଇଥାଏ,",
+          "ତେବେ ମନେ ଯାତ୍ରା,",
+          "ହୃଦୟର କଥା।",
+          "ଏହା ସଂବେଦନାର ନଦୀ,",
+          "ଏହା ନେଇ ଅନେକ କଥା।"
+        ],
+        "translated_lines": [
+          "The Fickle Heart",
+          "A restless heart,",
+          "A cascade of the mind,",
+          "Capable of change.",
+          "Whenever it journeys to a new direction,",
+          "It remembers the voyage,",
+          "The tales of the heart.",
+          "It is a river of emotions,",
+          "It carries many stories."
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ମନର ଝରଣା",
+            "abstract_meaning": "Flow of thoughts and emotions"
+          },
+          {
+            "source_term": "ସଂବେଦନାର ନଦୀ",
+            "abstract_meaning": "Continuous flow of deep feelings"
+          },
+          {
+            "source_term": "ମନେ ଯାତ୍ରା",
+            "abstract_meaning": "Internal process of change"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "କନ୍ତ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ଯାତ୍ରା",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7943,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1171",
+  "poem_title": "Tuka Zaum Aas",
+  "language": "Konkani",
+  "original_poem": "तूका जाऊं आस  \nतूच माझं स्वप्न,  \nसंपूर्ण रात्रीत  \nतू माझ्या सोबत,  \nशांतता आणतेस.",
+  "translated_poem": "You are my dream,  \nIn the depths of night,  \nWith you beside me,  \nYou bring peace,  \nTo my restless soul.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8484,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "तूका जाऊं आस",
+          "तूच माझं स्वप्न,",
+          "संपूर्ण रात्रीत",
+          "तू माझ्या सोबत,",
+          "शांतता आणतेस."
+        ],
+        "translated_lines": [
+          "You are my dream,",
+          "In the depths of night,",
+          "With you beside me,",
+          "You bring peace,",
+          "To my restless soul."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "finding peace in love",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "तूका जाऊं आस",
+          "तूच माझं स्वप्न,",
+          "संपूर्ण रात्रीत",
+          "तू माझ्या सोबत,",
+          "शांतता आणतेस."
+        ],
+        "translated_lines": [
+          "You are my dream,",
+          "In the depths of night,",
+          "With you beside me,",
+          "You bring peace,",
+          "To my restless soul."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Adds restless soul, omits initial desire",
+        "metaphor_spans": [
+          {
+            "source_term": "तूका जाऊं आस",
+            "abstract_meaning": "You represent the speaker's hope"
+          },
+          {
+            "source_term": "तूच माझं स्वप्न",
+            "abstract_meaning": "You are the speaker's aspiration"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "शांतता",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8484,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

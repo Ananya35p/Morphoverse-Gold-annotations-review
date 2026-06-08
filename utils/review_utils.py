@@ -48,7 +48,11 @@ def get_status(raw: Dict[str, Any]) -> str:
 
 
 def get_agreement(raw: Dict[str, Any]) -> str:
-    return str(raw.get("agreement") or "")
+    annotation = raw.get("annotation", {})
+    stats = annotation.get("annotation_stats", {}) if isinstance(annotation, dict) else {}
+    if isinstance(stats, dict) and stats.get("confidence"):
+        return str(stats.get("confidence"))
+    return str(raw.get("agreement") or raw.get("confidence") or "")
 
 
 def normalize_culture_entities(raw: Dict[str, Any]) -> pd.DataFrame:

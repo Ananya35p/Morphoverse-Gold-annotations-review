@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1166",
+  "poem_title": "Bhatkar",
+  "language": "Konkani",
+  "original_poem": "भटकऱ  \nतू जसा,  \nसंपूर्ण जगात  \nसारं काही  \nगेलं भटकंतीत.",
+  "translated_poem": "The Bhatkar,  \nJust as you are,  \nWandering through  \nThe entire world,  \nEverything fades in the journey.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned_low",
+    "alignment_confidence": 0.6872,
+    "alignment_note": "Alignment acceptable but not high (confidence=0.6872).",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "भटकऱ",
+          "तू जसा,",
+          "संपूर्ण जगात",
+          "सारं काही",
+          "गेलं भटकंतीत."
+        ],
+        "translated_lines": [
+          "The Bhatkar,",
+          "Just as you are,",
+          "Wandering through",
+          "The entire world,",
+          "Everything fades in the journey."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Life spent wandering",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "भटकऱ",
+          "तू जसा,",
+          "संपूर्ण जगात",
+          "सारं काही",
+          "गेलं भटकंतीत."
+        ],
+        "translated_lines": [
+          "The Bhatkar,",
+          "Just as you are,",
+          "Wandering through",
+          "The entire world,",
+          "Everything fades in the journey."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "fades softens literal lost in wandering",
+        "metaphor_spans": [
+          {
+            "source_term": "भटकऱ तू जसा",
+            "abstract_meaning": "Symbol of a rootless existence"
+          },
+          {
+            "source_term": "सारं काही गेलं भटकंतीत",
+            "abstract_meaning": "Life's purpose lost in transience"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "भटकऱ",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "भटकंती",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned_low",
+      "alignment_confidence": 0.6872,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

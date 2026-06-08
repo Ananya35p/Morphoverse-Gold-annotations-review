@@ -1,0 +1,95 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1165",
+  "poem_title": "Mhojea Konnan",
+  "language": "Konkani",
+  "original_poem": "माझ्या कोनन  \nतुला,  \nसंपूर्ण जगाचं  \nआसमान गाठून  \nमी प्रेम करतो.",
+  "translated_poem": "To my beloved,  \nI reach the skies,  \nOf the entire world,  \nWith love so vast,  \nI hold you close.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7724,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "माझ्या कोनन",
+          "तुला,",
+          "संपूर्ण जगाचं",
+          "आसमान गाठून",
+          "मी प्रेम करतो."
+        ],
+        "translated_lines": [
+          "To my beloved,",
+          "I reach the skies,",
+          "Of the entire world,",
+          "With love so vast,",
+          "I hold you close."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "I love you deeply",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "माझ्या कोनन",
+          "तुला,",
+          "संपूर्ण जगाचं",
+          "आसमान गाठून",
+          "मी प्रेम करतो."
+        ],
+        "translated_lines": [
+          "To my beloved,",
+          "I reach the skies,",
+          "Of the entire world,",
+          "With love so vast,",
+          "I hold you close."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Replaces simple 'I love you' with added imagery",
+        "metaphor_spans": [
+          {
+            "source_term": "आसमान गाठून",
+            "abstract_meaning": "Boundless or infinite love"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7724,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 1,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

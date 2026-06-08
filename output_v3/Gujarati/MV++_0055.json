@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0055",
+  "poem_title": "Mara Pranad",
+  "language": "Gujarati",
+  "original_poem": "मारा प्राणाद\nमारा प्राणाद, सदा संग छे,\nजीवन ना हर एक रंग छे।\nआँखो मा सपना, दिल मा उमंग,\nजीवन ना हर एक रंग छे।",
+  "translated_poem": "My Life\nMy life, always with me,\nEvery color of life.\nIn my eyes, dreams, in my heart, enthusiasm,\nEvery color of life.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9478,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "मारा प्राणाद",
+          "मारा प्राणाद, सदा संग छे,",
+          "जीवन ना हर एक रंग छे।",
+          "आँखो मा सपना, दिल मा उमंग,",
+          "जीवन ना हर एक रंग छे।"
+        ],
+        "translated_lines": [
+          "My Life",
+          "My life, always with me,",
+          "Every color of life.",
+          "In my eyes, dreams, in my heart, enthusiasm,",
+          "Every color of life."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "celebrating life's colors",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "मारा प्राणाद",
+          "मारा प्राणाद, सदा संग छे,",
+          "जीवन ना हर एक रंग छे।",
+          "आँखो मा सपना, दिल मा उमंग,",
+          "जीवन ना हर एक रंग छे।"
+        ],
+        "translated_lines": [
+          "My Life",
+          "My life, always with me,",
+          "Every color of life.",
+          "In my eyes, dreams, in my heart, enthusiasm,",
+          "Every color of life."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "जीवन ना हर एक रंग",
+            "abstract_meaning": "Diverse experiences of life"
+          },
+          {
+            "source_term": "मारा प्राणाद",
+            "abstract_meaning": "Essential person or life force"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "प्राणाद",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9478,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1279",
+  "poem_title": "Vennilave Vennilave",
+  "language": "Tamil",
+  "original_poem": "வெண்ணிலவே வெண்ணிலவே,  \nவெள்ளை சிரிக்கும் மேகங்களில்  \nஉன் கண்ணிருக்கும் கதை அழகு,  \nஅழகின் திருவிழா காற்றில் ஓர் குமுதம்!",
+  "translated_poem": "O moonlight, O moonlight,  \nIn the white smiling clouds,  \nThe tale within your eyes is beautiful,  \nA festival of beauty dances in the breeze!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9015,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "வெண்ணிலவே வெண்ணிலவே,",
+          "வெள்ளை சிரிக்கும் மேகங்களில்",
+          "உன் கண்ணிருக்கும் கதை அழகு,",
+          "அழகின் திருவிழா காற்றில் ஓர் குமுதம்!"
+        ],
+        "translated_lines": [
+          "O moonlight, O moonlight,",
+          "In the white smiling clouds,",
+          "The tale within your eyes is beautiful,",
+          "A festival of beauty dances in the breeze!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Beautiful white moon",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "வெண்ணிலவே வெண்ணிலவே,",
+          "வெள்ளை சிரிக்கும் மேகங்களில்",
+          "உன் கண்ணிருக்கும் கதை அழகு,",
+          "அழகின் திருவிழா காற்றில் ஓர் குமுதம்!"
+        ],
+        "translated_lines": [
+          "O moonlight, O moonlight,",
+          "In the white smiling clouds,",
+          "The tale within your eyes is beautiful,",
+          "A festival of beauty dances in the breeze!"
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "omits the water lily imagery",
+        "metaphor_spans": [
+          {
+            "source_term": "வெள்ளை சிரிக்கும் மேகங்களில்",
+            "abstract_meaning": "Brightness of the white clouds"
+          },
+          {
+            "source_term": "அழகின் திருவிழா",
+            "abstract_meaning": "Celebration of visual splendor"
+          },
+          {
+            "source_term": "காற்றில் ஓர் குமுதம்",
+            "abstract_meaning": "Joyous presence in the air"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "திருவிழா",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9015,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

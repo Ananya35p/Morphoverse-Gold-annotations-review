@@ -1,0 +1,162 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1188",
+  "poem_title": "Turel",
+  "language": "Manipuri",
+  "original_poem": "तुरेल नुपा यम्लैक्ख्रिबा,  \nसाना चंगु मगनुंगली,  \nनोनी नारानबाशिगी,  \nयुंबिनु मग्नुम ओक्ते।\n\nलामंग थावंग थमाइब,  \nनिंगोल सिंगनबाउबा,  \nइयेंगुं तुंबाई ओइ,  \nताम्बा मोयोम इमो ओई।",
+  "translated_poem": "The river, a man restless and bold,  \nCarving the earth with stories untold,  \nDancing with the grace of the night,  \nWeaving through villages, out of sight.\n\nThe hills bow as he roars ahead,  \nCarrying dreams in his riverbed,  \nWhispers of love from mountain’s breast,  \nThe river flows on, never to rest.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned_low",
+    "alignment_confidence": 0.7271,
+    "alignment_note": "Alignment acceptable but not high (confidence=0.7271).",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "तुरेल नुपा यम्लैक्ख्रिबा,",
+          "साना चंगु मगनुंगली,",
+          "नोनी नारानबाशिगी,",
+          "युंबिनु मग्नुम ओक्ते।"
+        ],
+        "translated_lines": [
+          "The river, a man restless and bold,",
+          "Carving the earth with stories untold,",
+          "Dancing with the grace of the night,",
+          "Weaving through villages, out of sight."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "लामंग थावंग थमाइब,",
+          "निंगोल सिंगनबाउबा,",
+          "इयेंगुं तुंबाई ओइ,",
+          "ताम्बा मोयोम इमो ओई।"
+        ],
+        "translated_lines": [
+          "The hills bow as he roars ahead,",
+          "Carrying dreams in his riverbed,",
+          "Whispers of love from mountain’s breast,",
+          "The river flows on, never to rest."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "nature and womanhood",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "तुरेल नुपा यम्लैक्ख्रिबा,",
+          "साना चंगु मगनुंगली,",
+          "नोनी नारानबाशिगी,",
+          "युंबिनु मग्नुम ओक्ते।"
+        ],
+        "translated_lines": [
+          "The river, a man restless and bold,",
+          "Carving the earth with stories untold,",
+          "Dancing with the grace of the night,",
+          "Weaving through villages, out of sight."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Literal imagery replaced by English rhymes",
+        "metaphor_spans": [
+          {
+            "source_term": "तुरेल नुपा",
+            "abstract_meaning": "A powerful or overwhelming man"
+          },
+          {
+            "source_term": "साना चंगु",
+            "abstract_meaning": "Infiltration of wealth or greed"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "लामंग थावंग थमाइब,",
+          "निंगोल सिंगनबाउबा,",
+          "इयेंगुं तुंबाई ओइ,",
+          "ताम्बा मोयोम इमो ओई।"
+        ],
+        "translated_lines": [
+          "The hills bow as he roars ahead,",
+          "Carrying dreams in his riverbed,",
+          "Whispers of love from mountain’s breast,",
+          "The river flows on, never to rest."
+        ],
+        "emotion": "resilience",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Omitted literal reference to maiden (ningol)",
+        "metaphor_spans": [
+          {
+            "source_term": "लामंग थावंग थमाइब",
+            "abstract_meaning": "Guiding light of the home"
+          },
+          {
+            "source_term": "इयेंगुं तुंबाई ओइ",
+            "abstract_meaning": "Vessel of family lineage"
+          },
+          {
+            "source_term": "ताम्बा मोयोम इमो ओई",
+            "abstract_meaning": "Core essence of discipline"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "तुरेल नुपा",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "नारान",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned_low",
+      "alignment_confidence": 0.7271,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

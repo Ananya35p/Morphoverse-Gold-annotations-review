@@ -1,0 +1,124 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0006",
+  "poem_title": "Jibon",
+  "language": "Assamese",
+  "original_poem": "জীৱন\nজীৱন, তুমি এক বুৰঞ্জী\nঅতি বেয়া মেঘৰ মাজত,\nসপোনৰ মৰমত দিয়া\nহৃদয়ৰ চেনেহৰ বাঁহী।",
+  "translated_poem": "Life\nLife, you are a history\nAmidst the darkest clouds,\nGifted in the love of dreams,\nThe flute of the heart's affection.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8154,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "জীৱন",
+          "জীৱন, তুমি এক বুৰঞ্জী",
+          "অতি বেয়া মেঘৰ মাজত,",
+          "সপোনৰ মৰমত দিয়া",
+          "হৃদয়ৰ চেনেহৰ বাঁহী।"
+        ],
+        "translated_lines": [
+          "Life",
+          "Life, you are a history",
+          "Amidst the darkest clouds,",
+          "Gifted in the love of dreams,",
+          "The flute of the heart's affection."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Reflections on life",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "জীৱন",
+          "জীৱন, তুমি এক বুৰঞ্জী",
+          "অতি বেয়া মেঘৰ মাজত,",
+          "সপোনৰ মৰমত দিয়া",
+          "হৃদয়ৰ চেনেহৰ বাঁহী।"
+        ],
+        "translated_lines": [
+          "Life",
+          "Life, you are a history",
+          "Amidst the darkest clouds,",
+          "Gifted in the love of dreams,",
+          "The flute of the heart's affection."
+        ],
+        "emotion": "resilience",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "অতি বেয়া মেঘৰ মাজত",
+            "abstract_meaning": "Difficulties or dark times"
+          },
+          {
+            "source_term": "হৃদয়ৰ চেনেহৰ বাঁহী",
+            "abstract_meaning": "Love expressed as music"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "বুৰঞ্জী",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "বাঁহী",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8154,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 1
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "জীৱন তুমি এক বুৰঞ্জী",
+      "note": "metaphor_source_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

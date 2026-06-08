@@ -1,0 +1,272 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1118",
+  "poem_title": "Udayavagali Namma Cheluva Kannada Naadu",
+  "language": "Kannada",
+  "original_poem": "ಉದಯವಾಗಲಿ ನಮ್ಮ ಚೆಲುವ ಕನ್ನಡನಾಡು  \nಚಲಿಸಲಿ ಯುಗ ಯುಗಾಂತರ ಗಳಿಗೆ  \nಉದಯವಾಗಲಿ, ಉದಯವಾಗಲಿ  \nನಮ್ಮ ಚೇತನ, ಉದಯವಾಗಲಿ.  \n\nನಮ್ಮ ನಾಡಿಗೆ ಮೆಟ್ಟಿಲು ತರುತ್ತದೆ  \nನಮ್ಮ ನಾಡು, ನಮ್ಮ ಹೆಮ್ಮೆ,  \nನಮ್ಮ ಹೆಜ್ಜೆಗೆ ಜವಾಬ್ದಾರಿ,  \nನಮ್ಮ ಹೃದಯವೇ ಮನೆ,  \nನಮ್ಮ ಕನಸು, ನಮ್ಮ ಕನಸು,  \nಅವುದು ಸದಾ ಬೆಳಕಿನಲ್ಲಿ.  \n\nನಾವೆಲ್ಲ ಸೇರಿ, ಹೆಮ್ಮೆ ಹರಿಯಬೇಕು  \nನಮ್ಮ ಕನ್ನಡಕ್ಕೆ ಜೀವ ನೀಡಬೇಕು  \nನಮ್ಮ ನಾಡು, ಹೆಮ್ಮೆ,  \nನಮ್ಮ ಹೆಜ್ಜೆ, ಕಲ್ಪನೆ,  \nಎಲ್ಲರ ಕೈಗೊಂಡು,  \nನಾವು ಒಗ್ಗಟ್ಟಾಗಿ ಹೆಜ್ಜೆ ಇಡಬೇಕು.",
+  "translated_poem": "Let our beautiful Karnataka rise,  \nMay it move through the ages,  \nLet it rise, let it rise,  \nOur spirit, let it rise.  \n\nBringing a ladder to our land,  \nOur land, our pride,  \nResponsibility to our steps,  \nOur heart is home,  \nOur dream, our dream,  \nAlways in the light.  \n\nLet us all unite and spread pride,  \nWe must give life to our Kannada,  \nOur land, pride,  \nOur step, our vision,  \nTogether we shall march,  \nWith strength and unity, we must tread.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9237,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಉದಯವಾಗಲಿ ನಮ್ಮ ಚೆಲುವ ಕನ್ನಡನಾಡು",
+          "ಚಲಿಸಲಿ ಯುಗ ಯುಗಾಂತರ ಗಳಿಗೆ",
+          "ಉದಯವಾಗಲಿ, ಉದಯವಾಗಲಿ",
+          "ನಮ್ಮ ಚೇತನ, ಉದಯವಾಗಲಿ."
+        ],
+        "translated_lines": [
+          "Let our beautiful Karnataka rise,",
+          "May it move through the ages,",
+          "Let it rise, let it rise,",
+          "Our spirit, let it rise."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 6,
+        "source_lines": [
+          "ನಮ್ಮ ನಾಡಿಗೆ ಮೆಟ್ಟಿಲು ತರುತ್ತದೆ",
+          "ನಮ್ಮ ನಾಡು, ನಮ್ಮ ಹೆಮ್ಮೆ,",
+          "ನಮ್ಮ ಹೆಜ್ಜೆಗೆ ಜವಾಬ್ದಾರಿ,",
+          "ನಮ್ಮ ಹೃದಯವೇ ಮನೆ,",
+          "ನಮ್ಮ ಕನಸು, ನಮ್ಮ ಕನಸು,",
+          "ಅವುದು ಸದಾ ಬೆಳಕಿನಲ್ಲಿ."
+        ],
+        "translated_lines": [
+          "Bringing a ladder to our land,",
+          "Our land, our pride,",
+          "Responsibility to our steps,",
+          "Our heart is home,",
+          "Our dream, our dream,",
+          "Always in the light."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 6,
+        "source_lines": [
+          "ನಾವೆಲ್ಲ ಸೇರಿ, ಹೆಮ್ಮೆ ಹರಿಯಬೇಕು",
+          "ನಮ್ಮ ಕನ್ನಡಕ್ಕೆ ಜೀವ ನೀಡಬೇಕು",
+          "ನಮ್ಮ ನಾಡು, ಹೆಮ್ಮೆ,",
+          "ನಮ್ಮ ಹೆಜ್ಜೆ, ಕಲ್ಪನೆ,",
+          "ಎಲ್ಲರ ಕೈಗೊಂಡು,",
+          "ನಾವು ಒಗ್ಗಟ್ಟಾಗಿ ಹೆಜ್ಜೆ ಇಡಬೇಕು."
+        ],
+        "translated_lines": [
+          "Let us all unite and spread pride,",
+          "We must give life to our Kannada,",
+          "Our land, pride,",
+          "Our step, our vision,",
+          "Together we shall march,",
+          "With strength and unity, we must tread."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Patriotic pride and unity",
+    "translation_fidelity_score": 0.833333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಉದಯವಾಗಲಿ ನಮ್ಮ ಚೆಲುವ ಕನ್ನಡನಾಡು",
+          "ಚಲಿಸಲಿ ಯುಗ ಯುಗಾಂತರ ಗಳಿಗೆ",
+          "ಉದಯವಾಗಲಿ, ಉದಯವಾಗಲಿ",
+          "ನಮ್ಮ ಚೇತನ, ಉದಯವಾಗಲಿ."
+        ],
+        "translated_lines": [
+          "Let our beautiful Karnataka rise,",
+          "May it move through the ages,",
+          "Let it rise, let it rise,",
+          "Our spirit, let it rise."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಉದಯವಾಗಲಿ",
+            "abstract_meaning": "Awakening or rebirth of land"
+          },
+          {
+            "source_term": "ನಮ್ಮ ಚೇತನ",
+            "abstract_meaning": "Collective cultural soul and identity"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 6,
+        "source_lines": [
+          "ನಮ್ಮ ನಾಡಿಗೆ ಮೆಟ್ಟಿಲು ತರುತ್ತದೆ",
+          "ನಮ್ಮ ನಾಡು, ನಮ್ಮ ಹೆಮ್ಮೆ,",
+          "ನಮ್ಮ ಹೆಜ್ಜೆಗೆ ಜವಾಬ್ದಾರಿ,",
+          "ನಮ್ಮ ಹೃದಯವೇ ಮನೆ,",
+          "ನಮ್ಮ ಕನಸು, ನಮ್ಮ ಕನಸು,",
+          "ಅವುದು ಸದಾ ಬೆಳಕಿನಲ್ಲಿ."
+        ],
+        "translated_lines": [
+          "Bringing a ladder to our land,",
+          "Our land, our pride,",
+          "Responsibility to our steps,",
+          "Our heart is home,",
+          "Our dream, our dream,",
+          "Always in the light."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ನಮ್ಮ ಹೃದಯವೇ ಮನೆ",
+            "abstract_meaning": "Love and belonging within us"
+          },
+          {
+            "source_term": "ನಮ್ಮ ಹೆಜ್ಜೆಗೆ ಜವಾಬ್ದಾರಿ",
+            "abstract_meaning": "Actions guided by duty"
+          },
+          {
+            "source_term": "ನಮ್ಮ ನಾಡಿಗೆ ಮೆಟ್ಟಿಲು ತರುತ್ತದೆ",
+            "abstract_meaning": "Progress and growth for nation"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 6,
+        "source_lines": [
+          "ನಾವೆಲ್ಲ ಸೇರಿ, ಹೆಮ್ಮೆ ಹರಿಯಬೇಕು",
+          "ನಮ್ಮ ಕನ್ನಡಕ್ಕೆ ಜೀವ ನೀಡಬೇಕು",
+          "ನಮ್ಮ ನಾಡು, ಹೆಮ್ಮೆ,",
+          "ನಮ್ಮ ಹೆಜ್ಜೆ, ಕಲ್ಪನೆ,",
+          "ಎಲ್ಲರ ಕೈಗೊಂಡು,",
+          "ನಾವು ಒಗ್ಗಟ್ಟಾಗಿ ಹೆಜ್ಜೆ ಇಡಬೇಕು."
+        ],
+        "translated_lines": [
+          "Let us all unite and spread pride,",
+          "We must give life to our Kannada,",
+          "Our land, pride,",
+          "Our step, our vision,",
+          "Together we shall march,",
+          "With strength and unity, we must tread."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "misses literal 'holding hands', adds 'strength'",
+        "metaphor_spans": [
+          {
+            "source_term": "ಹೆಮ್ಮೆ ಹರಿಯಬೇಕು",
+            "abstract_meaning": "Spreading pride like a river"
+          },
+          {
+            "source_term": "ಕನ್ನಡಕ್ಕೆ ಜೀವ ನೀಡಬೇಕು",
+            "abstract_meaning": "Revitalizing the language"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಕನ್ನಡನಾಡು",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಯುಗ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಚೇತನ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ನಮ್ಮ ನಾಡು",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಹೃದಯವೇ ಮನೆ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಕನ್ನಡ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ನಾಡು",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಒಗ್ಗಟ್ಟಾಗಿ",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9237,
+      "source_term_checks": {
+        "entities_total": 8,
+        "entities_dropped": 0,
+        "metaphors_total": 7,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

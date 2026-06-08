@@ -1,0 +1,154 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1187",
+  "poem_title": "Thainagi",
+  "language": "Manipuri",
+  "original_poem": "थैना गी निनोइसीगु,  \nलैरम थाकु थमबी ओइ,  \nलांथई पथोई तकिनु,  \nनोम थांगदरिओ, पाम्लिबा।\n\nलेईफा, चिंगलै फोरिंबु,  \nइशिंगा थाबि टाइबबा।  \nपुहोजा, पुहोजा इनतांग्बा,  \nथैना इबुडुं, थेम्बीबा।",
+  "translated_poem": "In the heart of the rainy season,  \nThe skies cry tears of life, a reason.  \nMountains breathe, rivers swell,  \nThe earth awakens, casting its spell.\n\nThe flowers bloom, the leaves sway,  \nDancing in the rain, night and day.  \nThunder roars, the lightning calls,  \nIn this season, nature enthralls.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7542,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "थैना गी निनोइसीगु,",
+          "लैरम थाकु थमबी ओइ,",
+          "लांथई पथोई तकिनु,",
+          "नोम थांगदरिओ, पाम्लिबा।"
+        ],
+        "translated_lines": [
+          "In the heart of the rainy season,",
+          "The skies cry tears of life, a reason.",
+          "Mountains breathe, rivers swell,",
+          "The earth awakens, casting its spell."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "लेईफा, चिंगलै फोरिंबु,",
+          "इशिंगा थाबि टाइबबा।",
+          "पुहोजा, पुहोजा इनतांग्बा,",
+          "थैना इबुडुं, थेम्बीबा।"
+        ],
+        "translated_lines": [
+          "The flowers bloom, the leaves sway,",
+          "Dancing in the rain, night and day.",
+          "Thunder roars, the lightning calls,",
+          "In this season, nature enthralls."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Ancestral spirit offering",
+    "translation_fidelity_score": 0.25,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "थैना गी निनोइसीगु,",
+          "लैरम थाकु थमबी ओइ,",
+          "लांथई पथोई तकिनु,",
+          "नोम थांगदरिओ, पाम्लिबा।"
+        ],
+        "translated_lines": [
+          "In the heart of the rainy season,",
+          "The skies cry tears of life, a reason.",
+          "Mountains breathe, rivers swell,",
+          "The earth awakens, casting its spell."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "lost",
+        "loss_note": "Source is about love and the past",
+        "metaphor_spans": [
+          {
+            "source_term": "लैरम थाकु थमबी ओइ",
+            "abstract_meaning": "Becoming a guiding lamp"
+          },
+          {
+            "source_term": "थैना गी निनोइसीगु",
+            "abstract_meaning": "Echoes of the ancient past"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "लेईफा, चिंगलै फोरिंबु,",
+          "इशिंगा थाबि टाइबबा।",
+          "पुहोजा, पुहोजा इनतांग्बा,",
+          "थैना इबुडुं, थेम्बीबा।"
+        ],
+        "translated_lines": [
+          "The flowers bloom, the leaves sway,",
+          "Dancing in the rain, night and day.",
+          "Thunder roars, the lightning calls,",
+          "In this season, nature enthralls."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Literal meaning sacrificed for English rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "चिंगलै फोरिंबु",
+            "abstract_meaning": "Mountain deity protecting the land"
+          },
+          {
+            "source_term": "इशिंगा थाबि",
+            "abstract_meaning": "Source of life and creation"
+          },
+          {
+            "source_term": "थैना इबुडुं",
+            "abstract_meaning": "Ancient ancestral spirits"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "लैरम",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7542,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

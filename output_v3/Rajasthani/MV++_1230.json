@@ -1,0 +1,104 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1230",
+  "poem_title": "Thar Ri Gathri",
+  "language": "Rajasthani",
+  "original_poem": "थार री गाठरी में सपनां सांचो,\nपधारो म्हारे देश में, मिट्टी में बांचो।",
+  "translated_poem": "In the bundle of Thar, dreams come true,  \nCome to my land, live in the soil’s hue.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.91,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "थार री गाठरी में सपनां सांचो,",
+          "पधारो म्हारे देश में, मिट्टी में बांचो।"
+        ],
+        "translated_lines": [
+          "In the bundle of Thar, dreams come true,",
+          "Come to my land, live in the soil’s hue."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Welcome to my land",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "थार री गाठरी में सपनां सांचो,",
+          "पधारो म्हारे देश में, मिट्टी में बांचो।"
+        ],
+        "translated_lines": [
+          "In the bundle of Thar, dreams come true,",
+          "Come to my land, live in the soil’s hue."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Lost metaphor of reading the soil",
+        "metaphor_spans": [
+          {
+            "source_term": "थार री गाठरी",
+            "abstract_meaning": "Cultural heritage of the desert"
+          },
+          {
+            "source_term": "मिट्टी में बांचो",
+            "abstract_meaning": "Understanding the land's deep history"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "थार",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पधारो म्हारे देश",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.91,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

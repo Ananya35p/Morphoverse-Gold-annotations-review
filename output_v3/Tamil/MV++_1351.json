@@ -1,0 +1,107 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1351",
+  "poem_title": "Nilavin Oli",
+  "language": "Tamil",
+  "original_poem": "நிலவின் ஒளி,  \nஉன் குரலில் கேட்கும்,  \nஎன் இதயத்தின் தூசிகளில்,  \nஅன்பின் மெழுகாய் உருகும்!",
+  "translated_poem": "The light of the moon,  \nHeard in your voice,  \nIn the dust of my heart,  \nMelts like wax in love!",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9528,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "நிலவின் ஒளி,",
+          "உன் குரலில் கேட்கும்,",
+          "என் இதயத்தின் தூசிகளில்,",
+          "அன்பின் மெழுகாய் உருகும்!"
+        ],
+        "translated_lines": [
+          "The light of the moon,",
+          "Heard in your voice,",
+          "In the dust of my heart,",
+          "Melts like wax in love!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Melting wax of love",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "நிலவின் ஒளி,",
+          "உன் குரலில் கேட்கும்,",
+          "என் இதயத்தின் தூசிகளில்,",
+          "அன்பின் மெழுகாய் உருகும்!"
+        ],
+        "translated_lines": [
+          "The light of the moon,",
+          "Heard in your voice,",
+          "In the dust of my heart,",
+          "Melts like wax in love!"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "நிலவின் ஒளி, உன் குரலில் கேட்கும்",
+            "abstract_meaning": "Voice is soothing like moonlight"
+          },
+          {
+            "source_term": "இதயத்தின் தூசிகளில்",
+            "abstract_meaning": "Neglected or old emotional spaces"
+          },
+          {
+            "source_term": "அன்பின் மெழுகாய்",
+            "abstract_meaning": "Love's tenderness and vulnerability"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9528,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 1,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 1,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "அன்பு",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

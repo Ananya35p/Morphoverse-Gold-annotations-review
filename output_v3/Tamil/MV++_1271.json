@@ -1,0 +1,104 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1271",
+  "poem_title": "Aagaya Gangai",
+  "language": "Tamil",
+  "original_poem": "ஆகாய கங்கை, என்னைச் சூழும்  \nஅந்தி நிலா நெஞ்சில் ஊரும்  \nவிண்ணின் நீர் பூமியில் சேரும்  \nகண்ணின் பாசம் காதலாய் தோன்றும்",
+  "translated_poem": "The sky river surrounds me,  \nThe twilight moon seeps into my heart.  \nThe water from the sky meets the earth,  \nLove blossoms in the bonds of the eyes.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8615,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆகாய கங்கை, என்னைச் சூழும்",
+          "அந்தி நிலா நெஞ்சில் ஊரும்",
+          "விண்ணின் நீர் பூமியில் சேரும்",
+          "கண்ணின் பாசம் காதலாய் தோன்றும்"
+        ],
+        "translated_lines": [
+          "The sky river surrounds me,",
+          "The twilight moon seeps into my heart.",
+          "The water from the sky meets the earth,",
+          "Love blossoms in the bonds of the eyes."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "serene romantic awakening",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஆகாய கங்கை, என்னைச் சூழும்",
+          "அந்தி நிலா நெஞ்சில் ஊரும்",
+          "விண்ணின் நீர் பூமியில் சேரும்",
+          "கண்ணின் பாசம் காதலாய் தோன்றும்"
+        ],
+        "translated_lines": [
+          "The sky river surrounds me,",
+          "The twilight moon seeps into my heart.",
+          "The water from the sky meets the earth,",
+          "Love blossoms in the bonds of the eyes."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ஆகாய கங்கை",
+            "abstract_meaning": "Divine beauty or celestial rain"
+          },
+          {
+            "source_term": "அந்தி நிலா நெஞ்சில் ஊரும்",
+            "abstract_meaning": "Love rising within the soul"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ஆகாய கங்கை",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8615,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

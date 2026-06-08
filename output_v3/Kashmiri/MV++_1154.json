@@ -1,0 +1,120 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1154",
+  "poem_title": "Me Chhum Aash Paghich",
+  "language": "Kashmiri",
+  "original_poem": "مے چھُ امید پٲگٕچ  \nشٲم سہٕل چھس نوَ باغو کُن پٲزہری پٲگٕچ  \nزالُم یٲم گٲم دِلام خٲتِر۔  \nمے چھُ امید پٲگٕچ۔",
+  "translated_poem": "I am hopeful for tomorrow,  \nSpring will once again enter the new garden.  \nCruelty, stop now and have mercy on my heart.  \nI am hopeful for tomorrow.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8213,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "مے چھُ امید پٲگٕچ",
+          "شٲم سہٕل چھس نوَ باغو کُن پٲزہری پٲگٕچ",
+          "زالُم یٲم گٲم دِلام خٲتِر۔",
+          "مے چھُ امید پٲگٕچ۔"
+        ],
+        "translated_lines": [
+          "I am hopeful for tomorrow,",
+          "Spring will once again enter the new garden.",
+          "Cruelty, stop now and have mercy on my heart.",
+          "I am hopeful for tomorrow."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Hope for tomorrow",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "مے چھُ امید پٲگٕچ",
+          "شٲم سہٕل چھس نوَ باغو کُن پٲزہری پٲگٕچ",
+          "زالُم یٲم گٲم دِلام خٲتِر۔",
+          "مے چھُ امید پٲگٕچ۔"
+        ],
+        "translated_lines": [
+          "I am hopeful for tomorrow,",
+          "Spring will once again enter the new garden.",
+          "Cruelty, stop now and have mercy on my heart.",
+          "I am hopeful for tomorrow."
+        ],
+        "emotion": "resilience",
+        "tone": "prayer",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "امید پٲگٕچ",
+            "abstract_meaning": "Hope for restored dignity"
+          },
+          {
+            "source_term": "نوَ باغو",
+            "abstract_meaning": "A new era of prosperity"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "پٲگ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "نوَ باغو",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "امید",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8213,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

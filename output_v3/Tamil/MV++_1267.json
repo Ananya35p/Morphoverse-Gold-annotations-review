@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1267",
+  "poem_title": "Oru Ponn Malai Pozhudhu",
+  "language": "Tamil",
+  "original_poem": "ஒரு பொன் மலை பொழுது,  \nநிலவோடு நான் கலந்தேன்,  \nகாதல் கீதம் பாடியாய்,  \nகாற்றோடு நீ வந்தாய்!",
+  "translated_poem": "On a golden evening,  \nI merged with the moon.  \nSinging the song of love,  \nYou arrived with the wind!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9298,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஒரு பொன் மலை பொழுது,",
+          "நிலவோடு நான் கலந்தேன்,",
+          "காதல் கீதம் பாடியாய்,",
+          "காற்றோடு நீ வந்தாய்!"
+        ],
+        "translated_lines": [
+          "On a golden evening,",
+          "I merged with the moon.",
+          "Singing the song of love,",
+          "You arrived with the wind!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "romantic evening encounter",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ஒரு பொன் மலை பொழுது,",
+          "நிலவோடு நான் கலந்தேன்,",
+          "காதல் கீதம் பாடியாய்,",
+          "காற்றோடு நீ வந்தாய்!"
+        ],
+        "translated_lines": [
+          "On a golden evening,",
+          "I merged with the moon.",
+          "Singing the song of love,",
+          "You arrived with the wind!"
+        ],
+        "emotion": "celebration",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "malai means mountain, maalai means evening",
+        "metaphor_spans": [
+          {
+            "source_term": "பொன் மலை பொழுது",
+            "abstract_meaning": "Radiant golden sunset time"
+          },
+          {
+            "source_term": "நிலவோடு நான் கலந்தேன்",
+            "abstract_meaning": "Deeply immersed in romantic bliss"
+          },
+          {
+            "source_term": "காற்றோடு நீ வந்தாய்",
+            "abstract_meaning": "Sudden or gentle ethereal arrival"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "கீதம்",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9298,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

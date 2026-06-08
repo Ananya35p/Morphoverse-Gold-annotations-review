@@ -1,0 +1,194 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1054",
+  "poem_title": "Parinde Ki Chah",
+  "language": "Kannada",
+  "original_poem": "पक्षी की चाह,  \nखुले आकाश में उड़ने की।  \nएक आकाश, जहाँ पर कोई बंधन न हो,  \nजहाँ हवाएँ उसे न पहचानें,  \nजहाँ धरती उसकी सीमा न हो।  \nपंख फैलाए, हवा में तैरते हुए,  \nपक्षी की चाह यही है –  \nआसमान की अनन्तता में खो जाने की।  \n\nवह अपनी गिनती से बाहर,  \nसभी बंदिशों को छोड़ दे,  \nकभी न थमने वाला,  \nअविराम उड़ने की चाहत रखे।  \nपक्षी की चाह –  \nएक असाधारण उड़ान,  \nहर पल एक नए सवेरे की तलाश।",
+  "translated_poem": "A bird's desire,  \nTo fly in the open sky.  \nA sky where no boundaries exist,  \nWhere the winds do not recognize it,  \nWhere the earth is not its limit.  \nWith wings spread wide, floating in the air,  \nThe bird’s desire is this—  \nTo lose itself in the infinity of the sky.\n\nIt wishes to go beyond its count,  \nLeaving all constraints behind,  \nNever stopping,  \nDesiring an uninterrupted flight.  \nThe bird’s desire—  \nAn extraordinary journey,  \nA quest for a new dawn every moment.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8615,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 8,
+        "source_lines": [
+          "पक्षी की चाह,",
+          "खुले आकाश में उड़ने की।",
+          "एक आकाश, जहाँ पर कोई बंधन न हो,",
+          "जहाँ हवाएँ उसे न पहचानें,",
+          "जहाँ धरती उसकी सीमा न हो।",
+          "पंख फैलाए, हवा में तैरते हुए,",
+          "पक्षी की चाह यही है –",
+          "आसमान की अनन्तता में खो जाने की।"
+        ],
+        "translated_lines": [
+          "A bird's desire,",
+          "To fly in the open sky.",
+          "A sky where no boundaries exist,",
+          "Where the winds do not recognize it,",
+          "Where the earth is not its limit.",
+          "With wings spread wide, floating in the air,",
+          "The bird’s desire is this—",
+          "To lose itself in the infinity of the sky."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 7,
+        "source_lines": [
+          "वह अपनी गिनती से बाहर,",
+          "सभी बंदिशों को छोड़ दे,",
+          "कभी न थमने वाला,",
+          "अविराम उड़ने की चाहत रखे।",
+          "पक्षी की चाह –",
+          "एक असाधारण उड़ान,",
+          "हर पल एक नए सवेरे की तलाश।"
+        ],
+        "translated_lines": [
+          "It wishes to go beyond its count,",
+          "Leaving all constraints behind,",
+          "Never stopping,",
+          "Desiring an uninterrupted flight.",
+          "The bird’s desire—",
+          "An extraordinary journey,",
+          "A quest for a new dawn every moment."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Yearning for boundless freedom",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 8,
+        "source_lines": [
+          "पक्षी की चाह,",
+          "खुले आकाश में उड़ने की।",
+          "एक आकाश, जहाँ पर कोई बंधन न हो,",
+          "जहाँ हवाएँ उसे न पहचानें,",
+          "जहाँ धरती उसकी सीमा न हो।",
+          "पंख फैलाए, हवा में तैरते हुए,",
+          "पक्षी की चाह यही है –",
+          "आसमान की अनन्तता में खो जाने की।"
+        ],
+        "translated_lines": [
+          "A bird's desire,",
+          "To fly in the open sky.",
+          "A sky where no boundaries exist,",
+          "Where the winds do not recognize it,",
+          "Where the earth is not its limit.",
+          "With wings spread wide, floating in the air,",
+          "The bird’s desire is this—",
+          "To lose itself in the infinity of the sky."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "खुले आकाश",
+            "abstract_meaning": "Limitless freedom and opportunity"
+          },
+          {
+            "source_term": "हवाएँ उसे न पहचानें",
+            "abstract_meaning": "Anonymity and absolute liberation"
+          },
+          {
+            "source_term": "धरती उसकी सीमा न हो",
+            "abstract_meaning": "Transcending worldly boundaries"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 7,
+        "source_lines": [
+          "वह अपनी गिनती से बाहर,",
+          "सभी बंदिशों को छोड़ दे,",
+          "कभी न थमने वाला,",
+          "अविराम उड़ने की चाहत रखे।",
+          "पक्षी की चाह –",
+          "एक असाधारण उड़ान,",
+          "हर पल एक नए सवेरे की तलाश।"
+        ],
+        "translated_lines": [
+          "It wishes to go beyond its count,",
+          "Leaving all constraints behind,",
+          "Never stopping,",
+          "Desiring an uninterrupted flight.",
+          "The bird’s desire—",
+          "An extraordinary journey,",
+          "A quest for a new dawn every moment."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "गिनती से बाहर",
+            "abstract_meaning": "Breaking personal limitations"
+          },
+          {
+            "source_term": "असाधारण उड़ान",
+            "abstract_meaning": "Pursuit of ultimate freedom"
+          },
+          {
+            "source_term": "नए सवेरे की तलाश",
+            "abstract_meaning": "Seeking hope and new beginnings"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "बंधन",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "अनन्तता",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8615,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

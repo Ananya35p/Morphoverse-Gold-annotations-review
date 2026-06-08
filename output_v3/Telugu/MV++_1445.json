@@ -1,0 +1,140 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1445",
+  "poem_title": "Thali Neku Padabivandanam",
+  "language": "Telugu",
+  "original_poem": "పుట్టుక బిడ్డకి తల్లి ఇచ్చే వరం ఐతే మరణం తల్లికి పుత్రుడు ఇచ్చే శాపం శాపం అనటం కంటే గర్భశోకం అనటం న్యాయం ఏమో దేశం కోసం మరణించే ఎంతో మంది సైనికులు తల్లులకు ఇలాంటి గర్భశోకాలని మిగులుస్తుంటే ఆ తల్బి శోకం ఈ భారతావనికి శాపంలా కాకుండా అఖండ కీర్తిని తెచ్చిపెడుతున్నాయి పేగు తెంచిన బంధం కాటికి పయనం అవుతుంటే ఉబికి వస్తున్న కంటనీరు ఆవిరైపోతుంటే దేశానికి వెలుగునిచ్చిన బిడ్డని కానరాని చీకటిలోకి సాగనంపుతూ ఆ తల్లి చెపుతుంది నా గుండెలపై సేద తీరిని నిన్ను ఈ భూమి తల్లి ఒడిలోకి పంపి నిద్రపుచ్చుతున్నా అని బిడ్డలని కన్నతల్లీ నీకు వందనం\n\nఆ బిడ్డలని దేశం కోసం పుడమి తల్లికి అంకితమిచ్చిన తల్లీ నీకు పాదాభివందనం..",
+  "translated_poem": "Birth is a blessing given by a mother to a child, but death is a curse given by a son to a mother, rather than a curse, it is fair to call pregnancy grief rather than a curse.\nThey are bringing, if the broken bond of the intestine is traveling to Kati, if the water coming to Ubi evaporates, the child who gave light to the country is dragged into the dark, the mother says, \"Seda Terini on my heart, send you to the lap of this mother earth.\"Salutations to the mother who sees the children as sleeping\n\nSalutations to the mother who dedicated those children for the country.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9849,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "పుట్టుక బిడ్డకి తల్లి ఇచ్చే వరం ఐతే మరణం తల్లికి పుత్రుడు ఇచ్చే శాపం శాపం అనటం కంటే గర్భశోకం అనటం న్యాయం ఏమో దేశం కోసం మరణించే ఎంతో మంది సైనికులు తల్లులకు ఇలాంటి గర్భశోకాలని మిగులుస్తుంటే ఆ తల్బి శోకం ఈ భారతావనికి శాపంలా కాకుండా అఖండ కీర్తిని తెచ్చిపెడుతున్నాయి పేగు తెంచిన బంధం కాటికి పయనం అవుతుంటే ఉబికి వస్తున్న కంటనీరు ఆవిరైపోతుంటే దేశానికి వెలుగునిచ్చిన బిడ్డని కానరాని చీకటిలోకి సాగనంపుతూ ఆ తల్లి చెపుతుంది నా గుండెలపై సేద తీరిని నిన్ను ఈ భూమి తల్లి ఒడిలోకి పంపి నిద్రపుచ్చుతున్నా అని బిడ్డలని కన్నతల్లీ నీకు వందనం"
+        ],
+        "translated_lines": [
+          "Birth is a blessing given by a mother to a child, but death is a curse given by a son to a mother, rather than a curse, it is fair to call pregnancy grief rather than a curse.",
+          "They are bringing, if the broken bond of the intestine is traveling to Kati, if the water coming to Ubi evaporates, the child who gave light to the country is dragged into the dark, the mother says, \"Seda Terini on my heart, send you to the lap of this mother earth.\"Salutations to the mother who sees the children as sleeping"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 1,
+        "source_lines": [
+          "ఆ బిడ్డలని దేశం కోసం పుడమి తల్లికి అంకితమిచ్చిన తల్లీ నీకు పాదాభివందనం.."
+        ],
+        "translated_lines": [
+          "Salutations to the mother who dedicated those children for the country."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "Honoring maternal sacrifice",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "పుట్టుక బిడ్డకి తల్లి ఇచ్చే వరం ఐతే మరణం తల్లికి పుత్రుడు ఇచ్చే శాపం శాపం అనటం కంటే గర్భశోకం అనటం న్యాయం ఏమో దేశం కోసం మరణించే ఎంతో మంది సైనికులు తల్లులకు ఇలాంటి గర్భశోకాలని మిగులుస్తుంటే ఆ తల్బి శోకం ఈ భారతావనికి శాపంలా కాకుండా అఖండ కీర్తిని తెచ్చిపెడుతున్నాయి పేగు తెంచిన బంధం కాటికి పయనం అవుతుంటే ఉబికి వస్తున్న కంటనీరు ఆవిరైపోతుంటే దేశానికి వెలుగునిచ్చిన బిడ్డని కానరాని చీకటిలోకి సాగనంపుతూ ఆ తల్లి చెపుతుంది నా గుండెలపై సేద తీరిని నిన్ను ఈ భూమి తల్లి ఒడిలోకి పంపి నిద్రపుచ్చుతున్నా అని బిడ్డలని కన్నతల్లీ నీకు వందనం"
+        ],
+        "translated_lines": [
+          "Birth is a blessing given by a mother to a child, but death is a curse given by a son to a mother, rather than a curse, it is fair to call pregnancy grief rather than a curse.",
+          "They are bringing, if the broken bond of the intestine is traveling to Kati, if the water coming to Ubi evaporates, the child who gave light to the country is dragged into the dark, the mother says, \"Seda Terini on my heart, send you to the lap of this mother earth.\"Salutations to the mother who sees the children as sleeping"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "literal errors like intestine, Ubi, Kati, Seda Terini",
+        "metaphor_spans": [
+          {
+            "source_term": "పేగు తెంచిన బంధం",
+            "abstract_meaning": "Deep mother-child connection"
+          },
+          {
+            "source_term": "దేశానికి వెలుగునిచ్చిన బిడ్డని",
+            "abstract_meaning": "Soldier bringing glory to nation"
+          },
+          {
+            "source_term": "భూమి తల్లి ఒడిలోకి",
+            "abstract_meaning": "Returning to the earth"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 1,
+        "source_lines": [
+          "ఆ బిడ్డలని దేశం కోసం పుడమి తల్లికి అంకితమిచ్చిన తల్లీ నీకు పాదాభివందనం.."
+        ],
+        "translated_lines": [
+          "Salutations to the mother who dedicated those children for the country."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "partial",
+        "loss_note": "omits dedication to Mother Earth",
+        "metaphor_spans": [
+          {
+            "source_term": "పుడమి తల్లి",
+            "abstract_meaning": "Personification of land as a mother"
+          },
+          {
+            "source_term": "అంకితమిచ్చిన",
+            "abstract_meaning": "Sacrificing children for the nation"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "పుడమి తల్లి",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "పాదాభివందనం",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9849,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

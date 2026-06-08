@@ -1,0 +1,158 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1136",
+  "poem_title": "Mugilu Male",
+  "language": "Kannada",
+  "original_poem": "ಮುಗಿಲು ಕಪ್ಪಾಗುತ್ತದೆ,  \nಮಳೆಹನಿ ಹರಿಯುತ್ತದೆ,  \nಮಣ್ಣಿನ ಹಾಸುಗೆಯಿಂದ  \nಮೂಡುತ್ತದೆ ಜೀವದ ಜೀವಾಳ.\n\nಮೋಡಕ್ಕೆ ಮರೆಯಾದ ಬಿಂದು  \nಮಳೆಗೆ ಕಾದಿತು;  \nಆಗಾಗ ಈರೆಯಿಂದ  \nಆಗೋಕೆ ಬಾಯ ಬಿಚ್ಚಿತು.",
+  "translated_poem": "The sky turns dark,  \nRaindrops begin to fall,  \nFrom the bed of the earth  \nRises the essence of life.\n\nThe drop hidden in the cloud  \nWaited for the rain;  \nAt times, from the wet earth,  \nIt opened its mouth to bloom.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8237,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಮುಗಿಲು ಕಪ್ಪಾಗುತ್ತದೆ,",
+          "ಮಳೆಹನಿ ಹರಿಯುತ್ತದೆ,",
+          "ಮಣ್ಣಿನ ಹಾಸುಗೆಯಿಂದ",
+          "ಮೂಡುತ್ತದೆ ಜೀವದ ಜೀವಾಳ."
+        ],
+        "translated_lines": [
+          "The sky turns dark,",
+          "Raindrops begin to fall,",
+          "From the bed of the earth",
+          "Rises the essence of life."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಮೋಡಕ್ಕೆ ಮರೆಯಾದ ಬಿಂದು",
+          "ಮಳೆಗೆ ಕಾದಿತು;",
+          "ಆಗಾಗ ಈರೆಯಿಂದ",
+          "ಆಗೋಕೆ ಬಾಯ ಬಿಚ್ಚಿತು."
+        ],
+        "translated_lines": [
+          "The drop hidden in the cloud",
+          "Waited for the rain;",
+          "At times, from the wet earth,",
+          "It opened its mouth to bloom."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Rain brings new life",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಮುಗಿಲು ಕಪ್ಪಾಗುತ್ತದೆ,",
+          "ಮಳೆಹನಿ ಹರಿಯುತ್ತದೆ,",
+          "ಮಣ್ಣಿನ ಹಾಸುಗೆಯಿಂದ",
+          "ಮೂಡುತ್ತದೆ ಜೀವದ ಜೀವಾಳ."
+        ],
+        "translated_lines": [
+          "The sky turns dark,",
+          "Raindrops begin to fall,",
+          "From the bed of the earth",
+          "Rises the essence of life."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಮಣ್ಣಿನ ಹಾಸುಗೆಯಿಂದ",
+            "abstract_meaning": "Earth as a nurturing bed"
+          },
+          {
+            "source_term": "ಜೀವದ ಜೀವಾಳ",
+            "abstract_meaning": "Essence of new life"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಮೋಡಕ್ಕೆ ಮರೆಯಾದ ಬಿಂದು",
+          "ಮಳೆಗೆ ಕಾದಿತು;",
+          "ಆಗಾಗ ಈರೆಯಿಂದ",
+          "ಆಗೋಕೆ ಬಾಯ ಬಿಚ್ಚಿತು."
+        ],
+        "translated_lines": [
+          "The drop hidden in the cloud",
+          "Waited for the rain;",
+          "At times, from the wet earth,",
+          "It opened its mouth to bloom."
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಮೋಡಕ್ಕೆ ಮರೆಯಾದ ಬಿಂದು",
+            "abstract_meaning": "Hidden potential or soul's longing"
+          },
+          {
+            "source_term": "ಬಾಯ ಬಿಚ್ಚಿತು",
+            "abstract_meaning": "Intense yearning for fulfillment"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಜೀವದ ಜೀವಾಳ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಬಿಂದು",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8237,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

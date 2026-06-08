@@ -1,0 +1,132 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1434",
+  "poem_title": "Anumantha Vamsam",
+  "language": "Telugu",
+  "original_poem": "అనుమంత వంశం దారి తీస్తున్నది, \nఅంతులేని శక్తి, పితామహుల నుండి. \nసముద్రాన్ని చీల్చి వెళ్ళిన\nవీరుల వేర్లు ఈ నేలలో గాఢం,\nఅదిగో వాటి చిహ్నాలు.",
+  "translated_poem": "The ancestral line leads the way, \nUnfathomable strength, passed down from forefathers. \nRoots of heroes who crossed the ocean, \nDeeply embedded in this soil, \nThere lie their marks.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8552,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "అనుమంత వంశం దారి తీస్తున్నది,",
+          "అంతులేని శక్తి, పితామహుల నుండి.",
+          "సముద్రాన్ని చీల్చి వెళ్ళిన",
+          "వీరుల వేర్లు ఈ నేలలో గాఢం,",
+          "అదిగో వాటి చిహ్నాలు."
+        ],
+        "translated_lines": [
+          "The ancestral line leads the way,",
+          "Unfathomable strength, passed down from forefathers.",
+          "Roots of heroes who crossed the ocean,",
+          "Deeply embedded in this soil,",
+          "There lie their marks."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Celebrating ancestral heroes",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "అనుమంత వంశం దారి తీస్తున్నది,",
+          "అంతులేని శక్తి, పితామహుల నుండి.",
+          "సముద్రాన్ని చీల్చి వెళ్ళిన",
+          "వీరుల వేర్లు ఈ నేలలో గాఢం,",
+          "అదిగో వాటి చిహ్నాలు."
+        ],
+        "translated_lines": [
+          "The ancestral line leads the way,",
+          "Unfathomable strength, passed down from forefathers.",
+          "Roots of heroes who crossed the ocean,",
+          "Deeply embedded in this soil,",
+          "There lie their marks."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "వీరుల వేర్లు",
+            "abstract_meaning": "Deeply rooted ancestral legacy"
+          },
+          {
+            "source_term": "సముద్రాన్ని చీల్చి",
+            "abstract_meaning": "Overcoming insurmountable obstacles"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "అనుమంత",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "శక్తి",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "పితామహుల",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "సముద్రాన్ని చీల్చి వెళ్ళిన",
+        "romanization": "",
+        "category": "MYTHOLOGICAL_EVENT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8552,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1254",
+  "poem_title": "Kanne Kalaimaane",
+  "language": "Tamil",
+  "original_poem": "கண்ணே களிமணே, கன்னியே, \nபொண்ணே பொன்னாதக் குழந்தை,\nபாலகமுது சுகம் தரும் மதி மாலையே,\nபறவைகளின் குரல் சொல்லும் மதியம்\nஅன்றென்று நினைவினில் அழுதிருக்கிறேன்.",
+  "translated_poem": "O beautiful-eyed girl,\nGolden child, beloved one,\nYou are the nectar of happiness,\nYour voice a bird's song in the afternoon\nIn memories past, I weep.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9959,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "கண்ணே களிமணே, கன்னியே,",
+          "பொண்ணே பொன்னாதக் குழந்தை,",
+          "பாலகமுது சுகம் தரும் மதி மாலையே,",
+          "பறவைகளின் குரல் சொல்லும் மதியம்",
+          "அன்றென்று நினைவினில் அழுதிருக்கிறேன்."
+        ],
+        "translated_lines": [
+          "O beautiful-eyed girl,",
+          "Golden child, beloved one,",
+          "You are the nectar of happiness,",
+          "Your voice a bird's song in the afternoon",
+          "In memories past, I weep."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "weeping over past memories",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "கண்ணே களிமணே, கன்னியே,",
+          "பொண்ணே பொன்னாதக் குழந்தை,",
+          "பாலகமுது சுகம் தரும் மதி மாலையே,",
+          "பறவைகளின் குரல் சொல்லும் மதியம்",
+          "அன்றென்று நினைவினில் அழுதிருக்கிறேன்."
+        ],
+        "translated_lines": [
+          "O beautiful-eyed girl,",
+          "Golden child, beloved one,",
+          "You are the nectar of happiness,",
+          "Your voice a bird's song in the afternoon",
+          "In memories past, I weep."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Misses evening moon and alters bird imagery",
+        "metaphor_spans": [
+          {
+            "source_term": "கண்ணே",
+            "abstract_meaning": "Child as precious as sight"
+          },
+          {
+            "source_term": "பொண்ணே",
+            "abstract_meaning": "Child as valuable as gold"
+          },
+          {
+            "source_term": "பாலகமுது",
+            "abstract_meaning": "Childhood as divine nectar"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9959,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

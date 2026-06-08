@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0007",
+  "poem_title": "Pratima",
+  "language": "Assamese",
+  "original_poem": "প্রতিমা\nপ্রতিমা, তুমি এক নিবেদনে\nস্নেহৰ পবনে আহা,\nমোৰ মনৰ প্ৰতিধ্বনি,\nআকাশত বেজে ওঠা।",
+  "translated_poem": "The Idol\nIdol, you come in a dedication\nWith the breeze of affection,\nThe echo of my heart,\nResounding in the sky.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8418,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "প্রতিমা",
+          "প্রতিমা, তুমি এক নিবেদনে",
+          "স্নেহৰ পবনে আহা,",
+          "মোৰ মনৰ প্ৰতিধ্বনি,",
+          "আকাশত বেজে ওঠা।"
+        ],
+        "translated_lines": [
+          "The Idol",
+          "Idol, you come in a dedication",
+          "With the breeze of affection,",
+          "The echo of my heart,",
+          "Resounding in the sky."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Offering to Pratima",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "প্রতিমা",
+          "প্রতিমা, তুমি এক নিবেদনে",
+          "স্নেহৰ পবনে আহা,",
+          "মোৰ মনৰ প্ৰতিধ্বনি,",
+          "আকাশত বেজে ওঠা।"
+        ],
+        "translated_lines": [
+          "The Idol",
+          "Idol, you come in a dedication",
+          "With the breeze of affection,",
+          "The echo of my heart,",
+          "Resounding in the sky."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "স্নেহৰ পবনে",
+            "abstract_meaning": "Love moving like gentle air"
+          },
+          {
+            "source_term": "মনৰ প্ৰতিধ্বনি",
+            "abstract_meaning": "Reflection of inner thoughts"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "প্রতিমা",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "নিবেদন",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8418,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

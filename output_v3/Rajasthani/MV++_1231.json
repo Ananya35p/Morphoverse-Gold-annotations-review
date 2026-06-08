@@ -1,0 +1,112 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1231",
+  "poem_title": "Rangila Rajasthan",
+  "language": "Rajasthani",
+  "original_poem": "रंगीलो राजस्थान, रंगीलो रे थार।\nपधारो म्हारे देश, खुशीयां सांचो बारां।",
+  "translated_poem": "Colorful Rajasthan, the colorful Thar.  \nCome to my land, happiness here is never far.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8988,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "रंगीलो राजस्थान, रंगीलो रे थार।",
+          "पधारो म्हारे देश, खुशीयां सांचो बारां।"
+        ],
+        "translated_lines": [
+          "Colorful Rajasthan, the colorful Thar.",
+          "Come to my land, happiness here is never far."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Joyful cultural invitation",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "रंगीलो राजस्थान, रंगीलो रे थार।",
+          "पधारो म्हारे देश, खुशीयां सांचो बारां।"
+        ],
+        "translated_lines": [
+          "Colorful Rajasthan, the colorful Thar.",
+          "Come to my land, happiness here is never far."
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "lost 'twelve months' idiom",
+        "metaphor_spans": [
+          {
+            "source_term": "रंगीलो राजस्थान",
+            "abstract_meaning": "Vibrant cultural heritage and diversity"
+          },
+          {
+            "source_term": "खुशीयां सांचो बारां",
+            "abstract_meaning": "Abundant and genuine joy"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "राजस्थान",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "थार",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पधारो म्हारे देश",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8988,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

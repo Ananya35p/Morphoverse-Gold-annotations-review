@@ -1,0 +1,186 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1221",
+  "poem_title": "Kandhan Ton Paar",
+  "language": "Punjabi",
+  "original_poem": "ਕੰਧਾਂ ਤੋਂ ਪਾਰ\nਕੰਧਾਂ ਦੇ ਪਾਰ ਇੱਕ ਹੋਰ ਸੰਸਾਰ ਹੈ,\nਜਿੱਥੇ ਲੰਬੇ ਲੰਬੇ ਸੁਪਨੇ ਹਨ,\nਤਾਰੇ ਜੋ ਸੱਚੇ ਹਨ,  \nਤੇ ਕਦੇ ਕਿਤੇ ਵੀ ਹਾਰ ਨਹੀਂ।  \nਇਹ ਲੋਕਾਂ ਦੇ ਸੁਖਾਂ ਦੀ ਬਾਤ ਹੈ,  \nਕੰਧਾਂ ਤੋਂ ਪਾਰ ਚੱਲਣ ਦੀ ਖ਼ਾਹਿਸ਼ ਹੈ।\n\nਜਿਥੇ ਪਿਆਰ ਦੇ ਪੰਛੀਆਂ ਦੇ ਗਾਣੇ ਹਨ,  \nਤੇ ਨਫਰਤ ਦੀਆਂ ਬਹਾਰਾਂ ਨਹੀਂ।  \nਇਹ ਇੱਕ ਚੀਜ਼ ਹੈ,  \nਇੱਕ ਨਵੀਂ ਜੀਵਨ ਦੀ ਸ਼ੁਰੂਆਤ,  \nਕੰਧਾਂ ਤੋਂ ਪਾਰ।",
+  "translated_poem": "Beyond the Walls  \nBeyond the walls lies another world,  \nWhere there are long, deep dreams,  \nStars that are true,  \nAnd never a defeat to be found.  \nIt speaks of the joys of people,  \nA desire to walk beyond the walls.\n\nWhere the birds of love sing,  \nAnd no springs of hatred exist.  \nIt is one thing,  \nA new beginning of life,  \nBeyond the walls.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9318,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "ਕੰਧਾਂ ਤੋਂ ਪਾਰ",
+          "ਕੰਧਾਂ ਦੇ ਪਾਰ ਇੱਕ ਹੋਰ ਸੰਸਾਰ ਹੈ,",
+          "ਜਿੱਥੇ ਲੰਬੇ ਲੰਬੇ ਸੁਪਨੇ ਹਨ,",
+          "ਤਾਰੇ ਜੋ ਸੱਚੇ ਹਨ,",
+          "ਤੇ ਕਦੇ ਕਿਤੇ ਵੀ ਹਾਰ ਨਹੀਂ।",
+          "ਇਹ ਲੋਕਾਂ ਦੇ ਸੁਖਾਂ ਦੀ ਬਾਤ ਹੈ,",
+          "ਕੰਧਾਂ ਤੋਂ ਪਾਰ ਚੱਲਣ ਦੀ ਖ਼ਾਹਿਸ਼ ਹੈ।"
+        ],
+        "translated_lines": [
+          "Beyond the Walls",
+          "Beyond the walls lies another world,",
+          "Where there are long, deep dreams,",
+          "Stars that are true,",
+          "And never a defeat to be found.",
+          "It speaks of the joys of people,",
+          "A desire to walk beyond the walls."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "ਜਿਥੇ ਪਿਆਰ ਦੇ ਪੰਛੀਆਂ ਦੇ ਗਾਣੇ ਹਨ,",
+          "ਤੇ ਨਫਰਤ ਦੀਆਂ ਬਹਾਰਾਂ ਨਹੀਂ।",
+          "ਇਹ ਇੱਕ ਚੀਜ਼ ਹੈ,",
+          "ਇੱਕ ਨਵੀਂ ਜੀਵਨ ਦੀ ਸ਼ੁਰੂਆਤ,",
+          "ਕੰਧਾਂ ਤੋਂ ਪਾਰ।"
+        ],
+        "translated_lines": [
+          "Where the birds of love sing,",
+          "And no springs of hatred exist.",
+          "It is one thing,",
+          "A new beginning of life,",
+          "Beyond the walls."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Hope beyond barriers",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "ਕੰਧਾਂ ਤੋਂ ਪਾਰ",
+          "ਕੰਧਾਂ ਦੇ ਪਾਰ ਇੱਕ ਹੋਰ ਸੰਸਾਰ ਹੈ,",
+          "ਜਿੱਥੇ ਲੰਬੇ ਲੰਬੇ ਸੁਪਨੇ ਹਨ,",
+          "ਤਾਰੇ ਜੋ ਸੱਚੇ ਹਨ,",
+          "ਤੇ ਕਦੇ ਕਿਤੇ ਵੀ ਹਾਰ ਨਹੀਂ।",
+          "ਇਹ ਲੋਕਾਂ ਦੇ ਸੁਖਾਂ ਦੀ ਬਾਤ ਹੈ,",
+          "ਕੰਧਾਂ ਤੋਂ ਪਾਰ ਚੱਲਣ ਦੀ ਖ਼ਾਹਿਸ਼ ਹੈ।"
+        ],
+        "translated_lines": [
+          "Beyond the Walls",
+          "Beyond the walls lies another world,",
+          "Where there are long, deep dreams,",
+          "Stars that are true,",
+          "And never a defeat to be found.",
+          "It speaks of the joys of people,",
+          "A desire to walk beyond the walls."
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਕੰਧਾਂ ਤੋਂ ਪਾਰ",
+            "abstract_meaning": "Overcoming social or personal barriers"
+          },
+          {
+            "source_term": "ਤਾਰੇ ਜੋ ਸੱਚੇ ਹਨ",
+            "abstract_meaning": "Attainable hopes or pure aspirations"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 5,
+        "source_lines": [
+          "ਜਿਥੇ ਪਿਆਰ ਦੇ ਪੰਛੀਆਂ ਦੇ ਗਾਣੇ ਹਨ,",
+          "ਤੇ ਨਫਰਤ ਦੀਆਂ ਬਹਾਰਾਂ ਨਹੀਂ।",
+          "ਇਹ ਇੱਕ ਚੀਜ਼ ਹੈ,",
+          "ਇੱਕ ਨਵੀਂ ਜੀਵਨ ਦੀ ਸ਼ੁਰੂਆਤ,",
+          "ਕੰਧਾਂ ਤੋਂ ਪਾਰ।"
+        ],
+        "translated_lines": [
+          "Where the birds of love sing,",
+          "And no springs of hatred exist.",
+          "It is one thing,",
+          "A new beginning of life,",
+          "Beyond the walls."
+        ],
+        "emotion": "peace",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ਪਿਆਰ ਦੇ ਪੰਛੀਆਂ",
+            "abstract_meaning": "Lovers or peaceful souls"
+          },
+          {
+            "source_term": "ਨਫਰਤ ਦੀਆਂ ਬਹਾਰਾਂ",
+            "abstract_meaning": "Seasons of intense animosity"
+          },
+          {
+            "source_term": "ਕੰਧਾਂ ਤੋਂ ਪਾਰ",
+            "abstract_meaning": "Overcoming social or physical barriers"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ਇੱਕ ਹੋਰ ਸੰਸਾਰ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਪਿਆਰ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ਜੀਵਨ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9318,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

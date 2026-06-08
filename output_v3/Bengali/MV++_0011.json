@@ -1,0 +1,322 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0011",
+  "poem_title": "O Amar Desher Mati",
+  "language": "Bengali",
+  "original_poem": "ও আমার দেশের মাটি,\nতোমার কল্যাণে চাহি,\nপ্রাণে প্রাণে মিলে যেতে,\nগানের সুরে চাহি।\n\nস্নেহের বৃষ্টি নামে,\nবৃষ্টি মাথার উপর।\nজীবনের পথ চলে,\nশান্তির আলো তোলে।\n\nসৃষ্টির খোঁজে যাই,\nতুমি আমার শিকড়।\nদেশের মাটির সুরে,\nপেতে চাই তোমার টান।\n\nও আমার দেশের মাটি,\nঅশ্রুর নদী flows,\nমা তুমি, মাটি তুমি,\nসুখে থাকুক সারা জীবন।",
+  "translated_poem": "O soil of my country,\nIn your welfare, I seek,\nTo blend together in life,\nIn the melody of songs.\n\nThe rains of affection fall,\nRaining upon my head.\nThe path of life travels,\nBringing forth the light of peace.\n\nI go in search of creation,\nYou are my roots.\nIn the tune of the soil,\nI long for your embrace.\n\nO soil of my country,\nThe river of tears flows,\nMother, you are the land,\nMay you be happy all your life.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 4,
+    "source_stanza_count": 4,
+    "translated_stanza_count": 4,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8417,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ও আমার দেশের মাটি,",
+          "তোমার কল্যাণে চাহি,",
+          "প্রাণে প্রাণে মিলে যেতে,",
+          "গানের সুরে চাহি।"
+        ],
+        "translated_lines": [
+          "O soil of my country,",
+          "In your welfare, I seek,",
+          "To blend together in life,",
+          "In the melody of songs."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "স্নেহের বৃষ্টি নামে,",
+          "বৃষ্টি মাথার উপর।",
+          "জীবনের পথ চলে,",
+          "শান্তির আলো তোলে।"
+        ],
+        "translated_lines": [
+          "The rains of affection fall,",
+          "Raining upon my head.",
+          "The path of life travels,",
+          "Bringing forth the light of peace."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "সৃষ্টির খোঁজে যাই,",
+          "তুমি আমার শিকড়।",
+          "দেশের মাটির সুরে,",
+          "পেতে চাই তোমার টান।"
+        ],
+        "translated_lines": [
+          "I go in search of creation,",
+          "You are my roots.",
+          "In the tune of the soil,",
+          "I long for your embrace."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "ও আমার দেশের মাটি,",
+          "অশ্রুর নদী flows,",
+          "মা তুমি, মাটি তুমি,",
+          "সুখে থাকুক সারা জীবন।"
+        ],
+        "translated_lines": [
+          "O soil of my country,",
+          "The river of tears flows,",
+          "Mother, you are the land,",
+          "May you be happy all your life."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "love for motherland",
+    "translation_fidelity_score": 0.75,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ও আমার দেশের মাটি,",
+          "তোমার কল্যাণে চাহি,",
+          "প্রাণে প্রাণে মিলে যেতে,",
+          "গানের সুরে চাহি।"
+        ],
+        "translated_lines": [
+          "O soil of my country,",
+          "In your welfare, I seek,",
+          "To blend together in life,",
+          "In the melody of songs."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "partial",
+        "loss_note": "loses the intimacy of soul to soul",
+        "metaphor_spans": [
+          {
+            "source_term": "দেশের মাটি",
+            "abstract_meaning": "Symbol for the motherland"
+          },
+          {
+            "source_term": "প্রাণে প্রাণে মিলে যেতে",
+            "abstract_meaning": "Universal unity and brotherhood"
+          },
+          {
+            "source_term": "গানের সুরে",
+            "abstract_meaning": "Harmony and emotional connection"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "স্নেহের বৃষ্টি নামে,",
+          "বৃষ্টি মাথার উপর।",
+          "জীবনের পথ চলে,",
+          "শান্তির আলো তোলে।"
+        ],
+        "translated_lines": [
+          "The rains of affection fall,",
+          "Raining upon my head.",
+          "The path of life travels,",
+          "Bringing forth the light of peace."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "স্নেহের বৃষ্টি",
+            "abstract_meaning": "Affection providing comfort and nourishment"
+          },
+          {
+            "source_term": "জীবনের পথ",
+            "abstract_meaning": "The journey of human existence"
+          },
+          {
+            "source_term": "শান্তির আলো",
+            "abstract_meaning": "Peace bringing clarity and hope"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "সৃষ্টির খোঁজে যাই,",
+          "তুমি আমার শিকড়।",
+          "দেশের মাটির সুরে,",
+          "পেতে চাই তোমার টান।"
+        ],
+        "translated_lines": [
+          "I go in search of creation,",
+          "You are my roots.",
+          "In the tune of the soil,",
+          "I long for your embrace."
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Misses homeland's soil, adapts pull to embrace",
+        "metaphor_spans": [
+          {
+            "source_term": "তুমি আমার শিকড়",
+            "abstract_meaning": "You are my origin/identity"
+          },
+          {
+            "source_term": "দেশের মাটির সুরে",
+            "abstract_meaning": "Essence of cultural heritage"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "ও আমার দেশের মাটি,",
+          "অশ্রুর নদী flows,",
+          "মা তুমি, মাটি তুমি,",
+          "সুখে থাকুক সারা জীবন।"
+        ],
+        "translated_lines": [
+          "O soil of my country,",
+          "The river of tears flows,",
+          "Mother, you are the land,",
+          "May you be happy all your life."
+        ],
+        "emotion": "devotion",
+        "tone": "prayer",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "অশ্রুর নদী",
+            "abstract_meaning": "Deep collective sorrow or suffering"
+          },
+          {
+            "source_term": "মা তুমি",
+            "abstract_meaning": "Country personified as a mother"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "দেশের মাটি",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "কল্যাণে",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "প্রাণে প্রাণে মিলে যেতে",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "গানের সুরে",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "জীবনের পথ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "শান্তি",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "সৃষ্টি",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "দেশের মাটি",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "দেশের মাটি",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "মা",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8417,
+      "source_term_checks": {
+        "entities_total": 10,
+        "entities_dropped": 0,
+        "metaphors_total": 10,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

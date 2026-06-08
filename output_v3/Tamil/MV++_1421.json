@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1421",
+  "poem_title": "Kaadhalin Kovil",
+  "language": "Tamil",
+  "original_poem": "காதலின் கோவில்,  \nஉன் இதயத்தின் ஸ்தலம்,  \nஎன் ஆன்மாவின் தூண்,  \nஅன்பின் ஒளியில் அடங்கியது!",
+  "translated_poem": "Temple of love,  \nThe place of your heart,  \nThe pillar of my soul,  \nEnshrined in the light of affection!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.901,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "காதலின் கோவில்,",
+          "உன் இதயத்தின் ஸ்தலம்,",
+          "என் ஆன்மாவின் தூண்,",
+          "அன்பின் ஒளியில் அடங்கியது!"
+        ],
+        "translated_lines": [
+          "Temple of love,",
+          "The place of your heart,",
+          "The pillar of my soul,",
+          "Enshrined in the light of affection!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Temple of love",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "காதலின் கோவில்,",
+          "உன் இதயத்தின் ஸ்தலம்,",
+          "என் ஆன்மாவின் தூண்,",
+          "அன்பின் ஒளியில் அடங்கியது!"
+        ],
+        "translated_lines": [
+          "Temple of love,",
+          "The place of your heart,",
+          "The pillar of my soul,",
+          "Enshrined in the light of affection!"
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "காதலின் கோவில்",
+            "abstract_meaning": "Love as a sacred sanctuary"
+          },
+          {
+            "source_term": "என் ஆன்மாவின் தூண்",
+            "abstract_meaning": "Essential support for the soul"
+          },
+          {
+            "source_term": "அன்பின் ஒளியில்",
+            "abstract_meaning": "Love as a guiding radiance"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "கோவில்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ஆன்மா",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.901,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

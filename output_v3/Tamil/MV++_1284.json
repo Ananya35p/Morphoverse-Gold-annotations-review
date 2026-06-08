@@ -1,0 +1,122 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1284",
+  "poem_title": "Kannanin Satham",
+  "language": "Tamil",
+  "original_poem": "கண்ணனின் சத்தம் என்ன,  \nகாதல் எனும் இசை,  \nநெஞ்சின் மயிலின்  \nவிளையாட்டும் மிதக்கும்!",
+  "translated_poem": "What is the call of Krishna?  \nIt is the music of love,  \nThe playful dance of the  \nPeacock in the heart, swaying!",
+  "status": "salvaged",
+  "model": "gemini-chunked",
+  "needs_human_review": true,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8302,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கண்ணனின் சத்தம் என்ன,",
+          "காதல் எனும் இசை,",
+          "நெஞ்சின் மயிலின்",
+          "விளையாட்டும் மிதக்கும்!"
+        ],
+        "translated_lines": [
+          "What is the call of Krishna?",
+          "It is the music of love,",
+          "The playful dance of the",
+          "Peacock in the heart, swaying!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "Krishna's music of love",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கண்ணனின் சத்தம் என்ன,",
+          "காதல் எனும் இசை,",
+          "நெஞ்சின் மயிலின்",
+          "விளையாட்டும் மிதக்கும்!"
+        ],
+        "translated_lines": [
+          "What is the call of Krishna?",
+          "It is the music of love,",
+          "The playful dance of the",
+          "Peacock in the heart, swaying!"
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "காதல் எனும் இசை",
+            "abstract_meaning": "Love is described as music"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "காதல்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8302,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 2,
+        "metaphors_total": 2,
+        "metaphors_dropped": 1
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 3,
+      "confidence": "low"
+    }
+  },
+  "review_items": [
+    {
+      "field_path": "annotation.stanzas[1].metaphor_spans",
+      "severity": "low",
+      "resolved_value": "dropped",
+      "model_value": "நெஞ்சின் மயில்",
+      "note": "metaphor_source_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "கண்ணன்",
+      "note": "entity_term_not_in_source"
+    },
+    {
+      "field_path": "annotation.cultural_entities",
+      "severity": "medium",
+      "resolved_value": "dropped",
+      "model_value": "மயில்",
+      "note": "entity_term_not_in_source"
+    }
+  ],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

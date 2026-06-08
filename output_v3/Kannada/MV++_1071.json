@@ -1,0 +1,158 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1071",
+  "poem_title": "A Lone Tree",
+  "language": "Kannada",
+  "original_poem": "एक अकेला पेड़, जो कहीं नहीं था,  \nआज भी साया किए हुए खड़ा है।  \nधूप में जलता, हवा में झूमता,  \nवो कभी नहीं गिरा, कभी नहीं टूटा।  \n\nचाहे परिन्दे, चाहे पत्तियाँ,  \nकभी न जाने उसे क्या हुआ,  \nपर यह पेड़, यह खड़ा है,  \nएक अकेला पेड़, हौसला किए हुए खड़ा है।",
+  "translated_poem": "A lone tree, once standing nowhere,  \nStill stands today, casting its shade.  \nBurning in the sun, swaying in the breeze,  \nIt never fell, never broke.  \n\nWhether it be the birds, or the leaves,  \nNo one ever knew what happened to it,  \nBut this tree, it stands firm,  \nA lone tree, with courage still standing.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8779,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "एक अकेला पेड़, जो कहीं नहीं था,",
+          "आज भी साया किए हुए खड़ा है।",
+          "धूप में जलता, हवा में झूमता,",
+          "वो कभी नहीं गिरा, कभी नहीं टूटा।"
+        ],
+        "translated_lines": [
+          "A lone tree, once standing nowhere,",
+          "Still stands today, casting its shade.",
+          "Burning in the sun, swaying in the breeze,",
+          "It never fell, never broke."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "चाहे परिन्दे, चाहे पत्तियाँ,",
+          "कभी न जाने उसे क्या हुआ,",
+          "पर यह पेड़, यह खड़ा है,",
+          "एक अकेला पेड़, हौसला किए हुए खड़ा है।"
+        ],
+        "translated_lines": [
+          "Whether it be the birds, or the leaves,",
+          "No one ever knew what happened to it,",
+          "But this tree, it stands firm,",
+          "A lone tree, with courage still standing."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Courageous lone tree",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "एक अकेला पेड़, जो कहीं नहीं था,",
+          "आज भी साया किए हुए खड़ा है।",
+          "धूप में जलता, हवा में झूमता,",
+          "वो कभी नहीं गिरा, कभी नहीं टूटा।"
+        ],
+        "translated_lines": [
+          "A lone tree, once standing nowhere,",
+          "Still stands today, casting its shade.",
+          "Burning in the sun, swaying in the breeze,",
+          "It never fell, never broke."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "एक अकेला पेड़",
+            "abstract_meaning": "Solitary resilient figure"
+          },
+          {
+            "source_term": "धूप में जलता",
+            "abstract_meaning": "Enduring intense life hardships"
+          },
+          {
+            "source_term": "साया किए हुए",
+            "abstract_meaning": "Offering protection and comfort"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "चाहे परिन्दे, चाहे पत्तियाँ,",
+          "कभी न जाने उसे क्या हुआ,",
+          "पर यह पेड़, यह खड़ा है,",
+          "एक अकेला पेड़, हौसला किए हुए खड़ा है।"
+        ],
+        "translated_lines": [
+          "Whether it be the birds, or the leaves,",
+          "No one ever knew what happened to it,",
+          "But this tree, it stands firm,",
+          "A lone tree, with courage still standing."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "परिन्दे, चाहे पत्तियाँ",
+            "abstract_meaning": "Transient companions or fleeting life"
+          },
+          {
+            "source_term": "एक अकेला पेड़",
+            "abstract_meaning": "A resilient, solitary individual"
+          },
+          {
+            "source_term": "हौसला किए हुए खड़ा है",
+            "abstract_meaning": "Enduring strength and determination"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "हौसला",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8779,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 6,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

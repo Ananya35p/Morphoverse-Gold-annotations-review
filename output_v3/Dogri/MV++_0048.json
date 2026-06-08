@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0048",
+  "poem_title": "Chandna",
+  "language": "Dogri",
+  "original_poem": "चांदना\nचांदना दी रौशनी\nपिंड दे रुत विच,\nसपने सजावे सजीले\nरातां दी खामोशी।",
+  "translated_poem": "Moonlight\nThe moonlight’s glow\nIn the village’s season,\nAdorning dreams\nIn the silence of the night.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8313,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "चांदना",
+          "चांदना दी रौशनी",
+          "पिंड दे रुत विच,",
+          "सपने सजावे सजीले",
+          "रातां दी खामोशी।"
+        ],
+        "translated_lines": [
+          "Moonlight",
+          "The moonlight’s glow",
+          "In the village’s season,",
+          "Adorning dreams",
+          "In the silence of the night."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "peaceful and serene",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "चांदना",
+          "चांदना दी रौशनी",
+          "पिंड दे रुत विच,",
+          "सपने सजावे सजीले",
+          "रातां दी खामोशी।"
+        ],
+        "translated_lines": [
+          "Moonlight",
+          "The moonlight’s glow",
+          "In the village’s season,",
+          "Adorning dreams",
+          "In the silence of the night."
+        ],
+        "emotion": "peace",
+        "tone": "whisper",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "सपने सजावे सजीले",
+            "abstract_meaning": "Moonlight inspiring hopeful imagination"
+          },
+          {
+            "source_term": "रातां दी खामोशी",
+            "abstract_meaning": "Symbol of profound inner peace"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "पिंड",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8313,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

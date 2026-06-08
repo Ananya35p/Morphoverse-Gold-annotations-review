@@ -1,0 +1,248 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1156",
+  "poem_title": "Kashmir",
+  "language": "Kashmiri",
+  "original_poem": "کشمیر، کی چھٕ پوٚست آفِس  \nراتی گٕلٕوٚن گٕچھٕ؟  \nچھٕس یٲتٕھ ہند کھیسِت پٲٹھ  \nاور موسمٕ آوٚن چھٕنٕ۔\n\nمیہٕ ژٔند ہٕندٕ ٹُھریٚ  \nہر پتھر چھٕ یِک زٲندَک  \nہند گھرانی چھٕں ٹُرٕن دیٔندٕ  \nبچٕو چھٕں ہنوز وٛچھیٚن۔\n\nمٕنٕس کی زٲند زِندٕرٕ  \nجہاں خاموشی راستۂ سٕرۂِ  \nجہاں سورج سُنٛن نہ کرن  \nاور سایے بےخبر پھلٕن۔",
+  "translated_poem": "Kashmir, is there a post office,  \nFor letters arriving at dusk?  \nWe are waiting to be told the history of snow  \nAnd learn the names of seasons.\n\nMy world is in fragments,  \nEach shard reflects a life,  \nOf families torn by the wind,  \nOf children who still wait to be found.\n\nLet me speak to you of the valley,  \nWhere silence moves through the streets,  \nWhere the sun sets without a sound,  \nAnd shadows fall unnoticed.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8177,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "کشمیر، کی چھٕ پوٚست آفِس",
+          "راتی گٕلٕوٚن گٕچھٕ؟",
+          "چھٕس یٲتٕھ ہند کھیسِت پٲٹھ",
+          "اور موسمٕ آوٚن چھٕنٕ۔"
+        ],
+        "translated_lines": [
+          "Kashmir, is there a post office,",
+          "For letters arriving at dusk?",
+          "We are waiting to be told the history of snow",
+          "And learn the names of seasons."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "میہٕ ژٔند ہٕندٕ ٹُھریٚ",
+          "ہر پتھر چھٕ یِک زٲندَک",
+          "ہند گھرانی چھٕں ٹُرٕن دیٔندٕ",
+          "بچٕو چھٕں ہنوز وٛچھیٚن۔"
+        ],
+        "translated_lines": [
+          "My world is in fragments,",
+          "Each shard reflects a life,",
+          "Of families torn by the wind,",
+          "Of children who still wait to be found."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "مٕنٕس کی زٲند زِندٕرٕ",
+          "جہاں خاموشی راستۂ سٕرۂِ",
+          "جہاں سورج سُنٛن نہ کرن",
+          "اور سایے بےخبر پھلٕن۔"
+        ],
+        "translated_lines": [
+          "Let me speak to you of the valley,",
+          "Where silence moves through the streets,",
+          "Where the sun sets without a sound,",
+          "And shadows fall unnoticed."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "bleak and sorrowful",
+    "translation_fidelity_score": 0.833333,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "کشمیر، کی چھٕ پوٚست آفِس",
+          "راتی گٕلٕوٚن گٕچھٕ؟",
+          "چھٕس یٲتٕھ ہند کھیسِت پٲٹھ",
+          "اور موسمٕ آوٚن چھٕنٕ۔"
+        ],
+        "translated_lines": [
+          "Kashmir, is there a post office,",
+          "For letters arriving at dusk?",
+          "We are waiting to be told the history of snow",
+          "And learn the names of seasons."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Literal word for snow missing in source",
+        "metaphor_spans": [
+          {
+            "source_term": "کشمیر، کی چھٕ پوٚست آفِس",
+            "abstract_meaning": "Kashmir as a transit point"
+          },
+          {
+            "source_term": "راتی گٕلٕوٚن",
+            "abstract_meaning": "The passage of time"
+          },
+          {
+            "source_term": "کھیسِت پٲٹھ",
+            "abstract_meaning": "A state of emptiness"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "میہٕ ژٔند ہٕندٕ ٹُھریٚ",
+          "ہر پتھر چھٕ یِک زٲندَک",
+          "ہند گھرانی چھٕں ٹُرٕن دیٔندٕ",
+          "بچٕو چھٕں ہنوز وٛچھیٚن۔"
+        ],
+        "translated_lines": [
+          "My world is in fragments,",
+          "Each shard reflects a life,",
+          "Of families torn by the wind,",
+          "Of children who still wait to be found."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "میہٕ ژٔند ہٕندٕ ٹُھریٚ",
+            "abstract_meaning": "Fragile remains of human life"
+          },
+          {
+            "source_term": "ہر پتھر چھٕ یِک زٲندَک",
+            "abstract_meaning": "Silent witnesses to historical suffering"
+          },
+          {
+            "source_term": "ٹُرٕن دیٔندٕ",
+            "abstract_meaning": "Shattered or ruined family homes"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "مٕنٕس کی زٲند زِندٕرٕ",
+          "جہاں خاموشی راستۂ سٕرۂِ",
+          "جہاں سورج سُنٛن نہ کرن",
+          "اور سایے بےخبر پھلٕن۔"
+        ],
+        "translated_lines": [
+          "Let me speak to you of the valley,",
+          "Where silence moves through the streets,",
+          "Where the sun sets without a sound,",
+          "And shadows fall unnoticed."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "مٕنٕس کی زٲند زِندٕرٕ",
+            "abstract_meaning": "Cyclical nature of human thought"
+          },
+          {
+            "source_term": "خاموشی راستۂ سٕرۂِ",
+            "abstract_meaning": "Silence as a spiritual journey"
+          },
+          {
+            "source_term": "سایے بےخبر پھلٕن",
+            "abstract_meaning": "Unconscious growth of hidden truths"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "کشمیر",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ہر",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "مٕنٕس",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "زِندٕرٕ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "خاموشی",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "راستۂ سٕرۂِ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8177,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 9,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

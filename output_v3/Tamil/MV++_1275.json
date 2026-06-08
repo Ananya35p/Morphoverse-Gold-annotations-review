@@ -1,0 +1,120 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1275",
+  "poem_title": "Kanniththin Siru Penn",
+  "language": "Tamil",
+  "original_poem": "கன்னித்தின் சிறு பெண் பள்ளத்தாக்கின்  \nபூந்தோட்டத் தோடில் நீந்திக் குளிக்கின்றாள்  \nவிண்ணினும் உயர்வது மண்ணின் மகள் எனும்  \nமெய்ப்பொருள் விளங்குக வானத்தில் தோன்றுக!",
+  "translated_poem": "The young girl swims in the stream  \nOf the valley’s flower garden.  \nLet the truth shine that the daughter of the earth  \nIs higher than the heavens, and let it appear in the sky!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9439,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கன்னித்தின் சிறு பெண் பள்ளத்தாக்கின்",
+          "பூந்தோட்டத் தோடில் நீந்திக் குளிக்கின்றாள்",
+          "விண்ணினும் உயர்வது மண்ணின் மகள் எனும்",
+          "மெய்ப்பொருள் விளங்குக வானத்தில் தோன்றுக!"
+        ],
+        "translated_lines": [
+          "The young girl swims in the stream",
+          "Of the valley’s flower garden.",
+          "Let the truth shine that the daughter of the earth",
+          "Is higher than the heavens, and let it appear in the sky!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Earth's daughter is supreme",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "கன்னித்தின் சிறு பெண் பள்ளத்தாக்கின்",
+          "பூந்தோட்டத் தோடில் நீந்திக் குளிக்கின்றாள்",
+          "விண்ணினும் உயர்வது மண்ணின் மகள் எனும்",
+          "மெய்ப்பொருள் விளங்குக வானத்தில் தோன்றுக!"
+        ],
+        "translated_lines": [
+          "The young girl swims in the stream",
+          "Of the valley’s flower garden.",
+          "Let the truth shine that the daughter of the earth",
+          "Is higher than the heavens, and let it appear in the sky!"
+        ],
+        "emotion": "celebration",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "மண்ணின் மகள்",
+            "abstract_meaning": "Exalted status of earthly womanhood"
+          },
+          {
+            "source_term": "விண்ணினும் உயர்வது",
+            "abstract_meaning": "Virtue exceeding celestial heights"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "மெய்ப்பொருள்",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "மண்ணின் மகள்",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "கன்னி",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9439,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

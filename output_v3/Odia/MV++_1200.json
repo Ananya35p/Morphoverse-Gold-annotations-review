@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1200",
+  "poem_title": "Dali Jhia",
+  "language": "Odia",
+  "original_poem": "ଡାଳୀ ଝିଆ  \nସୂର୍ଯ୍ୟ ତଳେ ମୋର  \nମୁହୂର୍ତ୍ତ ଆସେ,  \nପ୍ରକୃତିର ଗାନ,  \nଫୁଲର ଝିଙ୍କାର,  \nବେସ୍ବାସ୍ତେ ପାଉଛି।",
+  "translated_poem": "The flower girl,  \nUnder the sun,  \nMoments come,  \nThe song of nature,  \nThe whisper of flowers,  \nI embrace the beauty.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8528,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "ଡାଳୀ ଝିଆ",
+          "ସୂର୍ଯ୍ୟ ତଳେ ମୋର",
+          "ମୁହୂର୍ତ୍ତ ଆସେ,",
+          "ପ୍ରକୃତିର ଗାନ,",
+          "ଫୁଲର ଝିଙ୍କାର,",
+          "ବେସ୍ବାସ୍ତେ ପାଉଛି।"
+        ],
+        "translated_lines": [
+          "The flower girl,",
+          "Under the sun,",
+          "Moments come,",
+          "The song of nature,",
+          "The whisper of flowers,",
+          "I embrace the beauty."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Enjoying nature's song",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "ଡାଳୀ ଝିଆ",
+          "ସୂର୍ଯ୍ୟ ତଳେ ମୋର",
+          "ମୁହୂର୍ତ୍ତ ଆସେ,",
+          "ପ୍ରକୃତିର ଗାନ,",
+          "ଫୁଲର ଝିଙ୍କାର,",
+          "ବେସ୍ବାସ୍ତେ ପାଉଛି।"
+        ],
+        "translated_lines": [
+          "The flower girl,",
+          "Under the sun,",
+          "Moments come,",
+          "The song of nature,",
+          "The whisper of flowers,",
+          "I embrace the beauty."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Loosely translates the final phrase and drops 'my'",
+        "metaphor_spans": [
+          {
+            "source_term": "ଡାଳୀ ଝିଆ",
+            "abstract_meaning": "Personification of a tree branch"
+          },
+          {
+            "source_term": "ପ୍ରକୃତିର ଗାନ",
+            "abstract_meaning": "Melody of the natural world"
+          },
+          {
+            "source_term": "ଫୁଲର ଝିଙ୍କାର",
+            "abstract_meaning": "Rhythmic beauty of flowers"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ସୂର୍ଯ୍ୟ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8528,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

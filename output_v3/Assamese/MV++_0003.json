@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0003",
+  "poem_title": "Nadi",
+  "language": "Assamese",
+  "original_poem": "নদী\nনদী, তুঁতৰ বাণী বহে\nপ্ৰবাহিত শান্তিৰ বাটে,\nমোৰ বুকুত তোমাৰ সুৰ\nসাজে যুগে যুগে।",
+  "translated_poem": "The River\nO River, your voice flows\nAlong the path of peace,\nIn my heart, your melody\nPlays through the ages.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8457,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "নদী",
+          "নদী, তুঁতৰ বাণী বহে",
+          "প্ৰবাহিত শান্তিৰ বাটে,",
+          "মোৰ বুকুত তোমাৰ সুৰ",
+          "সাজে যুগে যুগে।"
+        ],
+        "translated_lines": [
+          "The River",
+          "O River, your voice flows",
+          "Along the path of peace,",
+          "In my heart, your melody",
+          "Plays through the ages."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "River's peaceful melody",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "নদী",
+          "নদী, তুঁতৰ বাণী বহে",
+          "প্ৰবাহিত শান্তিৰ বাটে,",
+          "মোৰ বুকুত তোমাৰ সুৰ",
+          "সাজে যুগে যুগে।"
+        ],
+        "translated_lines": [
+          "The River",
+          "O River, your voice flows",
+          "Along the path of peace,",
+          "In my heart, your melody",
+          "Plays through the ages."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "শান্তিৰ বাটে",
+            "abstract_meaning": "Harmonious way of living"
+          },
+          {
+            "source_term": "বুকুত তোমাৰ সুৰ",
+            "abstract_meaning": "Deeply felt emotional resonance"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "নদী",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "শান্তি",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8457,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

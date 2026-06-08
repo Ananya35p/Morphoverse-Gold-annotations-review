@@ -1,0 +1,224 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1184",
+  "poem_title": "Siring",
+  "language": "Manipuri",
+  "original_poem": "सिरिंग आहंगबा निंगथी,  \nतुमतुम्बा लोंतखा नुंशी।  \nपुमपम्ची, नचुम पांगक्ले,  \nमीनाई पुंगी वानरे।\n\nमुटुंबा, कुई युम्लुंग पांग,  \nईरेइरबा सिंगनिंग्लोंबा।  \nफुम्ना निंगं बा लैरेम,  \nतुम्बेइबा मतंबंग रसे।\n\nइरेयोकुं, खंग्तिबा सुभा,  \nसिरिंग्लोबा पुंतीरे,  \nमीतेंगबा ईमा निंहोक,  \nफंग्बा तुमिनांग रसे।",
+  "translated_poem": "Spring comes with a gentle breeze,  \nSoft and subtle, the earth it frees.  \nThe flowers bloom, the buds awake,  \nNature’s song, the birds partake.\n\nWith hands open, the fields embrace,  \nDew-kissed mornings, a tender grace.  \nUnder the sky's wide gentle dome,  \nThe heart finds its sweetest home.\n\nDawn's soft hues, whispered dreams,  \nSpring’s arrival in nature’s gleam.  \nThe mother earth with open arms,  \nWelcomes the world with peaceful charms.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7777,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "सिरिंग आहंगबा निंगथी,",
+          "तुमतुम्बा लोंतखा नुंशी।",
+          "पुमपम्ची, नचुम पांगक्ले,",
+          "मीनाई पुंगी वानरे।"
+        ],
+        "translated_lines": [
+          "Spring comes with a gentle breeze,",
+          "Soft and subtle, the earth it frees.",
+          "The flowers bloom, the buds awake,",
+          "Nature’s song, the birds partake."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मुटुंबा, कुई युम्लुंग पांग,",
+          "ईरेइरबा सिंगनिंग्लोंबा।",
+          "फुम्ना निंगं बा लैरेम,",
+          "तुम्बेइबा मतंबंग रसे।"
+        ],
+        "translated_lines": [
+          "With hands open, the fields embrace,",
+          "Dew-kissed mornings, a tender grace.",
+          "Under the sky's wide gentle dome,",
+          "The heart finds its sweetest home."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "इरेयोकुं, खंग्तिबा सुभा,",
+          "सिरिंग्लोबा पुंतीरे,",
+          "मीतेंगबा ईमा निंहोक,",
+          "फंग्बा तुमिनांग रसे।"
+        ],
+        "translated_lines": [
+          "Dawn's soft hues, whispered dreams,",
+          "Spring’s arrival in nature’s gleam.",
+          "The mother earth with open arms,",
+          "Welcomes the world with peaceful charms."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Reflecting on divine love",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "सिरिंग आहंगबा निंगथी,",
+          "तुमतुम्बा लोंतखा नुंशी।",
+          "पुमपम्ची, नचुम पांगक्ले,",
+          "मीनाई पुंगी वानरे।"
+        ],
+        "translated_lines": [
+          "Spring comes with a gentle breeze,",
+          "Soft and subtle, the earth it frees.",
+          "The flowers bloom, the buds awake,",
+          "Nature’s song, the birds partake."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "literal imagery replaced for English rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "तुमतुम्बा लोंतखा",
+            "abstract_meaning": "Dormant cultural identity"
+          },
+          {
+            "source_term": "मीनाई पुंगी",
+            "abstract_meaning": "Subjugation to external control"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "मुटुंबा, कुई युम्लुंग पांग,",
+          "ईरेइरबा सिंगनिंग्लोंबा।",
+          "फुम्ना निंगं बा लैरेम,",
+          "तुम्बेइबा मतंबंग रसे।"
+        ],
+        "translated_lines": [
+          "With hands open, the fields embrace,",
+          "Dew-kissed mornings, a tender grace.",
+          "Under the sky's wide gentle dome,",
+          "The heart finds its sweetest home."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Literal imagery sacrificed for English rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "ईरेइरबा सिंगनिंग्लोंबा",
+            "abstract_meaning": "Flowing stream of consciousness"
+          },
+          {
+            "source_term": "फुम्ना निंगं बा लैरेम",
+            "abstract_meaning": "Deeply buried divine peace"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "इरेयोकुं, खंग्तिबा सुभा,",
+          "सिरिंग्लोबा पुंतीरे,",
+          "मीतेंगबा ईमा निंहोक,",
+          "फंग्बा तुमिनांग रसे।"
+        ],
+        "translated_lines": [
+          "Dawn's soft hues, whispered dreams,",
+          "Spring’s arrival in nature’s gleam.",
+          "The mother earth with open arms,",
+          "Welcomes the world with peaceful charms."
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "poetic embellishments added for rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "इरेयोकुं",
+            "abstract_meaning": "The source of life"
+          },
+          {
+            "source_term": "सिरिंग्लोबा पुंतीरे",
+            "abstract_meaning": "The eternal thread of life"
+          },
+          {
+            "source_term": "तुमिनांग रसे",
+            "abstract_meaning": "Silent essence of achievement"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "पुंगी",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मीनाई",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ईमा",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "रसे",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7777,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 7,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

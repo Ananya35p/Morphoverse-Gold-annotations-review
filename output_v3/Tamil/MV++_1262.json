@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1262",
+  "poem_title": "Nalladhor Veenai",
+  "language": "Tamil",
+  "original_poem": "நல்லதோர் வீணை செய்வாய்,  \nஅதை நலங்கெடப் புழுதியில் எறிவாய்,  \nகல்லோ நெஞ்சம் உணர்வே,  \nஅதை கதறுதும் காதிலே கேளாய்!",
+  "translated_poem": "You craft a well-tuned veena,  \nOnly to throw it into dust.  \nOh heart made of stone,  \nHear its wailing cries!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9885,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "நல்லதோர் வீணை செய்வாய்,",
+          "அதை நலங்கெடப் புழுதியில் எறிவாய்,",
+          "கல்லோ நெஞ்சம் உணர்வே,",
+          "அதை கதறுதும் காதிலே கேளாய்!"
+        ],
+        "translated_lines": [
+          "You craft a well-tuned veena,",
+          "Only to throw it into dust.",
+          "Oh heart made of stone,",
+          "Hear its wailing cries!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "Wasted beautiful creation",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "நல்லதோர் வீணை செய்வாய்,",
+          "அதை நலங்கெடப் புழுதியில் எறிவாய்,",
+          "கல்லோ நெஞ்சம் உணர்வே,",
+          "அதை கதறுதும் காதிலே கேளாய்!"
+        ],
+        "translated_lines": [
+          "You craft a well-tuned veena,",
+          "Only to throw it into dust.",
+          "Oh heart made of stone,",
+          "Hear its wailing cries!"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "omits 'உணர்வே' (consciousness) and 'காதிலே' (in ear)",
+        "metaphor_spans": [
+          {
+            "source_term": "நல்லதோர் வீணை",
+            "abstract_meaning": "Human life or gifted intellect"
+          },
+          {
+            "source_term": "புழுதியில் எறிவாய்",
+            "abstract_meaning": "Wasting a precious creation"
+          },
+          {
+            "source_term": "கல்லோ நெஞ்சம்",
+            "abstract_meaning": "Divine indifference to suffering"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "வீணை",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9885,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1157",
+  "poem_title": "Yemberzal",
+  "language": "Kashmiri",
+  "original_poem": "یٕمبر زل  \nپٲدَرتھ پٲوےٚ منٕ زل  \nبٕکھری یٕشور چھٕ آوےٚ  \nپرینٕ زٲند پٲیٚؤ چھٕ آوےٚ  \nیٕمبر زل، یٕمبر زل،  \nخٲندٕزٕ گٲلِی یٕسِٹڑھی۔",
+  "translated_poem": "Narcissus,  \nYou emerge from the earth,  \nWith your beauty shining bright,  \nA delicate presence of grace,  \nNarcissus, Narcissus,  \nA flower of gentle light.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8867,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "یٕمبر زل",
+          "پٲدَرتھ پٲوےٚ منٕ زل",
+          "بٕکھری یٕشور چھٕ آوےٚ",
+          "پرینٕ زٲند پٲیٚؤ چھٕ آوےٚ",
+          "یٕمبر زل، یٕمبر زل،",
+          "خٲندٕزٕ گٲلِی یٕسِٹڑھی۔"
+        ],
+        "translated_lines": [
+          "Narcissus,",
+          "You emerge from the earth,",
+          "With your beauty shining bright,",
+          "A delicate presence of grace,",
+          "Narcissus, Narcissus,",
+          "A flower of gentle light."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Blooming of narcissus",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 6,
+        "source_lines": [
+          "یٕمبر زل",
+          "پٲدَرتھ پٲوےٚ منٕ زل",
+          "بٕکھری یٕشور چھٕ آوےٚ",
+          "پرینٕ زٲند پٲیٚؤ چھٕ آوےٚ",
+          "یٕمبر زل، یٕمبر زل،",
+          "خٲندٕزٕ گٲلِی یٕسِٹڑھی۔"
+        ],
+        "translated_lines": [
+          "Narcissus,",
+          "You emerge from the earth,",
+          "With your beauty shining bright,",
+          "A delicate presence of grace,",
+          "Narcissus, Narcissus,",
+          "A flower of gentle light."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "mystical undertones and literal Kashmiri idioms",
+        "metaphor_spans": [
+          {
+            "source_term": "یٕمبر زل",
+            "abstract_meaning": "Symbol of spiritual awakening"
+          },
+          {
+            "source_term": "منٕ زل",
+            "abstract_meaning": "The mind as reflective water"
+          },
+          {
+            "source_term": "خٲندٕزٕ گٲلِی",
+            "abstract_meaning": "Dissolving ego into the divine"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8867,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

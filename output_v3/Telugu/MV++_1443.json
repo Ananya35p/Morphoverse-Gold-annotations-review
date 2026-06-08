@@ -1,0 +1,474 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1443",
+  "poem_title": "Oh Jabilamma",
+  "language": "Telugu",
+  "original_poem": "ఆకాశ వదనంలో\n\nఅందాల తిలకమా\n\nచుక్కలన్ని రేకులై\n\nవిచ్చుకున్న పారిజాతమా\n\nమబ్బులన్ని ముద్దులిడే\n\nచిన్నారి ముద్దుగుమ్మ\n\nవెన్నెల పాదాలపై\n\nవెండి మువ్వవమ్మా ఆమరియుజాబిలమ్మా\n\nఈ తూరుపు తెలవారుతూ నిన్నే దాచేసిందా\n\nమా చూపులకందని దివిలొ నిదురబుచ్చినదా\n\nలేదా\n\nరేయికి రేయికి నడుమ దాగుడుమూతలు ఆడి నీకై మేము వెతకాలని.. వేచి చూడాలనీ వెళ్ళి దాక్కుంటున్నావా... ఓ తుంటరి వలువా...!!!",
+  "translated_poem": "In Akasha Vadaman\n\nAndala Tilakama\n\nPetals as many drops\n\nParijatama who has been released\n\nKissing all the clouds\n\nBaby girl\n\nOn the feet of the moon\n\nWendy is the third motherJabilamma\n\nDid you hide this mistake knowing it?\n\nDid the gods sigh that we did not see them?\n\nOr\n\nAre you playing hide-and-seek with Reiki Reiki and waiting for us to look for you?",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 12,
+    "source_stanza_count": 12,
+    "translated_stanza_count": 12,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8462,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "ఆకాశ వదనంలో"
+        ],
+        "translated_lines": [
+          "In Akasha Vadaman"
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 1,
+        "source_lines": [
+          "అందాల తిలకమా"
+        ],
+        "translated_lines": [
+          "Andala Tilakama"
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 1,
+        "source_lines": [
+          "చుక్కలన్ని రేకులై"
+        ],
+        "translated_lines": [
+          "Petals as many drops"
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 1,
+        "source_lines": [
+          "విచ్చుకున్న పారిజాతమా"
+        ],
+        "translated_lines": [
+          "Parijatama who has been released"
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 1,
+        "source_lines": [
+          "మబ్బులన్ని ముద్దులిడే"
+        ],
+        "translated_lines": [
+          "Kissing all the clouds"
+        ]
+      },
+      {
+        "stanza_index": 6,
+        "line_count": 1,
+        "source_lines": [
+          "చిన్నారి ముద్దుగుమ్మ"
+        ],
+        "translated_lines": [
+          "Baby girl"
+        ]
+      },
+      {
+        "stanza_index": 7,
+        "line_count": 1,
+        "source_lines": [
+          "వెన్నెల పాదాలపై"
+        ],
+        "translated_lines": [
+          "On the feet of the moon"
+        ]
+      },
+      {
+        "stanza_index": 8,
+        "line_count": 1,
+        "source_lines": [
+          "వెండి మువ్వవమ్మా ఆమరియుజాబిలమ్మా"
+        ],
+        "translated_lines": [
+          "Wendy is the third motherJabilamma"
+        ]
+      },
+      {
+        "stanza_index": 9,
+        "line_count": 1,
+        "source_lines": [
+          "ఈ తూరుపు తెలవారుతూ నిన్నే దాచేసిందా"
+        ],
+        "translated_lines": [
+          "Did you hide this mistake knowing it?"
+        ]
+      },
+      {
+        "stanza_index": 10,
+        "line_count": 1,
+        "source_lines": [
+          "మా చూపులకందని దివిలొ నిదురబుచ్చినదా"
+        ],
+        "translated_lines": [
+          "Did the gods sigh that we did not see them?"
+        ]
+      },
+      {
+        "stanza_index": 11,
+        "line_count": 1,
+        "source_lines": [
+          "లేదా"
+        ],
+        "translated_lines": [
+          "Or"
+        ]
+      },
+      {
+        "stanza_index": 12,
+        "line_count": 1,
+        "source_lines": [
+          "రేయికి రేయికి నడుమ దాగుడుమూతలు ఆడి నీకై మేము వెతకాలని.. వేచి చూడాలనీ వెళ్ళి దాక్కుంటున్నావా... ఓ తుంటరి వలువా...!!!"
+        ],
+        "translated_lines": [
+          "Are you playing hide-and-seek with Reiki Reiki and waiting for us to look for you?"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "admiring the playful moon",
+    "translation_fidelity_score": 0.375,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 1,
+        "source_lines": [
+          "ఆకాశ వదనంలో"
+        ],
+        "translated_lines": [
+          "In Akasha Vadaman"
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "lost",
+        "loss_note": "Failed to translate face of the sky",
+        "metaphor_spans": [
+          {
+            "source_term": "ఆకాశ వదనంలో",
+            "abstract_meaning": "Sky personified as a face"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 1,
+        "source_lines": [
+          "అందాల తిలకమా"
+        ],
+        "translated_lines": [
+          "Andala Tilakama"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "lost",
+        "loss_note": "transliteration loses meaning of beautiful mark",
+        "metaphor_spans": [
+          {
+            "source_term": "అందాల తిలకమా",
+            "abstract_meaning": "The crowning glory of beauty"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 1,
+        "source_lines": [
+          "చుక్కలన్ని రేకులై"
+        ],
+        "translated_lines": [
+          "Petals as many drops"
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Misses stars and the transformation aspect",
+        "metaphor_spans": [
+          {
+            "source_term": "చుక్కలన్ని రేకులై",
+            "abstract_meaning": "Stars as delicate flower petals"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 1,
+        "source_lines": [
+          "విచ్చుకున్న పారిజాతమా"
+        ],
+        "translated_lines": [
+          "Parijatama who has been released"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "translates blossomed as released",
+        "metaphor_spans": [
+          {
+            "source_term": "విచ్చుకున్న పారిజాతమా",
+            "abstract_meaning": "A beautiful, blossoming person"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 1,
+        "source_lines": [
+          "మబ్బులన్ని ముద్దులిడే"
+        ],
+        "translated_lines": [
+          "Kissing all the clouds"
+        ],
+        "emotion": "celebration",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "మబ్బులన్ని ముద్దులిడే",
+            "abstract_meaning": "Clouds touching or raining gently"
+          }
+        ]
+      },
+      {
+        "stanza_index": 6,
+        "line_count": 1,
+        "source_lines": [
+          "చిన్నారి ముద్దుగుమ్మ"
+        ],
+        "translated_lines": [
+          "Baby girl"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "loses the poetic endearment of sweet girl",
+        "metaphor_spans": [
+          {
+            "source_term": "ముద్దుగుమ్మ",
+            "abstract_meaning": "A charming, doll-like young girl"
+          }
+        ]
+      },
+      {
+        "stanza_index": 7,
+        "line_count": 1,
+        "source_lines": [
+          "వెన్నెల పాదాలపై"
+        ],
+        "translated_lines": [
+          "On the feet of the moon"
+        ],
+        "emotion": "peace",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Vennela means moonlight, not the moon",
+        "metaphor_spans": [
+          {
+            "source_term": "వెన్నెల పాదాలపై",
+            "abstract_meaning": "Softly spreading rays of moonlight"
+          }
+        ]
+      },
+      {
+        "stanza_index": 8,
+        "line_count": 1,
+        "source_lines": [
+          "వెండి మువ్వవమ్మా ఆమరియుజాబిలమ్మా"
+        ],
+        "translated_lines": [
+          "Wendy is the third motherJabilamma"
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "lost",
+        "loss_note": "Mistranslates silver as Wendy; nonsensical meaning",
+        "metaphor_spans": [
+          {
+            "source_term": "వెండి మువ్వవమ్మా",
+            "abstract_meaning": "Precious and musical like silver bells"
+          },
+          {
+            "source_term": "జాబిలమ్మా",
+            "abstract_meaning": "Beautiful and radiant like the moon"
+          }
+        ]
+      },
+      {
+        "stanza_index": 9,
+        "line_count": 1,
+        "source_lines": [
+          "ఈ తూరుపు తెలవారుతూ నిన్నే దాచేసిందా"
+        ],
+        "translated_lines": [
+          "Did you hide this mistake knowing it?"
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "lost",
+        "loss_note": "Completely mistranslates dawn hiding the person",
+        "metaphor_spans": [
+          {
+            "source_term": "తూరుపు తెలవారుతూ",
+            "abstract_meaning": "A new beginning or transition"
+          },
+          {
+            "source_term": "దాచేసిందా",
+            "abstract_meaning": "Loss or fading of presence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 10,
+        "line_count": 1,
+        "source_lines": [
+          "మా చూపులకందని దివిలొ నిదురబుచ్చినదా"
+        ],
+        "translated_lines": [
+          "Did the gods sigh that we did not see them?"
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "lost",
+        "loss_note": "misses 'put to sleep in heaven'",
+        "metaphor_spans": [
+          {
+            "source_term": "చూపులకందని దివిలొ",
+            "abstract_meaning": "The mysterious realm of death"
+          },
+          {
+            "source_term": "నిదురబుచ్చినదా",
+            "abstract_meaning": "Metaphor for eternal rest"
+          }
+        ]
+      },
+      {
+        "stanza_index": 11,
+        "line_count": 1,
+        "source_lines": [
+          "లేదా"
+        ],
+        "translated_lines": [
+          "Or"
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "లేదా",
+            "abstract_meaning": "Represents existential negation or absence"
+          }
+        ]
+      },
+      {
+        "stanza_index": 12,
+        "line_count": 1,
+        "source_lines": [
+          "రేయికి రేయికి నడుమ దాగుడుమూతలు ఆడి నీకై మేము వెతకాలని.. వేచి చూడాలనీ వెళ్ళి దాక్కుంటున్నావా... ఓ తుంటరి వలువా...!!!"
+        ],
+        "translated_lines": [
+          "Are you playing hide-and-seek with Reiki Reiki and waiting for us to look for you?"
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "mistranslates night as Reiki, misses naughty one",
+        "metaphor_spans": [
+          {
+            "source_term": "రేయికి రేయికి నడుమ దాగుడుమూతలు",
+            "abstract_meaning": "The moon's elusive phases"
+          },
+          {
+            "source_term": "తుంటరి వలువా",
+            "abstract_meaning": "Playful metaphor for the moon"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ఆకాశ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "తిలకమా",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "పారిజాతమా",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "జాబిలమ్మ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 8,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "దివి",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 10,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "దాగుడుమూతలు",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 12,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8462,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 16,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1239",
+  "poem_title": "Jitna Pahar",
+  "language": "Santhali",
+  "original_poem": "जितना पहाड़,  \nउतना अडिग संकल्प,  \nहर कठिनाई को सहकर,  \nचढ़ना है हमें।\n\nआसमान की ओर,  \nहर कदम को बढ़ाना है,  \nआशा का दीप जलाए,  \nसपनों को साकार करना है।\n\nबाधाएं आएं,  \nपर हिम्मत न हारें,  \nहर चोट को सहकर,  \nऊंचाई की ओर बढ़ें।\n\nसफलता की ऊंचाई,  \nआसानी से नहीं मिलती,  \nजितना पहाड़,  \nउतना कठिन सफर।\n\nहाथ में हाथ हो,  \nहम एकसाथ चलें,  \nसपनों की मंजिल,  \nहम सभी पाएंगे।",
+  "translated_poem": "The higher the mountain,  \nThe firmer our resolve,  \nEnduring every hardship,  \nWe must rise above.\n\nTowards the sky,  \nWe must take each step,  \nKindle the lamp of hope,  \nAnd make dreams come true.\n\nObstacles may come,  \nBut we won't lose our courage,  \nBearing every bruise,  \nWe ascend towards heights.\n\nThe peak of success,  \nIs not easily attained,  \nThe higher the mountain,  \nThe harder the journey.\n\nWith hands held together,  \nLet us walk as one,  \nThe destination of dreams,  \nWe shall all reach.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8141,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "जितना पहाड़,",
+          "उतना अडिग संकल्प,",
+          "हर कठिनाई को सहकर,",
+          "चढ़ना है हमें।"
+        ],
+        "translated_lines": [
+          "The higher the mountain,",
+          "The firmer our resolve,",
+          "Enduring every hardship,",
+          "We must rise above."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "आसमान की ओर,",
+          "हर कदम को बढ़ाना है,",
+          "आशा का दीप जलाए,",
+          "सपनों को साकार करना है।"
+        ],
+        "translated_lines": [
+          "Towards the sky,",
+          "We must take each step,",
+          "Kindle the lamp of hope,",
+          "And make dreams come true."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "बाधाएं आएं,",
+          "पर हिम्मत न हारें,",
+          "हर चोट को सहकर,",
+          "ऊंचाई की ओर बढ़ें।"
+        ],
+        "translated_lines": [
+          "Obstacles may come,",
+          "But we won't lose our courage,",
+          "Bearing every bruise,",
+          "We ascend towards heights."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "सफलता की ऊंचाई,",
+          "आसानी से नहीं मिलती,",
+          "जितना पहाड़,",
+          "उतना कठिन सफर।"
+        ],
+        "translated_lines": [
+          "The peak of success,",
+          "Is not easily attained,",
+          "The higher the mountain,",
+          "The harder the journey."
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "हाथ में हाथ हो,",
+          "हम एकसाथ चलें,",
+          "सपनों की मंजिल,",
+          "हम सभी पाएंगे।"
+        ],
+        "translated_lines": [
+          "With hands held together,",
+          "Let us walk as one,",
+          "The destination of dreams,",
+          "We shall all reach."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "climbing towards success",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "जितना पहाड़,",
+          "उतना अडिग संकल्प,",
+          "हर कठिनाई को सहकर,",
+          "चढ़ना है हमें।"
+        ],
+        "translated_lines": [
+          "The higher the mountain,",
+          "The firmer our resolve,",
+          "Enduring every hardship,",
+          "We must rise above."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "जितना पहाड़",
+            "abstract_meaning": "Scale of challenges or goals"
+          },
+          {
+            "source_term": "चढ़ना है हमें",
+            "abstract_meaning": "Overcoming obstacles to progress"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "आसमान की ओर,",
+          "हर कदम को बढ़ाना है,",
+          "आशा का दीप जलाए,",
+          "सपनों को साकार करना है।"
+        ],
+        "translated_lines": [
+          "Towards the sky,",
+          "We must take each step,",
+          "Kindle the lamp of hope,",
+          "And make dreams come true."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "आसमान की ओर",
+            "abstract_meaning": "Striving for high ambitions"
+          },
+          {
+            "source_term": "आशा का दीप",
+            "abstract_meaning": "Maintaining optimism and hope"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "बाधाएं आएं,",
+          "पर हिम्मत न हारें,",
+          "हर चोट को सहकर,",
+          "ऊंचाई की ओर बढ़ें।"
+        ],
+        "translated_lines": [
+          "Obstacles may come,",
+          "But we won't lose our courage,",
+          "Bearing every bruise,",
+          "We ascend towards heights."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हर चोट",
+            "abstract_meaning": "hardships and emotional pain"
+          },
+          {
+            "source_term": "ऊंचाई",
+            "abstract_meaning": "success and personal growth"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "सफलता की ऊंचाई,",
+          "आसानी से नहीं मिलती,",
+          "जितना पहाड़,",
+          "उतना कठिन सफर।"
+        ],
+        "translated_lines": [
+          "The peak of success,",
+          "Is not easily attained,",
+          "The higher the mountain,",
+          "The harder the journey."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "सफलता की ऊंचाई",
+            "abstract_meaning": "High level of achievement"
+          },
+          {
+            "source_term": "जितना पहाड़",
+            "abstract_meaning": "Magnitude of a great challenge"
+          },
+          {
+            "source_term": "कठिन सफर",
+            "abstract_meaning": "Struggle to reach a goal"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "हाथ में हाथ हो,",
+          "हम एकसाथ चलें,",
+          "सपनों की मंजिल,",
+          "हम सभी पाएंगे।"
+        ],
+        "translated_lines": [
+          "With hands held together,",
+          "Let us walk as one,",
+          "The destination of dreams,",
+          "We shall all reach."
+        ],
+        "emotion": "resilience",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "हाथ में हाथ",
+            "abstract_meaning": "Unity and mutual support"
+          },
+          {
+            "source_term": "सपनों की मंजिल",
+            "abstract_meaning": "Ultimate goals or aspirations"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "अडिग संकल्प",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पहाड़",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "आशा का दीप",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "पहाड़",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8141,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 11,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0108",
+  "poem_title": "Tumhare Haath Ki Chudiyan",
+  "language": "Hindi",
+  "original_poem": "तुम्हारे हाथ की चूड़ियां  \nतुम्हारे हाथ में कैसे खनकती हैं।  \nजैसे फूलों से महक उठी हो कोई हवा,  \nजैसे सावन में बज उठे हो कहीं घुंघरू।\n\nइन चूड़ियों की खनक में  \nतुम्हारी हंसी का एहसास है,  \nऔर ये खनकती हैं यूँ  \nजैसे तुम पास ही हो कहीं।",
+  "translated_poem": "The bangles on your hand,  \nHow they tinkle and chime.  \nLike the breeze carries the scent of flowers,  \nLike anklets jingling in the monsoon time.\n\nIn the melody of these bangles,  \nI feel the echo of your laughter.  \nAnd they tinkle in such a way,  \nAs if you're nearby, right after.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8867,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "तुम्हारे हाथ की चूड़ियां",
+          "तुम्हारे हाथ में कैसे खनकती हैं।",
+          "जैसे फूलों से महक उठी हो कोई हवा,",
+          "जैसे सावन में बज उठे हो कहीं घुंघरू।"
+        ],
+        "translated_lines": [
+          "The bangles on your hand,",
+          "How they tinkle and chime.",
+          "Like the breeze carries the scent of flowers,",
+          "Like anklets jingling in the monsoon time."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "इन चूड़ियों की खनक में",
+          "तुम्हारी हंसी का एहसास है,",
+          "और ये खनकती हैं यूँ",
+          "जैसे तुम पास ही हो कहीं।"
+        ],
+        "translated_lines": [
+          "In the melody of these bangles,",
+          "I feel the echo of your laughter.",
+          "And they tinkle in such a way,",
+          "As if you're nearby, right after."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Romantic sensory memory",
+    "translation_fidelity_score": 0.75,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "तुम्हारे हाथ की चूड़ियां",
+          "तुम्हारे हाथ में कैसे खनकती हैं।",
+          "जैसे फूलों से महक उठी हो कोई हवा,",
+          "जैसे सावन में बज उठे हो कहीं घुंघरू।"
+        ],
+        "translated_lines": [
+          "The bangles on your hand,",
+          "How they tinkle and chime.",
+          "Like the breeze carries the scent of flowers,",
+          "Like anklets jingling in the monsoon time."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "फूलों से महक उठी हो कोई हवा",
+            "abstract_meaning": "Fragrant, pleasant presence or sound"
+          },
+          {
+            "source_term": "सावन में बज उठे हो कहीं घुंघरू",
+            "abstract_meaning": "Joyful, rhythmic sound of bangles"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "इन चूड़ियों की खनक में",
+          "तुम्हारी हंसी का एहसास है,",
+          "और ये खनकती हैं यूँ",
+          "जैसे तुम पास ही हो कहीं।"
+        ],
+        "translated_lines": [
+          "In the melody of these bangles,",
+          "I feel the echo of your laughter.",
+          "And they tinkle in such a way,",
+          "As if you're nearby, right after."
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "forced rhyme 'right after' alters original meaning",
+        "metaphor_spans": [
+          {
+            "source_term": "चूड़ियों की खनक में तुम्हारी हंसी",
+            "abstract_meaning": "Bangles' sound symbolizes her laughter"
+          },
+          {
+            "source_term": "खनकती हैं यूँ जैसे तुम पास ही हो",
+            "abstract_meaning": "Sound represents the beloved's presence"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "चूड़ियां",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सावन",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "घुंघरू",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "चूड़ियों",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8867,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

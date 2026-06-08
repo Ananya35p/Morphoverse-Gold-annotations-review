@@ -1,0 +1,140 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1085",
+  "poem_title": "Krishna Ki Chetavani",
+  "language": "Kannada",
+  "original_poem": "कृष्ण ने कहा था—\nहरि काज करत गोधूलि में\nतुम हो ना इसमें, तुम्हीं हो,  \nहर ऋतु हर भू पर छा गया  \nमेरे परम संदेश का साया।  \nयह जो तुम आकर करते हो  \nवो मैं तुम्हारे दिल में करता हूँ।",
+  "translated_poem": "Krishna had said—\nIn the twilight, doing the work of God,  \nYou are in it, you are it,  \nIn every season, on every land,  \nThe shadow of my supreme message spreads.  \nWhat you come and do,  \nI do within your heart.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "कृष्ण ने कहा था—",
+          "हरि काज करत गोधूलि में",
+          "तुम हो ना इसमें, तुम्हीं हो,",
+          "हर ऋतु हर भू पर छा गया",
+          "मेरे परम संदेश का साया।",
+          "यह जो तुम आकर करते हो",
+          "वो मैं तुम्हारे दिल में करता हूँ।"
+        ],
+        "translated_lines": [
+          "Krishna had said—",
+          "In the twilight, doing the work of God,",
+          "You are in it, you are it,",
+          "In every season, on every land,",
+          "The shadow of my supreme message spreads.",
+          "What you come and do,",
+          "I do within your heart."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "divine inner connection",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "कृष्ण ने कहा था—",
+          "हरि काज करत गोधूलि में",
+          "तुम हो ना इसमें, तुम्हीं हो,",
+          "हर ऋतु हर भू पर छा गया",
+          "मेरे परम संदेश का साया।",
+          "यह जो तुम आकर करते हो",
+          "वो मैं तुम्हारे दिल में करता हूँ।"
+        ],
+        "translated_lines": [
+          "Krishna had said—",
+          "In the twilight, doing the work of God,",
+          "You are in it, you are it,",
+          "In every season, on every land,",
+          "The shadow of my supreme message spreads.",
+          "What you come and do,",
+          "I do within your heart."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "मेरे परम संदेश का साया",
+            "abstract_meaning": "Universal reach of divine wisdom"
+          },
+          {
+            "source_term": "हरि काज करत गोधूलि में",
+            "abstract_meaning": "Divine action during life's transitions"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "कृष्ण",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "हरि",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "गोधूलि",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "परम संदेश",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

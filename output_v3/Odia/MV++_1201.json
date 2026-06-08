@@ -1,0 +1,152 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1201",
+  "poem_title": "Kalinga Gatha",
+  "language": "Odia",
+  "original_poem": "କଳିଙ୍ଗ ଗାଥା  \nଏଠାରେ ଅନୁକ୍ରମ  \nସଂସାରର ସତ୍ୟର ସାକ୍ଷାତ୍କାର,  \nଘରରେ ମୁକୁରା ଏବଂ  \nକୃଷ୍ଣଙ୍କ ସଙ୍ଗରେ।  \nଗହର ଶବ୍ଦ ଓ ଶତକୋଟି ନର ତଥା  \nମାତୃକା ହୃଦୟର ରମ୍ୟା।",
+  "translated_poem": "The tale of Kalinga,  \nHere unfolds a sequence,  \nThe realization of truth in the world,  \nIn the home with the mirror,  \nAnd with Krishna.  \nThe sound of the depths and the countless men,  \nThe beauty of a mother’s heart.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.7618,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "କଳିଙ୍ଗ ଗାଥା",
+          "ଏଠାରେ ଅନୁକ୍ରମ",
+          "ସଂସାରର ସତ୍ୟର ସାକ୍ଷାତ୍କାର,",
+          "ଘରରେ ମୁକୁରା ଏବଂ",
+          "କୃଷ୍ଣଙ୍କ ସଙ୍ଗରେ।",
+          "ଗହର ଶବ୍ଦ ଓ ଶତକୋଟି ନର ତଥା",
+          "ମାତୃକା ହୃଦୟର ରମ୍ୟା।"
+        ],
+        "translated_lines": [
+          "The tale of Kalinga,",
+          "Here unfolds a sequence,",
+          "The realization of truth in the world,",
+          "In the home with the mirror,",
+          "And with Krishna.",
+          "The sound of the depths and the countless men,",
+          "The beauty of a mother’s heart."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Tale of Kalinga",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "କଳିଙ୍ଗ ଗାଥା",
+          "ଏଠାରେ ଅନୁକ୍ରମ",
+          "ସଂସାରର ସତ୍ୟର ସାକ୍ଷାତ୍କାର,",
+          "ଘରରେ ମୁକୁରା ଏବଂ",
+          "କୃଷ୍ଣଙ୍କ ସଙ୍ଗରେ।",
+          "ଗହର ଶବ୍ଦ ଓ ଶତକୋଟି ନର ତଥା",
+          "ମାତୃକା ହୃଦୟର ରମ୍ୟା।"
+        ],
+        "translated_lines": [
+          "The tale of Kalinga,",
+          "Here unfolds a sequence,",
+          "The realization of truth in the world,",
+          "In the home with the mirror,",
+          "And with Krishna.",
+          "The sound of the depths and the countless men,",
+          "The beauty of a mother’s heart."
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "କଳିଙ୍ଗ ଗାଥା",
+            "abstract_meaning": "Historical legacy and identity"
+          },
+          {
+            "source_term": "ସଂସାରର ସତ୍ୟର ସାକ୍ଷାତ୍କାର",
+            "abstract_meaning": "Realization of universal truths"
+          },
+          {
+            "source_term": "ମାତୃକା ହୃଦୟର ରମ୍ୟା",
+            "abstract_meaning": "Divine beauty of maternal love"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "କଳିଙ୍ଗ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ଗାଥା",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ସଂସାରର ସତ୍ୟ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "କୃଷ୍ଣ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ମାତୃକା",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.7618,
+      "source_term_checks": {
+        "entities_total": 5,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

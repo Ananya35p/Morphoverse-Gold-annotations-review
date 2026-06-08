@@ -1,0 +1,248 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1554",
+  "poem_title": "Yeh Daag Daag Ujala",
+  "language": "Urdu",
+  "original_poem": "یہ داغ داغ اجالا، یہ خاموشی کے سایے  \nیہ آہنگ ہے، یہ چپ، یہ خاموشی کے نیچے  \nچند لمحوں کی محبت، چند دھندلے خواب  \nمحبت کی گلیوں میں، چلتے ہیں ہم۔\n\nتاریک راتوں میں، کہیں کوئی چاند ہو  \nاجالا ہو، لیکن ہم سے دور ہو۔  \nیہ داغ داغ اجالا، یہ خاموشی کے سایے  \nیہ عشق کی کہانی ہے، جو کبھی نہ سمجھی۔\n\nنہ جانے کس کے خواب میں، یہ صبح بکھری ہو  \nنہ جانے کس کی آنکھوں میں، یہ آہنگ بھری ہو۔  \nیہ داغ داغ اجالا، یہ خاموشی کے سایے  \nیہ گیت ہے عشق کا، جو زندگی میں ہے۔",
+  "translated_poem": "This stained dawn, these shadows of silence,  \nThis rhythm, this hush, beneath the quiet,  \nMoments of love, a few hazy dreams,  \nWe walk through the streets of love.\n\nIn dark nights, may there be a moon somewhere,  \nLight shining, but far from us.  \nThis stained dawn, these shadows of silence,  \nThis is the tale of love, never truly understood.\n\nWho knows in whose dreams this morning is scattered,  \nIn whose eyes this rhythm is filled?  \nThis stained dawn, these shadows of silence,  \nThis is the song of love, which lives in life.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 3,
+    "source_stanza_count": 3,
+    "translated_stanza_count": 3,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8994,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "یہ داغ داغ اجالا، یہ خاموشی کے سایے",
+          "یہ آہنگ ہے، یہ چپ، یہ خاموشی کے نیچے",
+          "چند لمحوں کی محبت، چند دھندلے خواب",
+          "محبت کی گلیوں میں، چلتے ہیں ہم۔"
+        ],
+        "translated_lines": [
+          "This stained dawn, these shadows of silence,",
+          "This rhythm, this hush, beneath the quiet,",
+          "Moments of love, a few hazy dreams,",
+          "We walk through the streets of love."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "تاریک راتوں میں، کہیں کوئی چاند ہو",
+          "اجالا ہو، لیکن ہم سے دور ہو۔",
+          "یہ داغ داغ اجالا، یہ خاموشی کے سایے",
+          "یہ عشق کی کہانی ہے، جو کبھی نہ سمجھی۔"
+        ],
+        "translated_lines": [
+          "In dark nights, may there be a moon somewhere,",
+          "Light shining, but far from us.",
+          "This stained dawn, these shadows of silence,",
+          "This is the tale of love, never truly understood."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "نہ جانے کس کے خواب میں، یہ صبح بکھری ہو",
+          "نہ جانے کس کی آنکھوں میں، یہ آہنگ بھری ہو۔",
+          "یہ داغ داغ اجالا، یہ خاموشی کے سایے",
+          "یہ گیت ہے عشق کا، جو زندگی میں ہے۔"
+        ],
+        "translated_lines": [
+          "Who knows in whose dreams this morning is scattered,",
+          "In whose eyes this rhythm is filled?",
+          "This stained dawn, these shadows of silence,",
+          "This is the song of love, which lives in life."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "pondering incomplete love",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "یہ داغ داغ اجالا، یہ خاموشی کے سایے",
+          "یہ آہنگ ہے، یہ چپ، یہ خاموشی کے نیچے",
+          "چند لمحوں کی محبت، چند دھندلے خواب",
+          "محبت کی گلیوں میں، چلتے ہیں ہم۔"
+        ],
+        "translated_lines": [
+          "This stained dawn, these shadows of silence,",
+          "This rhythm, this hush, beneath the quiet,",
+          "Moments of love, a few hazy dreams,",
+          "We walk through the streets of love."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "داغ داغ اجالا",
+            "abstract_meaning": "Flawed or incomplete freedom"
+          },
+          {
+            "source_term": "خاموشی کے سایے",
+            "abstract_meaning": "Lingering oppression or sorrow"
+          },
+          {
+            "source_term": "دھندلے خواب",
+            "abstract_meaning": "Fading or uncertain aspirations"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "تاریک راتوں میں، کہیں کوئی چاند ہو",
+          "اجالا ہو، لیکن ہم سے دور ہو۔",
+          "یہ داغ داغ اجالا، یہ خاموشی کے سایے",
+          "یہ عشق کی کہانی ہے، جو کبھی نہ سمجھی۔"
+        ],
+        "translated_lines": [
+          "In dark nights, may there be a moon somewhere,",
+          "Light shining, but far from us.",
+          "This stained dawn, these shadows of silence,",
+          "This is the tale of love, never truly understood."
+        ],
+        "emotion": "longing",
+        "tone": "lament",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "داغ داغ اجالا",
+            "abstract_meaning": "Flawed or incomplete hope"
+          },
+          {
+            "source_term": "خاموشی کے سایے",
+            "abstract_meaning": "Unspoken grief or isolation"
+          },
+          {
+            "source_term": "تاریک راتوں",
+            "abstract_meaning": "Periods of despair or suffering"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "نہ جانے کس کے خواب میں، یہ صبح بکھری ہو",
+          "نہ جانے کس کی آنکھوں میں، یہ آہنگ بھری ہو۔",
+          "یہ داغ داغ اجالا، یہ خاموشی کے سایے",
+          "یہ گیت ہے عشق کا، جو زندگی میں ہے۔"
+        ],
+        "translated_lines": [
+          "Who knows in whose dreams this morning is scattered,",
+          "In whose eyes this rhythm is filled?",
+          "This stained dawn, these shadows of silence,",
+          "This is the song of love, which lives in life."
+        ],
+        "emotion": "longing",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "داغ داغ اجالا",
+            "abstract_meaning": "Flawed or disappointing hope"
+          },
+          {
+            "source_term": "خاموشی کے سایے",
+            "abstract_meaning": "Lingering gloom or oppression"
+          },
+          {
+            "source_term": "صبح بکھری ہو",
+            "abstract_meaning": "Fragmented or distributed hope"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "آہنگ",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "محبت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "عشق",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "آہنگ",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "گیت",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "عشق",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8994,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 9,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1550",
+  "poem_title": "Hum Dekhenge",
+  "language": "Urdu",
+  "original_poem": "ہم دیکھیں گے  \nلازم ہے کہ ہم بھی دیکھیں گے  \nوہ دن کہ جس کا وعدہ ہے  \nجو لوحِ ازل میں لکھا ہے  \nجب ظلم و ستم کے کوہ گراں  \nروئی کی طرح اڑ جائیں گے  \nہم محکوموں کے پاؤں تلے  \nیہ دھرتی دھڑ دھڑ دھڑکے گی  \nاور اہلِ حکم کے سر اوپر  \nجب بجلی کڑ کڑ کڑکے گی  \nہم دیکھیں گے",
+  "translated_poem": "We shall see  \nIt is certain that we too shall see  \nThe day that has been promised  \nWhich is written on the slate of eternity  \nWhen the mountains of tyranny and oppression  \nWill float away like cotton  \nBeneath our feet—the feet of the oppressed—  \nThis earth will throb and beat  \nAnd over the heads of the rulers  \nLightning will crack and strike  \nWe shall see",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8166,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 11,
+        "source_lines": [
+          "ہم دیکھیں گے",
+          "لازم ہے کہ ہم بھی دیکھیں گے",
+          "وہ دن کہ جس کا وعدہ ہے",
+          "جو لوحِ ازل میں لکھا ہے",
+          "جب ظلم و ستم کے کوہ گراں",
+          "روئی کی طرح اڑ جائیں گے",
+          "ہم محکوموں کے پاؤں تلے",
+          "یہ دھرتی دھڑ دھڑ دھڑکے گی",
+          "اور اہلِ حکم کے سر اوپر",
+          "جب بجلی کڑ کڑ کڑکے گی",
+          "ہم دیکھیں گے"
+        ],
+        "translated_lines": [
+          "We shall see",
+          "It is certain that we too shall see",
+          "The day that has been promised",
+          "Which is written on the slate of eternity",
+          "When the mountains of tyranny and oppression",
+          "Will float away like cotton",
+          "Beneath our feet—the feet of the oppressed—",
+          "This earth will throb and beat",
+          "And over the heads of the rulers",
+          "Lightning will crack and strike",
+          "We shall see"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "defiant revolutionary hope",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 11,
+        "source_lines": [
+          "ہم دیکھیں گے",
+          "لازم ہے کہ ہم بھی دیکھیں گے",
+          "وہ دن کہ جس کا وعدہ ہے",
+          "جو لوحِ ازل میں لکھا ہے",
+          "جب ظلم و ستم کے کوہ گراں",
+          "روئی کی طرح اڑ جائیں گے",
+          "ہم محکوموں کے پاؤں تلے",
+          "یہ دھرتی دھڑ دھڑ دھڑکے گی",
+          "اور اہلِ حکم کے سر اوپر",
+          "جب بجلی کڑ کڑ کڑکے گی",
+          "ہم دیکھیں گے"
+        ],
+        "translated_lines": [
+          "We shall see",
+          "It is certain that we too shall see",
+          "The day that has been promised",
+          "Which is written on the slate of eternity",
+          "When the mountains of tyranny and oppression",
+          "Will float away like cotton",
+          "Beneath our feet—the feet of the oppressed—",
+          "This earth will throb and beat",
+          "And over the heads of the rulers",
+          "Lightning will crack and strike",
+          "We shall see"
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ظلم و ستم کے کوہ گراں",
+            "abstract_meaning": "Immense and seemingly immovable oppression"
+          },
+          {
+            "source_term": "بجلی کڑ کڑ کڑکے گی",
+            "abstract_meaning": "Sudden downfall of ruling elite"
+          },
+          {
+            "source_term": "لوحِ ازل",
+            "abstract_meaning": "Inevitable predestined victory of justice"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "لوحِ ازل",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8166,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

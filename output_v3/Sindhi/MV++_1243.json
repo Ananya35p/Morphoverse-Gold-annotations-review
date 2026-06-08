@@ -1,0 +1,170 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1243",
+  "poem_title": "Pyar Ja Geet",
+  "language": "Sindhi",
+  "original_poem": "پيار جا گيت،  \nجيڪي تون مون لاءِ ڳائيندين،  \nتنهنجون اکيون مون ڏانهن،  \nڳجهو پيار جو پيغام ڏينديون.\n\nسورج جي ڪرڻن جهڙو،  \nاسان جو پيار جڳ مڳ ڪندو،  \nپکيئڙا پاڻ ۾ ڳالهائيندا،  \n۽ آسمان تي تارا کلندا.",
+  "translated_poem": "Songs of love,  \nThat you will sing for me,  \nYour eyes towards me,  \nSending a secret message of love.\n\nLike the rays of the sun,  \nOur love will sparkle,  \nBirds will talk to each other,  \nAnd the stars will laugh in the sky.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9209,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "پيار جا گيت،",
+          "جيڪي تون مون لاءِ ڳائيندين،",
+          "تنهنجون اکيون مون ڏانهن،",
+          "ڳجهو پيار جو پيغام ڏينديون."
+        ],
+        "translated_lines": [
+          "Songs of love,",
+          "That you will sing for me,",
+          "Your eyes towards me,",
+          "Sending a secret message of love."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "سورج جي ڪرڻن جهڙو،",
+          "اسان جو پيار جڳ مڳ ڪندو،",
+          "پکيئڙا پاڻ ۾ ڳالهائيندا،",
+          "۽ آسمان تي تارا کلندا."
+        ],
+        "translated_lines": [
+          "Like the rays of the sun,",
+          "Our love will sparkle,",
+          "Birds will talk to each other,",
+          "And the stars will laugh in the sky."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "expressing romantic joy",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "پيار جا گيت،",
+          "جيڪي تون مون لاءِ ڳائيندين،",
+          "تنهنجون اکيون مون ڏانهن،",
+          "ڳجهو پيار جو پيغام ڏينديون."
+        ],
+        "translated_lines": [
+          "Songs of love,",
+          "That you will sing for me,",
+          "Your eyes towards me,",
+          "Sending a secret message of love."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "پيار جا گيت",
+            "abstract_meaning": "Expressions of romantic devotion"
+          },
+          {
+            "source_term": "ڳجهو پيار جو پيغام",
+            "abstract_meaning": "Silent communication of deep emotion"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "سورج جي ڪرڻن جهڙو،",
+          "اسان جو پيار جڳ مڳ ڪندو،",
+          "پکيئڙا پاڻ ۾ ڳالهائيندا،",
+          "۽ آسمان تي تارا کلندا."
+        ],
+        "translated_lines": [
+          "Like the rays of the sun,",
+          "Our love will sparkle,",
+          "Birds will talk to each other,",
+          "And the stars will laugh in the sky."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "آسمان تي تارا کلندا",
+            "abstract_meaning": "Universal joy and celebration"
+          },
+          {
+            "source_term": "پکيئڙا پاڻ ۾ ڳالهائيندا",
+            "abstract_meaning": "Harmony and shared happiness"
+          },
+          {
+            "source_term": "اسان جو پيار جڳ مڳ ڪندو",
+            "abstract_meaning": "Radiance and beauty of love"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "گيت",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سورج",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "پيار",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9209,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 5,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0046",
+  "poem_title": "Sukoon",
+  "language": "Dogri",
+  "original_poem": "सुकून\nसुकून कहां है ओ सजना,\nज़िंदगी दे रस्ते विच\nमिट्टी दे खुशबू दी तरह,\nसावन दे बादलां वांग।",
+  "translated_poem": "Peace\nWhere is peace, dear?\nOn the paths of life,\nLike the scent of soil,\nLike the monsoon clouds.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9681,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "सुकून",
+          "सुकून कहां है ओ सजना,",
+          "ज़िंदगी दे रस्ते विच",
+          "मिट्टी दे खुशबू दी तरह,",
+          "सावन दे बादलां वांग।"
+        ],
+        "translated_lines": [
+          "Peace",
+          "Where is peace, dear?",
+          "On the paths of life,",
+          "Like the scent of soil,",
+          "Like the monsoon clouds."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "Searching for peace",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "सुकून",
+          "सुकून कहां है ओ सजना,",
+          "ज़िंदगी दे रस्ते विच",
+          "मिट्टी दे खुशबू दी तरह,",
+          "सावन दे बादलां वांग।"
+        ],
+        "translated_lines": [
+          "Peace",
+          "Where is peace, dear?",
+          "On the paths of life,",
+          "Like the scent of soil,",
+          "Like the monsoon clouds."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ज़िंदगी दे रस्ते विच",
+            "abstract_meaning": "The journey of human life"
+          },
+          {
+            "source_term": "मिट्टी दे खुशबू",
+            "abstract_meaning": "Natural, grounding comfort"
+          },
+          {
+            "source_term": "सावन दे बादलां",
+            "abstract_meaning": "Fleeting, refreshing relief"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "सुकून",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सावन",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9681,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

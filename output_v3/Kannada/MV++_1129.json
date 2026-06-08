@@ -1,0 +1,182 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1129",
+  "poem_title": "Huttidare Kannada Naadu",
+  "language": "Kannada",
+  "original_poem": "ಹುಟ್ಟಿದಾರೆ ಕನ್ನಡ ನಾಡು  \nನಾವೆಲ್ಲ ಹೆಮ್ಮೆ ಪಡುವ ತೀರ್ಥ  \nಮಣ್ಣಲ್ಲಿ ನಿಂತುದು ಅರಿವು,  \nಅಯ್ಯನ ಮೋಡಲಗಳಲ್ಲಿ ಮಾತು.  \n\nಎಲ್ಲರಿಗೂ ತೋರುವಂತಿದೆ  \nಇಲ್ಲಿ ಹುಟ್ಟಿದ ಕನ್ನಡವೇನೋ,  \nಅರಸಿರು ಪಲವೇ, ನಾವು  \nಹೀಗೆ ಹಂಬಲಿಸುತ್ತೇವೆ.",
+  "translated_poem": "Born is the land of Kannada,  \nWhere we all take pride,  \nStanding on the soil is wisdom,  \nWords in the clouds of the father.  \n\nIt is visible to all,  \nWhat is born here is Kannada,  \nSweet as nectar, we  \nLong for it in this way.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 2,
+    "source_stanza_count": 2,
+    "translated_stanza_count": 2,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8882,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಹುಟ್ಟಿದಾರೆ ಕನ್ನಡ ನಾಡು",
+          "ನಾವೆಲ್ಲ ಹೆಮ್ಮೆ ಪಡುವ ತೀರ್ಥ",
+          "ಮಣ್ಣಲ್ಲಿ ನಿಂತುದು ಅರಿವು,",
+          "ಅಯ್ಯನ ಮೋಡಲಗಳಲ್ಲಿ ಮಾತು."
+        ],
+        "translated_lines": [
+          "Born is the land of Kannada,",
+          "Where we all take pride,",
+          "Standing on the soil is wisdom,",
+          "Words in the clouds of the father."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಎಲ್ಲರಿಗೂ ತೋರುವಂತಿದೆ",
+          "ಇಲ್ಲಿ ಹುಟ್ಟಿದ ಕನ್ನಡವೇನೋ,",
+          "ಅರಸಿರು ಪಲವೇ, ನಾವು",
+          "ಹೀಗೆ ಹಂಬಲಿಸುತ್ತೇವೆ."
+        ],
+        "translated_lines": [
+          "It is visible to all,",
+          "What is born here is Kannada,",
+          "Sweet as nectar, we",
+          "Long for it in this way."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Pride in Kannada land",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಹುಟ್ಟಿದಾರೆ ಕನ್ನಡ ನಾಡು",
+          "ನಾವೆಲ್ಲ ಹೆಮ್ಮೆ ಪಡುವ ತೀರ್ಥ",
+          "ಮಣ್ಣಲ್ಲಿ ನಿಂತುದು ಅರಿವು,",
+          "ಅಯ್ಯನ ಮೋಡಲಗಳಲ್ಲಿ ಮಾತು."
+        ],
+        "translated_lines": [
+          "Born is the land of Kannada,",
+          "Where we all take pride,",
+          "Standing on the soil is wisdom,",
+          "Words in the clouds of the father."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "Missed sacred meaning of teertha",
+        "metaphor_spans": [
+          {
+            "source_term": "ಹೆಮ್ಮೆ ಪಡುವ ತೀರ್ಥ",
+            "abstract_meaning": "Land as a sacred source"
+          },
+          {
+            "source_term": "ಮಣ್ಣಲ್ಲಿ ನಿಂತುದು ಅರಿವು",
+            "abstract_meaning": "Wisdom rooted in the soil"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "ಎಲ್ಲರಿಗೂ ತೋರುವಂತಿದೆ",
+          "ಇಲ್ಲಿ ಹುಟ್ಟಿದ ಕನ್ನಡವೇನೋ,",
+          "ಅರಸಿರು ಪಲವೇ, ನಾವು",
+          "ಹೀಗೆ ಹಂಬಲಿಸುತ್ತೇವೆ."
+        ],
+        "translated_lines": [
+          "It is visible to all,",
+          "What is born here is Kannada,",
+          "Sweet as nectar, we",
+          "Long for it in this way."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "nectar metaphor absent in source text",
+        "metaphor_spans": [
+          {
+            "source_term": "ಇಲ್ಲಿ ಹುಟ್ಟಿದ ಕನ್ನಡವೇನೋ",
+            "abstract_meaning": "Kannada as a living native entity"
+          },
+          {
+            "source_term": "ಅರಸಿರು ಪಲವೇ",
+            "abstract_meaning": "Changing political leadership over time"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಕನ್ನಡ ನಾಡು",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ತೀರ್ಥ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಅರಿವು",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಅಯ್ಯ",
+        "romanization": "",
+        "category": "DEITY",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಕನ್ನಡ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8882,
+      "source_term_checks": {
+        "entities_total": 5,
+        "entities_dropped": 0,
+        "metaphors_total": 4,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

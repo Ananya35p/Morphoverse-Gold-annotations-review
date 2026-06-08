@@ -1,0 +1,95 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1426",
+  "poem_title": "Malargal Innum",
+  "language": "Tamil",
+  "original_poem": "மலர்கள் இன்னும்,  \nஉன் காதலின் வாசலில்,  \nஎன் மனம் பறவை போல,  \nபேச்சின் ரெஞ்சில் மிதக்கும்!",
+  "translated_poem": "Flowers still,  \nAt the threshold of your love,  \nMy heart, like a bird,  \nFlutters in the realm of conversation!",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8731,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "மலர்கள் இன்னும்,",
+          "உன் காதலின் வாசலில்,",
+          "என் மனம் பறவை போல,",
+          "பேச்சின் ரெஞ்சில் மிதக்கும்!"
+        ],
+        "translated_lines": [
+          "Flowers still,",
+          "At the threshold of your love,",
+          "My heart, like a bird,",
+          "Flutters in the realm of conversation!"
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "mind floating in love",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "மலர்கள் இன்னும்,",
+          "உன் காதலின் வாசலில்,",
+          "என் மனம் பறவை போல,",
+          "பேச்சின் ரெஞ்சில் மிதக்கும்!"
+        ],
+        "translated_lines": [
+          "Flowers still,",
+          "At the threshold of your love,",
+          "My heart, like a bird,",
+          "Flutters in the realm of conversation!"
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "உன் காதலின் வாசலில்",
+            "abstract_meaning": "Love as a physical threshold"
+          },
+          {
+            "source_term": "பேச்சின் ரெஞ்சில் மிதக்கும்",
+            "abstract_meaning": "Thoughts drifting in conversation"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8731,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1190",
+  "poem_title": "Nakoshi",
+  "language": "Marathi",
+  "original_poem": "नकोशी  \nजगण्याच्या उंबरठ्यावर  \nनकोशी जन्मली,  \nउजाडून गेलेला तो काळोख  \nसर्वत्र नाचत राहतोय.",
+  "translated_poem": "Unwanted,  \nBorn at the threshold of life,  \nThe darkness that dawned  \nKeeps dancing  \nEverywhere.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9586,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "नकोशी",
+          "जगण्याच्या उंबरठ्यावर",
+          "नकोशी जन्मली,",
+          "उजाडून गेलेला तो काळोख",
+          "सर्वत्र नाचत राहतोय."
+        ],
+        "translated_lines": [
+          "Unwanted,",
+          "Born at the threshold of life,",
+          "The darkness that dawned",
+          "Keeps dancing",
+          "Everywhere."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "lament",
+    "emotional_arc": "Unwanted girl child born",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "नकोशी",
+          "जगण्याच्या उंबरठ्यावर",
+          "नकोशी जन्मली,",
+          "उजाडून गेलेला तो काळोख",
+          "सर्वत्र नाचत राहतोय."
+        ],
+        "translated_lines": [
+          "Unwanted,",
+          "Born at the threshold of life,",
+          "The darkness that dawned",
+          "Keeps dancing",
+          "Everywhere."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "misses the repetition of Nakoshi",
+        "metaphor_spans": [
+          {
+            "source_term": "जगण्याच्या उंबरठ्यावर",
+            "abstract_meaning": "The beginning of existence"
+          },
+          {
+            "source_term": "उजाडून गेलेला तो काळोख",
+            "abstract_meaning": "Persistent and visible suffering"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "नकोशी",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9586,
+      "source_term_checks": {
+        "entities_total": 1,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1433",
+  "poem_title": "Vasanta Rutu",
+  "language": "Telugu",
+  "original_poem": "వసంత ఋతువు వచ్చె,\nముగ్గురిపిల్లల నడుమ\nమల్లెలు విరియ వేలు వెళ్ళియ, \nవెన్నెలవెలుగు జారె,\nరెండు కళ్లు వెన్నెలవెలుగునొలకలె\nనింగి నిలుపును తాకి, \nపచ్చని అడవి సవాలు వేస్తే.",
+  "translated_poem": "The season of spring arrives,\nAmong three playful children\nThe jasmine blooms and the breeze sways, \nThe moonlight spreads softly,\nTwo eyes glow with the light of the moon,\nReaching to touch the sky, \nThe green forest throws a challenge.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.814,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "వసంత ఋతువు వచ్చె,",
+          "ముగ్గురిపిల్లల నడుమ",
+          "మల్లెలు విరియ వేలు వెళ్ళియ,",
+          "వెన్నెలవెలుగు జారె,",
+          "రెండు కళ్లు వెన్నెలవెలుగునొలకలె",
+          "నింగి నిలుపును తాకి,",
+          "పచ్చని అడవి సవాలు వేస్తే."
+        ],
+        "translated_lines": [
+          "The season of spring arrives,",
+          "Among three playful children",
+          "The jasmine blooms and the breeze sways,",
+          "The moonlight spreads softly,",
+          "Two eyes glow with the light of the moon,",
+          "Reaching to touch the sky,",
+          "The green forest throws a challenge."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Arrival of spring",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 7,
+        "source_lines": [
+          "వసంత ఋతువు వచ్చె,",
+          "ముగ్గురిపిల్లల నడుమ",
+          "మల్లెలు విరియ వేలు వెళ్ళియ,",
+          "వెన్నెలవెలుగు జారె,",
+          "రెండు కళ్లు వెన్నెలవెలుగునొలకలె",
+          "నింగి నిలుపును తాకి,",
+          "పచ్చని అడవి సవాలు వేస్తే."
+        ],
+        "translated_lines": [
+          "The season of spring arrives,",
+          "Among three playful children",
+          "The jasmine blooms and the breeze sways,",
+          "The moonlight spreads softly,",
+          "Two eyes glow with the light of the moon,",
+          "Reaching to touch the sky,",
+          "The green forest throws a challenge."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Misses conditional 'if' in the last line",
+        "metaphor_spans": [
+          {
+            "source_term": "రెండు కళ్లు వెన్నెలవెలుగునొలకలె",
+            "abstract_meaning": "Eyes radiating pure, bright joy"
+          },
+          {
+            "source_term": "నింగి నిలుపును తాకి",
+            "abstract_meaning": "Reaching for immense heights"
+          },
+          {
+            "source_term": "పచ్చని అడవి సవాలు వేస్తే",
+            "abstract_meaning": "Nature's vibrant, demanding life"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.814,
+      "source_term_checks": {
+        "entities_total": 0,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

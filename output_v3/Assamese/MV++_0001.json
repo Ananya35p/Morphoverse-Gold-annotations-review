@@ -1,0 +1,116 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0001",
+  "poem_title": "O Mur Apunar Desh",
+  "language": "Assamese",
+  "original_poem": "ও মুর আপোনাৰ দেশ\nও মুর আপোনাৰ দেশ,\nতাত শান্তি আৰু স্নেহ।\nমোৰ হৃদয়ৰ গহীনত\nমোৰ পুৰণি সপোন।",
+  "translated_poem": "O My Native Land\nO my native land,\nThere is peace and love there.\nIn the depths of my heart,\nLie my old dreams.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8766,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ও মুর আপোনাৰ দেশ",
+          "ও মুর আপোনাৰ দেশ,",
+          "তাত শান্তি আৰু স্নেহ।",
+          "মোৰ হৃদয়ৰ গহীনত",
+          "মোৰ পুৰণি সপোন।"
+        ],
+        "translated_lines": [
+          "O My Native Land",
+          "O my native land,",
+          "There is peace and love there.",
+          "In the depths of my heart,",
+          "Lie my old dreams."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "devotional",
+    "emotional_arc": "revering the motherland",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 5,
+        "source_lines": [
+          "ও মুর আপোনাৰ দেশ",
+          "ও মুর আপোনাৰ দেশ,",
+          "তাত শান্তি আৰু স্নেহ।",
+          "মোৰ হৃদয়ৰ গহীনত",
+          "মোৰ পুৰণি সপোন।"
+        ],
+        "translated_lines": [
+          "O My Native Land",
+          "O my native land,",
+          "There is peace and love there.",
+          "In the depths of my heart,",
+          "Lie my old dreams."
+        ],
+        "emotion": "devotion",
+        "tone": "declaration",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "হৃদয়ৰ গহীনত",
+            "abstract_meaning": "Deepest emotional core"
+          },
+          {
+            "source_term": "পুৰণি সপোন",
+            "abstract_meaning": "Long-held national aspirations"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ও মুর আপোনাৰ দেশ",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "শান্তি",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8766,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

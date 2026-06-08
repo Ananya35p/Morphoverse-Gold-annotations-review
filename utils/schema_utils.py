@@ -39,6 +39,8 @@ ALLOWED_EMOTIONS = [
 ]
 
 REVIEW_ACTIONS = ["keep", "modify", "remove", "add"]
+# Existing LLM rows: reviewers may keep, modify, or remove — not re-add.
+REVIEW_ACTIONS_EXISTING = ["keep", "modify", "remove"]
 REVIEW_DECISIONS = [
     "approved",
     "approved_with_corrections",

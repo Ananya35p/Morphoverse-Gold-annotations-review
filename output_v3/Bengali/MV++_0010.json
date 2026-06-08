@@ -1,0 +1,324 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0010",
+  "poem_title": "Aaj Nover Sukh",
+  "language": "Bengali",
+  "original_poem": "আজ নবের সুখ,\nবাতাসে বহে।\nমনেতে আশা,\nনব উদয়েতে আসে।\n \nহৃদয়ে গুনগুন,\nচোখে আনন্দ।\nনব জগতের সুখে,\nআমি উঠে দেখি আনন্দ।\n\nআকাশে নীলাভ, \nপৃথিবীতে সোনালী।\nআমি চাই, \nঅন্তহীন সুখে হর্ষে।\n\nতুমি আজকে আমার,\nএমনকি পাশে থাকো।\nভালোবাসা দিয়ে,\nআমার হৃদয়ে থাকো।\n\nআমার জীবন হলো,\nনবের শুরু।\nআমি তোমাকে চাই,\nসাথে আমার যুগল।",
+  "translated_poem": "Today is the happiness of a new dawn,\nBlowing in the breeze.\nHope in the heart,\nWith the new sunrise comes.\n\nA humming in the heart,\nJoy in the eyes.\nIn the bliss of the new world,\nI rise and see the joy.\n\nIn the sky is blue,\nOn earth is gold.\nI wish for,\nEndless happiness and cheer.\n\nYou are with me today,\nEven standing by my side.\nWith love,\nStay in my heart.\n\nMy life has become,\nThe beginning of a new.\nI want you,\nBy my side, my love.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.81,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "আজ নবের সুখ,",
+          "বাতাসে বহে।",
+          "মনেতে আশা,",
+          "নব উদয়েতে আসে।"
+        ],
+        "translated_lines": [
+          "Today is the happiness of a new dawn,",
+          "Blowing in the breeze.",
+          "Hope in the heart,",
+          "With the new sunrise comes."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "হৃদয়ে গুনগুন,",
+          "চোখে আনন্দ।",
+          "নব জগতের সুখে,",
+          "আমি উঠে দেখি আনন্দ।"
+        ],
+        "translated_lines": [
+          "A humming in the heart,",
+          "Joy in the eyes.",
+          "In the bliss of the new world,",
+          "I rise and see the joy."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "আকাশে নীলাভ,",
+          "পৃথিবীতে সোনালী।",
+          "আমি চাই,",
+          "অন্তহীন সুখে হর্ষে।"
+        ],
+        "translated_lines": [
+          "In the sky is blue,",
+          "On earth is gold.",
+          "I wish for,",
+          "Endless happiness and cheer."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "তুমি আজকে আমার,",
+          "এমনকি পাশে থাকো।",
+          "ভালোবাসা দিয়ে,",
+          "আমার হৃদয়ে থাকো।"
+        ],
+        "translated_lines": [
+          "You are with me today,",
+          "Even standing by my side.",
+          "With love,",
+          "Stay in my heart."
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "আমার জীবন হলো,",
+          "নবের শুরু।",
+          "আমি তোমাকে চাই,",
+          "সাথে আমার যুগল।"
+        ],
+        "translated_lines": [
+          "My life has become,",
+          "The beginning of a new.",
+          "I want you,",
+          "By my side, my love."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Joyful new beginnings",
+    "translation_fidelity_score": 0.8,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "আজ নবের সুখ,",
+          "বাতাসে বহে।",
+          "মনেতে আশা,",
+          "নব উদয়েতে আসে।"
+        ],
+        "translated_lines": [
+          "Today is the happiness of a new dawn,",
+          "Blowing in the breeze.",
+          "Hope in the heart,",
+          "With the new sunrise comes."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "বাতাসে বহে",
+            "abstract_meaning": "Pervasive atmosphere of happiness"
+          },
+          {
+            "source_term": "নব উদয়েতে",
+            "abstract_meaning": "Symbol of a fresh beginning"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "হৃদয়ে গুনগুন,",
+          "চোখে আনন্দ।",
+          "নব জগতের সুখে,",
+          "আমি উঠে দেখি আনন্দ।"
+        ],
+        "translated_lines": [
+          "A humming in the heart,",
+          "Joy in the eyes.",
+          "In the bliss of the new world,",
+          "I rise and see the joy."
+        ],
+        "emotion": "celebration",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "হৃদয়ে গুনগুন",
+            "abstract_meaning": "Inner feeling of secret joy"
+          },
+          {
+            "source_term": "নব জগতের সুখে",
+            "abstract_meaning": "Joy of a fresh beginning"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "আকাশে নীলাভ,",
+          "পৃথিবীতে সোনালী।",
+          "আমি চাই,",
+          "অন্তহীন সুখে হর্ষে।"
+        ],
+        "translated_lines": [
+          "In the sky is blue,",
+          "On earth is gold.",
+          "I wish for,",
+          "Endless happiness and cheer."
+        ],
+        "emotion": "longing",
+        "tone": "prayer",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "আকাশে নীলাভ",
+            "abstract_meaning": "Symbolizes tranquility and infinite peace"
+          },
+          {
+            "source_term": "পৃথিবীতে সোনালী",
+            "abstract_meaning": "Represents prosperity and radiant abundance"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "তুমি আজকে আমার,",
+          "এমনকি পাশে থাকো।",
+          "ভালোবাসা দিয়ে,",
+          "আমার হৃদয়ে থাকো।"
+        ],
+        "translated_lines": [
+          "You are with me today,",
+          "Even standing by my side.",
+          "With love,",
+          "Stay in my heart."
+        ],
+        "emotion": "devotion",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Lost 'mine' (amar), translated as 'with me'",
+        "metaphor_spans": [
+          {
+            "source_term": "আমার হৃদয়ে থাকো",
+            "abstract_meaning": "Emotional intimacy and constant remembrance"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "আমার জীবন হলো,",
+          "নবের শুরু।",
+          "আমি তোমাকে চাই,",
+          "সাথে আমার যুগল।"
+        ],
+        "translated_lines": [
+          "My life has become,",
+          "The beginning of a new.",
+          "I want you,",
+          "By my side, my love."
+        ],
+        "emotion": "longing",
+        "tone": "declaration",
+        "translation_quality": "partial",
+        "loss_note": "translates jugol (couple) as my love",
+        "metaphor_spans": [
+          {
+            "source_term": "নবের শুরু",
+            "abstract_meaning": "A fresh start or rebirth"
+          },
+          {
+            "source_term": "যুগল",
+            "abstract_meaning": "Symbolic of union or completeness"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "নবের",
+        "romanization": "",
+        "category": "FESTIVAL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "নব উদয়",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "আনন্দ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "আনন্দ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ভালোবাসা",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "যুগল",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 5,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.81,
+      "source_term_checks": {
+        "entities_total": 6,
+        "entities_dropped": 0,
+        "metaphors_total": 9,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1238",
+  "poem_title": "Santhal Rebellion",
+  "language": "Santhali",
+  "original_poem": "कब तक सहें हम,  \nधैर्य की सीमा है,  \nहम संताल हैं,  \nहमारा जज्बा देखो।\n\nहमारी ज़मीन पर,  \nकब्जा करने वालों,  \nहम उठ खड़े हुए हैं,  \nअब छूने दो हमें।\n\nरक्त का रंग है,  \nज़मीन की मिट्टी से,  \nहमारे हक की लड़ाई,  \nसंग्राम छेड़ेगी।\n\nधड़कता है दिल,  \nसंघर्ष की राह पर,  \nसंताल की आवाज़,  \nगूंजेगी सदा।\n\nआज़ादी का सपना,  \nहम सबका है अधिकार,  \nसंताल विद्रोह का ये,  \nकिसी से नहीं होगा माफ़।",
+  "translated_poem": "How long shall we endure,  \nPatience has its limits,  \nWe are Santhals,  \nWitness our spirit.\n\nOn our land,  \nThose who seize,  \nWe have risen,  \nLet us now be free.\n\nThe color of blood,  \nIs from the soil,  \nOur fight for rights,  \nWill raise the coil.\n\nA heartbeat strong,  \nOn the path of strife,  \nThe Santhal voice,  \nWill echo for life.\n\nThe dream of freedom,  \nIs our rightful claim,  \nThis Santhal rebellion,  \nShall never be in vain.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 5,
+    "source_stanza_count": 5,
+    "translated_stanza_count": 5,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8941,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "कब तक सहें हम,",
+          "धैर्य की सीमा है,",
+          "हम संताल हैं,",
+          "हमारा जज्बा देखो।"
+        ],
+        "translated_lines": [
+          "How long shall we endure,",
+          "Patience has its limits,",
+          "We are Santhals,",
+          "Witness our spirit."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "हमारी ज़मीन पर,",
+          "कब्जा करने वालों,",
+          "हम उठ खड़े हुए हैं,",
+          "अब छूने दो हमें।"
+        ],
+        "translated_lines": [
+          "On our land,",
+          "Those who seize,",
+          "We have risen,",
+          "Let us now be free."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "रक्त का रंग है,",
+          "ज़मीन की मिट्टी से,",
+          "हमारे हक की लड़ाई,",
+          "संग्राम छेड़ेगी।"
+        ],
+        "translated_lines": [
+          "The color of blood,",
+          "Is from the soil,",
+          "Our fight for rights,",
+          "Will raise the coil."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "धड़कता है दिल,",
+          "संघर्ष की राह पर,",
+          "संताल की आवाज़,",
+          "गूंजेगी सदा।"
+        ],
+        "translated_lines": [
+          "A heartbeat strong,",
+          "On the path of strife,",
+          "The Santhal voice,",
+          "Will echo for life."
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "आज़ादी का सपना,",
+          "हम सबका है अधिकार,",
+          "संताल विद्रोह का ये,",
+          "किसी से नहीं होगा माफ़।"
+        ],
+        "translated_lines": [
+          "The dream of freedom,",
+          "Is our rightful claim,",
+          "This Santhal rebellion,",
+          "Shall never be in vain."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "declarative",
+    "emotional_arc": "defiant call to rebellion",
+    "translation_fidelity_score": 0.7,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "कब तक सहें हम,",
+          "धैर्य की सीमा है,",
+          "हम संताल हैं,",
+          "हमारा जज्बा देखो।"
+        ],
+        "translated_lines": [
+          "How long shall we endure,",
+          "Patience has its limits,",
+          "We are Santhals,",
+          "Witness our spirit."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "धैर्य की सीमा",
+            "abstract_meaning": "Reaching the limit of endurance"
+          },
+          {
+            "source_term": "जज्बा",
+            "abstract_meaning": "Symbolic of collective resilience"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 4,
+        "source_lines": [
+          "हमारी ज़मीन पर,",
+          "कब्जा करने वालों,",
+          "हम उठ खड़े हुए हैं,",
+          "अब छूने दो हमें।"
+        ],
+        "translated_lines": [
+          "On our land,",
+          "Those who seize,",
+          "We have risen,",
+          "Let us now be free."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "partial",
+        "loss_note": "literal meaning of touch is lost",
+        "metaphor_spans": [
+          {
+            "source_term": "हम उठ खड़े हुए हैं",
+            "abstract_meaning": "Resistance and collective awakening"
+          },
+          {
+            "source_term": "अब छूने दो हमें",
+            "abstract_meaning": "Reclaiming agency and connection"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 4,
+        "source_lines": [
+          "रक्त का रंग है,",
+          "ज़मीन की मिट्टी से,",
+          "हमारे हक की लड़ाई,",
+          "संग्राम छेड़ेगी।"
+        ],
+        "translated_lines": [
+          "The color of blood,",
+          "Is from the soil,",
+          "Our fight for rights,",
+          "Will raise the coil."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "partial",
+        "loss_note": "loses the literal meaning of waging a war",
+        "metaphor_spans": [
+          {
+            "source_term": "रक्त का रंग",
+            "abstract_meaning": "Symbolizes sacrifice and revolutionary passion"
+          },
+          {
+            "source_term": "ज़मीन की मिट्टी",
+            "abstract_meaning": "Represents deep connection to land"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 4,
+        "source_lines": [
+          "धड़कता है दिल,",
+          "संघर्ष की राह पर,",
+          "संताल की आवाज़,",
+          "गूंजेगी सदा।"
+        ],
+        "translated_lines": [
+          "A heartbeat strong,",
+          "On the path of strife,",
+          "The Santhal voice,",
+          "Will echo for life."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "धड़कता है दिल",
+            "abstract_meaning": "Vitality of the movement"
+          },
+          {
+            "source_term": "संघर्ष की राह",
+            "abstract_meaning": "The journey of resistance"
+          },
+          {
+            "source_term": "संताल की आवाज़",
+            "abstract_meaning": "Symbol of collective identity"
+          }
+        ]
+      },
+      {
+        "stanza_index": 5,
+        "line_count": 4,
+        "source_lines": [
+          "आज़ादी का सपना,",
+          "हम सबका है अधिकार,",
+          "संताल विद्रोह का ये,",
+          "किसी से नहीं होगा माफ़।"
+        ],
+        "translated_lines": [
+          "The dream of freedom,",
+          "Is our rightful claim,",
+          "This Santhal rebellion,",
+          "Shall never be in vain."
+        ],
+        "emotion": "resilience",
+        "tone": "defiance",
+        "translation_quality": "partial",
+        "loss_note": "Changes unforgiven to not in vain",
+        "metaphor_spans": [
+          {
+            "source_term": "आज़ादी का सपना",
+            "abstract_meaning": "Collective hope for liberation"
+          },
+          {
+            "source_term": "किसी से नहीं होगा माफ़",
+            "abstract_meaning": "Uncompromising demand for justice"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "संताल",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ज़मीन की मिट्टी",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "संताल",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "संताल विद्रोह",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 5,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8941,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 11,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

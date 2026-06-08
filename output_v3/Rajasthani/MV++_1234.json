@@ -1,0 +1,124 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1234",
+  "poem_title": "Kesariya Balam",
+  "language": "Rajasthani",
+  "original_poem": "केसरिया बालम, पधारो म्हारे देश,  \nमरुधरा री धरती पर, प्रेम रा फेरो।  \nप्यार री पावन बण, रेती री माटी,  \nबांध्यो म्हारी कलाई पर सुहाग री रेगो।",
+  "translated_poem": "Beloved in saffron, come to my land,  \nTo Marudhara's soil, where love makes its stand.  \nA holy bond in sands of gold,  \nA bracelet of love, forever we hold.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9315,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "केसरिया बालम, पधारो म्हारे देश,",
+          "मरुधरा री धरती पर, प्रेम रा फेरो।",
+          "प्यार री पावन बण, रेती री माटी,",
+          "बांध्यो म्हारी कलाई पर सुहाग री रेगो।"
+        ],
+        "translated_lines": [
+          "Beloved in saffron, come to my land,",
+          "To Marudhara's soil, where love makes its stand.",
+          "A holy bond in sands of gold,",
+          "A bracelet of love, forever we hold."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Welcoming the beloved",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "केसरिया बालम, पधारो म्हारे देश,",
+          "मरुधरा री धरती पर, प्रेम रा फेरो।",
+          "प्यार री पावन बण, रेती री माटी,",
+          "बांध्यो म्हारी कलाई पर सुहाग री रेगो।"
+        ],
+        "translated_lines": [
+          "Beloved in saffron, come to my land,",
+          "To Marudhara's soil, where love makes its stand.",
+          "A holy bond in sands of gold,",
+          "A bracelet of love, forever we hold."
+        ],
+        "emotion": "longing",
+        "tone": "tenderness",
+        "translation_quality": "partial",
+        "loss_note": "Loses cultural nuance of suhag (marital bliss)",
+        "metaphor_spans": [
+          {
+            "source_term": "प्रेम रा फेरो",
+            "abstract_meaning": "Sacred bond of love"
+          },
+          {
+            "source_term": "सुहाग री रेगो",
+            "abstract_meaning": "Mark of marital destiny"
+          },
+          {
+            "source_term": "केसरिया बालम",
+            "abstract_meaning": "Noble and brave beloved"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "केसरिया बालम",
+        "romanization": "",
+        "category": "MUSICAL_TRADITION",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "मरुधरा",
+        "romanization": "",
+        "category": "REGIONAL_SYMBOL",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "सुहाग",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9315,
+      "source_term_checks": {
+        "entities_total": 3,
+        "entities_dropped": 0,
+        "metaphors_total": 3,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

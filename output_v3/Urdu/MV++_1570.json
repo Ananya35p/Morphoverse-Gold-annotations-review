@@ -1,0 +1,242 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_1570",
+  "poem_title": "Kaifiyaat",
+  "language": "Urdu",
+  "original_poem": "تاروں کی روشنی میں چمکتے ہیں خواب میرے\nہر سانس میں اک خواب، دلکش جواب میرے\n\nخاموشیوں کا شور، کچھ کہنے کو تیار ہے\nلب بستہ کہانی ہے، خاموش آداب میرے\n\nوقت کے قید خانے میں قید ہو گئے ہیں ہم\nہر لمحہ جیسے ایک زخم، بے حساب میرے\n\nکبھی ہنسی، کبھی آنسو، کبھی سکوت کا رنگ\nرنگ برنگی دنیا کے عجیب و غریب خواب میرے",
+  "translated_poem": "In the light of the stars, my dreams gleam,\nIn every breath, a dream, a captivating theme.\n\nA tumult of silence, eager to say,\nLips sealed, yet a story, in my quiet way.\n\nImprisoned in the dungeon of time, I stay,\nEach moment, like a wound, unfathomable sway.\n\nSometimes laughter, sometimes tears, sometimes calm,\nA world of colors, strange dreams that charm.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 4,
+    "source_stanza_count": 4,
+    "translated_stanza_count": 4,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.9007,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "تاروں کی روشنی میں چمکتے ہیں خواب میرے",
+          "ہر سانس میں اک خواب، دلکش جواب میرے"
+        ],
+        "translated_lines": [
+          "In the light of the stars, my dreams gleam,",
+          "In every breath, a dream, a captivating theme."
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "خاموشیوں کا شور، کچھ کہنے کو تیار ہے",
+          "لب بستہ کہانی ہے، خاموش آداب میرے"
+        ],
+        "translated_lines": [
+          "A tumult of silence, eager to say,",
+          "Lips sealed, yet a story, in my quiet way."
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "وقت کے قید خانے میں قید ہو گئے ہیں ہم",
+          "ہر لمحہ جیسے ایک زخم، بے حساب میرے"
+        ],
+        "translated_lines": [
+          "Imprisoned in the dungeon of time, I stay,",
+          "Each moment, like a wound, unfathomable sway."
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "کبھی ہنسی، کبھی آنسو، کبھی سکوت کا رنگ",
+          "رنگ برنگی دنیا کے عجیب و غریب خواب میرے"
+        ],
+        "translated_lines": [
+          "Sometimes laughter, sometimes tears, sometimes calm,",
+          "A world of colors, strange dreams that charm."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "reflective",
+    "emotional_arc": "reflecting on life's dreams",
+    "translation_fidelity_score": 0.5,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 2,
+        "source_lines": [
+          "تاروں کی روشنی میں چمکتے ہیں خواب میرے",
+          "ہر سانس میں اک خواب، دلکش جواب میرے"
+        ],
+        "translated_lines": [
+          "In the light of the stars, my dreams gleam,",
+          "In every breath, a dream, a captivating theme."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "Translates 'jawab' (answer) as 'theme' for rhyme",
+        "metaphor_spans": [
+          {
+            "source_term": "تاروں کی روشنی",
+            "abstract_meaning": "hope or celestial guidance"
+          },
+          {
+            "source_term": "ہر سانس میں اک خواب",
+            "abstract_meaning": "dreams as essential as life"
+          }
+        ]
+      },
+      {
+        "stanza_index": 2,
+        "line_count": 2,
+        "source_lines": [
+          "خاموشیوں کا شور، کچھ کہنے کو تیار ہے",
+          "لب بستہ کہانی ہے، خاموش آداب میرے"
+        ],
+        "translated_lines": [
+          "A tumult of silence, eager to say,",
+          "Lips sealed, yet a story, in my quiet way."
+        ],
+        "emotion": "longing",
+        "tone": "whisper",
+        "translation_quality": "partial",
+        "loss_note": "misses the meaning of aadab as respects",
+        "metaphor_spans": [
+          {
+            "source_term": "خاموشیوں کا شور",
+            "abstract_meaning": "Internal turmoil or unexpressed thoughts"
+          },
+          {
+            "source_term": "لب بستہ کہانی",
+            "abstract_meaning": "An untold or suppressed life story"
+          },
+          {
+            "source_term": "خاموش آداب",
+            "abstract_meaning": "Respectful restraint or unspoken submission"
+          }
+        ]
+      },
+      {
+        "stanza_index": 3,
+        "line_count": 2,
+        "source_lines": [
+          "وقت کے قید خانے میں قید ہو گئے ہیں ہم",
+          "ہر لمحہ جیسے ایک زخم، بے حساب میرے"
+        ],
+        "translated_lines": [
+          "Imprisoned in the dungeon of time, I stay,",
+          "Each moment, like a wound, unfathomable sway."
+        ],
+        "emotion": "grief",
+        "tone": "lament",
+        "translation_quality": "partial",
+        "loss_note": "Added 'sway' for rhyme, lost 'countless'",
+        "metaphor_spans": [
+          {
+            "source_term": "وقت کے قید خانے",
+            "abstract_meaning": "Time as a restrictive prison"
+          },
+          {
+            "source_term": "ہر لمحہ جیسے ایک زخم",
+            "abstract_meaning": "Moments causing continuous emotional pain"
+          }
+        ]
+      },
+      {
+        "stanza_index": 4,
+        "line_count": 2,
+        "source_lines": [
+          "کبھی ہنسی، کبھی آنسو، کبھی سکوت کا رنگ",
+          "رنگ برنگی دنیا کے عجیب و غریب خواب میرے"
+        ],
+        "translated_lines": [
+          "Sometimes laughter, sometimes tears, sometimes calm,",
+          "A world of colors, strange dreams that charm."
+        ],
+        "emotion": "peace",
+        "tone": "wonder",
+        "translation_quality": "partial",
+        "loss_note": "lost 'color of silence' and 'my' dreams",
+        "metaphor_spans": [
+          {
+            "source_term": "سکوت کا رنگ",
+            "abstract_meaning": "The atmosphere of stillness"
+          },
+          {
+            "source_term": "رنگ برنگی دنیا",
+            "abstract_meaning": "Diverse experiences of life"
+          },
+          {
+            "source_term": "عجیب و غریب خواب",
+            "abstract_meaning": "Complex human aspirations"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "آداب",
+        "romanization": "",
+        "category": "SOCIAL_CUSTOM",
+        "stanza_index": 2,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "وقت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 3,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "سکوت",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "دنیا",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 4,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.9007,
+      "source_term_checks": {
+        "entities_total": 4,
+        "entities_dropped": 0,
+        "metaphors_total": 10,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "low"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}

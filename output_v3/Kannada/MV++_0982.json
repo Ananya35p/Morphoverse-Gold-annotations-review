@@ -1,0 +1,112 @@
+{
+  "schema_version": 5,
+  "prompt_version": 9,
+  "poem_id": "MV++_0982",
+  "poem_title": "Ganga",
+  "language": "Kannada",
+  "original_poem": "ಗಂಗಾ, ನಿನ್ನ ನದಿಯ ಹರಿವಿನಲ್ಲಿ,  \nಭೂಮಿಯ ಮಡಿಯಲ್ಲಿ,  \nಪಾಲು ಬೀರಿದ ಅನುಭವ,  \nಆನಂದದ ಉಕ್ಕಿ ಹರಿಯುತ್ತದೆ.",
+  "translated_poem": "Ganges, in the flow of your river,  \nIn the folds of the earth,  \nAn experience that nurtures,  \nJoy flows abundantly.",
+  "status": "completed",
+  "model": "gemini-chunked",
+  "needs_human_review": false,
+  "preprocessing": {
+    "stanza_count": 1,
+    "source_stanza_count": 1,
+    "translated_stanza_count": 1,
+    "alignment_status": "aligned",
+    "alignment_confidence": 0.8569,
+    "alignment_note": "Stanza counts match and alignment confidence is high.",
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಗಂಗಾ, ನಿನ್ನ ನದಿಯ ಹರಿವಿನಲ್ಲಿ,",
+          "ಭೂಮಿಯ ಮಡಿಯಲ್ಲಿ,",
+          "ಪಾಲು ಬೀರಿದ ಅನುಭವ,",
+          "ಆನಂದದ ಉಕ್ಕಿ ಹರಿಯುತ್ತದೆ."
+        ],
+        "translated_lines": [
+          "Ganges, in the flow of your river,",
+          "In the folds of the earth,",
+          "An experience that nurtures,",
+          "Joy flows abundantly."
+        ]
+      }
+    ]
+  },
+  "annotation": {
+    "recitation_style": "celebratory",
+    "emotional_arc": "Overflowing with joy",
+    "translation_fidelity_score": 1.0,
+    "stanzas": [
+      {
+        "stanza_index": 1,
+        "line_count": 4,
+        "source_lines": [
+          "ಗಂಗಾ, ನಿನ್ನ ನದಿಯ ಹರಿವಿನಲ್ಲಿ,",
+          "ಭೂಮಿಯ ಮಡಿಯಲ್ಲಿ,",
+          "ಪಾಲು ಬೀರಿದ ಅನುಭವ,",
+          "ಆನಂದದ ಉಕ್ಕಿ ಹರಿಯುತ್ತದೆ."
+        ],
+        "translated_lines": [
+          "Ganges, in the flow of your river,",
+          "In the folds of the earth,",
+          "An experience that nurtures,",
+          "Joy flows abundantly."
+        ],
+        "emotion": "devotion",
+        "tone": "wonder",
+        "translation_quality": "faithful",
+        "loss_note": "",
+        "metaphor_spans": [
+          {
+            "source_term": "ಭೂಮಿಯ ಮಡಿಯಲ್ಲಿ",
+            "abstract_meaning": "Earth as a nurturing mother"
+          },
+          {
+            "source_term": "ಆನಂದದ ಉಕ್ಕಿ ಹರಿಯುತ್ತದೆ",
+            "abstract_meaning": "Joy as a flowing river"
+          }
+        ]
+      }
+    ],
+    "cultural_entities": [
+      {
+        "term": "ಗಂಗಾ",
+        "romanization": "",
+        "category": "SACRED_RIVER",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      },
+      {
+        "term": "ಆನಂದ",
+        "romanization": "",
+        "category": "DEVOTIONAL_CONCEPT",
+        "stanza_index": 1,
+        "preserved": true,
+        "translation_note": ""
+      }
+    ],
+    "annotation_stats": {
+      "model": "gemini-chunked",
+      "alignment_status": "aligned",
+      "alignment_confidence": 0.8569,
+      "source_term_checks": {
+        "entities_total": 2,
+        "entities_dropped": 0,
+        "metaphors_total": 2,
+        "metaphors_dropped": 0
+      },
+      "low_confidence_stanza_count": 0,
+      "review_item_count": 0,
+      "confidence": "high"
+    }
+  },
+  "review_items": [],
+  "_raw": {
+    "prompt_kind": "chunked",
+    "retry_count": 0
+  }
+}
