@@ -9,6 +9,7 @@ import streamlit as st
 from utils.auth_utils import admin_logout, init_admin_state, require_admin_login
 from utils.io_utils import load_json, make_review_zip
 from utils.reviewer_store import load_all_reviewer_submissions, SUBMISSIONS_DIR
+from utils.display_prefs import get_display_css, init_display_prefs, render_display_controls
 from utils.storage_utils import load_reviews_from_persistent_storage, persistent_storage_label
 
 
@@ -44,7 +45,8 @@ CUSTOM_CSS = """
 .small-muted { color: #4b5563; font-size: 0.88rem; }
 </style>
 """
-st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
+init_display_prefs()
+st.markdown(CUSTOM_CSS + get_display_css(), unsafe_allow_html=True)
 
 
 def load_legacy_reviews() -> List[Dict[str, Any]]:
@@ -170,10 +172,15 @@ summary_df = review_summary_df(reviews)
 
 st.title("MorphoVerse++ Review Admin")
 st.caption(f"Signed in as admin: **{admin_user}**")
-st.caption(f"Reviewer submissions folder: `{SUBMISSIONS_DIR}`")
+st.caption(f"Reviewer submissions folder: `{SUBMISSIONS_DIR}` · Storage: {persistent_storage_label()}")
 
-if storage_message:
-    st.info(storage_message)
+if storage_message and "not configured" in storage_message.lower():
+    st.info(
+        f"{storage_message} Add Supabase secrets and run `supabase/schema.sql` so every reviewer's "
+        "submission is stored permanently (multiple reviewers per poem supported)."
+    )
+elif storage_message:
+    st.success(storage_message)
 
 if not reviews:
     st.warning("No reviewer submissions found yet.")
@@ -185,6 +192,8 @@ if not reviews:
 
 with st.sidebar:
     st.header("Admin")
+    render_display_controls()
+    st.divider()
     if st.button("Sign out", use_container_width=True):
         admin_logout()
         st.rerun()

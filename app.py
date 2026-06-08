@@ -11,7 +11,6 @@ from utils.io_utils import (
     append_audit_log,
     ensure_app_dirs,
     load_raw_poems,
-    load_reviewed_index,
     now_iso,
     review_id,
     resolve_data_dir,
@@ -39,7 +38,12 @@ from utils.schema_utils import (
     REVIEW_DECISIONS,
     REVIEW_STATUS_FILTERS,
 )
-from utils.reviewer_store import load_user_poem_review, save_poem_review
+from utils.reviewer_store import (
+    get_co_reviewers_for_poem,
+    load_user_poem_review,
+    load_user_reviewed_index,
+    save_poem_review,
+)
 from utils.auth_utils import (
     init_auth_state,
     logout,
@@ -55,7 +59,8 @@ from utils.ui_utils import (
     render_top_bar,
     require_language_setup,
 )
-from utils.storage_utils import save_review_to_persistent_storage
+from utils.display_prefs import get_display_css, init_display_prefs, render_display_controls
+from utils.storage_utils import get_supabase_config, persistent_storage_label, save_review_to_persistent_storage
 
 
 st.set_page_config(
@@ -181,7 +186,7 @@ CUSTOM_CSS = """
 }
 </style>
 """
-st.markdown(CUSTOM_CSS + LANGUAGE_UI_CSS, unsafe_allow_html=True)
+st.markdown(CUSTOM_CSS + LANGUAGE_UI_CSS + get_display_css(), unsafe_allow_html=True)
 
 
 def badge(text: str, kind: str = "gray") -> str:
@@ -363,9 +368,10 @@ def poem_option_label(raw: Dict[str, Any], reviewed_index: Dict[str, Dict[str, A
     poem_id = get_poem_id(raw)
     title = get_title(raw)
     short_title = title if len(title) <= 42 else f"{title[:39]}..."
-    status = get_current_review_status(raw, reviewed_index).replace("_", " ")
+    status = get_current_review_status(raw, reviewed_index)
+    you_status = "done" if status not in {"pending_review", "pending"} else "pending"
     agreement = get_agreement(raw) or "n/a"
-    return f"{poem_id} · {short_title} · {status} · {agreement}"
+    return f"{short_title} · {poem_id} · you: {you_status}"
 
 
 def review_action_column(include_add: bool = True) -> st.column_config.SelectboxColumn:
@@ -608,13 +614,14 @@ def df_editor_motif(df: pd.DataFrame, key: str) -> pd.DataFrame:
 
 init_auth_state()
 init_ui_state()
+init_display_prefs()
 logged_in_user = require_login()
 render_instructions_if_needed()
 
 ensure_app_dirs()
 data_dir = resolve_data_dir()
 poems = load_raw_poems(data_dir)
-reviewed_index = load_reviewed_index()
+reviewed_index = load_user_reviewed_index(logged_in_user)
 
 if not data_dir.exists():
     st.error(
@@ -668,7 +675,11 @@ with st.sidebar:
     selected_poem_id = poem_options[selected_label]
 
     st.divider()
+    render_display_controls()
+
+    st.divider()
     st.caption(f"Signed in as **{logged_in_user}**")
+    st.caption(f"Storage: {persistent_storage_label()}")
     if st.button("Review instructions", use_container_width=True):
         st.session_state.show_instructions = True
         st.session_state.instructions_completed = False
@@ -693,10 +704,17 @@ st.markdown(
     + badge(f"Status: {current_review_status}", status_badge_kind(current_review_status)),
     unsafe_allow_html=True,
 )
+co_reviewers = get_co_reviewers_for_poem(poem_id, exclude_username=logged_in_user)
+if co_reviewers:
+    st.caption(
+        f"**{len(co_reviewers)} other reviewer(s)** also submitted this poem: {', '.join(co_reviewers)}. "
+        "Your review is saved separately under your name."
+    )
+
 if reviewed:
-    st.info("You have a saved draft for this poem. Submitting again will update your review.")
+    st.info("You have a saved review for this poem. Submitting again will update your copy only.")
 else:
-    st.caption("Your review will be saved under your name and visible only to admins.")
+    st.caption("Your review will be saved under your name. Other reviewers can review the same poem independently.")
 
 culture_df, metaphor_df, emotion_df, motif_df = load_initial_tables(raw, reviewed)
 
@@ -848,8 +866,12 @@ with st.container():
 
             persistent_ok, persistent_message = save_review_to_persistent_storage(payload, audit_entry)
 
-            st.success("Your review was saved successfully.")
+            st.success(f"Your review for **{poem_id}** was saved under **{logged_in_user}**.")
             if persistent_ok:
-                st.success(persistent_message)
-            elif persistent_message:
-                st.caption(persistent_message)
+                st.success("Saved to database (Supabase). Admins can see all reviewer submissions.")
+            elif get_supabase_config()[0]:
+                st.warning(persistent_message)
+            else:
+                st.caption(
+                    "Saved locally. Configure Supabase in Streamlit secrets for persistent cloud storage."
+                )

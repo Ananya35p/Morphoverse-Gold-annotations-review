@@ -89,4 +89,76 @@ def load_all_reviewer_submissions() -> List[Dict[str, Any]]:
 def load_user_poem_review(username: str, poem_id: str) -> Dict[str, Any] | None:
     poems = load_user_submissions(username).get("poems") or {}
     payload = poems.get(poem_id)
-    return payload if isinstance(payload, dict) else None
+    if isinstance(payload, dict):
+        return payload
+
+    try:
+        from utils.storage_utils import load_review_from_supabase
+
+        remote = load_review_from_supabase(username, poem_id)
+        if isinstance(remote, dict):
+            return remote
+    except Exception:
+        pass
+    return None
+
+
+def load_user_reviewed_index(username: str) -> Dict[str, Dict[str, Any]]:
+    """Poems reviewed by this user only (local JSON + Supabase)."""
+    index: Dict[str, Dict[str, Any]] = {}
+    poems = load_user_submissions(username).get("poems") or {}
+    for poem_id, payload in poems.items():
+        if not isinstance(payload, dict):
+            continue
+        index[str(poem_id)] = {
+            "poem_id": str(poem_id),
+            "review_status": str(payload.get("review_status") or "reviewed"),
+            "reviewed_at": payload.get("reviewed_at", ""),
+        }
+
+    try:
+        from utils.storage_utils import load_reviewer_poem_ids_from_supabase, load_review_from_supabase
+
+        for poem_id in load_reviewer_poem_ids_from_supabase(username):
+            if poem_id in index:
+                continue
+            payload = load_review_from_supabase(username, poem_id)
+            if isinstance(payload, dict):
+                index[poem_id] = {
+                    "poem_id": poem_id,
+                    "review_status": str(payload.get("review_status") or "reviewed"),
+                    "reviewed_at": payload.get("reviewed_at", ""),
+                }
+    except Exception:
+        pass
+    return index
+
+
+def get_co_reviewers_for_poem(poem_id: str, exclude_username: str = "") -> List[str]:
+    """Other reviewers who have already submitted this poem."""
+    exclude = exclude_username.strip().lower()
+    reviewers: List[str] = []
+
+    ensure_submissions_dir()
+    for path in sorted(SUBMISSIONS_DIR.glob("*.json")):
+        try:
+            record = load_json(path)
+        except Exception:
+            continue
+        username = str(record.get("username") or path.stem)
+        if username.lower() == exclude:
+            continue
+        poems = record.get("poems") or {}
+        if poem_id in poems and isinstance(poems[poem_id], dict):
+            reviewers.append(username)
+
+    try:
+        from utils.storage_utils import load_reviewer_ids_for_poem_from_supabase
+
+        for name in load_reviewer_ids_for_poem_from_supabase(poem_id):
+            if name.lower() != exclude and name not in reviewers:
+                reviewers.append(name)
+    except Exception:
+        pass
+
+    return sorted(reviewers)

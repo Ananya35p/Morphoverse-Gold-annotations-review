@@ -111,6 +111,79 @@ def load_remote_review_ids(poem_id: str) -> List[str]:
     return [str(row.get("reviewer_id") or "") for row in rows if isinstance(row, dict)]
 
 
+def load_review_from_supabase(reviewer_id: str, poem_id: str) -> Dict[str, Any] | None:
+    """Load one reviewer's submission for a poem from Supabase."""
+    url, key = get_supabase_config()
+    if not url or not key:
+        return None
+
+    from utils.io_utils import review_id as make_review_id
+
+    rid = make_review_id(poem_id, reviewer_id)
+    try:
+        response = requests.get(
+            f"{url}/rest/v1/reviewed_annotations",
+            headers=_supabase_headers(key),
+            params={"select": "payload", "review_id": f"eq.{rid}"},
+            timeout=15,
+        )
+        response.raise_for_status()
+    except requests.RequestException:
+        return None
+
+    rows = response.json()
+    if not isinstance(rows, list) or not rows:
+        return None
+    payload = rows[0].get("payload") if isinstance(rows[0], dict) else None
+    return payload if isinstance(payload, dict) else None
+
+
+def load_reviewer_ids_for_poem_from_supabase(poem_id: str) -> List[str]:
+    """Return reviewer IDs who submitted this poem in Supabase."""
+    url, key = get_supabase_config()
+    if not url or not key:
+        return []
+
+    try:
+        response = requests.get(
+            f"{url}/rest/v1/reviewed_annotations",
+            headers=_supabase_headers(key),
+            params={"select": "reviewer_id", "poem_id": f"eq.{poem_id}"},
+            timeout=15,
+        )
+        response.raise_for_status()
+    except requests.RequestException:
+        return []
+
+    rows = response.json()
+    if not isinstance(rows, list):
+        return []
+    return [str(row.get("reviewer_id") or "") for row in rows if isinstance(row, dict) and row.get("reviewer_id")]
+
+
+def load_reviewer_poem_ids_from_supabase(reviewer_id: str) -> List[str]:
+    """Return poem IDs this reviewer has submitted in Supabase."""
+    url, key = get_supabase_config()
+    if not url or not key:
+        return []
+
+    try:
+        response = requests.get(
+            f"{url}/rest/v1/reviewed_annotations",
+            headers=_supabase_headers(key),
+            params={"select": "poem_id", "reviewer_id": f"eq.{reviewer_id}"},
+            timeout=15,
+        )
+        response.raise_for_status()
+    except requests.RequestException:
+        return []
+
+    rows = response.json()
+    if not isinstance(rows, list):
+        return []
+    return [str(row.get("poem_id") or "") for row in rows if isinstance(row, dict) and row.get("poem_id")]
+
+
 def load_reviews_from_persistent_storage() -> Tuple[List[Dict[str, Any]], str]:
     """Load full review payloads from Supabase when configured."""
     url, key = get_supabase_config()

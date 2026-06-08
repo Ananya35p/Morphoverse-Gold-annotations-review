@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+from html import escape
 from typing import Any, Dict, List, Tuple
 
 import streamlit as st
 
+from utils.review_utils import get_title
 from utils.reviewer_store import get_user_languages, save_user_languages
 
 
@@ -32,9 +34,24 @@ LANGUAGE_UI_CSS = """
     font-size: 1.1rem;
     color: #1e3a5f;
 }
-.lang-stat {
-    font-size: 0.82rem;
-    color: #4b5563;
+.lang-poem-list {
+    list-style: none;
+    margin: 0.6rem 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+.lang-poem-list li {
+    font-size: 0.86rem;
+    color: #374151;
+    padding: 0.28rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+.lang-poem-list li:last-child {
+    border-bottom: none;
+}
+.lang-poem-id {
+    font-size: 0.75rem;
+    color: #6b7280;
 }
 .top-bar {
     border: 1px solid #dbeafe;
@@ -83,20 +100,32 @@ def language_key(raw: Dict[str, Any]) -> str:
     return str(raw.get("language") or raw.get("_language_folder") or "Unknown")
 
 
-def language_stats(
+def language_poem_groups(
     poems: List[Dict[str, Any]],
-    reviewed_index: Dict[str, Dict[str, Any]],
     get_poem_id_fn,
-) -> List[Tuple[str, int, int, int]]:
+) -> List[Tuple[str, List[Tuple[str, str]]]]:
+    """Return (language, [(poem_id, title), ...]) sorted by language then title."""
     languages = sorted({language_key(p) for p in poems})
-    rows: List[Tuple[str, int, int, int]] = []
+    rows: List[Tuple[str, List[Tuple[str, str]]]] = []
     for lang in languages:
-        lang_poems = [p for p in poems if language_key(p) == lang]
-        total = len(lang_poems)
-        reviewed = sum(1 for p in lang_poems if get_poem_id_fn(p) in reviewed_index)
-        pending = total - reviewed
-        rows.append((lang, total, reviewed, pending))
+        lang_poems = sorted(
+            [p for p in poems if language_key(p) == lang],
+            key=lambda p: get_title(p).lower(),
+        )
+        entries = [(get_poem_id_fn(p), get_title(p)) for p in lang_poems]
+        rows.append((lang, entries))
     return rows
+
+
+def _poem_list_html(entries: List[Tuple[str, str]]) -> str:
+    items = []
+    for poem_id, title in entries:
+        safe_title = escape(title or poem_id)
+        safe_id = escape(poem_id)
+        items.append(
+            f'<li><strong>{safe_title}</strong><br><span class="lang-poem-id">{safe_id}</span></li>'
+        )
+    return f'<ul class="lang-poem-list">{"".join(items)}</ul>'
 
 
 def render_language_multiselect(
@@ -119,20 +148,20 @@ def render_language_multiselect(
         unsafe_allow_html=True,
     )
 
-    stats = language_stats(poems, reviewed_index, get_poem_id_fn)
-    all_languages = [lang for lang, _, _, _ in stats]
+    groups = language_poem_groups(poems, get_poem_id_fn)
+    all_languages = [lang for lang, _ in groups]
 
     saved = get_user_languages(logged_in_user)
     default_selection = [lang for lang in saved if lang in all_languages]
 
-    cols = st.columns(min(3, len(stats)) or 1)
-    for index, (lang, total, reviewed, pending) in enumerate(stats):
+    cols = st.columns(min(3, len(groups)) or 1)
+    for index, (lang, entries) in enumerate(groups):
         with cols[index % len(cols)]:
             st.markdown(
                 f"""
                 <div class="lang-card">
-                    <h3>{lang}</h3>
-                    <div class="lang-stat">{total} low-confidence · {pending} pending review</div>
+                    <h3>{escape(lang)}</h3>
+                    {_poem_list_html(entries)}
                 </div>
                 """,
                 unsafe_allow_html=True,
