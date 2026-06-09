@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from typing import Any, Dict, List, Tuple
 
 import requests
@@ -10,12 +11,20 @@ from streamlit.errors import StreamlitSecretNotFoundError
 
 
 def get_supabase_config() -> Tuple[str, str]:
-    """Return Supabase URL/key from Streamlit secrets when configured."""
+    """Return Supabase URL/key from Streamlit secrets or environment variables when configured."""
+    url = ""
+    key = ""
     try:
         url = str(st.secrets.get("SUPABASE_URL", "") or "").rstrip("/")
         key = str(st.secrets.get("SUPABASE_SERVICE_ROLE_KEY", "") or "")
     except StreamlitSecretNotFoundError:
-        return "", ""
+        pass
+
+    if not url:
+        url = str(os.environ.get("SUPABASE_URL", "") or "").rstrip("/")
+    if not key:
+        key = str(os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "") or "")
+
     return url, key
 
 

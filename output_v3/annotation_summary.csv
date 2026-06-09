@@ -30,25 +30,25 @@ schema_version,prompt_version,poem_id,poem_title,language,status,model,confidenc
 5,9,MV++_0974,Kaveri,Kannada,completed,gemini-chunked,high,False,1,aligned,0.9172,0,0,0,1.0,0
 5,9,MV++_0982,Ganga,Kannada,completed,gemini-chunked,high,False,1,aligned,0.8569,0,0,0,1.0,0
 5,9,MV++_0989,Aakasha Deepa,Kannada,completed,gemini-chunked,high,False,1,aligned,0.8343,0,0,0,1.0,0
-5,9,MV++_1042,Prithvi Ki Santaan,Kannada,completed,gemini-chunked,high,False,3,aligned,0.9011,0,0,0,0.666667,0
-5,9,MV++_1045,Kaidi Aur Kokila,Kannada,completed,gemini-chunked,high,False,3,aligned,0.91,0,0,0,0.666667,0
-5,9,MV++_1047,Doosra Sita,Kannada,completed,gemini-chunked,low,False,3,aligned,0.9036,0,0,0,0.5,0
-5,9,MV++_1048,Ram Ka Prem Patra,Kannada,completed,gemini-chunked,high,False,3,aligned,0.8987,0,0,0,0.666667,0
-5,9,MV++_1054,Parinde Ki Chah,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8615,0,0,0,1.0,0
-5,9,MV++_1057,Safar Mein Dhoop To Hogi,Kannada,completed,gemini-chunked,low,True,3,aligned,0.8661,0,3,0,1.0,3
-5,9,MV++_1059,Mitti Ke Diye,Kannada,completed,gemini-chunked,high,False,3,aligned,0.8951,0,0,0,1.0,0
-5,9,MV++_1060,Aag Ka Dariya,Kannada,completed,gemini-chunked,high,False,3,aligned,0.914,0,0,0,0.833333,0
-5,9,MV++_1071,A Lone Tree,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8779,0,0,0,1.0,0
-5,9,MV++_1072,Shahar Mein Ghar Nahin,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8777,0,0,0,1.0,0
-5,9,MV++_1075,Panchhi Nadiyan Pawan Ke Jhonke,Kannada,completed,gemini-chunked,high,False,3,aligned,0.8885,0,0,0,0.833333,0
-5,9,MV++_1076,Prithvi Ki Pukar,Kannada,completed,gemini-chunked,high,False,1,aligned,0.9335,0,0,0,1.0,0
-5,9,MV++_1078,Buddha Ka Kya Kasoor Tha,Kannada,completed,gemini-chunked,high,False,3,aligned,0.934,0,0,0,1.0,0
-5,9,MV++_1079,Usne Kaha Tha,Kannada,completed,gemini-chunked,high,False,3,aligned,0.942,0,0,0,1.0,0
-5,9,MV++_1085,Krishna Ki Chetavani,Kannada,completed,gemini-chunked,high,False,1,aligned,0.9,0,0,0,1.0,0
-5,9,MV++_1092,Hawa Hoon Main,Kannada,completed,gemini-chunked,high,False,2,aligned,0.8836,0,0,0,1.0,0
-5,9,MV++_1094,Trikaal Sandhya,Kannada,completed,gemini-chunked,high,False,2,aligned,0.9482,0,0,0,1.0,0
-5,9,MV++_1095,Prateeksha Mein Viraasat,Kannada,completed,gemini-chunked,high,False,2,aligned,0.9424,0,0,0,1.0,0
-5,9,MV++_1096,Pyar Ka Prateek,Kannada,completed,gemini-chunked,high,False,2,aligned,0.9615,0,0,0,1.0,0
+5,9,MV++_1042,Prithvi Ki Santaan,Hindi,completed,gemini-chunked,high,False,3,aligned,0.9011,0,0,0,0.666667,0
+5,9,MV++_1045,Kaidi Aur Kokila,Hindi,completed,gemini-chunked,high,False,3,aligned,0.91,0,0,0,0.666667,0
+5,9,MV++_1047,Doosra Sita,Hindi,completed,gemini-chunked,low,False,3,aligned,0.9036,0,0,0,0.5,0
+5,9,MV++_1048,Ram Ka Prem Patra,Hindi,completed,gemini-chunked,high,False,3,aligned,0.8987,0,0,0,0.666667,0
+5,9,MV++_1054,Parinde Ki Chah,Hindi,completed,gemini-chunked,high,False,2,aligned,0.8615,0,0,0,1.0,0
+5,9,MV++_1057,Safar Mein Dhoop To Hogi,Hindi,completed,gemini-chunked,low,True,3,aligned,0.8661,0,3,0,1.0,3
+5,9,MV++_1059,Mitti Ke Diye,Hindi,completed,gemini-chunked,high,False,3,aligned,0.8951,0,0,0,1.0,0
+5,9,MV++_1060,Aag Ka Dariya,Hindi,completed,gemini-chunked,high,False,3,aligned,0.914,0,0,0,0.833333,0
+5,9,MV++_1071,A Lone Tree,Hindi,completed,gemini-chunked,high,False,2,aligned,0.8779,0,0,0,1.0,0
+5,9,MV++_1072,Shahar Mein Ghar Nahin,Hindi,completed,gemini-chunked,high,False,2,aligned,0.8777,0,0,0,1.0,0
+5,9,MV++_1075,Panchhi Nadiyan Pawan Ke Jhonke,Hindi,completed,gemini-chunked,high,False,3,aligned,0.8885,0,0,0,0.833333,0
+5,9,MV++_1076,Prithvi Ki Pukar,Hindi,completed,gemini-chunked,high,False,1,aligned,0.9335,0,0,0,1.0,0
+5,9,MV++_1078,Buddha Ka Kya Kasoor Tha,Hindi,completed,gemini-chunked,high,False,3,aligned,0.934,0,0,0,1.0,0
+5,9,MV++_1079,Usne Kaha Tha,Hindi,completed,gemini-chunked,high,False,3,aligned,0.942,0,0,0,1.0,0
+5,9,MV++_1085,Krishna Ki Chetavani,Hindi,completed,gemini-chunked,high,False,1,aligned,0.9,0,0,0,1.0,0
+5,9,MV++_1092,Hawa Hoon Main,Hindi,completed,gemini-chunked,high,False,2,aligned,0.8836,0,0,0,1.0,0
+5,9,MV++_1094,Trikaal Sandhya,Hindi,completed,gemini-chunked,high,False,2,aligned,0.9482,0,0,0,1.0,0
+5,9,MV++_1095,Prateeksha Mein Viraasat,Hindi,completed,gemini-chunked,high,False,2,aligned,0.9424,0,0,0,1.0,0
+5,9,MV++_1096,Pyar Ka Prateek,Hindi,completed,gemini-chunked,high,False,2,aligned,0.9615,0,0,0,1.0,0
 5,9,MV++_1113,Mankuthimmana Kagga,Kannada,completed,gemini-chunked,low,False,1,aligned,0.7933,0,0,0,0.5,0
 5,9,MV++_1116,Mareyada Haadu,Kannada,completed,gemini-chunked,low,True,3,aligned,0.8128,0,1,0,0.833333,1
 5,9,MV++_1118,Udayavagali Namma Cheluva Kannada Naadu,Kannada,completed,gemini-chunked,high,False,3,aligned,0.9237,0,0,0,0.833333,0

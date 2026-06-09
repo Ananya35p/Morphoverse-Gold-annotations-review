@@ -683,6 +683,10 @@ with st.sidebar:
     st.divider()
     st.caption(f"Signed in as **{logged_in_user}**")
     st.caption(f"Storage: {persistent_storage_label()}")
+    if not all(get_supabase_config()):
+        st.caption(
+            "Supabase is not configured. Add `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` to Streamlit secrets or environment variables."
+        )
     if st.button("Review instructions", use_container_width=True):
         st.session_state.show_instructions = True
         st.session_state.instructions_completed = False

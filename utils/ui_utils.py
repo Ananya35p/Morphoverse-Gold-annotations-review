@@ -90,7 +90,6 @@ def render_language_multiselect(
     get_poem_id_fn,
     logged_in_user: str,
 ) -> None:
-    st.markdown(LANGUAGE_UI_CSS, unsafe_allow_html=True)
     st.markdown(
         f"""
         <div class="lang-hero">

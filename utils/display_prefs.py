@@ -86,13 +86,60 @@ def get_display_css() -> str:
 
     return f"""
 <style>
-.stApp {{
-    background-color: {tokens["app_bg"]};
-    color: {tokens["text"]};
+html, body, .stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"],
+.main .block-container {{
+    background-color: {tokens["app_bg"]} !important;
+    color: {tokens["text"]} !important;
     font-size: {base_px}px;
 }}
 .block-container {{
     color: {tokens["text"]};
+}}
+.stButton button,
+.stDownloadButton button,
+button,
+select,
+input,
+textarea {{
+    color: {tokens["text"]} !important;
+    background-color: {tokens["card_bg"]} !important;
+    border-color: {tokens["card_border"]} !important;
+}}
+textarea,
+.stTextArea textarea,
+.stTextInput input,
+select {{
+    background-color: {tokens["card_bg"]} !important;
+    color: {tokens["text"]} !important;
+    border-color: {tokens["card_border"]} !important;
+}}
+[data-testid="stMarkdown"] p,
+[data-testid="stMarkdown"] li,
+[data-testid="stMarkdown"] span,
+[data-testid="stMarkdown"] div,
+[data-testid="stHeading"],
+h1, h2, h3, h4, h5, h6 {{
+    color: {tokens["text"]} !important;
+}}
+.stCaption, [data-testid="stCaptionContainer"] {{
+    color: {tokens["muted"]} !important;
+}}
+[data-testid="stSidebar"],
+[data-testid="stSidebar"] > div:first-child {{
+    background-color: {tokens["card_bg"]} !important;
+}}
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] .stMarkdown,
+[data-testid="stSidebar"] [data-testid="stMarkdown"] p {{
+    color: {tokens["text"]} !important;
+}}
+[data-testid="stSidebar"] .stCaption,
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] {{
+    color: {tokens["muted"]} !important;
 }}
 .mv-card, .mv-hero, .admin-card {{
     border: 1px solid {tokens["card_border"]};
@@ -112,12 +159,18 @@ def get_display_css() -> str:
 }}
 .poem-box {{
     font-size: {poem_px}px;
-    background: {tokens["poem_bg"]};
-    border-color: {tokens["poem_border"]};
-    color: {tokens["text"]};
+    background: {tokens["poem_bg"]} !important;
+    border-color: {tokens["poem_border"]} !important;
+    color: {tokens["text"]} !important;
+}}
+.poem-box p,
+.poem-box span,
+.poem-box div,
+.poem-box * {{
+    color: {tokens["text"]} !important;
 }}
 .poem-label {{
-    color: {tokens["text"]};
+    color: {tokens["text"]} !important;
     font-size: {0.9 * base_px}px;
 }}
 .top-bar {{
@@ -147,8 +200,17 @@ def get_display_css() -> str:
 .attention-list, .review-steps, .field-guide {{
     color: {tokens["text"]};
 }}
-[data-testid="stSidebar"] {{
-    background-color: {tokens["card_bg"]};
+.compare-panel {{
+    background: {tokens["card_bg"]};
+    border-color: {tokens["card_border"]};
+    color: {tokens["text"]};
+}}
+.compare-row {{
+    border-bottom-color: {tokens["section_border"]};
+    color: {tokens["text"]};
+}}
+.quick-review-band {{
+    border-top-color: {tokens["section_border"]};
 }}
 </style>
 """
@@ -162,10 +224,11 @@ def render_display_controls() -> None:
         if st.session_state.ui_theme in THEME_OPTIONS
         else 0
     )
-    st.session_state.ui_theme = st.selectbox(
+    st.selectbox(
         "Theme",
         THEME_OPTIONS,
         index=theme_index,
+        key="ui_theme",
         format_func=lambda value: THEME_LABELS.get(value, value),
     )
 

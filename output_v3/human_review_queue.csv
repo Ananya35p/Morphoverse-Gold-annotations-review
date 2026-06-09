@@ -2,9 +2,9 @@ poem_id,poem_title,language,status,field_path,severity,resolved_value,model_valu
 MV++_0004,Brahmaputra,Assamese,completed,annotation.stanzas[1].metaphor_spans,low,dropped,তোমাৰ স্রোত / হৃদয়ৰ গভীৰতাত বয়,metaphor_source_term_not_in_source
 MV++_0004,Brahmaputra,Assamese,completed,annotation.stanzas[1].metaphor_spans,low,dropped,মোৰ চিন্তাৰ সঙ্গীতত / বহা তোমাৰ গতি,metaphor_source_term_not_in_source
 MV++_0006,Jibon,Assamese,completed,annotation.stanzas[1].metaphor_spans,low,dropped,জীৱন তুমি এক বুৰঞ্জী,metaphor_source_term_not_in_source
-MV++_1057,Safar Mein Dhoop To Hogi,Kannada,completed,annotation.stanzas[1].metaphor_spans,low,dropped,ಧೂಪ್,metaphor_source_term_not_in_source
-MV++_1057,Safar Mein Dhoop To Hogi,Kannada,completed,annotation.stanzas[1].metaphor_spans,low,dropped,ಚಾಂದನೀ ರಾತೇಂ,metaphor_source_term_not_in_source
-MV++_1057,Safar Mein Dhoop To Hogi,Kannada,completed,annotation.stanzas[1].metaphor_spans,low,dropped,ರಾಹೇಂ,metaphor_source_term_not_in_source
+MV++_1057,Safar Mein Dhoop To Hogi,Hindi,completed,annotation.stanzas[1].metaphor_spans,low,dropped,ಧೂಪ್,metaphor_source_term_not_in_source
+MV++_1057,Safar Mein Dhoop To Hogi,Hindi,completed,annotation.stanzas[1].metaphor_spans,low,dropped,ಚಾಂದನೀ ರಾತೇಂ,metaphor_source_term_not_in_source
+MV++_1057,Safar Mein Dhoop To Hogi,Hindi,completed,annotation.stanzas[1].metaphor_spans,low,dropped,ರಾಹೇಂ,metaphor_source_term_not_in_source
 MV++_1116,Mareyada Haadu,Kannada,completed,annotation.stanzas[3].metaphor_spans,low,dropped,ಬೆಳಕಿನ ಚಿಮ್ಮುವ ಕನಸುಗಳು,metaphor_source_term_not_in_source
 MV++_1121,Kannada,Kannada,salvaged,annotation.cultural_entities,medium,dropped,ಕನ್ನಡ ನಾಡು,entity_term_not_in_source
 MV++_1123,Hachchevu Kannadada Deepa,Kannada,salvaged,annotation.cultural_entities,medium,dropped,ಕನ್ನಡ ನಾಡು,entity_term_not_in_source
