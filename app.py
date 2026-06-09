@@ -394,6 +394,9 @@ def build_keep_disabled_mask(df: pd.DataFrame, action_col: str = "review_action"
             for col in df.columns:
                 if col not in {action_col, "_is_original"}:
                     disabled.at[idx, col] = True
+    # Ensure the action column itself is never disabled
+    if action_col in disabled.columns:
+        disabled[action_col] = False
     return disabled
 
 
