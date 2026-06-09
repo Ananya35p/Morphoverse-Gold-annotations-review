@@ -504,6 +504,19 @@ def df_editor_culture(df: pd.DataFrame, key: str) -> pd.DataFrame:
         hide_index=True,
         num_rows="dynamic",
         disabled=build_keep_disabled_mask(editor_df),
+        column_order=[
+            "review_action",
+            "text",
+            "category",
+            "preserved",
+            "english_gloss",
+            "romanization",
+            "translation_note",
+            "stanza_index",
+            "confidence",
+            "reviewer_comment",
+            "_is_original",
+        ],
         column_config={
             "category": st.column_config.SelectboxColumn("category", options=ALLOWED_CULTURE_CATEGORIES),
             "review_action": review_action_column(include_add=True),
@@ -690,7 +703,7 @@ with st.sidebar:
     if st.button("Review instructions", use_container_width=True):
         st.session_state.show_instructions = True
         st.session_state.instructions_completed = False
-        show_instructions_dialog()
+        st.rerun()
     if st.button("Sign out", use_container_width=True):
         logout()
         st.rerun()
