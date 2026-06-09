@@ -506,7 +506,6 @@ def df_editor_culture(df: pd.DataFrame, key: str) -> pd.DataFrame:
         use_container_width=True,
         hide_index=True,
         num_rows="dynamic",
-        disabled=build_keep_disabled_mask(editor_df),
         column_order=[
             "review_action",
             "text",
