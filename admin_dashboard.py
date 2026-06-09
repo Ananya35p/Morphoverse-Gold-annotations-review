@@ -112,12 +112,17 @@ def load_all_reviews() -> tuple[List[Dict[str, Any]], str]:
     remote_reviews, remote_message = load_reviews_from_persistent_storage()
 
     reviews_by_id: Dict[str, Dict[str, Any]] = {}
-    for review in reviewer_reviews + legacy_reviews + remote_reviews:
+    for review in reviewer_reviews + legacy_reviews:
         user = str(review.get("logged_in_user") or review.get("reviewer_id") or "unknown")
         poem_id = str(review.get("poem_id") or "")
         key = str(review.get("review_id") or f"{user}__{poem_id}")
-        if key not in reviews_by_id or review.get("_storage_source") == "Reviewer store":
-            reviews_by_id[key] = review
+        reviews_by_id[key] = review
+
+    for review in remote_reviews:
+        user = str(review.get("logged_in_user") or review.get("reviewer_id") or "unknown")
+        poem_id = str(review.get("poem_id") or "")
+        key = str(review.get("review_id") or f"{user}__{poem_id}")
+        reviews_by_id[key] = review
 
     return list(reviews_by_id.values()), remote_message
 
