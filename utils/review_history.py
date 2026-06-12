@@ -35,8 +35,8 @@ def history_event_label(event: str) -> str:
         "draft_saved": "Draft auto-saved",
         "submitted": "Review submitted",
         "updated": "Review updated",
-        "escalated": "Escalated to senior reviewer",
-        "senior_resolved": "Senior review completed",
+        "admin_resolved": "Admin accepted a reviewer submission",
+        "admin_disputed": "Admin marked poem as disputed",
     }
     return labels.get(event, event.replace("_", " ").title())
 

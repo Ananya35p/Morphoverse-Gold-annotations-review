@@ -73,13 +73,6 @@ def get_admin_credentials() -> Dict[str, str]:
     return creds
 
 
-def get_senior_credentials() -> Dict[str, str]:
-    creds = get_credentials("senior_credentials", "SENIOR_CREDENTIALS")
-    if not creds:
-        creds["senior"] = os.environ.get("SENIOR_PASSWORD", "senior2025")
-    return creds
-
-
 def validate_reviewer_login(name: str, password: str) -> bool:
     name = name.strip()
     password = password.strip()
@@ -101,21 +94,6 @@ def validate_admin_login(username: str, password: str) -> bool:
     return expected is not None and expected == password
 
 
-def validate_senior_login(username: str, password: str) -> bool:
-    expected = get_senior_credentials().get(username.strip())
-    return expected is not None and expected == password
-
-
-def resolve_staff_role(username: str, password: str) -> str | None:
-    """Return admin, senior, or None."""
-    name = username.strip()
-    if validate_admin_login(name, password):
-        return "admin"
-    if validate_senior_login(name, password):
-        return "senior"
-    return None
-
-
 def logout() -> None:
     st.session_state.authenticated = False
     st.session_state.username = None
@@ -128,7 +106,6 @@ def logout() -> None:
 def admin_logout() -> None:
     st.session_state.admin_authenticated = False
     st.session_state.admin_username = None
-    st.session_state.admin_role = None
 
 
 def render_login_page() -> None:
@@ -170,7 +147,7 @@ def render_admin_login_page() -> None:
         """
         <div class="mv-hero" style="max-width: 520px; margin: 2.5rem auto 1.5rem auto; text-align: center;">
             <h1>Admin Dashboard</h1>
-            <div class="small-muted">Sign in as admin or senior reviewer.</div>
+            <div class="small-muted">Sign in to review submissions and resolve reviewer conflicts.</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -179,22 +156,19 @@ def render_admin_login_page() -> None:
     _, center, _ = st.columns([1, 1.1, 1])
     with center:
         with st.form("admin_login_form", clear_on_submit=False):
-            username = st.text_input("Username", placeholder="admin or senior")
-            password = st.text_input("Password", type="password", placeholder="Staff password")
+            username = st.text_input("Admin username", placeholder="admin")
+            password = st.text_input("Password", type="password", placeholder="Admin password")
             submitted = st.form_submit_button("Sign in", type="primary", use_container_width=True)
 
         if submitted:
             if not username.strip() or not password:
                 st.error("Please enter both username and password.")
+            elif validate_admin_login(username, password):
+                st.session_state.admin_authenticated = True
+                st.session_state.admin_username = username.strip()
+                st.rerun()
             else:
-                role = resolve_staff_role(username, password)
-                if role:
-                    st.session_state.admin_authenticated = True
-                    st.session_state.admin_username = username.strip()
-                    st.session_state.admin_role = role
-                    st.rerun()
-                else:
-                    st.error("Invalid credentials.")
+                st.error("Invalid admin credentials.")
 
 
 @st.dialog("How to review poems", width="large")
@@ -256,8 +230,6 @@ def init_admin_state() -> None:
         st.session_state.admin_authenticated = False
     if "admin_username" not in st.session_state:
         st.session_state.admin_username = None
-    if "admin_role" not in st.session_state:
-        st.session_state.admin_role = None
 
 
 def require_admin_login() -> str:
@@ -266,8 +238,3 @@ def require_admin_login() -> str:
         render_admin_login_page()
         st.stop()
     return str(st.session_state.admin_username or "")
-
-
-def get_admin_role() -> str:
-    init_admin_state()
-    return str(st.session_state.admin_role or "admin")
